@@ -5,4 +5,4 @@ Create and administrate multiple  ARMA 3 dedicated server under windows environn
 
 INSTALLATION :
 
-http://www.clan-gign.net/FSFLauncherA3/publish.htm
+http://www.clan-gign.net/FSFServerA3/publish.htm
