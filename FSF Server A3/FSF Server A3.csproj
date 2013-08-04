@@ -103,7 +103,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\GestionProfil.cs" />
-    <Compile Include="Classes\Priority.cs" />
+    <Compile Include="Classes\TabMissions.cs" />
+    <Compile Include="Classes\TabPriority.cs" />
     <Compile Include="Classes\SerializeForm.cs" />
     <Compile Include="Classes\SurveillanceProcess.cs" />
     <Compile Include="Classes\Var.cs" />

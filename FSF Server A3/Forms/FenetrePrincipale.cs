@@ -52,27 +52,27 @@ namespace FSF_Server_A3
 
         private void Priorité_Enter(object sender, EventArgs e)
         {
-            Priority.actualisePrioriteMods();
+            TabPriority.actualisePrioriteMods();
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
-            Priority.topPrioriteMod();
+            TabPriority.topPrioriteMod();
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
-            Priority.augmentePrioriteMod();
+            TabPriority.augmentePrioriteMod();
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
-            Priority.diminuePrioriteMod();
+            TabPriority.diminuePrioriteMod();
         }
 
         private void button32_Click(object sender, EventArgs e)
         {
-            Priority.downPrioriteMod();
+            TabPriority.downPrioriteMod();
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -400,22 +400,22 @@ namespace FSF_Server_A3
 
         private void button31_Click_1(object sender, EventArgs e)
         {
-            Priority.topPrioriteMod();
+            TabPriority.topPrioriteMod();
         }
 
         private void button29_Click_1(object sender, EventArgs e)
         {
-            Priority.augmentePrioriteMod();
+            TabPriority.augmentePrioriteMod();
         }
 
         private void button30_Click_1(object sender, EventArgs e)
         {
-            Priority.diminuePrioriteMod();
+            TabPriority.diminuePrioriteMod();
         }
 
         private void button32_Click_1(object sender, EventArgs e)
         {
-            Priority.downPrioriteMod();
+            TabPriority.downPrioriteMod();
         }
 
         private void button26_Click(object sender, EventArgs e)
@@ -431,7 +431,7 @@ namespace FSF_Server_A3
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Interface.changeFiltreMissions((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+           TabMissions.changeFiltreMissions((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
         }
 
 

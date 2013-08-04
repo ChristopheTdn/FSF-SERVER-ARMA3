@@ -3556,6 +3556,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
+            this.radioButton2.Enabled = false;
             this.radioButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radioButton2.Location = new System.Drawing.Point(123, 53);
             this.radioButton2.Name = "radioButton2";
@@ -3567,6 +3568,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
+            this.radioButton5.Enabled = false;
             this.radioButton5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radioButton5.Location = new System.Drawing.Point(259, 24);
             this.radioButton5.Name = "radioButton5";
@@ -3605,6 +3607,7 @@
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
+            this.radioButton6.Enabled = false;
             this.radioButton6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radioButton6.Location = new System.Drawing.Point(259, 53);
             this.radioButton6.Name = "radioButton6";
@@ -3644,6 +3647,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.Enabled = false;
             this.radioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radioButton3.Location = new System.Drawing.Point(123, 84);
             this.radioButton3.Name = "radioButton3";

@@ -180,7 +180,7 @@ namespace FSF_Server_A3.Classes
         static public void SauvegardePrioriteProfilXML(string nomProfil)
         {
             if (nomProfil == "") return;
-            Priority.actualisePrioriteMods();
+            TabPriority.actualisePrioriteMods();
             if (!System.IO.File.Exists(Var.RepertoireDeSauvegarde + nomProfil + ".profilPriorite.xml"))
             {
                 Directory.CreateDirectory(Var.RepertoireDeSauvegarde);
@@ -429,7 +429,7 @@ namespace FSF_Server_A3.Classes
             string listArguments = "";
 
             // Ligne Mods
-            Priority.actualisePrioriteMods();
+            TabPriority.actualisePrioriteMods();
             foreach (string ligne in Var.fenetrePrincipale.ctrlListModPrioritaire.Items)
             {
                 listMODS += ligne + ";";
