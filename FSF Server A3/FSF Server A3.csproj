@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55421EED-DF7C-4A9D-8B39-2F75B6948BAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSF_Server_A3</RootNamespace>
+    <AssemblyName>FSF Server A3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>ftp://www.clan-gign.net/FSFServerA3/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.clan-gign.net/FSFServerA3/</InstallUrl>
+    <SupportUrl>http://www.clan-fsf.fr</SupportUrl>
+    <ProductName>FSF Server A3</ProductName>
+    <PublisherName>Clan FSF</PublisherName>
+    <SuiteName>ToF Developpement</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>35</ApplicationRevision>
+    <ApplicationVersion>0.8.0801.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4F17446182B4E789E32F4355510DA57CE3879DE4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FSF Server A3_CléTemporaire.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>graphX\FSFLauncherA3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infralution.Localization, Version=1.2.2.0, Culture=neutral, PublicKeyToken=af4bb5454ff71782, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Infralution.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinSCPnet, Version=1.1.1.3231, Culture=neutral, PublicKeyToken=b5f19f5762436b89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\WinSCPnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\GestionProfil.cs" />
+    <Compile Include="Classes\Priority.cs" />
+    <Compile Include="Classes\SerializeForm.cs" />
+    <Compile Include="Classes\SurveillanceProcess.cs" />
+    <Compile Include="Classes\Var.cs" />
+    <Compile Include="Classes\Core.cs" />
+    <Compile Include="Classes\Interface.cs" />
+    <Compile Include="Forms\DIAL_RepertoireARMA3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DIAL_RepertoireARMA3.Designer.cs">
+      <DependentUpon>DIAL_RepertoireARMA3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FenetrePrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FenetrePrincipale.Designer.cs">
+      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DIAL_RepertoireARMA3.resx">
+      <DependentUpon>DIAL_RepertoireARMA3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FenetrePrincipale.resx">
+      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\Infralution.Localization.dll" />
+    <Content Include="dll\WinSCPnet.dll" />
+    <Content Include="graphX\Ace_logo.jpg" />
+    <Content Include="graphX\ajouter-vert-plus-icone-9105-128.png" />
+    <Content Include="graphX\ajouterListe.png" />
+    <Content Include="graphX\allemagne.png" />
+    <Content Include="graphX\balle-fermer-cute-stop-icone-4372-64.png" />
+    <Content Include="graphX\blasonfsfA3.png" />
+    <Content Include="graphX\case-divers-icone-9631-96.png" />
+    <Content Include="graphX\crochet-ok-oui-icone-5594-64.png" />
+    <Content Include="graphX\d7.2.png" />
+    <Content Include="graphX\danger.png" />
+    <Content Include="graphX\disque-dur-icone-5993-128.png" />
+    <Content Include="graphX\disquette.png" />
+    <Content Include="graphX\espagne.png" />
+    <Content Include="graphX\fermer-gtk-icone-6139-128.png" />
+    <Content Include="graphX\fleche-cycle-actualisez-icone-7641-64.png" />
+    <Content Include="graphX\france.png" />
+    <Content Include="graphX\FSFLauncherA3.ico" />
+    <Content Include="graphX\globe.png" />
+    <Content Include="graphX\grece.png" />
+    <Content Include="graphX\Hangar.svg.png" />
+    <Content Include="graphX\hexa_soldier_radio_mini_art.png" />
+    <Content Include="graphX\Island Stone.png" />
+    <Content Include="graphX\italie.png" />
+    <Content Include="graphX\la-gestion-pouvoir-preferences-systeme-icone-5042-96.png" />
+    <Content Include="graphX\list-add-3.png" />
+    <Content Include="graphX\logo-fsf.png" />
+    <Content Include="graphX\mettre-en-favori-favori-etoile-icone-3996-64.png" />
+    <Content Include="graphX\point_exclamation.png" />
+    <Content Include="graphX\point_interrogation.png" />
+    <Content Include="graphX\profil.png" />
+    <Content Include="graphX\programme.png" />
+    <Content Include="graphX\royaumeunis.png" />
+    <Content Include="graphX\russe.png" />
+    <Content Include="graphX\Small-logo.jpg" />
+    <Content Include="graphX\solution1.jpg" />
+    <Content Include="graphX\teamspeak.png" />
+    <Content Include="graphX\ts3.png" />
+    <Content Include="graphX\utilisateur-icone-8690-128.png" />
+    <Content Include="graphX\winscp.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
