@@ -393,6 +393,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button39 = new System.Windows.Forms.Button();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -4457,6 +4458,7 @@
             // Missions
             // 
             this.Missions.BackColor = System.Drawing.Color.Gainsboro;
+            this.Missions.Controls.Add(this.comboBox6);
             this.Missions.Controls.Add(this.textBox3);
             this.Missions.Controls.Add(this.textBox2);
             this.Missions.Controls.Add(this.button19);
@@ -4478,7 +4480,7 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(368, 18);
+            this.textBox3.Location = new System.Drawing.Point(309, 29);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(32, 22);
             this.textBox3.TabIndex = 56;
@@ -4486,14 +4488,14 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(248, 18);
+            this.textBox2.Location = new System.Drawing.Point(96, 29);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(35, 22);
             this.textBox2.TabIndex = 55;
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(258, 339);
+            this.button19.Location = new System.Drawing.Point(216, 351);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 23);
             this.button19.TabIndex = 54;
@@ -4502,27 +4504,27 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(177, 339);
+            this.button18.Location = new System.Drawing.Point(146, 351);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.Size = new System.Drawing.Size(59, 23);
             this.button18.TabIndex = 53;
             this.button18.Text = "Monter";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(96, 339);
+            this.button17.Location = new System.Drawing.Point(83, 351);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 23);
+            this.button17.Size = new System.Drawing.Size(57, 23);
             this.button17.TabIndex = 52;
             this.button17.Text = "Inverser";
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 339);
+            this.button1.Location = new System.Drawing.Point(22, 351);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(51, 23);
             this.button1.TabIndex = 51;
             this.button1.Text = "Tout";
             this.button1.UseVisualStyleBackColor = true;
@@ -4536,16 +4538,17 @@
             this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox5.Items.AddRange(new object[] {
             "Toutes"});
-            this.comboBox5.Location = new System.Drawing.Point(95, 19);
+            this.comboBox5.Location = new System.Drawing.Point(95, 6);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(64, 21);
+            this.comboBox5.Size = new System.Drawing.Size(246, 21);
             this.comboBox5.TabIndex = 50;
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(289, 22);
+            this.label13.Location = new System.Drawing.Point(230, 32);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(73, 13);
             this.label13.TabIndex = 49;
@@ -4555,7 +4558,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(173, 22);
+            this.label9.Location = new System.Drawing.Point(15, 32);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 48;
@@ -4565,7 +4568,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(15, 22);
+            this.label8.Location = new System.Drawing.Point(15, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 13);
             this.label8.TabIndex = 47;
@@ -5282,6 +5285,23 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.comboBox6.Items.AddRange(new object[] {
+            "recruit",
+            "regular",
+            "veteran",
+            "expert"});
+            this.comboBox6.Location = new System.Drawing.Point(309, 351);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(78, 21);
+            this.comboBox6.TabIndex = 57;
+            // 
             // FenetrePrincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5784,6 +5804,7 @@
         internal System.Windows.Forms.Label label13;
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Label label8;
+        internal System.Windows.Forms.ComboBox comboBox6;
 
     }
 }

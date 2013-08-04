@@ -429,6 +429,11 @@ namespace FSF_Server_A3
                 Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Text.ToString());            
         }
 
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Interface.changeFiltreMissions((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+        }
+
 
 
         

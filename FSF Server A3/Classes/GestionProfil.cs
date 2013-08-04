@@ -472,6 +472,7 @@ namespace FSF_Server_A3.Classes
             // creation server.cfg
             FileStream fs;
             string text;
+            
             string repertoireDeTravail = Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil;
             fs = File.Create(repertoireDeTravail + @"\server.cfg");
             fs.Close();
@@ -529,6 +530,27 @@ namespace FSF_Server_A3.Classes
                 text += "voteMissionPlayers = " + Var.fenetrePrincipale.numericUpDown3.Value.ToString() + @";" + Environment.NewLine;
                 text += "voteThreshold = " + (Var.fenetrePrincipale.numericUpDown4.Value / 100).ToString().Replace(",", ".") + @";" + Environment.NewLine;
             }
+            // Missions
+            text += "// Missions" + Environment.NewLine;
+            text += "class Missions" + Environment.NewLine;
+            text += "   {" + Environment.NewLine;
+            int compteur = 0;
+            int indexMission = 1;
+            foreach (string ligne in Var.fenetrePrincipale.checkedListBoxMissions.Items)
+            {
+                if (Var.fenetrePrincipale.checkedListBoxMissions.GetItemChecked(compteur))
+                {
+                    text += "   class Mission_" + indexMission.ToString() + Environment.NewLine;
+                    text += "       {" + Environment.NewLine;
+                    text += @"        template = """ + ligne.Replace(".pbo", "") + @"""; " + Environment.NewLine;
+                    text += @"        difficulty = """+Var.fenetrePrincipale.comboBox6.Text+@""";" + Environment.NewLine;
+                    text += "       };" + Environment.NewLine;
+                    indexMission++;
+                }
+                compteur++;
+            }
+            text += "   };" + Environment.NewLine;
+
             System.IO.File.WriteAllText(repertoireDeTravail + @"\server.cfg", text);
 
         }
