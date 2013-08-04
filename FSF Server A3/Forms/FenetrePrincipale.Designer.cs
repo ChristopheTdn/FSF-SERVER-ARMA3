@@ -4579,7 +4579,6 @@
             this.checkedListBoxMissions.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.checkedListBoxMissions.FormattingEnabled = true;
             this.checkedListBoxMissions.Location = new System.Drawing.Point(14, 57);
-            this.checkedListBoxMissions.MultiColumn = true;
             this.checkedListBoxMissions.Name = "checkedListBoxMissions";
             this.checkedListBoxMissions.Size = new System.Drawing.Size(386, 276);
             this.checkedListBoxMissions.TabIndex = 8;

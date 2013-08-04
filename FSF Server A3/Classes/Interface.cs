@@ -468,7 +468,32 @@ namespace FSF_Server_A3.Classes
         {
             Var.fenetrePrincipale.checkedListBoxMissions.Items.Clear();
             Var.fenetrePrincipale.comboBox5.SelectedIndex = 0;
+            foreach (var ligne in GenereListeTabMission(profil))
+            {
+                Var.fenetrePrincipale.checkedListBoxMissions.Items.Add(ligne);
+            }                
         }
+        static private List<string> GenereListeTabMission(string Profil)
+          {
+
+              List<string> listeFichier = new List<string>();
+              try
+              {
+                  string[] tableauFichier = Directory.GetFiles(Var.fenetrePrincipale.textBox18.Text + @"\MPMissions\", "*.pbo");
+
+                  foreach (var ligne in tableauFichier)
+                  {
+
+                      listeFichier.Add(ligne.Replace(Var.fenetrePrincipale.textBox18.Text + @"\MPMissions\", ""));                  
+
+                      
+                  }
+              }
+              catch
+              {
+              }
+              return listeFichier;
+          }
 
     }
 }

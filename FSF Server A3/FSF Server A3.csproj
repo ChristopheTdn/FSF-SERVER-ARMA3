@@ -34,8 +34,8 @@
     <SuiteName>ToF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>35</ApplicationRevision>
-    <ApplicationVersion>0.8.0801.%2a</ApplicationVersion>
+    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationVersion>0.8.0804.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
