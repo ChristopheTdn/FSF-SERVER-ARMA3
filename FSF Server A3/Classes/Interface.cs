@@ -59,6 +59,7 @@ namespace FSF_Server_A3.Classes
 
             }
 
+
         }
         static private string AfficheVersionProgramme()
         {
@@ -93,6 +94,7 @@ namespace FSF_Server_A3.Classes
             //genereTabMods();
             genereTabParam(profil);
             genereTabPriorite(profil);
+            genereTabMissions(profil);
         }
         static public void effaceTousItemsOnglets()
         {
@@ -461,6 +463,12 @@ namespace FSF_Server_A3.Classes
 
         }
 
+        // GESTION TABS MISSIONS
+          static public void genereTabMissions(string profil)
+        {
+            Var.fenetrePrincipale.checkedListBoxMissions.Items.Clear();
+            Var.fenetrePrincipale.comboBox5.SelectedIndex = 0;
+        }
 
     }
 }

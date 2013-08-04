@@ -339,7 +339,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
             this.TabOptions = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabMODS = new System.Windows.Forms.TabPage();
@@ -4467,7 +4467,7 @@
             this.Missions.Controls.Add(this.label13);
             this.Missions.Controls.Add(this.label9);
             this.Missions.Controls.Add(this.label8);
-            this.Missions.Controls.Add(this.checkedListBox8);
+            this.Missions.Controls.Add(this.checkedListBoxMissions);
             this.Missions.ImageIndex = 10;
             this.Missions.Location = new System.Drawing.Point(4, 42);
             this.Missions.Name = "Missions";
@@ -4477,6 +4477,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox3.Location = new System.Drawing.Point(368, 18);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(32, 22);
@@ -4484,6 +4485,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox2.Location = new System.Drawing.Point(248, 18);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(35, 22);
@@ -4491,7 +4493,7 @@
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(257, 342);
+            this.button19.Location = new System.Drawing.Point(258, 339);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(75, 23);
             this.button19.TabIndex = 54;
@@ -4500,7 +4502,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(176, 342);
+            this.button18.Location = new System.Drawing.Point(177, 339);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(75, 23);
             this.button18.TabIndex = 53;
@@ -4509,7 +4511,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(95, 342);
+            this.button17.Location = new System.Drawing.Point(96, 339);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 52;
@@ -4518,7 +4520,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(13, 342);
+            this.button1.Location = new System.Drawing.Point(14, 339);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 51;
@@ -4569,28 +4571,28 @@
             this.label8.TabIndex = 47;
             this.label8.Text = "Filtre par Ile :";
             // 
-            // checkedListBox8
+            // checkedListBoxMissions
             // 
-            this.checkedListBox8.BackColor = System.Drawing.Color.LightGray;
-            this.checkedListBox8.CheckOnClick = true;
-            this.checkedListBox8.ColumnWidth = 160;
-            this.checkedListBox8.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.checkedListBox8.FormattingEnabled = true;
-            this.checkedListBox8.Location = new System.Drawing.Point(14, 57);
-            this.checkedListBox8.MultiColumn = true;
-            this.checkedListBox8.Name = "checkedListBox8";
-            this.checkedListBox8.Size = new System.Drawing.Size(386, 259);
-            this.checkedListBox8.TabIndex = 8;
-            this.checkedListBox8.ThreeDCheckBoxes = true;
+            this.checkedListBoxMissions.BackColor = System.Drawing.Color.LightGray;
+            this.checkedListBoxMissions.CheckOnClick = true;
+            this.checkedListBoxMissions.ColumnWidth = 160;
+            this.checkedListBoxMissions.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.checkedListBoxMissions.FormattingEnabled = true;
+            this.checkedListBoxMissions.Location = new System.Drawing.Point(14, 57);
+            this.checkedListBoxMissions.MultiColumn = true;
+            this.checkedListBoxMissions.Name = "checkedListBoxMissions";
+            this.checkedListBoxMissions.Size = new System.Drawing.Size(386, 276);
+            this.checkedListBoxMissions.TabIndex = 8;
+            this.checkedListBoxMissions.ThreeDCheckBoxes = true;
             // 
             // TabOptions
             // 
+            this.TabOptions.BackColor = System.Drawing.Color.Gainsboro;
             this.TabOptions.Location = new System.Drawing.Point(4, 42);
             this.TabOptions.Name = "TabOptions";
             this.TabOptions.Size = new System.Drawing.Size(418, 387);
             this.TabOptions.TabIndex = 5;
             this.TabOptions.Text = "Options";
-            this.TabOptions.UseVisualStyleBackColor = true;
             // 
             // imageList1
             // 
@@ -5772,7 +5774,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TabPage Missions;
         private System.Windows.Forms.TabPage TabOptions;
-        internal System.Windows.Forms.CheckedListBox checkedListBox8;
+        internal System.Windows.Forms.CheckedListBox checkedListBoxMissions;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button19;
