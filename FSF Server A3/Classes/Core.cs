@@ -111,6 +111,10 @@ namespace FSF_Server_A3.Classes
            {
                string repertoireLocal = Var.fenetrePrincipale.textBox18.Text + @"\@FSF\";
                string repertoireDistant = "/@FSF/";
+                string host,userName,pass;
+                host = "";
+                userName = "";
+                pass = "";
 
                Var.fenetrePrincipale.textBox11.Text = "Synchronisation procedure " + typeSynchro + " en cours :" + Environment.NewLine;
                Var.fenetrePrincipale.textBox11.Text += "────────────────────────────" + Environment.NewLine;
@@ -120,12 +124,15 @@ namespace FSF_Server_A3.Classes
                switch (typeSynchro)
                {
                    case "beta":
+                       host = "ftp1.clan-fsf.fr";
+                       userName = "fsflauncherA3";
+                       pass = "fsflauncherA3";
                        SessionOptions sessionOptions1 = new SessionOptions
                        {
                            Protocol = Protocol.Ftp,
-                           HostName = "ftp1.clan-fsf.fr",
-                           UserName = "fsflauncherA3",
-                           Password = "fsflauncherA3"
+                           HostName = host,
+                           UserName = userName,
+                           Password = pass
 
                        };
                        repertoireDistant = "/@FSF/";
@@ -230,7 +237,7 @@ namespace FSF_Server_A3.Classes
                    synchronizationResult.Check();
                    Var.fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
 
-                   //downloadnouvelleVersion("Organisation.txt", FSFLauncherCore.constCheminFTP + "/@FSF/", FSFLauncherCore.constLoginFTP, FSFLauncherCore.constMdpFTP, repertoireLocal);
+                   downloadnouvelleVersion("Organisation.txt", host + "/@FSF/", userName, pass, repertoireLocal);
 
                }
            }
@@ -276,6 +283,26 @@ namespace FSF_Server_A3.Classes
            Var.fenetrePrincipale.label19.Text = ": " + Path.GetDirectoryName(e.Directory).Replace(Var.fenetrePrincipale.textBox18.Text, "");
            Var.fenetrePrincipale.progressBar2.Value = int.Parse(Math.Truncate(e.FileProgress * 100).ToString());
            Var.fenetrePrincipale.progressBar3.Value = int.Parse(Math.Truncate(e.OverallProgress * 100).ToString());
+       }
+       static private bool downloadnouvelleVersion(string nomFichier, string repertoireFTP, string username, string password, string destinationRepertoire)
+       {
+           // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
+           try
+           {
+
+               WebClient request = new WebClient();
+               request.Credentials = new NetworkCredential(username, password);
+               byte[] fileData = request.DownloadData("ftp://" + repertoireFTP + "/" + nomFichier);
+               FileStream file = File.Create(destinationRepertoire + nomFichier);
+               file.Write(fileData, 0, fileData.Length);
+               file.Close();
+               return true;
+           }
+           catch
+           {
+               //MessageBox.Show("Impossible de réaliser la mise à jour automatique du programme. Nouvel essai...\n\n"+e,"Erreur Critique",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+               return false;
+           }
        }
 
        #endregion
