@@ -434,6 +434,21 @@ namespace FSF_Server_A3
            TabMissions.changeFiltreMissions((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Interface.SelectionneTousTAB(checkedListBoxMissions);
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Interface.InverseTousTAB(checkedListBoxMissions);
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+        }
+
+
 
 
         

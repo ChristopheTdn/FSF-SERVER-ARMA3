@@ -329,6 +329,7 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.Missions = new System.Windows.Forms.TabPage();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button19 = new System.Windows.Forms.Button();
@@ -393,7 +394,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button39 = new System.Windows.Forms.Button();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -4481,6 +4481,23 @@
             this.Missions.TabIndex = 6;
             this.Missions.Text = "Missions";
             // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.comboBox6.Items.AddRange(new object[] {
+            "recruit",
+            "regular",
+            "veteran",
+            "expert"});
+            this.comboBox6.Location = new System.Drawing.Point(309, 351);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(78, 21);
+            this.comboBox6.TabIndex = 57;
+            // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
@@ -4514,6 +4531,7 @@
             this.button18.TabIndex = 53;
             this.button18.Text = "Monter";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -4523,6 +4541,7 @@
             this.button17.TabIndex = 52;
             this.button17.Text = "Inverser";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button1
             // 
@@ -4532,6 +4551,7 @@
             this.button1.TabIndex = 51;
             this.button1.Text = "Tout";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox5
             // 
@@ -5288,23 +5308,6 @@
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.comboBox6.Items.AddRange(new object[] {
-            "recruit",
-            "regular",
-            "veteran",
-            "expert"});
-            this.comboBox6.Location = new System.Drawing.Point(309, 351);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(78, 21);
-            this.comboBox6.TabIndex = 57;
             // 
             // FenetrePrincipale
             // 
