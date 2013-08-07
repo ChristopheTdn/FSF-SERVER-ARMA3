@@ -465,6 +465,21 @@ namespace FSF_Server_A3
             Interface.downSelection(checkedListBoxMissions);
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-SERVER-ARMA3/issues");
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-SERVER-ARMA3");
+        }
+
 
 
 

@@ -263,7 +263,6 @@
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -391,11 +390,14 @@
             this.ctrlListModPrioritaire = new System.Windows.Forms.ListBox();
             this.Options = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button39 = new System.Windows.Forms.Button();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -3673,19 +3675,6 @@
             this.pictureBox18.TabStop = false;
             this.pictureBox18.Visible = false;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel1.Location = new System.Drawing.Point(6, 126);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(99, 13);
-            this.linkLabel1.TabIndex = 44;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Signaler une erreur";
-            this.linkLabel1.UseMnemonic = false;
-            // 
             // pictureBox13
             // 
             this.pictureBox13.ErrorImage = null;
@@ -3704,13 +3693,14 @@
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.linkLabel3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel3.Location = new System.Drawing.Point(2, 139);
+            this.linkLabel3.Location = new System.Drawing.Point(6, 147);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(120, 13);
             this.linkLabel3.TabIndex = 25;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "http://www.clan-FSF.fr";
             this.linkLabel3.UseMnemonic = false;
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // label2
             // 
@@ -5245,6 +5235,8 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox8.Controls.Add(this.linkLabel4);
+            this.groupBox8.Controls.Add(this.linkLabel2);
             this.groupBox8.Controls.Add(this.linkLabel1);
             this.groupBox8.Controls.Add(this.label2);
             this.groupBox8.Controls.Add(this.pictureBox13);
@@ -5262,6 +5254,20 @@
             this.groupBox8.TabIndex = 43;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "A propos";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel1.Location = new System.Drawing.Point(129, 84);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(111, 13);
+            this.linkLabel1.TabIndex = 44;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "GiTHuB Issues Report";
+            this.linkLabel1.UseMnemonic = false;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // groupBox7
             // 
@@ -5333,6 +5339,33 @@
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.linkLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel2.Location = new System.Drawing.Point(129, 105);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(114, 13);
+            this.linkLabel2.TabIndex = 45;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "GiTHuB Sources Depot";
+            this.linkLabel2.UseMnemonic = false;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.linkLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel4.Location = new System.Drawing.Point(121, 126);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(129, 13);
+            this.linkLabel4.TabIndex = 46;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Support Forum (Bohemia)";
+            this.linkLabel4.UseMnemonic = false;
             // 
             // FenetrePrincipale
             // 
@@ -5694,7 +5727,6 @@
         internal System.Windows.Forms.PictureBox pictureBox27;
         internal System.Windows.Forms.RadioButton radioButton3;
         internal System.Windows.Forms.PictureBox pictureBox18;
-        internal System.Windows.Forms.LinkLabel linkLabel1;
         internal System.Windows.Forms.PictureBox pictureBox13;
         internal System.Windows.Forms.LinkLabel linkLabel3;
         internal System.Windows.Forms.Label label31;
@@ -5839,6 +5871,9 @@
         internal System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button20;
+        internal System.Windows.Forms.LinkLabel linkLabel1;
+        internal System.Windows.Forms.LinkLabel linkLabel4;
+        internal System.Windows.Forms.LinkLabel linkLabel2;
 
     }
 }
