@@ -77,72 +77,72 @@ namespace FSF_Server_A3
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox7);
+            Interface.SelectionneTous(checkedListBox7);
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox7);
+            Interface.InverseSelection(checkedListBox7);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox1);
+            Interface.SelectionneTous(checkedListBox1);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox1);
+            Interface.InverseSelection(checkedListBox1);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox2);
+            Interface.SelectionneTous(checkedListBox2);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox2);
+            Interface.InverseSelection(checkedListBox2);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox3);
+            Interface.SelectionneTous(checkedListBox3);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox3);
+            Interface.InverseSelection(checkedListBox3);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox6);
+            Interface.SelectionneTous(checkedListBox6);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox6);
+            Interface.InverseSelection(checkedListBox6);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox4);
+            Interface.SelectionneTous(checkedListBox4);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox4);
+            Interface.InverseSelection(checkedListBox4);
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBox5);
+            Interface.SelectionneTous(checkedListBox5);
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBox5);
+            Interface.InverseSelection(checkedListBox5);
         }
 
         private void checkBox21_CheckedChanged(object sender, EventArgs e)
@@ -436,17 +436,35 @@ namespace FSF_Server_A3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Interface.SelectionneTousTAB(checkedListBoxMissions);
+            Interface.SelectionneTous(checkedListBoxMissions);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            Interface.InverseTousTAB(checkedListBoxMissions);
+            Interface.InverseSelection(checkedListBoxMissions);
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
+            Interface.augmenteSelection(checkedListBoxMissions);
         }
+
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Interface.diminueSelection(checkedListBoxMissions);
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            Interface.topSelection(checkedListBoxMissions);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Interface.downSelection(checkedListBoxMissions);
+        }
+
 
 
 

@@ -279,14 +279,14 @@ namespace FSF_Server_A3.Classes
 
 
         }
-        static public void SelectionneTousTAB(CheckedListBox tab)
+        static public void SelectionneTous(CheckedListBox tab)
         {
             for (int x = 0; x <= tab.Items.Count - 1; x++)
             {
                 tab.SetItemChecked(x, true);
             }
         }
-        static public void InverseTousTAB(CheckedListBox tab)
+        static public void InverseSelection(CheckedListBox tab)
         {
             for (int x = 0; x <= tab.Items.Count - 1; x++)
             {
@@ -297,6 +297,76 @@ namespace FSF_Server_A3.Classes
                 else
                 {
                     tab.SetItemChecked(x, true);
+                }
+            }
+        }
+        static public void topSelection(CheckedListBox tab)
+        {
+
+            if (tab.SelectedIndex.ToString() != "-1")
+            {
+                bool etatItem = tab.GetItemChecked(tab.SelectedIndex);
+                int index;
+                string valeur;
+                while (tab.SelectedIndex > 0)
+                {
+                    valeur = tab.SelectedItem.ToString();
+                    index = tab.SelectedIndex;
+                    tab.Items.RemoveAt(index);
+                    tab.Items.Insert(index - 1, valeur);
+                    tab.SetSelected(index - 1, true);
+                }
+                tab.SetItemChecked(tab.SelectedIndex, etatItem);
+            }
+        }
+        static public void downSelection(CheckedListBox tab)
+        {
+            if (tab.SelectedIndex.ToString() != "-1")
+            {
+                bool etatItem = tab.GetItemChecked(tab.SelectedIndex);
+                
+                while (tab.SelectedIndex < tab.Items.Count - 1)
+                {
+                    string valeur = tab.SelectedItem.ToString();
+                    int index = tab.SelectedIndex;
+                    tab.Items.RemoveAt(index);
+                    tab.Items.Insert(index + 1, valeur);
+                    tab.SetSelected(index + 1, true);
+                }
+                tab.SetItemChecked(tab.SelectedIndex, etatItem);
+            }
+        }
+        static public void augmenteSelection(CheckedListBox tab)
+        {
+            if (tab.SelectedIndex.ToString() != "-1")
+            {
+                string valeur;
+                int index;
+                bool etatItem = tab.GetItemChecked(tab.SelectedIndex);
+                if (tab.SelectedIndex > 0)
+                {
+                    valeur = tab.SelectedItem.ToString();
+                    index = tab.SelectedIndex;
+                    tab.Items.RemoveAt(index);
+                    tab.Items.Insert(index - 1, valeur);
+                    tab.SetItemChecked(index - 1, etatItem);
+                    tab.SetSelected(index - 1, true);
+                }
+            }
+        }
+        static public void diminueSelection(CheckedListBox tab)
+        {
+            if (tab.SelectedIndex.ToString() != "-1")
+            {
+                if (tab.SelectedIndex < tab.Items.Count - 1)
+                {
+                    bool etatItem = tab.GetItemChecked(tab.SelectedIndex);
+                    string valeur = tab.SelectedItem.ToString();
+                    int index = tab.SelectedIndex;
+                    tab.Items.RemoveAt(index);
+                    tab.Items.Insert(index + 1, valeur);
+                    tab.SetItemChecked(index + 1, etatItem);
+                    tab.SetSelected(index + 1, true);
                 }
             }
         }
