@@ -215,7 +215,6 @@
             this.SynchroZONE = new System.Windows.Forms.TabPage();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
-            this.scriptserveur = new System.Windows.Forms.TabPage();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -342,7 +341,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
-            this.TabOptions = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabMODS = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -390,14 +388,13 @@
             this.ctrlListModPrioritaire = new System.Windows.Forms.ListBox();
             this.Options = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button39 = new System.Windows.Forms.Button();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -1608,10 +1605,10 @@
             this.difficulte.BackColor = System.Drawing.Color.Gainsboro;
             this.difficulte.Controls.Add(this.groupBox5);
             this.difficulte.ImageIndex = 3;
-            this.difficulte.Location = new System.Drawing.Point(4, 42);
+            this.difficulte.Location = new System.Drawing.Point(23, 4);
             this.difficulte.Name = "difficulte";
             this.difficulte.Padding = new System.Windows.Forms.Padding(3);
-            this.difficulte.Size = new System.Drawing.Size(418, 387);
+            this.difficulte.Size = new System.Drawing.Size(420, 411);
             this.difficulte.TabIndex = 2;
             this.difficulte.Text = "Difficulté";
             // 
@@ -2699,7 +2696,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(247, 420);
+            this.label19.Location = new System.Drawing.Point(247, 410);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(124, 13);
             this.label19.TabIndex = 31;
@@ -2708,7 +2705,7 @@
             // progressBar3
             // 
             this.progressBar3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar3.Location = new System.Drawing.Point(21, 420);
+            this.progressBar3.Location = new System.Drawing.Point(21, 410);
             this.progressBar3.Name = "progressBar3";
             this.progressBar3.Size = new System.Drawing.Size(210, 13);
             this.progressBar3.Step = 100;
@@ -2718,7 +2715,7 @@
             // progressBar2
             // 
             this.progressBar2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar2.Location = new System.Drawing.Point(21, 439);
+            this.progressBar2.Location = new System.Drawing.Point(21, 429);
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(210, 13);
             this.progressBar2.Step = 100;
@@ -2729,7 +2726,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(247, 439);
+            this.label11.Location = new System.Drawing.Point(247, 429);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(151, 13);
             this.label11.TabIndex = 28;
@@ -2749,7 +2746,7 @@
             // button25
             // 
             this.button25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button25.Location = new System.Drawing.Point(166, 90);
+            this.button25.Location = new System.Drawing.Point(174, 95);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(104, 33);
             this.button25.TabIndex = 0;
@@ -2793,7 +2790,7 @@
             // 
             this.pictureBox3.Image = global::FSF_Server_A3.Properties.Resources.ajouter_vert_plus_icone_9105_128;
             this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(365, 123);
+            this.pictureBox3.Location = new System.Drawing.Point(365, 114);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(18, 20);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2885,7 +2882,7 @@
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = global::FSF_Server_A3.Properties.Resources.disquette;
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(156, 501);
+            this.pictureBox2.Location = new System.Drawing.Point(159, 519);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 35);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3038,9 +3035,9 @@
             this.SynchroZONE.Controls.Add(this.textBox11);
             this.SynchroZONE.Controls.Add(this.pictureBox17);
             this.SynchroZONE.ImageIndex = 9;
-            this.SynchroZONE.Location = new System.Drawing.Point(25, 4);
+            this.SynchroZONE.Location = new System.Drawing.Point(4, 23);
             this.SynchroZONE.Name = "SynchroZONE";
-            this.SynchroZONE.Size = new System.Drawing.Size(432, 477);
+            this.SynchroZONE.Size = new System.Drawing.Size(453, 458);
             this.SynchroZONE.TabIndex = 6;
             this.SynchroZONE.Text = "Synchro ZONE";
             // 
@@ -3050,7 +3047,7 @@
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox11.Size = new System.Drawing.Size(378, 252);
+            this.textBox11.Size = new System.Drawing.Size(415, 252);
             this.textBox11.TabIndex = 1;
             // 
             // button16
@@ -3064,17 +3061,6 @@
             this.button16.Text = "Lancer SERVEUR";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // scriptserveur
-            // 
-            this.scriptserveur.BackColor = System.Drawing.Color.Gainsboro;
-            this.scriptserveur.ImageIndex = 4;
-            this.scriptserveur.Location = new System.Drawing.Point(4, 42);
-            this.scriptserveur.Name = "scriptserveur";
-            this.scriptserveur.Padding = new System.Windows.Forms.Padding(3);
-            this.scriptserveur.Size = new System.Drawing.Size(418, 387);
-            this.scriptserveur.TabIndex = 4;
-            this.scriptserveur.Text = "Scripts";
             // 
             // label59
             // 
@@ -3138,10 +3124,10 @@
             this.special.Controls.Add(this.groupBox15);
             this.special.Controls.Add(this.groupBox12);
             this.special.ImageIndex = 1;
-            this.special.Location = new System.Drawing.Point(4, 42);
+            this.special.Location = new System.Drawing.Point(23, 4);
             this.special.Name = "special";
             this.special.Padding = new System.Windows.Forms.Padding(3);
-            this.special.Size = new System.Drawing.Size(418, 387);
+            this.special.Size = new System.Drawing.Size(420, 411);
             this.special.TabIndex = 3;
             this.special.Text = "Performance";
             // 
@@ -3469,7 +3455,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label18.Location = new System.Drawing.Point(208, 105);
+            this.label18.Location = new System.Drawing.Point(208, 93);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(98, 13);
             this.label18.TabIndex = 20;
@@ -3491,7 +3477,7 @@
             // textBox1
             // 
             this.textBox1.CausesValidation = false;
-            this.textBox1.Location = new System.Drawing.Point(145, 121);
+            this.textBox1.Location = new System.Drawing.Point(142, 112);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(214, 22);
             this.textBox1.TabIndex = 18;
@@ -3502,7 +3488,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(145, 21);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(214, 82);
+            this.listBox1.Size = new System.Drawing.Size(214, 69);
             this.listBox1.TabIndex = 0;
             // 
             // pictureBox22
@@ -3718,7 +3704,7 @@
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Segoe Print", 7.25F, System.Drawing.FontStyle.Bold);
             this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label33.Location = new System.Drawing.Point(256, 126);
+            this.label33.Location = new System.Drawing.Point(289, 126);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(138, 34);
             this.label33.TabIndex = 36;
@@ -3740,7 +3726,7 @@
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
             this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label32.Location = new System.Drawing.Point(257, 105);
+            this.label32.Location = new System.Drawing.Point(290, 105);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(68, 13);
             this.label32.TabIndex = 35;
@@ -3762,7 +3748,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(257, 55);
+            this.label12.Location = new System.Drawing.Point(290, 55);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(38, 13);
             this.label12.TabIndex = 28;
@@ -3773,7 +3759,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold);
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(256, 68);
+            this.label17.Location = new System.Drawing.Point(289, 68);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 19);
             this.label17.TabIndex = 30;
@@ -3800,7 +3786,7 @@
             this.comboBox4.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox4.Items.AddRange(new object[] {
             "defaut"});
-            this.comboBox4.Location = new System.Drawing.Point(9, 507);
+            this.comboBox4.Location = new System.Drawing.Point(12, 522);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(141, 21);
             this.comboBox4.TabIndex = 46;
@@ -3808,7 +3794,6 @@
             // 
             // tabControl2
             // 
-            this.tabControl2.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tabControl2.Controls.Add(this.ConfigServeur);
             this.tabControl2.Controls.Add(this.TabMODS);
             this.tabControl2.Controls.Add(this.PRIORITE);
@@ -3831,16 +3816,16 @@
             this.ConfigServeur.Controls.Add(this.label24);
             this.ConfigServeur.Controls.Add(this.tab_serveur);
             this.ConfigServeur.ImageIndex = 6;
-            this.ConfigServeur.Location = new System.Drawing.Point(25, 4);
+            this.ConfigServeur.Location = new System.Drawing.Point(4, 23);
             this.ConfigServeur.Name = "ConfigServeur";
-            this.ConfigServeur.Size = new System.Drawing.Size(432, 477);
+            this.ConfigServeur.Size = new System.Drawing.Size(453, 458);
             this.ConfigServeur.TabIndex = 8;
             this.ConfigServeur.Text = "Config Serveur";
             // 
             // button37
             // 
             this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button37.Location = new System.Drawing.Point(366, 442);
+            this.button37.Location = new System.Drawing.Point(371, 427);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(28, 23);
             this.button37.TabIndex = 48;
@@ -3851,7 +3836,7 @@
             // textBox18
             // 
             this.textBox18.AcceptsReturn = true;
-            this.textBox18.Location = new System.Drawing.Point(152, 443);
+            this.textBox18.Location = new System.Drawing.Point(157, 428);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(205, 22);
             this.textBox18.TabIndex = 47;
@@ -3862,7 +3847,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(37, 446);
+            this.label24.Location = new System.Drawing.Point(42, 431);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(94, 13);
             this.label24.TabIndex = 46;
@@ -3870,20 +3855,21 @@
             // 
             // tab_serveur
             // 
+            this.tab_serveur.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tab_serveur.Controls.Add(this.Serveur_Detail);
             this.tab_serveur.Controls.Add(this.reglement);
             this.tab_serveur.Controls.Add(this.difficulte);
             this.tab_serveur.Controls.Add(this.Missions);
             this.tab_serveur.Controls.Add(this.special);
-            this.tab_serveur.Controls.Add(this.scriptserveur);
-            this.tab_serveur.Controls.Add(this.TabOptions);
             this.tab_serveur.HotTrack = true;
             this.tab_serveur.ImageList = this.imageList1;
             this.tab_serveur.Location = new System.Drawing.Point(3, 3);
             this.tab_serveur.Multiline = true;
             this.tab_serveur.Name = "tab_serveur";
+            this.tab_serveur.Padding = new System.Drawing.Point(6, 2);
             this.tab_serveur.SelectedIndex = 0;
-            this.tab_serveur.Size = new System.Drawing.Size(426, 433);
+            this.tab_serveur.Size = new System.Drawing.Size(447, 419);
+            this.tab_serveur.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tab_serveur.TabIndex = 33;
             // 
             // Serveur_Detail
@@ -3910,10 +3896,10 @@
             this.Serveur_Detail.Controls.Add(this.label6);
             this.Serveur_Detail.Controls.Add(this.label1);
             this.Serveur_Detail.ImageIndex = 0;
-            this.Serveur_Detail.Location = new System.Drawing.Point(4, 42);
+            this.Serveur_Detail.Location = new System.Drawing.Point(23, 4);
             this.Serveur_Detail.Name = "Serveur_Detail";
             this.Serveur_Detail.Padding = new System.Windows.Forms.Padding(3);
-            this.Serveur_Detail.Size = new System.Drawing.Size(418, 387);
+            this.Serveur_Detail.Size = new System.Drawing.Size(420, 411);
             this.Serveur_Detail.TabIndex = 0;
             this.Serveur_Detail.Text = "Serveur";
             // 
@@ -4254,10 +4240,10 @@
             this.reglement.Controls.Add(this.groupBox4);
             this.reglement.Controls.Add(this.groupBox1);
             this.reglement.ImageIndex = 2;
-            this.reglement.Location = new System.Drawing.Point(4, 42);
+            this.reglement.Location = new System.Drawing.Point(23, 4);
             this.reglement.Name = "reglement";
             this.reglement.Padding = new System.Windows.Forms.Padding(3);
-            this.reglement.Size = new System.Drawing.Size(418, 387);
+            this.reglement.Size = new System.Drawing.Size(420, 411);
             this.reglement.TabIndex = 1;
             this.reglement.Text = "Parametres";
             // 
@@ -4469,9 +4455,9 @@
             this.Missions.Controls.Add(this.label8);
             this.Missions.Controls.Add(this.checkedListBoxMissions);
             this.Missions.ImageIndex = 10;
-            this.Missions.Location = new System.Drawing.Point(4, 42);
+            this.Missions.Location = new System.Drawing.Point(23, 4);
             this.Missions.Name = "Missions";
-            this.Missions.Size = new System.Drawing.Size(418, 387);
+            this.Missions.Size = new System.Drawing.Size(420, 411);
             this.Missions.TabIndex = 6;
             this.Missions.Text = "Missions";
             // 
@@ -4626,15 +4612,6 @@
             this.checkedListBoxMissions.TabIndex = 8;
             this.checkedListBoxMissions.ThreeDCheckBoxes = true;
             // 
-            // TabOptions
-            // 
-            this.TabOptions.BackColor = System.Drawing.Color.Gainsboro;
-            this.TabOptions.Location = new System.Drawing.Point(4, 42);
-            this.TabOptions.Name = "TabOptions";
-            this.TabOptions.Size = new System.Drawing.Size(418, 387);
-            this.TabOptions.TabIndex = 5;
-            this.TabOptions.Text = "Options";
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -4656,9 +4633,9 @@
             this.TabMODS.BackColor = System.Drawing.Color.Gainsboro;
             this.TabMODS.Controls.Add(this.tabControl1);
             this.TabMODS.ImageIndex = 5;
-            this.TabMODS.Location = new System.Drawing.Point(25, 4);
+            this.TabMODS.Location = new System.Drawing.Point(4, 23);
             this.TabMODS.Name = "TabMODS";
-            this.TabMODS.Size = new System.Drawing.Size(432, 477);
+            this.TabMODS.Size = new System.Drawing.Size(453, 458);
             this.TabMODS.TabIndex = 9;
             this.TabMODS.Text = "MODs";
             // 
@@ -4677,7 +4654,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(422, 471);
+            this.tabControl1.Size = new System.Drawing.Size(443, 452);
             this.tabControl1.TabIndex = 8;
             // 
             // TEMPLATE
@@ -4693,7 +4670,7 @@
             this.TEMPLATE.Controls.Add(this.checkedListBox7);
             this.TEMPLATE.Location = new System.Drawing.Point(4, 22);
             this.TEMPLATE.Name = "TEMPLATE";
-            this.TEMPLATE.Size = new System.Drawing.Size(414, 445);
+            this.TEMPLATE.Size = new System.Drawing.Size(435, 426);
             this.TEMPLATE.TabIndex = 5;
             this.TEMPLATE.Text = "@Template";
             // 
@@ -4703,7 +4680,7 @@
             this.groupBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox14.Location = new System.Drawing.Point(292, 146);
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(107, 54);
+            this.groupBox14.Size = new System.Drawing.Size(131, 54);
             this.groupBox14.TabIndex = 19;
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Apparence";
@@ -4717,7 +4694,7 @@
             this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox2.Location = new System.Drawing.Point(6, 21);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(95, 21);
+            this.comboBox2.Size = new System.Drawing.Size(119, 21);
             this.comboBox2.TabIndex = 13;
             // 
             // groupBox13
@@ -4727,7 +4704,7 @@
             this.groupBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox13.Location = new System.Drawing.Point(298, 322);
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(107, 83);
+            this.groupBox13.Size = new System.Drawing.Size(125, 83);
             this.groupBox13.TabIndex = 18;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Casques Perso";
@@ -4736,7 +4713,7 @@
             // 
             this.radioButton21.AutoSize = true;
             this.radioButton21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton21.Location = new System.Drawing.Point(8, 53);
+            this.radioButton21.Location = new System.Drawing.Point(24, 53);
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Size = new System.Drawing.Size(53, 17);
             this.radioButton21.TabIndex = 4;
@@ -4748,7 +4725,7 @@
             // 
             this.radioButton20.AutoSize = true;
             this.radioButton20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton20.Location = new System.Drawing.Point(8, 30);
+            this.radioButton20.Location = new System.Drawing.Point(24, 30);
             this.radioButton20.Name = "radioButton20";
             this.radioButton20.Size = new System.Drawing.Size(77, 17);
             this.radioButton20.TabIndex = 1;
@@ -4762,9 +4739,9 @@
             this.pictureBox1.Image = global::FSF_Server_A3.Properties.Resources.logo_fsf;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(298, 206);
+            this.pictureBox1.Location = new System.Drawing.Point(298, 194);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(119, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
@@ -4774,7 +4751,7 @@
             this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button13.Location = new System.Drawing.Point(292, 83);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(101, 43);
+            this.button13.Size = new System.Drawing.Size(131, 43);
             this.button13.TabIndex = 14;
             this.button13.Text = "Inverser selection";
             this.button13.UseVisualStyleBackColor = true;
@@ -4785,7 +4762,7 @@
             this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.button12.Location = new System.Drawing.Point(292, 34);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(101, 43);
+            this.button12.Size = new System.Drawing.Size(131, 43);
             this.button12.TabIndex = 13;
             this.button12.Text = "Selectionner tous";
             this.button12.UseVisualStyleBackColor = true;
@@ -4818,7 +4795,7 @@
             this.ISLANDS.Location = new System.Drawing.Point(4, 22);
             this.ISLANDS.Name = "ISLANDS";
             this.ISLANDS.Padding = new System.Windows.Forms.Padding(3);
-            this.ISLANDS.Size = new System.Drawing.Size(414, 445);
+            this.ISLANDS.Size = new System.Drawing.Size(435, 426);
             this.ISLANDS.TabIndex = 0;
             this.ISLANDS.Text = "@Islands";
             // 
@@ -4884,7 +4861,7 @@
             this.UNITS.Location = new System.Drawing.Point(4, 22);
             this.UNITS.Name = "UNITS";
             this.UNITS.Padding = new System.Windows.Forms.Padding(3);
-            this.UNITS.Size = new System.Drawing.Size(414, 445);
+            this.UNITS.Size = new System.Drawing.Size(435, 426);
             this.UNITS.TabIndex = 1;
             this.UNITS.Text = "@Units";
             // 
@@ -4948,7 +4925,7 @@
             this.MATERIEL.Location = new System.Drawing.Point(4, 22);
             this.MATERIEL.Name = "MATERIEL";
             this.MATERIEL.Padding = new System.Windows.Forms.Padding(3);
-            this.MATERIEL.Size = new System.Drawing.Size(414, 445);
+            this.MATERIEL.Size = new System.Drawing.Size(435, 426);
             this.MATERIEL.TabIndex = 2;
             this.MATERIEL.Text = "@Materiel";
             // 
@@ -5011,7 +4988,7 @@
             this.CLIENT.Controls.Add(this.checkedListBox6);
             this.CLIENT.Location = new System.Drawing.Point(4, 22);
             this.CLIENT.Name = "CLIENT";
-            this.CLIENT.Size = new System.Drawing.Size(414, 445);
+            this.CLIENT.Size = new System.Drawing.Size(435, 426);
             this.CLIENT.TabIndex = 4;
             this.CLIENT.Text = "@Client";
             // 
@@ -5076,7 +5053,7 @@
             this.TEST.Location = new System.Drawing.Point(4, 22);
             this.TEST.Name = "TEST";
             this.TEST.Padding = new System.Windows.Forms.Padding(3);
-            this.TEST.Size = new System.Drawing.Size(414, 445);
+            this.TEST.Size = new System.Drawing.Size(435, 426);
             this.TEST.TabIndex = 3;
             this.TEST.Text = "@Test";
             // 
@@ -5138,7 +5115,7 @@
             this.AUTRES.Controls.Add(this.checkedListBox5);
             this.AUTRES.Location = new System.Drawing.Point(4, 22);
             this.AUTRES.Name = "AUTRES";
-            this.AUTRES.Size = new System.Drawing.Size(414, 445);
+            this.AUTRES.Size = new System.Drawing.Size(435, 426);
             this.AUTRES.TabIndex = 6;
             this.AUTRES.Text = "Autres";
             // 
@@ -5186,7 +5163,7 @@
             this.checkedListBox5.HorizontalScrollbar = true;
             this.checkedListBox5.Location = new System.Drawing.Point(7, 19);
             this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(290, 408);
+            this.checkedListBox5.Size = new System.Drawing.Size(290, 391);
             this.checkedListBox5.TabIndex = 22;
             this.checkedListBox5.ThreeDCheckBoxes = true;
             // 
@@ -5199,9 +5176,9 @@
             this.PRIORITE.Controls.Add(this.button29);
             this.PRIORITE.Controls.Add(this.ctrlListModPrioritaire);
             this.PRIORITE.ImageIndex = 7;
-            this.PRIORITE.Location = new System.Drawing.Point(25, 4);
+            this.PRIORITE.Location = new System.Drawing.Point(4, 23);
             this.PRIORITE.Name = "PRIORITE";
-            this.PRIORITE.Size = new System.Drawing.Size(432, 477);
+            this.PRIORITE.Size = new System.Drawing.Size(453, 458);
             this.PRIORITE.TabIndex = 10;
             this.PRIORITE.Text = "Priorité";
             this.PRIORITE.Enter += new System.EventHandler(this.Priorité_Enter);
@@ -5224,10 +5201,10 @@
             this.Options.Controls.Add(this.groupBox7);
             this.Options.Controls.Add(this.groupBox3);
             this.Options.ImageIndex = 8;
-            this.Options.Location = new System.Drawing.Point(25, 4);
+            this.Options.Location = new System.Drawing.Point(4, 23);
             this.Options.Name = "Options";
             this.Options.Padding = new System.Windows.Forms.Padding(3);
-            this.Options.Size = new System.Drawing.Size(432, 477);
+            this.Options.Size = new System.Drawing.Size(453, 458);
             this.Options.TabIndex = 1;
             this.Options.Text = "Options";
             this.Options.ToolTipText = "Sauvegarder le profil";
@@ -5250,10 +5227,37 @@
             this.groupBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox8.Location = new System.Drawing.Point(10, 6);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(408, 172);
+            this.groupBox8.Size = new System.Drawing.Size(433, 172);
             this.groupBox8.TabIndex = 43;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "A propos";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.linkLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel4.Location = new System.Drawing.Point(121, 126);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(129, 13);
+            this.linkLabel4.TabIndex = 46;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Support Forum (Bohemia)";
+            this.linkLabel4.UseMnemonic = false;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.linkLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.linkLabel2.Location = new System.Drawing.Point(129, 105);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(114, 13);
+            this.linkLabel2.TabIndex = 45;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "GiTHuB Sources Depot";
+            this.linkLabel2.UseMnemonic = false;
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -5288,7 +5292,7 @@
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox7.Location = new System.Drawing.Point(10, 184);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(408, 123);
+            this.groupBox7.Size = new System.Drawing.Size(433, 115);
             this.groupBox7.TabIndex = 42;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Langage";
@@ -5305,9 +5309,9 @@
             this.groupBox3.Controls.Add(this.pictureBox5);
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Location = new System.Drawing.Point(10, 313);
+            this.groupBox3.Location = new System.Drawing.Point(10, 303);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(408, 153);
+            this.groupBox3.Size = new System.Drawing.Size(433, 145);
             this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Gestion des Profils";
@@ -5317,7 +5321,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(28, 531);
+            this.label4.Location = new System.Drawing.Point(36, 548);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 13);
             this.label4.TabIndex = 48;
@@ -5325,47 +5329,9 @@
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label4.Visible = false;
             // 
-            // button39
-            // 
-            this.button39.Enabled = false;
-            this.button39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button39.Location = new System.Drawing.Point(9, 547);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(141, 25);
-            this.button39.TabIndex = 49;
-            this.button39.Text = "Importer Liste MOD";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel2.Location = new System.Drawing.Point(129, 105);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(114, 13);
-            this.linkLabel2.TabIndex = 45;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "GiTHuB Sources Depot";
-            this.linkLabel2.UseMnemonic = false;
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // linkLabel4
-            // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel4.Location = new System.Drawing.Point(121, 126);
-            this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(129, 13);
-            this.linkLabel4.TabIndex = 46;
-            this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Support Forum (Bohemia)";
-            this.linkLabel4.UseMnemonic = false;
             // 
             // FenetrePrincipale
             // 
@@ -5380,7 +5346,6 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.checkBox24);
-            this.Controls.Add(this.button39);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FenetrePrincipale";
             this.Text = "FSF Server A3";
@@ -5675,7 +5640,6 @@
         internal System.Windows.Forms.TabPage SynchroZONE;
         internal System.Windows.Forms.TextBox textBox11;
         internal System.Windows.Forms.Button button16;
-        internal System.Windows.Forms.TabPage scriptserveur;
         internal System.Windows.Forms.Label label59;
         internal System.Windows.Forms.Label label58;
         internal System.Windows.Forms.GroupBox groupBox15;
@@ -5789,7 +5753,6 @@
         internal System.Windows.Forms.Label label4;
         internal System.Windows.Forms.PictureBox pictureBox2;
         internal System.Windows.Forms.CheckBox checkBox24;
-        internal System.Windows.Forms.Button button39;
         private Infralution.Localization.CultureManager cultureManager1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage TabMODS;
@@ -5856,7 +5819,6 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TabPage Missions;
-        private System.Windows.Forms.TabPage TabOptions;
         internal System.Windows.Forms.CheckedListBox checkedListBoxMissions;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
