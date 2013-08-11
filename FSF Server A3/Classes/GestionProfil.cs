@@ -45,6 +45,7 @@ namespace FSF_Server_A3.Classes
             SauvegardeConfigProfilXML(profil);
             SauvegardePrioriteProfilXML(profil);
             SauvegardeProfilServer(profil);
+            SauvegardeMissionsProfilXML(profil);
         }
         static public void SauvegardeConfigProfilXML(string nomProfil)
         {
@@ -198,6 +199,33 @@ namespace FSF_Server_A3.Classes
             foreach (string ligne in Var.fenetrePrincipale.ctrlListModPrioritaire.Items)
             {
                 FichierProfilXML.WriteElementString("MODS", ligne);
+            }
+            FichierProfilXML.WriteEndElement();
+            FichierProfilXML.WriteEndElement();
+            FichierProfilXML.Flush(); //vide le buffer
+            FichierProfilXML.Close(); // ferme le document
+        }
+        static public void SauvegardeMissionsProfilXML(string nomProfil)
+        {
+            if (nomProfil == "") return;
+            TabMissions.actualiseMissions();
+            if (!System.IO.File.Exists(Var.RepertoireDeSauvegarde + nomProfil + ".profilMissions.xml"))
+            {
+                Directory.CreateDirectory(Var.RepertoireDeSauvegarde);
+                FileStream fs = File.Create(Var.RepertoireDeSauvegarde + nomProfil + ".profilMissions.xml");
+                fs.Close();
+            }
+            XmlTextWriter FichierProfilXML = new XmlTextWriter(Var.RepertoireDeSauvegarde + nomProfil + ".profilMissions.xml", System.Text.Encoding.UTF8);
+            FichierProfilXML.Formatting = Formatting.Indented;
+            FichierProfilXML.WriteStartDocument();
+            FichierProfilXML.WriteComment("Creation Du profil FSF LAUNCHER " + nomProfil + ".profilMissions.xml"); // commentaire
+            FichierProfilXML.WriteComment("Détermination de la priorité par ordre d'affichage (le plus haut est le plus important"); // commentaire
+            FichierProfilXML.WriteComment("> le plus haut est le plus important"); // commentaire
+            FichierProfilXML.WriteStartElement("PROFIL");
+            FichierProfilXML.WriteStartElement("MISSIONS");
+            foreach (string ligne in Var.fenetrePrincipale.checkedListBoxMissions.CheckedItems)
+            {
+                FichierProfilXML.WriteElementString("FICHIER", ligne);
             }
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();

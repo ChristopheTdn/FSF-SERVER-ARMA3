@@ -69,7 +69,7 @@ namespace FSF_Server_A3.Classes
 
             }
         }
-        static public void ActualiseMissionsSelectionnee()
+        static public void actualiseMissions()
         {
 
         }
