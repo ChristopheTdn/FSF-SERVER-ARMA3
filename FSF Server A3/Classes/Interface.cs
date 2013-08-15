@@ -25,11 +25,23 @@ namespace FSF_Server_A3.Classes
     }
 
     class Interface
-    {
-        
-
+    {     
         static public void dessineInterface(string profil)
         {
+            // 
+            if (!Core.IsFSFInterface())
+            {
+                Var.fenetrePrincipale.tabControl2.TabPages.Remove(Var.fenetrePrincipale.SynchroZONE);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEMPLATE);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.ISLANDS);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.UNITS);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.MATERIEL);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.CLIENT);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
+
+            }
+
+
             // Dessin Interface Constant
             Var.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
             // Genere Tabs 
@@ -74,7 +86,6 @@ namespace FSF_Server_A3.Classes
         }
 
         // TABS
-
         // GESTION TAB MODS 
         static public void genereTab(string profil)
         {
@@ -503,7 +514,13 @@ namespace FSF_Server_A3.Classes
             item.Value = nomProfil;
             Var.fenetrePrincipale.listBox1.Items.Add(item);
         }
-
+        // GESTION Lock
+        static public void UnlockFSFServer()
+        {
+            Form dialogue = new DIAL_Unlock();
+            dialogue.ShowDialog();
+            Application.Restart();
+        }
 
 
 

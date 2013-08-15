@@ -38,6 +38,33 @@ namespace FSF_Server_A3.Classes
                     FileName = FileName.Replace(InvalidFileNameChar, RemplaceChar);
             return FileName;
         }
+        static public bool IsFSFInterface()
+        {
+            try
+            {
+                if (Encoder(GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "UnlockPass")) == "43b97597d8bd45aed49b393fef1223d7")
+                {
+                    return true;
+                }
+            }
+            catch {
+            }
+            return false;
+
+        }
+        static public string Encoder(string testpass)
+        {
+            System.Security.Cryptography.MD5CryptoServiceProvider x = new System.Security.Cryptography.MD5CryptoServiceProvider();
+            byte[] bs = System.Text.Encoding.UTF8.GetBytes(testpass);
+            bs = x.ComputeHash(bs);
+            System.Text.StringBuilder s = new System.Text.StringBuilder();
+            foreach (byte b in bs)
+            {
+                s.Append(b.ToString("x2").ToLower());
+            }
+            testpass = s.ToString();
+            return testpass;
+        }
 
         // Gestion base des registres
        

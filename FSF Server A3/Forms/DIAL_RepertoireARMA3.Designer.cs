@@ -68,7 +68,7 @@
             this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label24.Location = new System.Drawing.Point(18, 132);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(157, 13);
+            this.label24.Size = new System.Drawing.Size(0, 13);
             this.label24.TabIndex = 49;
             // 
             // DIAL_RepertoireARMA3
@@ -82,6 +82,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DIAL_RepertoireARMA3";
             this.Text = "arma3server.exe ?";
+            this.Load += new System.EventHandler(this.DIAL_RepertoireARMA3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

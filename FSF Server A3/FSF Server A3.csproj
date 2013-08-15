@@ -34,8 +34,8 @@
     <SuiteName>ToF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>40</ApplicationRevision>
-    <ApplicationVersion>0.8.0807.%2a</ApplicationVersion>
+    <ApplicationRevision>41</ApplicationRevision>
+    <ApplicationVersion>0.50.0815.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
@@ -116,6 +116,12 @@
     <Compile Include="Forms\DIAL_RepertoireARMA3.Designer.cs">
       <DependentUpon>DIAL_RepertoireARMA3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DIAL_Unlock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DIAL_Unlock.Designer.cs">
+      <DependentUpon>DIAL_Unlock.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FenetrePrincipale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\DIAL_RepertoireARMA3.resx">
       <DependentUpon>DIAL_RepertoireARMA3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DIAL_Unlock.resx">
+      <DependentUpon>DIAL_Unlock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FenetrePrincipale.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>

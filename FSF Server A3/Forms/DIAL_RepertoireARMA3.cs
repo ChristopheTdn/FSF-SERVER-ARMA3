@@ -24,5 +24,10 @@ namespace FSF_Server_A3.Forms
             CheminA3Server.ShowDialog();
             textBox88.Text = CheminA3Server.SelectedPath;
         }
+
+        private void DIAL_RepertoireARMA3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

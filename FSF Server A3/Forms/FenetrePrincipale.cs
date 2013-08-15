@@ -470,14 +470,15 @@ namespace FSF_Server_A3
             System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-SERVER-ARMA3/issues");
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-SERVER-ARMA3");
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Interface.UnlockFSFServer();
         }
 
   

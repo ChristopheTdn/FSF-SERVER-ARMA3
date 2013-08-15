@@ -330,15 +330,11 @@
             this.button21 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -379,7 +375,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.AUTRES = new System.Windows.Forms.TabPage();
+            this.DIVERS = new System.Windows.Forms.TabPage();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -388,6 +384,7 @@
             this.ctrlListModPrioritaire = new System.Windows.Forms.ListBox();
             this.Options = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button22 = new System.Windows.Forms.Button();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -479,7 +476,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.TEST.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.AUTRES.SuspendLayout();
+            this.DIVERS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.PRIORITE.SuspendLayout();
             this.Options.SuspendLayout();
@@ -3686,7 +3683,6 @@
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "http://www.clan-FSF.fr";
             this.linkLabel3.UseMnemonic = false;
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // label2
             // 
@@ -4443,15 +4439,11 @@
             this.Missions.Controls.Add(this.button21);
             this.Missions.Controls.Add(this.button20);
             this.Missions.Controls.Add(this.comboBox6);
-            this.Missions.Controls.Add(this.textBox3);
-            this.Missions.Controls.Add(this.textBox2);
             this.Missions.Controls.Add(this.button19);
             this.Missions.Controls.Add(this.button18);
             this.Missions.Controls.Add(this.button17);
             this.Missions.Controls.Add(this.button1);
             this.Missions.Controls.Add(this.comboBox5);
-            this.Missions.Controls.Add(this.label13);
-            this.Missions.Controls.Add(this.label9);
             this.Missions.Controls.Add(this.label8);
             this.Missions.Controls.Add(this.checkedListBoxMissions);
             this.Missions.ImageIndex = 10;
@@ -4463,9 +4455,9 @@
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(170, 343);
+            this.button21.Location = new System.Drawing.Point(195, 350);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.Size = new System.Drawing.Size(75, 25);
             this.button21.TabIndex = 60;
             this.button21.Text = "Bas";
             this.button21.UseVisualStyleBackColor = true;
@@ -4473,7 +4465,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(185, 316);
+            this.button20.Location = new System.Drawing.Point(210, 323);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(50, 23);
             this.button20.TabIndex = 59;
@@ -4493,32 +4485,16 @@
             "regular",
             "veteran",
             "expert"});
-            this.comboBox6.Location = new System.Drawing.Point(322, 345);
+            this.comboBox6.Location = new System.Drawing.Point(311, 354);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(78, 21);
             this.comboBox6.TabIndex = 57;
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(369, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(32, 22);
-            this.textBox3.TabIndex = 56;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(176, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(35, 22);
-            this.textBox2.TabIndex = 55;
-            // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(89, 345);
+            this.button19.Location = new System.Drawing.Point(114, 350);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.Size = new System.Drawing.Size(75, 25);
             this.button19.TabIndex = 54;
             this.button19.Text = "Descendre";
             this.button19.UseVisualStyleBackColor = true;
@@ -4526,7 +4502,7 @@
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(98, 316);
+            this.button18.Location = new System.Drawing.Point(123, 323);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(59, 23);
             this.button18.TabIndex = 53;
@@ -4536,7 +4512,7 @@
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(14, 345);
+            this.button17.Location = new System.Drawing.Point(39, 352);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(57, 23);
             this.button17.TabIndex = 52;
@@ -4546,7 +4522,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(14, 316);
+            this.button1.Location = new System.Drawing.Point(39, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(51, 23);
             this.button1.TabIndex = 51;
@@ -4563,41 +4539,21 @@
             this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox5.Items.AddRange(new object[] {
             "Toutes"});
-            this.comboBox5.Location = new System.Drawing.Point(175, 9);
+            this.comboBox5.Location = new System.Drawing.Point(176, 21);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(226, 21);
             this.comboBox5.TabIndex = 50;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label13.Location = new System.Drawing.Point(290, 35);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 13);
-            this.label13.TabIndex = 49;
-            this.label13.Text = "Selectionné :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(95, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 13);
-            this.label9.TabIndex = 48;
-            this.label9.Text = "Disponible :";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(94, 12);
+            this.label8.Location = new System.Drawing.Point(124, 24);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 13);
+            this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 47;
-            this.label8.Text = "Filtre par Ile :";
+            this.label8.Text = "Filtrer  :";
             // 
             // checkedListBoxMissions
             // 
@@ -4647,7 +4603,7 @@
             this.tabControl1.Controls.Add(this.MATERIEL);
             this.tabControl1.Controls.Add(this.CLIENT);
             this.tabControl1.Controls.Add(this.TEST);
-            this.tabControl1.Controls.Add(this.AUTRES);
+            this.tabControl1.Controls.Add(this.DIVERS);
             this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tabControl1.Location = new System.Drawing.Point(7, 3);
@@ -5106,18 +5062,18 @@
             this.checkedListBox4.TabIndex = 5;
             this.checkedListBox4.ThreeDCheckBoxes = true;
             // 
-            // AUTRES
+            // DIVERS
             // 
-            this.AUTRES.BackColor = System.Drawing.Color.Gainsboro;
-            this.AUTRES.Controls.Add(this.pictureBox12);
-            this.AUTRES.Controls.Add(this.button14);
-            this.AUTRES.Controls.Add(this.button15);
-            this.AUTRES.Controls.Add(this.checkedListBox5);
-            this.AUTRES.Location = new System.Drawing.Point(4, 22);
-            this.AUTRES.Name = "AUTRES";
-            this.AUTRES.Size = new System.Drawing.Size(435, 426);
-            this.AUTRES.TabIndex = 6;
-            this.AUTRES.Text = "Autres";
+            this.DIVERS.BackColor = System.Drawing.Color.Gainsboro;
+            this.DIVERS.Controls.Add(this.pictureBox12);
+            this.DIVERS.Controls.Add(this.button14);
+            this.DIVERS.Controls.Add(this.button15);
+            this.DIVERS.Controls.Add(this.checkedListBox5);
+            this.DIVERS.Location = new System.Drawing.Point(4, 22);
+            this.DIVERS.Name = "DIVERS";
+            this.DIVERS.Size = new System.Drawing.Size(435, 426);
+            this.DIVERS.TabIndex = 6;
+            this.DIVERS.Text = "Divers";
             // 
             // pictureBox12
             // 
@@ -5212,6 +5168,7 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox8.Controls.Add(this.button22);
             this.groupBox8.Controls.Add(this.linkLabel4);
             this.groupBox8.Controls.Add(this.linkLabel2);
             this.groupBox8.Controls.Add(this.linkLabel1);
@@ -5232,12 +5189,22 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "A propos";
             // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(145, 142);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 47;
+            this.button22.Text = "Mode FSF";
+            this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.linkLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel4.Location = new System.Drawing.Point(121, 126);
+            this.linkLabel4.Location = new System.Drawing.Point(121, 116);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(129, 13);
             this.linkLabel4.TabIndex = 46;
@@ -5250,7 +5217,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.linkLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel2.Location = new System.Drawing.Point(129, 105);
+            this.linkLabel2.Location = new System.Drawing.Point(129, 95);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(114, 13);
             this.linkLabel2.TabIndex = 45;
@@ -5264,7 +5231,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel1.Location = new System.Drawing.Point(129, 84);
+            this.linkLabel1.Location = new System.Drawing.Point(129, 74);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(111, 13);
             this.linkLabel1.TabIndex = 44;
@@ -5454,7 +5421,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.TEST.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.AUTRES.ResumeLayout(false);
+            this.DIVERS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.PRIORITE.ResumeLayout(false);
             this.Options.ResumeLayout(false);
@@ -5792,7 +5759,7 @@
         internal System.Windows.Forms.Button button8;
         internal System.Windows.Forms.Button button9;
         internal System.Windows.Forms.CheckedListBox checkedListBox4;
-        private System.Windows.Forms.TabPage AUTRES;
+        private System.Windows.Forms.TabPage DIVERS;
         internal System.Windows.Forms.PictureBox pictureBox12;
         internal System.Windows.Forms.Button button14;
         internal System.Windows.Forms.Button button15;
@@ -5820,15 +5787,11 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TabPage Missions;
         internal System.Windows.Forms.CheckedListBox checkedListBoxMissions;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button1;
         internal System.Windows.Forms.ComboBox comboBox5;
-        internal System.Windows.Forms.Label label13;
-        internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.Button button21;
@@ -5836,6 +5799,7 @@
         internal System.Windows.Forms.LinkLabel linkLabel1;
         internal System.Windows.Forms.LinkLabel linkLabel4;
         internal System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Button button22;
 
     }
 }
