@@ -95,20 +95,31 @@ namespace FSF_Server_A3.Classes
             return listeMissionsChecked;
         }
 
-        static public void changeFiltreMissions(string Profil)
+        static public void changeFiltreMissions(string profil)
         {
-            //Var.fenetrePrincipale.checkedListBoxMissions.Items.Clear();
+            Var.fenetrePrincipale.checkedListBoxMissions.Items.Clear();
             List<string> listIle = new List<string>();
-            /*
-            foreach (string ligne in GenereListeTabMission(Profil))
+            List<string> Intersection = ListeMissionsProfil(profil).Intersect(ListeMissionsSurDisque(profil)).ToList();
+            List<string> Ajout = ListeMissionsSurDisque(profil).Except(ListeMissionsProfil(profil)).ToList();
+            foreach (var ligne in Intersection)
             {
-                if (ligne.Contains(Var.fenetrePrincipale.comboBox5.SelectedItem.ToString()) || Var.fenetrePrincipale.comboBox5.SelectedIndex == 0)
+                // recupere le nom de l ile                {
+                string[] Tstr = ligne.Split('.');
+                string nomIle = Tstr[Tstr.Length - 2];
+                if (nomIle == Var.fenetrePrincipale.comboBox5.Text | Var.fenetrePrincipale.comboBox5.Text == "Toutes")
                 {
-                    Var.fenetrePrincipale.checkedListBoxMissions.Items.Add(ligne);
+                    Var.fenetrePrincipale.checkedListBoxMissions.Items.Add(ligne, true);
                 }
-
             }
-             * */
+            foreach (var ligne in Ajout)
+            {
+                string[] Tstr = ligne.Split('.');
+                string nomIle = Tstr[Tstr.Length - 2];
+                if (nomIle == Var.fenetrePrincipale.comboBox5.Text | Var.fenetrePrincipale.comboBox5.Text == "Toutes")
+                {
+                    Var.fenetrePrincipale.checkedListBoxMissions.Items.Add(ligne, false);
+                }
+            }
         }
         static public void actualiseMissions()
         {
