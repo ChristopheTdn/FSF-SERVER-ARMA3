@@ -220,7 +220,7 @@
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.label60 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.special = new System.Windows.Forms.TabPage();
+            this.Performance = new System.Windows.Forms.TabPage();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -392,6 +392,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -426,7 +427,7 @@
             this.SynchroZONE.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            this.special.SuspendLayout();
+            this.Performance.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -3114,19 +3115,20 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Aide";
             // 
-            // special
+            // Performance
             // 
-            this.special.BackColor = System.Drawing.Color.Gainsboro;
-            this.special.Controls.Add(this.groupBox16);
-            this.special.Controls.Add(this.groupBox15);
-            this.special.Controls.Add(this.groupBox12);
-            this.special.ImageIndex = 1;
-            this.special.Location = new System.Drawing.Point(23, 4);
-            this.special.Name = "special";
-            this.special.Padding = new System.Windows.Forms.Padding(3);
-            this.special.Size = new System.Drawing.Size(420, 411);
-            this.special.TabIndex = 3;
-            this.special.Text = "Performance";
+            this.Performance.BackColor = System.Drawing.Color.Gainsboro;
+            this.Performance.Controls.Add(this.label9);
+            this.Performance.Controls.Add(this.groupBox16);
+            this.Performance.Controls.Add(this.groupBox15);
+            this.Performance.Controls.Add(this.groupBox12);
+            this.Performance.ImageIndex = 1;
+            this.Performance.Location = new System.Drawing.Point(23, 4);
+            this.Performance.Name = "Performance";
+            this.Performance.Padding = new System.Windows.Forms.Padding(3);
+            this.Performance.Size = new System.Drawing.Size(420, 411);
+            this.Performance.TabIndex = 3;
+            this.Performance.Text = "Performance";
             // 
             // label26
             // 
@@ -3856,7 +3858,7 @@
             this.tab_serveur.Controls.Add(this.reglement);
             this.tab_serveur.Controls.Add(this.difficulte);
             this.tab_serveur.Controls.Add(this.Missions);
-            this.tab_serveur.Controls.Add(this.special);
+            this.tab_serveur.Controls.Add(this.Performance);
             this.tab_serveur.HotTrack = true;
             this.tab_serveur.ImageList = this.imageList1;
             this.tab_serveur.Location = new System.Drawing.Point(3, 3);
@@ -5300,6 +5302,18 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Tomato;
+            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label9.Location = new System.Drawing.Point(6, 355);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(399, 40);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "CURRENTLY NOT WORKING";
+            // 
             // FenetrePrincipale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5360,7 +5374,8 @@
             this.groupBox15.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
-            this.special.ResumeLayout(false);
+            this.Performance.ResumeLayout(false);
+            this.Performance.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -5612,7 +5627,7 @@
         internal System.Windows.Forms.GroupBox groupBox15;
         internal System.Windows.Forms.Label label60;
         internal System.Windows.Forms.GroupBox groupBox16;
-        internal System.Windows.Forms.TabPage special;
+        internal System.Windows.Forms.TabPage Performance;
         internal System.Windows.Forms.Label label26;
         internal System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.PictureBox pictureBox30;
@@ -5800,6 +5815,7 @@
         internal System.Windows.Forms.LinkLabel linkLabel4;
         internal System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button22;
+        internal System.Windows.Forms.Label label9;
 
     }
 }
