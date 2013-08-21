@@ -3627,6 +3627,8 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.checkBox24);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "FenetrePrincipale";
             this.Load += new System.EventHandler(this.FenetrePrincipale_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();

@@ -23,6 +23,11 @@ namespace FSF_Server_A3
             FSF_Server_A3.Classes.Core.SetKeyValue(@"Software\Clan FSF\FSF Server A3\", "UnlockPass", textBox2.Text);
             this.Close();
         }
+
+        private void DIAL_Unlock_Load(object sender, EventArgs e)
+        {
+
+        }
         
     }
 }

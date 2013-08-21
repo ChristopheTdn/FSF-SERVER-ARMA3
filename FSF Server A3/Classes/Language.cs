@@ -5,26 +5,33 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FSF_Server_A3.Classes
 {
     class Language
     {
-
+       
         static public void DetermineLanguage()
         {
+            string langue;
             try
             {
-                if (Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage") != "")
+                langue = Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage");
+                if (langue != "00")
                 {
+                    CultureManager.ApplicationUICulture = new CultureInfo(Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage"));
+                }
+                else
+                {
+                    Form LanguageForm = new DIAL_LangageSelect();
+                    LanguageForm.ShowDialog();
                     CultureManager.ApplicationUICulture = new CultureInfo(Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage"));
                 }
             }
             catch
             {
             }
-
-
         }
         static public void ChangeLangage(string langue)
         {

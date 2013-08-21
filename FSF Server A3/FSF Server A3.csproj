@@ -111,6 +111,12 @@
     <Compile Include="Classes\Var.cs" />
     <Compile Include="Classes\Core.cs" />
     <Compile Include="Classes\Interface.cs" />
+    <Compile Include="Forms\DIAL_LangageSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DIAL_LangageSelect.Designer.cs">
+      <DependentUpon>DIAL_LangageSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DIAL_RepertoireARMA3.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\DIAL_LangageSelect.resx">
+      <DependentUpon>DIAL_LangageSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DIAL_RepertoireARMA3.resx">
       <DependentUpon>DIAL_RepertoireARMA3.cs</DependentUpon>
     </EmbeddedResource>
