@@ -19,17 +19,8 @@ namespace FSF_Server_A3
     {
         public FenetrePrincipale()
         {
-            try
-            {
-                if (Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage") != "")
-                {
-                    CultureManager.ApplicationUICulture = new CultureInfo(Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage"));
-                }
-            }
-            catch
-            {
-            }
-                InitializeComponent();
+            Language.DetermineLanguage();                    
+            InitializeComponent();
         }
 
         private void FenetrePrincipale_Load(object sender, EventArgs e)

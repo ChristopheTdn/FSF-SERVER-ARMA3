@@ -2455,9 +2455,7 @@
             // radioButton1
             // 
             resources.ApplyResources(this.radioButton1, "radioButton1");
-            this.radioButton1.Checked = true;
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
@@ -4090,8 +4088,6 @@
         internal System.Windows.Forms.CheckBox checkBox27;
         internal System.Windows.Forms.CheckBox checkBox26;
         internal System.Windows.Forms.CheckBox checkBox25;
-        internal System.Windows.Forms.Button button36;
-        internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.Button button34;
         internal System.Windows.Forms.CheckBox checkBox20;
         internal System.Windows.Forms.Button button27;
@@ -4116,6 +4112,8 @@
         internal System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button22;
         internal System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.Button button36;
+        internal System.Windows.Forms.Button button35;
 
     }
 }

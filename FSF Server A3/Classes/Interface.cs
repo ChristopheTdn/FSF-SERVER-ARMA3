@@ -70,6 +70,8 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.button25.Enabled = false; 
 
             }
+            // Determine Langage choisi 
+            Language.CheckButtonLanguageOption();
 
 
         }
