@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FSF_Server_A3.Classes;
 using System.IO;
+using System.Threading;
+using System.Globalization;
+using Infralution.Localization;
 
 namespace FSF_Server_A3
 {
@@ -16,11 +19,23 @@ namespace FSF_Server_A3
     {
         public FenetrePrincipale()
         {
-            InitializeComponent();
+            try
+            {
+                if (Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage") != "")
+                {
+                    CultureManager.ApplicationUICulture = new CultureInfo(Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "langage"));
+                }
+            }
+            catch
+            {
+            }
+                InitializeComponent();
         }
 
         private void FenetrePrincipale_Load(object sender, EventArgs e)
         {
+
+             
             Var.fenetrePrincipale = this;
             Core.InitialiseCore();
         }
@@ -467,7 +482,7 @@ namespace FSF_Server_A3
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/ChristopheTdn/FSF-SERVER-ARMA3/issues");
+            System.Diagnostics.Process.Start("http://server.clan-fsf.fr:8008/redmine/projects/fsf-server-arma-3/issues");
         }
 
 
@@ -479,6 +494,36 @@ namespace FSF_Server_A3
         private void button22_Click(object sender, EventArgs e)
         {
             Interface.UnlockFSFServer();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                Language.ChangeLangage("fr-fr");
+            };
+        }
+
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                Language.ChangeLangage("en-us");
+            };
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+                Language.ChangeLangage("ru-RU");
+            };
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://forums.bistudio.com/showthread.php?161899-FSF-SERVER-Administrate-Multi-dedicated-servers-under-Windows-Environnement");
         }
 
   

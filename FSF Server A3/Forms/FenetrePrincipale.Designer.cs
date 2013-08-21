@@ -221,6 +221,7 @@
             this.label60 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.Performance = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -392,7 +393,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -488,25 +488,13 @@
             // 
             // label63
             // 
-            this.label63.AutoSize = true;
-            this.label63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label63.Location = new System.Drawing.Point(244, 231);
+            resources.ApplyResources(this.label63, "label63");
             this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(77, 13);
-            this.label63.TabIndex = 49;
-            this.label63.Text = "Skill Ennemy :";
-            this.label63.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label65
             // 
-            this.label65.AutoSize = true;
-            this.label65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label65.Location = new System.Drawing.Point(63, 231);
+            resources.ApplyResources(this.label65, "label65");
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(78, 13);
-            this.label65.TabIndex = 47;
-            this.label65.Text = "Skill Friendly :";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numericUpDown19
             // 
@@ -516,7 +504,7 @@
             0,
             0,
             131072});
-            this.numericUpDown19.Location = new System.Drawing.Point(148, 229);
+            resources.ApplyResources(this.numericUpDown19, "numericUpDown19");
             this.numericUpDown19.Maximum = new decimal(new int[] {
             1,
             0,
@@ -528,8 +516,6 @@
             0,
             131072});
             this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown19.TabIndex = 46;
             this.numericUpDown19.Value = new decimal(new int[] {
             1,
             0,
@@ -538,15 +524,10 @@
             // 
             // checkBox89
             // 
-            this.checkBox89.AutoSize = true;
+            resources.ApplyResources(this.checkBox89, "checkBox89");
             this.checkBox89.Checked = true;
             this.checkBox89.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox89.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox89.Location = new System.Drawing.Point(6, 115);
             this.checkBox89.Name = "checkBox89";
-            this.checkBox89.Size = new System.Drawing.Size(125, 17);
-            this.checkBox89.TabIndex = 58;
-            this.checkBox89.Text = "Extended HUD info";
             this.checkBox89.UseVisualStyleBackColor = true;
             // 
             // groupBox_regular
@@ -581,291 +562,178 @@
             this.groupBox_regular.Controls.Add(this.label44);
             this.groupBox_regular.Controls.Add(this.label61);
             this.groupBox_regular.Controls.Add(this.numericUpDown15);
-            this.groupBox_regular.Location = new System.Drawing.Point(2, 40);
+            resources.ApplyResources(this.groupBox_regular, "groupBox_regular");
             this.groupBox_regular.Name = "groupBox_regular";
-            this.groupBox_regular.Size = new System.Drawing.Size(406, 302);
-            this.groupBox_regular.TabIndex = 76;
             this.groupBox_regular.TabStop = false;
-            this.groupBox_regular.Text = "Regular";
             // 
             // checkBox50
             // 
-            this.checkBox50.AutoSize = true;
+            resources.ApplyResources(this.checkBox50, "checkBox50");
             this.checkBox50.Checked = true;
             this.checkBox50.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox50.Location = new System.Drawing.Point(6, 92);
             this.checkBox50.Name = "checkBox50";
-            this.checkBox50.Size = new System.Drawing.Size(126, 17);
-            this.checkBox50.TabIndex = 75;
-            this.checkBox50.Text = "Allow full HUD info";
             this.checkBox50.UseVisualStyleBackColor = true;
             // 
             // checkBox51
             // 
-            this.checkBox51.AutoSize = true;
+            resources.ApplyResources(this.checkBox51, "checkBox51");
             this.checkBox51.Checked = true;
             this.checkBox51.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox51.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox51.Location = new System.Drawing.Point(278, 115);
             this.checkBox51.Name = "checkBox51";
-            this.checkBox51.Size = new System.Drawing.Size(64, 17);
-            this.checkBox51.TabIndex = 74;
-            this.checkBox51.Text = "VON ID";
             this.checkBox51.UseVisualStyleBackColor = true;
             // 
             // checkBox52
             // 
-            this.checkBox52.AutoSize = true;
+            resources.ApplyResources(this.checkBox52, "checkBox52");
             this.checkBox52.Checked = true;
             this.checkBox52.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox52.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox52.Location = new System.Drawing.Point(278, 92);
             this.checkBox52.Name = "checkBox52";
-            this.checkBox52.Size = new System.Drawing.Size(113, 17);
-            this.checkBox52.TabIndex = 73;
-            this.checkBox52.Text = "multiplayer score";
             this.checkBox52.UseVisualStyleBackColor = true;
             // 
             // checkBox53
             // 
-            this.checkBox53.AutoSize = true;
+            resources.ApplyResources(this.checkBox53, "checkBox53");
             this.checkBox53.Checked = true;
             this.checkBox53.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox53.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox53.Location = new System.Drawing.Point(278, 69);
             this.checkBox53.Name = "checkBox53";
-            this.checkBox53.Size = new System.Drawing.Size(69, 17);
-            this.checkBox53.TabIndex = 72;
-            this.checkBox53.Text = "Killed by";
             this.checkBox53.UseVisualStyleBackColor = true;
             // 
             // checkBox54
             // 
-            this.checkBox54.AutoSize = true;
-            this.checkBox54.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox54.Location = new System.Drawing.Point(278, 46);
+            resources.ApplyResources(this.checkBox54, "checkBox54");
             this.checkBox54.Name = "checkBox54";
-            this.checkBox54.Size = new System.Drawing.Size(106, 17);
-            this.checkBox54.TabIndex = 71;
-            this.checkBox54.Text = "Unlimited saves";
             this.checkBox54.UseVisualStyleBackColor = true;
             // 
             // checkBox55
             // 
-            this.checkBox55.AutoSize = true;
+            resources.ApplyResources(this.checkBox55, "checkBox55");
             this.checkBox55.Checked = true;
             this.checkBox55.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox55.Location = new System.Drawing.Point(278, 23);
             this.checkBox55.Name = "checkBox55";
-            this.checkBox55.Size = new System.Drawing.Size(97, 17);
-            this.checkBox55.TabIndex = 70;
-            this.checkBox55.Text = "Camera shake";
             this.checkBox55.UseVisualStyleBackColor = true;
             // 
             // checkBox56
             // 
-            this.checkBox56.AutoSize = true;
-            this.checkBox56.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox56.Location = new System.Drawing.Point(278, 138);
+            resources.ApplyResources(this.checkBox56, "checkBox56");
             this.checkBox56.Name = "checkBox56";
-            this.checkBox56.Size = new System.Drawing.Size(69, 17);
-            this.checkBox56.TabIndex = 69;
-            this.checkBox56.Text = "Super AI";
             this.checkBox56.UseVisualStyleBackColor = true;
             // 
             // checkBox57
             // 
-            this.checkBox57.AutoSize = true;
+            resources.ApplyResources(this.checkBox57, "checkBox57");
             this.checkBox57.Checked = true;
             this.checkBox57.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox57.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox57.Location = new System.Drawing.Point(136, 161);
             this.checkBox57.Name = "checkBox57";
-            this.checkBox57.Size = new System.Drawing.Size(108, 17);
-            this.checkBox57.TabIndex = 68;
-            this.checkBox57.Text = "3rd person view";
             this.checkBox57.UseVisualStyleBackColor = true;
             // 
             // checkBox58
             // 
-            this.checkBox58.AutoSize = true;
+            resources.ApplyResources(this.checkBox58, "checkBox58");
             this.checkBox58.Checked = true;
             this.checkBox58.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox58.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox58.Location = new System.Drawing.Point(136, 138);
             this.checkBox58.Name = "checkBox58";
-            this.checkBox58.Size = new System.Drawing.Size(103, 17);
-            this.checkBox58.TabIndex = 67;
-            this.checkBox58.Text = "Clock indicator";
             this.checkBox58.UseVisualStyleBackColor = true;
             // 
             // checkBox59
             // 
-            this.checkBox59.AutoSize = true;
+            resources.ApplyResources(this.checkBox59, "checkBox59");
             this.checkBox59.Checked = true;
             this.checkBox59.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox59.Location = new System.Drawing.Point(136, 115);
             this.checkBox59.Name = "checkBox59";
-            this.checkBox59.Size = new System.Drawing.Size(99, 17);
-            this.checkBox59.TabIndex = 66;
-            this.checkBox59.Text = "Auto guide AT";
             this.checkBox59.UseVisualStyleBackColor = true;
             // 
             // checkBox60
             // 
-            this.checkBox60.AutoSize = true;
+            resources.ApplyResources(this.checkBox60, "checkBox60");
             this.checkBox60.Checked = true;
             this.checkBox60.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox60.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox60.Location = new System.Drawing.Point(136, 92);
             this.checkBox60.Name = "checkBox60";
-            this.checkBox60.Size = new System.Drawing.Size(119, 17);
-            this.checkBox60.TabIndex = 65;
-            this.checkBox60.Text = "Weapon crosshair";
             this.checkBox60.UseVisualStyleBackColor = true;
             // 
             // checkBox61
             // 
-            this.checkBox61.AutoSize = true;
+            resources.ApplyResources(this.checkBox61, "checkBox61");
             this.checkBox61.Checked = true;
             this.checkBox61.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox61.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox61.Location = new System.Drawing.Point(136, 69);
             this.checkBox61.Name = "checkBox61";
-            this.checkBox61.Size = new System.Drawing.Size(123, 17);
-            this.checkBox61.TabIndex = 64;
-            this.checkBox61.Text = "Extended map info";
             this.checkBox61.UseVisualStyleBackColor = true;
             // 
             // checkBox62
             // 
-            this.checkBox62.AutoSize = true;
+            resources.ApplyResources(this.checkBox62, "checkBox62");
             this.checkBox62.Checked = true;
             this.checkBox62.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox62.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox62.Location = new System.Drawing.Point(136, 46);
             this.checkBox62.Name = "checkBox62";
-            this.checkBox62.Size = new System.Drawing.Size(86, 17);
-            this.checkBox62.TabIndex = 63;
-            this.checkBox62.Text = "Auto report";
             this.checkBox62.UseVisualStyleBackColor = true;
             // 
             // checkBox63
             // 
-            this.checkBox63.AutoSize = true;
+            resources.ApplyResources(this.checkBox63, "checkBox63");
             this.checkBox63.Checked = true;
             this.checkBox63.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox63.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox63.Location = new System.Drawing.Point(6, 161);
             this.checkBox63.Name = "checkBox63";
-            this.checkBox63.Size = new System.Drawing.Size(130, 17);
-            this.checkBox63.TabIndex = 62;
-            this.checkBox63.Text = "HUD waypoints info";
             this.checkBox63.UseVisualStyleBackColor = true;
             // 
             // checkBox64
             // 
-            this.checkBox64.AutoSize = true;
+            resources.ApplyResources(this.checkBox64, "checkBox64");
             this.checkBox64.Checked = true;
             this.checkBox64.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox64.Location = new System.Drawing.Point(136, 184);
             this.checkBox64.Name = "checkBox64";
-            this.checkBox64.Size = new System.Drawing.Size(197, 17);
-            this.checkBox64.TabIndex = 61;
-            this.checkBox64.Text = "HUD waypoints info permanently";
             this.checkBox64.UseVisualStyleBackColor = true;
             // 
             // checkBox65
             // 
-            this.checkBox65.AutoSize = true;
+            resources.ApplyResources(this.checkBox65, "checkBox65");
             this.checkBox65.Checked = true;
             this.checkBox65.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox65.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox65.Location = new System.Drawing.Point(6, 138);
             this.checkBox65.Name = "checkBox65";
-            this.checkBox65.Size = new System.Drawing.Size(116, 17);
-            this.checkBox65.TabIndex = 60;
-            this.checkBox65.Text = "HUD show group";
             this.checkBox65.UseVisualStyleBackColor = true;
             // 
             // checkBox66
             // 
-            this.checkBox66.AutoSize = true;
+            resources.ApplyResources(this.checkBox66, "checkBox66");
             this.checkBox66.Checked = true;
             this.checkBox66.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox66.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox66.Location = new System.Drawing.Point(136, 23);
             this.checkBox66.Name = "checkBox66";
-            this.checkBox66.Size = new System.Drawing.Size(136, 17);
-            this.checkBox66.TabIndex = 59;
-            this.checkBox66.Text = "Show detected mines";
             this.checkBox66.UseVisualStyleBackColor = true;
             // 
             // checkBox67
             // 
-            this.checkBox67.AutoSize = true;
+            resources.ApplyResources(this.checkBox67, "checkBox67");
             this.checkBox67.Checked = true;
             this.checkBox67.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox67.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox67.Location = new System.Drawing.Point(6, 115);
             this.checkBox67.Name = "checkBox67";
-            this.checkBox67.Size = new System.Drawing.Size(125, 17);
-            this.checkBox67.TabIndex = 58;
-            this.checkBox67.Text = "Extended HUD info";
             this.checkBox67.UseVisualStyleBackColor = true;
             // 
             // checkBox68
             // 
-            this.checkBox68.AutoSize = true;
+            resources.ApplyResources(this.checkBox68, "checkBox68");
             this.checkBox68.Checked = true;
             this.checkBox68.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox68.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox68.Location = new System.Drawing.Point(6, 184);
             this.checkBox68.Name = "checkBox68";
-            this.checkBox68.Size = new System.Drawing.Size(132, 17);
-            this.checkBox68.TabIndex = 57;
-            this.checkBox68.Text = "Permanent HUD info";
             this.checkBox68.UseVisualStyleBackColor = true;
             // 
             // checkBox69
             // 
-            this.checkBox69.AutoSize = true;
-            this.checkBox69.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox69.Location = new System.Drawing.Point(6, 69);
+            resources.ApplyResources(this.checkBox69, "checkBox69");
             this.checkBox69.Name = "checkBox69";
-            this.checkBox69.Size = new System.Drawing.Size(82, 17);
-            this.checkBox69.TabIndex = 56;
-            this.checkBox69.Text = "Enemy TAG";
             this.checkBox69.UseVisualStyleBackColor = true;
             // 
             // checkBox70
             // 
-            this.checkBox70.AutoSize = true;
+            resources.ApplyResources(this.checkBox70, "checkBox70");
             this.checkBox70.Checked = true;
             this.checkBox70.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox70.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox70.Location = new System.Drawing.Point(6, 46);
             this.checkBox70.Name = "checkBox70";
-            this.checkBox70.Size = new System.Drawing.Size(90, 17);
-            this.checkBox70.TabIndex = 55;
-            this.checkBox70.Text = "Friendly TAG";
             this.checkBox70.UseVisualStyleBackColor = true;
             // 
             // checkBox71
             // 
-            this.checkBox71.AutoSize = true;
+            resources.ApplyResources(this.checkBox71, "checkBox71");
             this.checkBox71.Checked = true;
             this.checkBox71.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox71.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox71.Location = new System.Drawing.Point(6, 23);
             this.checkBox71.Name = "checkBox71";
-            this.checkBox71.Size = new System.Drawing.Size(107, 17);
-            this.checkBox71.TabIndex = 54;
-            this.checkBox71.Text = "Extended armor";
             this.checkBox71.UseVisualStyleBackColor = true;
             // 
             // numericUpDown5
@@ -876,15 +744,13 @@
             0,
             0,
             131072});
-            this.numericUpDown5.Location = new System.Drawing.Point(327, 253);
+            resources.ApplyResources(this.numericUpDown5, "numericUpDown5");
             this.numericUpDown5.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown5.TabIndex = 53;
             this.numericUpDown5.Value = new decimal(new int[] {
             1,
             0,
@@ -899,15 +765,13 @@
             0,
             0,
             131072});
-            this.numericUpDown13.Location = new System.Drawing.Point(327, 229);
+            resources.ApplyResources(this.numericUpDown13, "numericUpDown13");
             this.numericUpDown13.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown13.TabIndex = 52;
             this.numericUpDown13.Value = new decimal(new int[] {
             1,
             0,
@@ -922,15 +786,13 @@
             0,
             0,
             131072});
-            this.numericUpDown14.Location = new System.Drawing.Point(148, 253);
+            resources.ApplyResources(this.numericUpDown14, "numericUpDown14");
             this.numericUpDown14.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown14.TabIndex = 51;
             this.numericUpDown14.Value = new decimal(new int[] {
             1,
             0,
@@ -939,47 +801,23 @@
             // 
             // label29
             // 
-            this.label29.AutoSize = true;
-            this.label29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label29.Location = new System.Drawing.Point(220, 255);
+            resources.ApplyResources(this.label29, "label29");
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(102, 13);
-            this.label29.TabIndex = 50;
-            this.label29.Text = "Precision Ennemy :";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label30
             // 
-            this.label30.AutoSize = true;
-            this.label30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label30.Location = new System.Drawing.Point(244, 231);
+            resources.ApplyResources(this.label30, "label30");
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(77, 13);
-            this.label30.TabIndex = 49;
-            this.label30.Text = "Skill Ennemy :";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label44
             // 
-            this.label44.AutoSize = true;
-            this.label44.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label44.Location = new System.Drawing.Point(39, 255);
+            resources.ApplyResources(this.label44, "label44");
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(103, 13);
-            this.label44.TabIndex = 48;
-            this.label44.Text = "Precision Friendly :";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label61
             // 
-            this.label61.AutoSize = true;
-            this.label61.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label61.Location = new System.Drawing.Point(63, 231);
+            resources.ApplyResources(this.label61, "label61");
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(78, 13);
-            this.label61.TabIndex = 47;
-            this.label61.Text = "Skill Friendly :";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numericUpDown15
             // 
@@ -989,15 +827,13 @@
             0,
             0,
             131072});
-            this.numericUpDown15.Location = new System.Drawing.Point(148, 229);
+            resources.ApplyResources(this.numericUpDown15, "numericUpDown15");
             this.numericUpDown15.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown15.TabIndex = 46;
             this.numericUpDown15.Value = new decimal(new int[] {
             1,
             0,
@@ -1036,291 +872,178 @@
             this.groupBox_recruit.Controls.Add(this.label39);
             this.groupBox_recruit.Controls.Add(this.label38);
             this.groupBox_recruit.Controls.Add(this.numericUpDown6);
-            this.groupBox_recruit.Location = new System.Drawing.Point(2, 40);
+            resources.ApplyResources(this.groupBox_recruit, "groupBox_recruit");
             this.groupBox_recruit.Name = "groupBox_recruit";
-            this.groupBox_recruit.Size = new System.Drawing.Size(406, 302);
-            this.groupBox_recruit.TabIndex = 49;
             this.groupBox_recruit.TabStop = false;
-            this.groupBox_recruit.Text = "Recruit";
             // 
             // checkBox49
             // 
-            this.checkBox49.AutoSize = true;
+            resources.ApplyResources(this.checkBox49, "checkBox49");
             this.checkBox49.Checked = true;
             this.checkBox49.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox49.Location = new System.Drawing.Point(6, 92);
             this.checkBox49.Name = "checkBox49";
-            this.checkBox49.Size = new System.Drawing.Size(126, 17);
-            this.checkBox49.TabIndex = 75;
-            this.checkBox49.Text = "Allow full HUD info";
             this.checkBox49.UseVisualStyleBackColor = true;
             // 
             // checkBox48
             // 
-            this.checkBox48.AutoSize = true;
+            resources.ApplyResources(this.checkBox48, "checkBox48");
             this.checkBox48.Checked = true;
             this.checkBox48.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox48.Location = new System.Drawing.Point(278, 115);
             this.checkBox48.Name = "checkBox48";
-            this.checkBox48.Size = new System.Drawing.Size(64, 17);
-            this.checkBox48.TabIndex = 74;
-            this.checkBox48.Text = "VON ID";
             this.checkBox48.UseVisualStyleBackColor = true;
             // 
             // checkBox47
             // 
-            this.checkBox47.AutoSize = true;
+            resources.ApplyResources(this.checkBox47, "checkBox47");
             this.checkBox47.Checked = true;
             this.checkBox47.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox47.Location = new System.Drawing.Point(278, 92);
             this.checkBox47.Name = "checkBox47";
-            this.checkBox47.Size = new System.Drawing.Size(113, 17);
-            this.checkBox47.TabIndex = 73;
-            this.checkBox47.Text = "multiplayer score";
             this.checkBox47.UseVisualStyleBackColor = true;
             // 
             // checkBox46
             // 
-            this.checkBox46.AutoSize = true;
+            resources.ApplyResources(this.checkBox46, "checkBox46");
             this.checkBox46.Checked = true;
             this.checkBox46.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox46.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox46.Location = new System.Drawing.Point(278, 69);
             this.checkBox46.Name = "checkBox46";
-            this.checkBox46.Size = new System.Drawing.Size(69, 17);
-            this.checkBox46.TabIndex = 72;
-            this.checkBox46.Text = "Killed by";
             this.checkBox46.UseVisualStyleBackColor = true;
             // 
             // checkBox45
             // 
-            this.checkBox45.AutoSize = true;
+            resources.ApplyResources(this.checkBox45, "checkBox45");
             this.checkBox45.Checked = true;
             this.checkBox45.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox45.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox45.Location = new System.Drawing.Point(278, 46);
             this.checkBox45.Name = "checkBox45";
-            this.checkBox45.Size = new System.Drawing.Size(106, 17);
-            this.checkBox45.TabIndex = 71;
-            this.checkBox45.Text = "Unlimited saves";
             this.checkBox45.UseVisualStyleBackColor = true;
             // 
             // checkBox44
             // 
-            this.checkBox44.AutoSize = true;
-            this.checkBox44.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox44.Location = new System.Drawing.Point(278, 23);
+            resources.ApplyResources(this.checkBox44, "checkBox44");
             this.checkBox44.Name = "checkBox44";
-            this.checkBox44.Size = new System.Drawing.Size(97, 17);
-            this.checkBox44.TabIndex = 70;
-            this.checkBox44.Text = "Camera shake";
             this.checkBox44.UseVisualStyleBackColor = true;
             // 
             // checkBox43
             // 
-            this.checkBox43.AutoSize = true;
-            this.checkBox43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox43.Location = new System.Drawing.Point(278, 138);
+            resources.ApplyResources(this.checkBox43, "checkBox43");
             this.checkBox43.Name = "checkBox43";
-            this.checkBox43.Size = new System.Drawing.Size(69, 17);
-            this.checkBox43.TabIndex = 69;
-            this.checkBox43.Text = "Super AI";
             this.checkBox43.UseVisualStyleBackColor = true;
             // 
             // checkBox42
             // 
-            this.checkBox42.AutoSize = true;
+            resources.ApplyResources(this.checkBox42, "checkBox42");
             this.checkBox42.Checked = true;
             this.checkBox42.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox42.Location = new System.Drawing.Point(136, 161);
             this.checkBox42.Name = "checkBox42";
-            this.checkBox42.Size = new System.Drawing.Size(108, 17);
-            this.checkBox42.TabIndex = 68;
-            this.checkBox42.Text = "3rd person view";
             this.checkBox42.UseVisualStyleBackColor = true;
             // 
             // checkBox41
             // 
-            this.checkBox41.AutoSize = true;
+            resources.ApplyResources(this.checkBox41, "checkBox41");
             this.checkBox41.Checked = true;
             this.checkBox41.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox41.Location = new System.Drawing.Point(136, 138);
             this.checkBox41.Name = "checkBox41";
-            this.checkBox41.Size = new System.Drawing.Size(103, 17);
-            this.checkBox41.TabIndex = 67;
-            this.checkBox41.Text = "Clock indicator";
             this.checkBox41.UseVisualStyleBackColor = true;
             // 
             // checkBox40
             // 
-            this.checkBox40.AutoSize = true;
+            resources.ApplyResources(this.checkBox40, "checkBox40");
             this.checkBox40.Checked = true;
             this.checkBox40.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox40.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox40.Location = new System.Drawing.Point(136, 115);
             this.checkBox40.Name = "checkBox40";
-            this.checkBox40.Size = new System.Drawing.Size(99, 17);
-            this.checkBox40.TabIndex = 66;
-            this.checkBox40.Text = "Auto guide AT";
             this.checkBox40.UseVisualStyleBackColor = true;
             // 
             // checkBox39
             // 
-            this.checkBox39.AutoSize = true;
+            resources.ApplyResources(this.checkBox39, "checkBox39");
             this.checkBox39.Checked = true;
             this.checkBox39.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox39.Location = new System.Drawing.Point(136, 92);
             this.checkBox39.Name = "checkBox39";
-            this.checkBox39.Size = new System.Drawing.Size(119, 17);
-            this.checkBox39.TabIndex = 65;
-            this.checkBox39.Text = "Weapon crosshair";
             this.checkBox39.UseVisualStyleBackColor = true;
             // 
             // checkBox38
             // 
-            this.checkBox38.AutoSize = true;
+            resources.ApplyResources(this.checkBox38, "checkBox38");
             this.checkBox38.Checked = true;
             this.checkBox38.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox38.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox38.Location = new System.Drawing.Point(136, 69);
             this.checkBox38.Name = "checkBox38";
-            this.checkBox38.Size = new System.Drawing.Size(123, 17);
-            this.checkBox38.TabIndex = 64;
-            this.checkBox38.Text = "Extended map info";
             this.checkBox38.UseVisualStyleBackColor = true;
             // 
             // checkBox37
             // 
-            this.checkBox37.AutoSize = true;
+            resources.ApplyResources(this.checkBox37, "checkBox37");
             this.checkBox37.Checked = true;
             this.checkBox37.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox37.Location = new System.Drawing.Point(136, 46);
             this.checkBox37.Name = "checkBox37";
-            this.checkBox37.Size = new System.Drawing.Size(86, 17);
-            this.checkBox37.TabIndex = 63;
-            this.checkBox37.Text = "Auto report";
             this.checkBox37.UseVisualStyleBackColor = true;
             // 
             // checkBox34
             // 
-            this.checkBox34.AutoSize = true;
+            resources.ApplyResources(this.checkBox34, "checkBox34");
             this.checkBox34.Checked = true;
             this.checkBox34.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox34.Location = new System.Drawing.Point(6, 161);
             this.checkBox34.Name = "checkBox34";
-            this.checkBox34.Size = new System.Drawing.Size(130, 17);
-            this.checkBox34.TabIndex = 62;
-            this.checkBox34.Text = "HUD waypoints info";
             this.checkBox34.UseVisualStyleBackColor = true;
             // 
             // checkBox35
             // 
-            this.checkBox35.AutoSize = true;
+            resources.ApplyResources(this.checkBox35, "checkBox35");
             this.checkBox35.Checked = true;
             this.checkBox35.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox35.Location = new System.Drawing.Point(136, 184);
             this.checkBox35.Name = "checkBox35";
-            this.checkBox35.Size = new System.Drawing.Size(197, 17);
-            this.checkBox35.TabIndex = 61;
-            this.checkBox35.Text = "HUD waypoints info permanently";
             this.checkBox35.UseVisualStyleBackColor = true;
             // 
             // checkBox36
             // 
-            this.checkBox36.AutoSize = true;
+            resources.ApplyResources(this.checkBox36, "checkBox36");
             this.checkBox36.Checked = true;
             this.checkBox36.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox36.Location = new System.Drawing.Point(6, 138);
             this.checkBox36.Name = "checkBox36";
-            this.checkBox36.Size = new System.Drawing.Size(116, 17);
-            this.checkBox36.TabIndex = 60;
-            this.checkBox36.Text = "HUD show group";
             this.checkBox36.UseVisualStyleBackColor = true;
             // 
             // checkBox31
             // 
-            this.checkBox31.AutoSize = true;
+            resources.ApplyResources(this.checkBox31, "checkBox31");
             this.checkBox31.Checked = true;
             this.checkBox31.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox31.Location = new System.Drawing.Point(136, 23);
             this.checkBox31.Name = "checkBox31";
-            this.checkBox31.Size = new System.Drawing.Size(136, 17);
-            this.checkBox31.TabIndex = 59;
-            this.checkBox31.Text = "Show detected mines";
             this.checkBox31.UseVisualStyleBackColor = true;
             // 
             // checkBox32
             // 
-            this.checkBox32.AutoSize = true;
+            resources.ApplyResources(this.checkBox32, "checkBox32");
             this.checkBox32.Checked = true;
             this.checkBox32.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox32.Location = new System.Drawing.Point(6, 115);
             this.checkBox32.Name = "checkBox32";
-            this.checkBox32.Size = new System.Drawing.Size(125, 17);
-            this.checkBox32.TabIndex = 58;
-            this.checkBox32.Text = "Extended HUD info";
             this.checkBox32.UseVisualStyleBackColor = true;
             // 
             // checkBox33
             // 
-            this.checkBox33.AutoSize = true;
+            resources.ApplyResources(this.checkBox33, "checkBox33");
             this.checkBox33.Checked = true;
             this.checkBox33.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox33.Location = new System.Drawing.Point(6, 184);
             this.checkBox33.Name = "checkBox33";
-            this.checkBox33.Size = new System.Drawing.Size(132, 17);
-            this.checkBox33.TabIndex = 57;
-            this.checkBox33.Text = "Permanent HUD info";
             this.checkBox33.UseVisualStyleBackColor = true;
             // 
             // checkBox30
             // 
-            this.checkBox30.AutoSize = true;
-            this.checkBox30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox30.Location = new System.Drawing.Point(6, 69);
+            resources.ApplyResources(this.checkBox30, "checkBox30");
             this.checkBox30.Name = "checkBox30";
-            this.checkBox30.Size = new System.Drawing.Size(82, 17);
-            this.checkBox30.TabIndex = 56;
-            this.checkBox30.Text = "Enemy TAG";
             this.checkBox30.UseVisualStyleBackColor = true;
             // 
             // checkBox29
             // 
-            this.checkBox29.AutoSize = true;
+            resources.ApplyResources(this.checkBox29, "checkBox29");
             this.checkBox29.Checked = true;
             this.checkBox29.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox29.Location = new System.Drawing.Point(6, 46);
             this.checkBox29.Name = "checkBox29";
-            this.checkBox29.Size = new System.Drawing.Size(90, 17);
-            this.checkBox29.TabIndex = 55;
-            this.checkBox29.Text = "Friendly TAG";
             this.checkBox29.UseVisualStyleBackColor = true;
             // 
             // checkBox28
             // 
-            this.checkBox28.AutoSize = true;
+            resources.ApplyResources(this.checkBox28, "checkBox28");
             this.checkBox28.Checked = true;
             this.checkBox28.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox28.Location = new System.Drawing.Point(6, 23);
             this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(107, 17);
-            this.checkBox28.TabIndex = 54;
-            this.checkBox28.Text = "Extended armor";
             this.checkBox28.UseVisualStyleBackColor = true;
             // 
             // numericUpDown9
@@ -1331,15 +1054,13 @@
             0,
             0,
             131072});
-            this.numericUpDown9.Location = new System.Drawing.Point(327, 253);
+            resources.ApplyResources(this.numericUpDown9, "numericUpDown9");
             this.numericUpDown9.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown9.TabIndex = 53;
             this.numericUpDown9.Value = new decimal(new int[] {
             1,
             0,
@@ -1354,15 +1075,13 @@
             0,
             0,
             131072});
-            this.numericUpDown8.Location = new System.Drawing.Point(327, 229);
+            resources.ApplyResources(this.numericUpDown8, "numericUpDown8");
             this.numericUpDown8.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown8.TabIndex = 52;
             this.numericUpDown8.Value = new decimal(new int[] {
             1,
             0,
@@ -1377,15 +1096,13 @@
             0,
             0,
             131072});
-            this.numericUpDown7.Location = new System.Drawing.Point(148, 253);
+            resources.ApplyResources(this.numericUpDown7, "numericUpDown7");
             this.numericUpDown7.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown7.TabIndex = 51;
             this.numericUpDown7.Value = new decimal(new int[] {
             1,
             0,
@@ -1394,47 +1111,23 @@
             // 
             // label40
             // 
-            this.label40.AutoSize = true;
-            this.label40.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label40.Location = new System.Drawing.Point(220, 255);
+            resources.ApplyResources(this.label40, "label40");
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(102, 13);
-            this.label40.TabIndex = 50;
-            this.label40.Text = "Precision Ennemy :";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label42
             // 
-            this.label42.AutoSize = true;
-            this.label42.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label42.Location = new System.Drawing.Point(244, 231);
+            resources.ApplyResources(this.label42, "label42");
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(77, 13);
-            this.label42.TabIndex = 49;
-            this.label42.Text = "Skill Ennemy :";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label39
             // 
-            this.label39.AutoSize = true;
-            this.label39.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label39.Location = new System.Drawing.Point(39, 255);
+            resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(103, 13);
-            this.label39.TabIndex = 48;
-            this.label39.Text = "Precision Friendly :";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label38
             // 
-            this.label38.AutoSize = true;
-            this.label38.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label38.Location = new System.Drawing.Point(63, 231);
+            resources.ApplyResources(this.label38, "label38");
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(78, 13);
-            this.label38.TabIndex = 47;
-            this.label38.Text = "Skill Friendly :";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numericUpDown6
             // 
@@ -1444,15 +1137,13 @@
             0,
             0,
             131072});
-            this.numericUpDown6.Location = new System.Drawing.Point(148, 229);
+            resources.ApplyResources(this.numericUpDown6, "numericUpDown6");
             this.numericUpDown6.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown6.TabIndex = 46;
             this.numericUpDown6.Value = new decimal(new int[] {
             1,
             0,
@@ -1461,27 +1152,18 @@
             // 
             // label64
             // 
-            this.label64.AutoSize = true;
-            this.label64.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label64.Location = new System.Drawing.Point(39, 255);
+            resources.ApplyResources(this.label64, "label64");
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(103, 13);
-            this.label64.TabIndex = 48;
-            this.label64.Text = "Precision Friendly :";
-            this.label64.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Enabled = false;
-            this.numericUpDown4.Location = new System.Drawing.Point(96, 107);
+            resources.ApplyResources(this.numericUpDown4, "numericUpDown4");
             this.numericUpDown4.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(39, 22);
-            this.numericUpDown4.TabIndex = 34;
             this.numericUpDown4.Value = new decimal(new int[] {
             30,
             0,
@@ -1490,125 +1172,69 @@
             // 
             // checkBox75
             // 
-            this.checkBox75.AutoSize = true;
+            resources.ApplyResources(this.checkBox75, "checkBox75");
             this.checkBox75.Checked = true;
             this.checkBox75.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox75.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox75.Location = new System.Drawing.Point(286, 69);
             this.checkBox75.Name = "checkBox75";
-            this.checkBox75.Size = new System.Drawing.Size(69, 17);
-            this.checkBox75.TabIndex = 72;
-            this.checkBox75.Text = "Killed by";
             this.checkBox75.UseVisualStyleBackColor = true;
             // 
             // checkBox76
             // 
-            this.checkBox76.AutoSize = true;
-            this.checkBox76.Enabled = false;
-            this.checkBox76.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox76.Location = new System.Drawing.Point(286, 46);
+            resources.ApplyResources(this.checkBox76, "checkBox76");
             this.checkBox76.Name = "checkBox76";
-            this.checkBox76.Size = new System.Drawing.Size(106, 17);
-            this.checkBox76.TabIndex = 71;
-            this.checkBox76.Text = "Unlimited saves";
             this.checkBox76.UseVisualStyleBackColor = true;
             // 
             // checkBox77
             // 
-            this.checkBox77.AutoSize = true;
+            resources.ApplyResources(this.checkBox77, "checkBox77");
             this.checkBox77.Checked = true;
             this.checkBox77.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox77.Enabled = false;
-            this.checkBox77.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox77.Location = new System.Drawing.Point(286, 23);
             this.checkBox77.Name = "checkBox77";
-            this.checkBox77.Size = new System.Drawing.Size(97, 17);
-            this.checkBox77.TabIndex = 70;
-            this.checkBox77.Text = "Camera shake";
             this.checkBox77.UseVisualStyleBackColor = true;
             // 
             // checkBox78
             // 
-            this.checkBox78.AutoSize = true;
-            this.checkBox78.Enabled = false;
-            this.checkBox78.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox78.Location = new System.Drawing.Point(286, 138);
+            resources.ApplyResources(this.checkBox78, "checkBox78");
             this.checkBox78.Name = "checkBox78";
-            this.checkBox78.Size = new System.Drawing.Size(69, 17);
-            this.checkBox78.TabIndex = 69;
-            this.checkBox78.Text = "Super AI";
             this.checkBox78.UseVisualStyleBackColor = true;
             // 
             // checkBox79
             // 
-            this.checkBox79.AutoSize = true;
-            this.checkBox79.Enabled = false;
-            this.checkBox79.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox79.Location = new System.Drawing.Point(144, 161);
+            resources.ApplyResources(this.checkBox79, "checkBox79");
             this.checkBox79.Name = "checkBox79";
-            this.checkBox79.Size = new System.Drawing.Size(108, 17);
-            this.checkBox79.TabIndex = 68;
-            this.checkBox79.Text = "3rd person view";
             this.checkBox79.UseVisualStyleBackColor = true;
             // 
             // checkBox80
             // 
-            this.checkBox80.AutoSize = true;
-            this.checkBox80.Enabled = false;
-            this.checkBox80.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox80.Location = new System.Drawing.Point(144, 138);
+            resources.ApplyResources(this.checkBox80, "checkBox80");
             this.checkBox80.Name = "checkBox80";
-            this.checkBox80.Size = new System.Drawing.Size(103, 17);
-            this.checkBox80.TabIndex = 67;
-            this.checkBox80.Text = "Clock indicator";
             this.checkBox80.UseVisualStyleBackColor = true;
             // 
             // checkBox81
             // 
-            this.checkBox81.AutoSize = true;
-            this.checkBox81.Enabled = false;
-            this.checkBox81.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox81.Location = new System.Drawing.Point(144, 115);
+            resources.ApplyResources(this.checkBox81, "checkBox81");
             this.checkBox81.Name = "checkBox81";
-            this.checkBox81.Size = new System.Drawing.Size(99, 17);
-            this.checkBox81.TabIndex = 66;
-            this.checkBox81.Text = "Auto guide AT";
             this.checkBox81.UseVisualStyleBackColor = true;
             // 
             // checkBox82
             // 
-            this.checkBox82.AutoSize = true;
+            resources.ApplyResources(this.checkBox82, "checkBox82");
             this.checkBox82.Checked = true;
             this.checkBox82.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox82.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox82.Location = new System.Drawing.Point(144, 92);
             this.checkBox82.Name = "checkBox82";
-            this.checkBox82.Size = new System.Drawing.Size(119, 17);
-            this.checkBox82.TabIndex = 65;
-            this.checkBox82.Text = "Weapon crosshair";
             this.checkBox82.UseVisualStyleBackColor = true;
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label27.Location = new System.Drawing.Point(11, 103);
+            resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(86, 26);
-            this.label27.TabIndex = 33;
-            this.label27.Text = "Validation \r\ndu vote (en %) :";
             // 
             // difficulte
             // 
             this.difficulte.BackColor = System.Drawing.Color.Gainsboro;
             this.difficulte.Controls.Add(this.groupBox5);
-            this.difficulte.ImageIndex = 3;
-            this.difficulte.Location = new System.Drawing.Point(23, 4);
+            resources.ApplyResources(this.difficulte, "difficulte");
             this.difficulte.Name = "difficulte";
-            this.difficulte.Padding = new System.Windows.Forms.Padding(3);
-            this.difficulte.Size = new System.Drawing.Size(420, 411);
-            this.difficulte.TabIndex = 2;
-            this.difficulte.Text = "Difficulté";
             // 
             // groupBox5
             // 
@@ -1620,60 +1246,37 @@
             this.groupBox5.Controls.Add(this.groupBox_veteran);
             this.groupBox5.Controls.Add(this.groupBox_elite);
             this.groupBox5.Controls.Add(this.groupBox_regular);
-            this.groupBox5.Location = new System.Drawing.Point(4, 7);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(429, 324);
-            this.groupBox5.TabIndex = 0;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Reglage difficulté par Profil";
             // 
             // radioButton10
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton10.Location = new System.Drawing.Point(326, 20);
+            resources.ApplyResources(this.radioButton10, "radioButton10");
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(47, 17);
-            this.radioButton10.TabIndex = 5;
-            this.radioButton10.Text = "Elite";
             this.radioButton10.UseVisualStyleBackColor = true;
             this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
             // radioButton9
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton9.Location = new System.Drawing.Point(228, 20);
+            resources.ApplyResources(this.radioButton9, "radioButton9");
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(65, 17);
-            this.radioButton9.TabIndex = 4;
-            this.radioButton9.Text = "Veteran";
             this.radioButton9.UseVisualStyleBackColor = true;
             this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
             // 
             // radioButton8
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton8.Location = new System.Drawing.Point(132, 20);
+            resources.ApplyResources(this.radioButton8, "radioButton8");
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(65, 17);
-            this.radioButton8.TabIndex = 3;
-            this.radioButton8.Text = "Regular";
             this.radioButton8.UseVisualStyleBackColor = true;
             this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
             // radioButton7
             // 
-            this.radioButton7.AutoSize = true;
+            resources.ApplyResources(this.radioButton7, "radioButton7");
             this.radioButton7.Checked = true;
-            this.radioButton7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton7.Location = new System.Drawing.Point(31, 20);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(61, 17);
-            this.radioButton7.TabIndex = 2;
             this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Recruit";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
@@ -1709,283 +1312,162 @@
             this.groupBox_veteran.Controls.Add(this.label68);
             this.groupBox_veteran.Controls.Add(this.label69);
             this.groupBox_veteran.Controls.Add(this.numericUpDown23);
-            this.groupBox_veteran.Location = new System.Drawing.Point(2, 40);
+            resources.ApplyResources(this.groupBox_veteran, "groupBox_veteran");
             this.groupBox_veteran.Name = "groupBox_veteran";
-            this.groupBox_veteran.Size = new System.Drawing.Size(406, 302);
-            this.groupBox_veteran.TabIndex = 78;
             this.groupBox_veteran.TabStop = false;
-            this.groupBox_veteran.Text = "Veteran";
             // 
             // checkBox94
             // 
-            this.checkBox94.AutoSize = true;
-            this.checkBox94.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox94.Location = new System.Drawing.Point(6, 92);
+            resources.ApplyResources(this.checkBox94, "checkBox94");
             this.checkBox94.Name = "checkBox94";
-            this.checkBox94.Size = new System.Drawing.Size(126, 17);
-            this.checkBox94.TabIndex = 75;
-            this.checkBox94.Text = "Allow full HUD info";
             this.checkBox94.UseVisualStyleBackColor = true;
             // 
             // checkBox95
             // 
-            this.checkBox95.AutoSize = true;
-            this.checkBox95.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox95.Location = new System.Drawing.Point(282, 115);
+            resources.ApplyResources(this.checkBox95, "checkBox95");
             this.checkBox95.Name = "checkBox95";
-            this.checkBox95.Size = new System.Drawing.Size(64, 17);
-            this.checkBox95.TabIndex = 74;
-            this.checkBox95.Text = "VON ID";
             this.checkBox95.UseVisualStyleBackColor = true;
             // 
             // checkBox96
             // 
-            this.checkBox96.AutoSize = true;
+            resources.ApplyResources(this.checkBox96, "checkBox96");
             this.checkBox96.Checked = true;
             this.checkBox96.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox96.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox96.Location = new System.Drawing.Point(282, 92);
             this.checkBox96.Name = "checkBox96";
-            this.checkBox96.Size = new System.Drawing.Size(113, 17);
-            this.checkBox96.TabIndex = 73;
-            this.checkBox96.Text = "multiplayer score";
             this.checkBox96.UseVisualStyleBackColor = true;
             // 
             // checkBox97
             // 
-            this.checkBox97.AutoSize = true;
+            resources.ApplyResources(this.checkBox97, "checkBox97");
             this.checkBox97.Checked = true;
             this.checkBox97.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox97.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox97.Location = new System.Drawing.Point(282, 69);
             this.checkBox97.Name = "checkBox97";
-            this.checkBox97.Size = new System.Drawing.Size(69, 17);
-            this.checkBox97.TabIndex = 72;
-            this.checkBox97.Text = "Killed by";
             this.checkBox97.UseVisualStyleBackColor = true;
             // 
             // checkBox98
             // 
-            this.checkBox98.AutoSize = true;
-            this.checkBox98.Enabled = false;
-            this.checkBox98.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox98.Location = new System.Drawing.Point(282, 46);
+            resources.ApplyResources(this.checkBox98, "checkBox98");
             this.checkBox98.Name = "checkBox98";
-            this.checkBox98.Size = new System.Drawing.Size(106, 17);
-            this.checkBox98.TabIndex = 71;
-            this.checkBox98.Text = "Unlimited saves";
             this.checkBox98.UseVisualStyleBackColor = true;
             // 
             // checkBox99
             // 
-            this.checkBox99.AutoSize = true;
+            resources.ApplyResources(this.checkBox99, "checkBox99");
             this.checkBox99.Checked = true;
             this.checkBox99.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox99.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox99.Location = new System.Drawing.Point(282, 23);
             this.checkBox99.Name = "checkBox99";
-            this.checkBox99.Size = new System.Drawing.Size(97, 17);
-            this.checkBox99.TabIndex = 70;
-            this.checkBox99.Text = "Camera shake";
             this.checkBox99.UseVisualStyleBackColor = true;
             // 
             // checkBox100
             // 
-            this.checkBox100.AutoSize = true;
-            this.checkBox100.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox100.Location = new System.Drawing.Point(282, 138);
+            resources.ApplyResources(this.checkBox100, "checkBox100");
             this.checkBox100.Name = "checkBox100";
-            this.checkBox100.Size = new System.Drawing.Size(69, 17);
-            this.checkBox100.TabIndex = 69;
-            this.checkBox100.Text = "Super AI";
             this.checkBox100.UseVisualStyleBackColor = true;
             // 
             // checkBox101
             // 
-            this.checkBox101.AutoSize = true;
+            resources.ApplyResources(this.checkBox101, "checkBox101");
             this.checkBox101.Checked = true;
             this.checkBox101.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox101.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox101.Location = new System.Drawing.Point(140, 161);
             this.checkBox101.Name = "checkBox101";
-            this.checkBox101.Size = new System.Drawing.Size(108, 17);
-            this.checkBox101.TabIndex = 68;
-            this.checkBox101.Text = "3rd person view";
             this.checkBox101.UseVisualStyleBackColor = true;
             // 
             // checkBox102
             // 
-            this.checkBox102.AutoSize = true;
+            resources.ApplyResources(this.checkBox102, "checkBox102");
             this.checkBox102.Checked = true;
             this.checkBox102.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox102.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox102.Location = new System.Drawing.Point(140, 138);
             this.checkBox102.Name = "checkBox102";
-            this.checkBox102.Size = new System.Drawing.Size(103, 17);
-            this.checkBox102.TabIndex = 67;
-            this.checkBox102.Text = "Clock indicator";
             this.checkBox102.UseVisualStyleBackColor = true;
             // 
             // checkBox103
             // 
-            this.checkBox103.AutoSize = true;
-            this.checkBox103.Enabled = false;
-            this.checkBox103.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox103.Location = new System.Drawing.Point(140, 115);
+            resources.ApplyResources(this.checkBox103, "checkBox103");
             this.checkBox103.Name = "checkBox103";
-            this.checkBox103.Size = new System.Drawing.Size(99, 17);
-            this.checkBox103.TabIndex = 66;
-            this.checkBox103.Text = "Auto guide AT";
             this.checkBox103.UseVisualStyleBackColor = true;
             // 
             // checkBox104
             // 
-            this.checkBox104.AutoSize = true;
+            resources.ApplyResources(this.checkBox104, "checkBox104");
             this.checkBox104.Checked = true;
             this.checkBox104.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox104.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox104.Location = new System.Drawing.Point(140, 92);
             this.checkBox104.Name = "checkBox104";
-            this.checkBox104.Size = new System.Drawing.Size(119, 17);
-            this.checkBox104.TabIndex = 65;
-            this.checkBox104.Text = "Weapon crosshair";
             this.checkBox104.UseVisualStyleBackColor = true;
             // 
             // checkBox105
             // 
-            this.checkBox105.AutoSize = true;
-            this.checkBox105.Enabled = false;
-            this.checkBox105.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox105.Location = new System.Drawing.Point(140, 69);
+            resources.ApplyResources(this.checkBox105, "checkBox105");
             this.checkBox105.Name = "checkBox105";
-            this.checkBox105.Size = new System.Drawing.Size(123, 17);
-            this.checkBox105.TabIndex = 64;
-            this.checkBox105.Text = "Extended map info";
             this.checkBox105.UseVisualStyleBackColor = true;
             // 
             // checkBox106
             // 
-            this.checkBox106.AutoSize = true;
+            resources.ApplyResources(this.checkBox106, "checkBox106");
             this.checkBox106.Checked = true;
             this.checkBox106.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox106.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox106.Location = new System.Drawing.Point(140, 46);
             this.checkBox106.Name = "checkBox106";
-            this.checkBox106.Size = new System.Drawing.Size(86, 17);
-            this.checkBox106.TabIndex = 63;
-            this.checkBox106.Text = "Auto report";
             this.checkBox106.UseVisualStyleBackColor = true;
             // 
             // checkBox107
             // 
-            this.checkBox107.AutoSize = true;
+            resources.ApplyResources(this.checkBox107, "checkBox107");
             this.checkBox107.Checked = true;
             this.checkBox107.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox107.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox107.Location = new System.Drawing.Point(6, 161);
             this.checkBox107.Name = "checkBox107";
-            this.checkBox107.Size = new System.Drawing.Size(130, 17);
-            this.checkBox107.TabIndex = 62;
-            this.checkBox107.Text = "HUD waypoints info";
             this.checkBox107.UseVisualStyleBackColor = true;
             // 
             // checkBox108
             // 
-            this.checkBox108.AutoSize = true;
+            resources.ApplyResources(this.checkBox108, "checkBox108");
             this.checkBox108.Checked = true;
             this.checkBox108.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox108.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox108.Location = new System.Drawing.Point(140, 184);
             this.checkBox108.Name = "checkBox108";
-            this.checkBox108.Size = new System.Drawing.Size(197, 17);
-            this.checkBox108.TabIndex = 61;
-            this.checkBox108.Text = "HUD waypoints info permanently";
             this.checkBox108.UseVisualStyleBackColor = true;
             // 
             // checkBox109
             // 
-            this.checkBox109.AutoSize = true;
+            resources.ApplyResources(this.checkBox109, "checkBox109");
             this.checkBox109.Checked = true;
             this.checkBox109.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox109.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox109.Location = new System.Drawing.Point(6, 138);
             this.checkBox109.Name = "checkBox109";
-            this.checkBox109.Size = new System.Drawing.Size(116, 17);
-            this.checkBox109.TabIndex = 60;
-            this.checkBox109.Text = "HUD show group";
             this.checkBox109.UseVisualStyleBackColor = true;
             // 
             // checkBox110
             // 
-            this.checkBox110.AutoSize = true;
-            this.checkBox110.Enabled = false;
-            this.checkBox110.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox110.Location = new System.Drawing.Point(140, 23);
+            resources.ApplyResources(this.checkBox110, "checkBox110");
             this.checkBox110.Name = "checkBox110";
-            this.checkBox110.Size = new System.Drawing.Size(136, 17);
-            this.checkBox110.TabIndex = 59;
-            this.checkBox110.Text = "Show detected mines";
             this.checkBox110.UseVisualStyleBackColor = true;
             // 
             // checkBox111
             // 
-            this.checkBox111.AutoSize = true;
+            resources.ApplyResources(this.checkBox111, "checkBox111");
             this.checkBox111.Checked = true;
             this.checkBox111.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox111.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox111.Location = new System.Drawing.Point(6, 115);
             this.checkBox111.Name = "checkBox111";
-            this.checkBox111.Size = new System.Drawing.Size(125, 17);
-            this.checkBox111.TabIndex = 58;
-            this.checkBox111.Text = "Extended HUD info";
             this.checkBox111.UseVisualStyleBackColor = true;
             // 
             // checkBox112
             // 
-            this.checkBox112.AutoSize = true;
-            this.checkBox112.Enabled = false;
-            this.checkBox112.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox112.Location = new System.Drawing.Point(6, 184);
+            resources.ApplyResources(this.checkBox112, "checkBox112");
             this.checkBox112.Name = "checkBox112";
-            this.checkBox112.Size = new System.Drawing.Size(132, 17);
-            this.checkBox112.TabIndex = 57;
-            this.checkBox112.Text = "Permanent HUD info";
             this.checkBox112.UseVisualStyleBackColor = true;
             // 
             // checkBox113
             // 
-            this.checkBox113.AutoSize = true;
-            this.checkBox113.Enabled = false;
-            this.checkBox113.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox113.Location = new System.Drawing.Point(6, 69);
+            resources.ApplyResources(this.checkBox113, "checkBox113");
             this.checkBox113.Name = "checkBox113";
-            this.checkBox113.Size = new System.Drawing.Size(82, 17);
-            this.checkBox113.TabIndex = 56;
-            this.checkBox113.Text = "Enemy TAG";
             this.checkBox113.UseVisualStyleBackColor = true;
             // 
             // checkBox114
             // 
-            this.checkBox114.AutoSize = true;
-            this.checkBox114.Enabled = false;
-            this.checkBox114.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox114.Location = new System.Drawing.Point(6, 46);
+            resources.ApplyResources(this.checkBox114, "checkBox114");
             this.checkBox114.Name = "checkBox114";
-            this.checkBox114.Size = new System.Drawing.Size(90, 17);
-            this.checkBox114.TabIndex = 55;
-            this.checkBox114.Text = "Friendly TAG";
             this.checkBox114.UseVisualStyleBackColor = true;
             // 
             // checkBox115
             // 
-            this.checkBox115.AutoSize = true;
-            this.checkBox115.Enabled = false;
-            this.checkBox115.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox115.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.checkBox115, "checkBox115");
             this.checkBox115.Name = "checkBox115";
-            this.checkBox115.Size = new System.Drawing.Size(107, 17);
-            this.checkBox115.TabIndex = 54;
-            this.checkBox115.Text = "Extended armor";
             this.checkBox115.UseVisualStyleBackColor = true;
             // 
             // numericUpDown20
@@ -1996,15 +1478,13 @@
             0,
             0,
             131072});
-            this.numericUpDown20.Location = new System.Drawing.Point(327, 253);
+            resources.ApplyResources(this.numericUpDown20, "numericUpDown20");
             this.numericUpDown20.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown20.TabIndex = 53;
             this.numericUpDown20.Value = new decimal(new int[] {
             1,
             0,
@@ -2019,7 +1499,7 @@
             0,
             0,
             131072});
-            this.numericUpDown21.Location = new System.Drawing.Point(327, 229);
+            resources.ApplyResources(this.numericUpDown21, "numericUpDown21");
             this.numericUpDown21.Maximum = new decimal(new int[] {
             1,
             0,
@@ -2031,8 +1511,6 @@
             0,
             131072});
             this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown21.TabIndex = 52;
             this.numericUpDown21.Value = new decimal(new int[] {
             1,
             0,
@@ -2047,15 +1525,13 @@
             0,
             0,
             131072});
-            this.numericUpDown22.Location = new System.Drawing.Point(148, 253);
+            resources.ApplyResources(this.numericUpDown22, "numericUpDown22");
             this.numericUpDown22.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown22.TabIndex = 51;
             this.numericUpDown22.Value = new decimal(new int[] {
             1,
             0,
@@ -2064,47 +1540,23 @@
             // 
             // label66
             // 
-            this.label66.AutoSize = true;
-            this.label66.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label66.Location = new System.Drawing.Point(220, 255);
+            resources.ApplyResources(this.label66, "label66");
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(102, 13);
-            this.label66.TabIndex = 50;
-            this.label66.Text = "Precision Ennemy :";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label67
             // 
-            this.label67.AutoSize = true;
-            this.label67.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label67.Location = new System.Drawing.Point(244, 231);
+            resources.ApplyResources(this.label67, "label67");
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(77, 13);
-            this.label67.TabIndex = 49;
-            this.label67.Text = "Skill Ennemy :";
-            this.label67.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label68
             // 
-            this.label68.AutoSize = true;
-            this.label68.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label68.Location = new System.Drawing.Point(39, 255);
+            resources.ApplyResources(this.label68, "label68");
             this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(103, 13);
-            this.label68.TabIndex = 48;
-            this.label68.Text = "Precision Friendly :";
-            this.label68.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label69
             // 
-            this.label69.AutoSize = true;
-            this.label69.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label69.Location = new System.Drawing.Point(63, 231);
+            resources.ApplyResources(this.label69, "label69");
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(78, 13);
-            this.label69.TabIndex = 47;
-            this.label69.Text = "Skill Friendly :";
-            this.label69.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // numericUpDown23
             // 
@@ -2114,7 +1566,7 @@
             0,
             0,
             131072});
-            this.numericUpDown23.Location = new System.Drawing.Point(148, 229);
+            resources.ApplyResources(this.numericUpDown23, "numericUpDown23");
             this.numericUpDown23.Maximum = new decimal(new int[] {
             1,
             0,
@@ -2126,8 +1578,6 @@
             0,
             131072});
             this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown23.TabIndex = 46;
             this.numericUpDown23.Value = new decimal(new int[] {
             1,
             0,
@@ -2166,166 +1616,88 @@
             this.groupBox_elite.Controls.Add(this.label65);
             this.groupBox_elite.Controls.Add(this.numericUpDown19);
             this.groupBox_elite.Controls.Add(this.checkBox89);
-            this.groupBox_elite.Location = new System.Drawing.Point(2, 40);
+            resources.ApplyResources(this.groupBox_elite, "groupBox_elite");
             this.groupBox_elite.Name = "groupBox_elite";
-            this.groupBox_elite.Size = new System.Drawing.Size(407, 302);
-            this.groupBox_elite.TabIndex = 77;
             this.groupBox_elite.TabStop = false;
-            this.groupBox_elite.Text = "Elite";
             // 
             // checkBox72
             // 
-            this.checkBox72.AutoSize = true;
-            this.checkBox72.Enabled = false;
-            this.checkBox72.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox72.Location = new System.Drawing.Point(6, 92);
+            resources.ApplyResources(this.checkBox72, "checkBox72");
             this.checkBox72.Name = "checkBox72";
-            this.checkBox72.Size = new System.Drawing.Size(126, 17);
-            this.checkBox72.TabIndex = 75;
-            this.checkBox72.Text = "Allow full HUD info";
             this.checkBox72.UseVisualStyleBackColor = true;
             // 
             // checkBox73
             // 
-            this.checkBox73.AutoSize = true;
-            this.checkBox73.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox73.Location = new System.Drawing.Point(286, 115);
+            resources.ApplyResources(this.checkBox73, "checkBox73");
             this.checkBox73.Name = "checkBox73";
-            this.checkBox73.Size = new System.Drawing.Size(64, 17);
-            this.checkBox73.TabIndex = 74;
-            this.checkBox73.Text = "VON ID";
             this.checkBox73.UseVisualStyleBackColor = true;
             // 
             // checkBox74
             // 
-            this.checkBox74.AutoSize = true;
+            resources.ApplyResources(this.checkBox74, "checkBox74");
             this.checkBox74.Checked = true;
             this.checkBox74.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox74.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox74.Location = new System.Drawing.Point(286, 92);
             this.checkBox74.Name = "checkBox74";
-            this.checkBox74.Size = new System.Drawing.Size(113, 17);
-            this.checkBox74.TabIndex = 73;
-            this.checkBox74.Text = "multiplayer score";
             this.checkBox74.UseVisualStyleBackColor = true;
             // 
             // checkBox83
             // 
-            this.checkBox83.AutoSize = true;
-            this.checkBox83.Enabled = false;
-            this.checkBox83.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox83.Location = new System.Drawing.Point(144, 69);
+            resources.ApplyResources(this.checkBox83, "checkBox83");
             this.checkBox83.Name = "checkBox83";
-            this.checkBox83.Size = new System.Drawing.Size(123, 17);
-            this.checkBox83.TabIndex = 64;
-            this.checkBox83.Text = "Extended map info";
             this.checkBox83.UseVisualStyleBackColor = true;
             // 
             // checkBox84
             // 
-            this.checkBox84.AutoSize = true;
-            this.checkBox84.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox84.Location = new System.Drawing.Point(144, 46);
+            resources.ApplyResources(this.checkBox84, "checkBox84");
             this.checkBox84.Name = "checkBox84";
-            this.checkBox84.Size = new System.Drawing.Size(86, 17);
-            this.checkBox84.TabIndex = 63;
-            this.checkBox84.Text = "Auto report";
             this.checkBox84.UseVisualStyleBackColor = true;
             // 
             // checkBox85
             // 
-            this.checkBox85.AutoSize = true;
-            this.checkBox85.Enabled = false;
-            this.checkBox85.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox85.Location = new System.Drawing.Point(6, 161);
+            resources.ApplyResources(this.checkBox85, "checkBox85");
             this.checkBox85.Name = "checkBox85";
-            this.checkBox85.Size = new System.Drawing.Size(130, 17);
-            this.checkBox85.TabIndex = 62;
-            this.checkBox85.Text = "HUD waypoints info";
             this.checkBox85.UseVisualStyleBackColor = true;
             // 
             // checkBox86
             // 
-            this.checkBox86.AutoSize = true;
-            this.checkBox86.Enabled = false;
-            this.checkBox86.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox86.Location = new System.Drawing.Point(144, 184);
+            resources.ApplyResources(this.checkBox86, "checkBox86");
             this.checkBox86.Name = "checkBox86";
-            this.checkBox86.Size = new System.Drawing.Size(197, 17);
-            this.checkBox86.TabIndex = 61;
-            this.checkBox86.Text = "HUD waypoints info permanently";
             this.checkBox86.UseVisualStyleBackColor = true;
             // 
             // checkBox87
             // 
-            this.checkBox87.AutoSize = true;
-            this.checkBox87.Enabled = false;
-            this.checkBox87.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox87.Location = new System.Drawing.Point(6, 138);
+            resources.ApplyResources(this.checkBox87, "checkBox87");
             this.checkBox87.Name = "checkBox87";
-            this.checkBox87.Size = new System.Drawing.Size(116, 17);
-            this.checkBox87.TabIndex = 60;
-            this.checkBox87.Text = "HUD show group";
             this.checkBox87.UseVisualStyleBackColor = true;
             // 
             // checkBox88
             // 
-            this.checkBox88.AutoSize = true;
-            this.checkBox88.Enabled = false;
-            this.checkBox88.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox88.Location = new System.Drawing.Point(144, 23);
+            resources.ApplyResources(this.checkBox88, "checkBox88");
             this.checkBox88.Name = "checkBox88";
-            this.checkBox88.Size = new System.Drawing.Size(136, 17);
-            this.checkBox88.TabIndex = 59;
-            this.checkBox88.Text = "Show detected mines";
             this.checkBox88.UseVisualStyleBackColor = true;
             // 
             // checkBox90
             // 
-            this.checkBox90.AutoSize = true;
-            this.checkBox90.Enabled = false;
-            this.checkBox90.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox90.Location = new System.Drawing.Point(6, 184);
+            resources.ApplyResources(this.checkBox90, "checkBox90");
             this.checkBox90.Name = "checkBox90";
-            this.checkBox90.Size = new System.Drawing.Size(132, 17);
-            this.checkBox90.TabIndex = 57;
-            this.checkBox90.Text = "Permanent HUD info";
             this.checkBox90.UseVisualStyleBackColor = true;
             // 
             // checkBox91
             // 
-            this.checkBox91.AutoSize = true;
-            this.checkBox91.Enabled = false;
-            this.checkBox91.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox91.Location = new System.Drawing.Point(6, 69);
+            resources.ApplyResources(this.checkBox91, "checkBox91");
             this.checkBox91.Name = "checkBox91";
-            this.checkBox91.Size = new System.Drawing.Size(82, 17);
-            this.checkBox91.TabIndex = 56;
-            this.checkBox91.Text = "Enemy TAG";
             this.checkBox91.UseVisualStyleBackColor = true;
             // 
             // checkBox92
             // 
-            this.checkBox92.AutoSize = true;
-            this.checkBox92.Enabled = false;
-            this.checkBox92.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox92.Location = new System.Drawing.Point(6, 46);
+            resources.ApplyResources(this.checkBox92, "checkBox92");
             this.checkBox92.Name = "checkBox92";
-            this.checkBox92.Size = new System.Drawing.Size(90, 17);
-            this.checkBox92.TabIndex = 55;
-            this.checkBox92.Text = "Friendly TAG";
             this.checkBox92.UseVisualStyleBackColor = true;
             // 
             // checkBox93
             // 
-            this.checkBox93.AutoSize = true;
-            this.checkBox93.Enabled = false;
-            this.checkBox93.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox93.Location = new System.Drawing.Point(6, 23);
+            resources.ApplyResources(this.checkBox93, "checkBox93");
             this.checkBox93.Name = "checkBox93";
-            this.checkBox93.Size = new System.Drawing.Size(107, 17);
-            this.checkBox93.TabIndex = 54;
-            this.checkBox93.Text = "Extended armor";
             this.checkBox93.UseVisualStyleBackColor = true;
             // 
             // numericUpDown16
@@ -2336,15 +1708,13 @@
             0,
             0,
             131072});
-            this.numericUpDown16.Location = new System.Drawing.Point(327, 253);
+            resources.ApplyResources(this.numericUpDown16, "numericUpDown16");
             this.numericUpDown16.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown16.TabIndex = 53;
             this.numericUpDown16.Value = new decimal(new int[] {
             1,
             0,
@@ -2359,7 +1729,7 @@
             0,
             0,
             131072});
-            this.numericUpDown17.Location = new System.Drawing.Point(327, 229);
+            resources.ApplyResources(this.numericUpDown17, "numericUpDown17");
             this.numericUpDown17.Maximum = new decimal(new int[] {
             1,
             0,
@@ -2371,8 +1741,6 @@
             0,
             131072});
             this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown17.TabIndex = 52;
             this.numericUpDown17.Value = new decimal(new int[] {
             1,
             0,
@@ -2387,15 +1755,13 @@
             0,
             0,
             131072});
-            this.numericUpDown18.Location = new System.Drawing.Point(148, 253);
+            resources.ApplyResources(this.numericUpDown18, "numericUpDown18");
             this.numericUpDown18.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(54, 22);
-            this.numericUpDown18.TabIndex = 51;
             this.numericUpDown18.Value = new decimal(new int[] {
             1,
             0,
@@ -2404,222 +1770,108 @@
             // 
             // label62
             // 
-            this.label62.AutoSize = true;
-            this.label62.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label62.Location = new System.Drawing.Point(220, 255);
+            resources.ApplyResources(this.label62, "label62");
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(102, 13);
-            this.label62.TabIndex = 50;
-            this.label62.Text = "Precision Ennemy :";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label57
             // 
-            this.label57.AutoSize = true;
-            this.label57.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label57.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label57.Location = new System.Drawing.Point(210, 225);
+            resources.ApplyResources(this.label57, "label57");
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(20, 13);
-            this.label57.TabIndex = 20;
-            this.label57.Text = "kB";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label56
             // 
-            this.label56.AutoSize = true;
-            this.label56.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label56.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label56.Location = new System.Drawing.Point(210, 141);
+            resources.ApplyResources(this.label56, "label56");
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(39, 13);
-            this.label56.TabIndex = 19;
-            this.label56.Text = "mbit/s";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label55
             // 
-            this.label55.AutoSize = true;
-            this.label55.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label55.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label55.Location = new System.Drawing.Point(210, 113);
+            resources.ApplyResources(this.label55, "label55");
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(36, 13);
-            this.label55.TabIndex = 18;
-            this.label55.Text = "kbit/s";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label54
             // 
-            this.label54.AutoSize = true;
-            this.label54.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label54.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label54.Location = new System.Drawing.Point(210, 85);
+            resources.ApplyResources(this.label54, "label54");
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(34, 13);
-            this.label54.TabIndex = 17;
-            this.label54.Text = "Bytes";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label53
             // 
-            this.label53.AutoSize = true;
-            this.label53.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label53.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label53.Location = new System.Drawing.Point(210, 57);
+            resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(34, 13);
-            this.label53.TabIndex = 16;
-            this.label53.Text = "Bytes";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBox29
             // 
-            this.textBox29.Location = new System.Drawing.Point(168, 222);
+            resources.ApplyResources(this.textBox29, "textBox29");
             this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(36, 22);
-            this.textBox29.TabIndex = 15;
-            this.textBox29.Text = "160";
             // 
             // label52
             // 
-            this.label52.AutoSize = true;
-            this.label52.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label52.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label52.Location = new System.Drawing.Point(19, 225);
+            resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(143, 13);
-            this.label52.TabIndex = 14;
-            this.label52.Text = "Maximum custom file size :";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(168, 194);
+            resources.ApplyResources(this.textBox28, "textBox28");
             this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(36, 22);
-            this.textBox28.TabIndex = 13;
-            this.textBox28.Text = "0.010";
             // 
             // label51
             // 
-            this.label51.AutoSize = true;
-            this.label51.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label51.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label51.Location = new System.Drawing.Point(5, 197);
+            resources.ApplyResources(this.label51, "label51");
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(157, 13);
-            this.label51.TabIndex = 12;
-            this.label51.Text = "Minimum error to send near :";
-            this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(168, 166);
+            resources.ApplyResources(this.textBox27, "textBox27");
             this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(36, 22);
-            this.textBox27.TabIndex = 11;
-            this.textBox27.Text = "0.010";
             // 
             // label50
             // 
-            this.label50.AutoSize = true;
-            this.label50.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label50.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label50.Location = new System.Drawing.Point(31, 169);
+            resources.ApplyResources(this.label50, "label50");
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(131, 13);
-            this.label50.TabIndex = 10;
-            this.label50.Text = "Minimum error to send :";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(168, 138);
+            resources.ApplyResources(this.textBox26, "textBox26");
             this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(36, 22);
-            this.textBox26.TabIndex = 9;
-            this.textBox26.Text = "2000";
             // 
             // label49
             // 
-            this.label49.AutoSize = true;
-            this.label49.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label49.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label49.Location = new System.Drawing.Point(40, 141);
+            resources.ApplyResources(this.label49, "label49");
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(122, 13);
-            this.label49.TabIndex = 8;
-            this.label49.Text = "Maximum Bandwidth :";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox25
             // 
-            this.textBox25.Location = new System.Drawing.Point(168, 110);
+            resources.ApplyResources(this.textBox25, "textBox25");
             this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(36, 22);
-            this.textBox25.TabIndex = 7;
-            this.textBox25.Text = "128";
             // 
             // label48
             // 
-            this.label48.AutoSize = true;
-            this.label48.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label48.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label48.Location = new System.Drawing.Point(43, 113);
+            resources.ApplyResources(this.label48, "label48");
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(121, 13);
-            this.label48.TabIndex = 6;
-            this.label48.Text = "Minimum Bandwidth :";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(168, 82);
+            resources.ApplyResources(this.textBox24, "textBox24");
             this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(36, 22);
-            this.textBox24.TabIndex = 5;
-            this.textBox24.Text = "256";
             // 
             // label47
             // 
-            this.label47.AutoSize = true;
-            this.label47.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label47.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label47.Location = new System.Drawing.Point(15, 85);
+            resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(147, 13);
-            this.label47.TabIndex = 4;
-            this.label47.Text = "Max size NON guaranteed :";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(168, 54);
+            resources.ApplyResources(this.textBox23, "textBox23");
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(36, 22);
-            this.textBox23.TabIndex = 3;
-            this.textBox23.Text = "512";
             // 
             // label46
             // 
-            this.label46.AutoSize = true;
-            this.label46.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label46.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label46.Location = new System.Drawing.Point(43, 57);
+            resources.ApplyResources(this.label46, "label46");
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(119, 13);
-            this.label46.TabIndex = 2;
-            this.label46.Text = "Max size guaranteed :";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(168, 26);
+            resources.ApplyResources(this.textBox22, "textBox22");
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(36, 22);
-            this.textBox22.TabIndex = 1;
-            this.textBox22.Text = "128";
             // 
             // groupBox12
             // 
@@ -2644,33 +1896,23 @@
             this.groupBox12.Controls.Add(this.label46);
             this.groupBox12.Controls.Add(this.textBox22);
             this.groupBox12.Controls.Add(this.label45);
-            this.groupBox12.Location = new System.Drawing.Point(11, 7);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(253, 255);
-            this.groupBox12.TabIndex = 0;
             this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Performance Tuning Setting";
             // 
             // label45
             // 
-            this.label45.AutoSize = true;
-            this.label45.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label45.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label45.Location = new System.Drawing.Point(18, 29);
+            resources.ApplyResources(this.label45, "label45");
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(144, 13);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "Maximum Messages Send :";
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Enabled = false;
+            resources.ApplyResources(this.numericUpDown12, "numericUpDown12");
             this.numericUpDown12.Increment = new decimal(new int[] {
             100,
             0,
             0,
             0});
-            this.numericUpDown12.Location = new System.Drawing.Point(125, 45);
             this.numericUpDown12.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -2682,8 +1924,6 @@
             0,
             0});
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(61, 22);
-            this.numericUpDown12.TabIndex = 33;
             this.numericUpDown12.Value = new decimal(new int[] {
             500,
             0,
@@ -2692,63 +1932,37 @@
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label19.Location = new System.Drawing.Point(247, 410);
+            resources.ApplyResources(this.label19, "label19");
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(124, 13);
-            this.label19.TabIndex = 31;
-            this.label19.Text = "                                       ";
             // 
             // progressBar3
             // 
-            this.progressBar3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar3.Location = new System.Drawing.Point(21, 410);
+            resources.ApplyResources(this.progressBar3, "progressBar3");
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(210, 13);
             this.progressBar3.Step = 100;
             this.progressBar3.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar3.TabIndex = 30;
             // 
             // progressBar2
             // 
-            this.progressBar2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar2.Location = new System.Drawing.Point(21, 429);
+            resources.ApplyResources(this.progressBar2, "progressBar2");
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(210, 13);
             this.progressBar2.Step = 100;
             this.progressBar2.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-            this.progressBar2.TabIndex = 29;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label11.Location = new System.Drawing.Point(247, 429);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(151, 13);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "                                                ";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold);
-            this.label14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label14.Location = new System.Drawing.Point(13, 7);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(188, 43);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Synchro Zone";
             // 
             // button25
             // 
-            this.button25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button25.Location = new System.Drawing.Point(174, 95);
+            resources.ApplyResources(this.button25, "button25");
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(104, 33);
-            this.button25.TabIndex = 0;
-            this.button25.Text = "Synchroniser";
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
@@ -2760,246 +1974,156 @@
             // 
             // checkBox21
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox21.Location = new System.Drawing.Point(11, 204);
+            resources.ApplyResources(this.checkBox21, "checkBox21");
             this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(93, 17);
-            this.checkBox21.TabIndex = 18;
-            this.checkBox21.Text = "Extra threads";
-            this.toolTip1.SetToolTip(this.checkBox21, " -exThreads");
+            this.toolTip1.SetToolTip(this.checkBox21, resources.GetString("checkBox21.ToolTip"));
             this.checkBox21.UseVisualStyleBackColor = true;
             this.checkBox21.CheckedChanged += new System.EventHandler(this.checkBox21_CheckedChanged);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::FSF_Server_A3.Properties.Resources.mettre_en_favori_favori_etoile_icone_3996_64;
-            this.pictureBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox5.Location = new System.Drawing.Point(365, 47);
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(18, 20);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 17;
             this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Définir comme Favoris");
+            this.toolTip1.SetToolTip(this.pictureBox5, resources.GetString("pictureBox5.ToolTip"));
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FSF_Server_A3.Properties.Resources.ajouter_vert_plus_icone_9105_128;
-            this.pictureBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox3.Location = new System.Drawing.Point(365, 114);
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(18, 20);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Ajouter un profil\r\n");
+            this.toolTip1.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip"));
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::FSF_Server_A3.Properties.Resources.fermer_gtk_icone_6139_128;
-            this.pictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox4.Location = new System.Drawing.Point(365, 23);
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Effacer le profil\r\n");
+            this.toolTip1.SetToolTip(this.pictureBox4, resources.GetString("pictureBox4.ToolTip"));
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // checkBox19
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Enabled = false;
+            resources.ApplyResources(this.checkBox19, "checkBox19");
             this.checkBox19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox19.Location = new System.Drawing.Point(215, 544);
             this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(125, 17);
-            this.checkBox19.TabIndex = 50;
             this.checkBox19.Tag = "";
-            this.checkBox19.Text = "réduire au lancement";
-            this.toolTip1.SetToolTip(this.checkBox19, "Minimise l\'interface du FSF Launcher au lancement du jeu");
+            this.toolTip1.SetToolTip(this.checkBox19, resources.GetString("checkBox19.ToolTip"));
             this.checkBox19.UseVisualStyleBackColor = true;
             // 
             // checkBox23
             // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox23.Location = new System.Drawing.Point(6, 182);
+            resources.ApplyResources(this.checkBox23, "checkBox23");
             this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(162, 17);
-            this.checkBox23.TabIndex = 44;
-            this.checkBox23.Text = "Seulement les fichiers PBO";
-            this.toolTip1.SetToolTip(this.checkBox23, "-noCB : It slows down rendering but may resolve visual glitches.");
+            this.toolTip1.SetToolTip(this.checkBox23, resources.GetString("checkBox23.ToolTip"));
             this.checkBox23.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox8.Location = new System.Drawing.Point(6, 135);
+            resources.ApplyResources(this.checkBox8, "checkBox8");
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(188, 17);
-            this.checkBox8.TabIndex = 17;
-            this.checkBox8.Text = "Arrêt gestion MultiCore (-noCB)";
-            this.toolTip1.SetToolTip(this.checkBox8, "-noCB : It slows down rendering but may resolve visual glitches.");
+            this.toolTip1.SetToolTip(this.checkBox8, resources.GetString("checkBox8.ToolTip"));
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox9
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox9.Location = new System.Drawing.Point(6, 158);
+            resources.ApplyResources(this.checkBox9, "checkBox9");
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(193, 17);
-            this.checkBox9.TabIndex = 4;
-            this.checkBox9.Text = "Mode WinXP/multi GPU/DirectX9";
-            this.toolTip1.SetToolTip(this.checkBox9, "force Direct3D version 9 pour ameliorer alt-Tab. Favorise le multi GPU avec d\'anc" +
-        "ien  driver.");
+            this.toolTip1.SetToolTip(this.checkBox9, resources.GetString("checkBox9.ToolTip"));
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox1.Location = new System.Drawing.Point(6, 21);
+            resources.ApplyResources(this.checkBox1, "checkBox1");
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(168, 17);
-            this.checkBox1.TabIndex = 0;
             this.checkBox1.Tag = "";
-            this.checkBox1.Text = "Passer écrans de démarrage";
-            this.toolTip1.SetToolTip(this.checkBox1, "Désactive les écrans de chargement \r\npour un lancement plus rapide (-noSplash)");
+            this.toolTip1.SetToolTip(this.checkBox1, resources.GetString("checkBox1.ToolTip"));
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::FSF_Server_A3.Properties.Resources.disquette;
-            this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox2.Location = new System.Drawing.Point(159, 519);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(37, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 47;
             this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Sauvegarder le profil\r\n");
+            this.toolTip1.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // checkBox24
             // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Enabled = false;
+            resources.ApplyResources(this.checkBox24, "checkBox24");
             this.checkBox24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.checkBox24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox24.Location = new System.Drawing.Point(215, 519);
             this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(117, 17);
-            this.checkBox24.TabIndex = 51;
             this.checkBox24.Tag = "";
-            this.checkBox24.Text = "force mode ADMIN";
-            this.toolTip1.SetToolTip(this.checkBox24, "Minimise l\'interface du FSF Launcher au lancement du jeu");
+            this.toolTip1.SetToolTip(this.checkBox24, resources.GetString("checkBox24.ToolTip"));
             this.checkBox24.UseVisualStyleBackColor = true;
             // 
             // button32
             // 
-            this.button32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button32.Location = new System.Drawing.Point(340, 160);
+            resources.ApplyResources(this.button32, "button32");
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(75, 36);
-            this.button32.TabIndex = 14;
-            this.button32.Text = "Bas";
-            this.toolTip1.SetToolTip(this.button32, "Priorité la plus basse");
+            this.toolTip1.SetToolTip(this.button32, resources.GetString("button32.ToolTip"));
             this.button32.UseVisualStyleBackColor = true;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // button31
             // 
-            this.button31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button31.Location = new System.Drawing.Point(340, 31);
+            resources.ApplyResources(this.button31, "button31");
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(75, 36);
-            this.button31.TabIndex = 13;
-            this.button31.Text = "Haut";
-            this.toolTip1.SetToolTip(this.button31, "Priorité la plus haute");
+            this.toolTip1.SetToolTip(this.button31, resources.GetString("button31.ToolTip"));
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button30
             // 
-            this.button30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button30.Location = new System.Drawing.Point(340, 118);
+            resources.ApplyResources(this.button30, "button30");
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(75, 36);
-            this.button30.TabIndex = 12;
-            this.button30.Text = "-";
-            this.toolTip1.SetToolTip(this.button30, "Diminue la priorité");
+            this.toolTip1.SetToolTip(this.button30, resources.GetString("button30.ToolTip"));
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button29
             // 
-            this.button29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button29.Location = new System.Drawing.Point(340, 76);
+            resources.ApplyResources(this.button29, "button29");
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(75, 36);
-            this.button29.TabIndex = 11;
-            this.button29.Text = "+";
-            this.toolTip1.SetToolTip(this.button29, "Augmente la priorité");
+            this.toolTip1.SetToolTip(this.button29, resources.GetString("button29.ToolTip"));
             this.button29.UseVisualStyleBackColor = true;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // checkBox10
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox10.Location = new System.Drawing.Point(6, 205);
+            resources.ApplyResources(this.checkBox10, "checkBox10");
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(68, 17);
-            this.checkBox10.TabIndex = 45;
-            this.checkBox10.Text = "No Logs";
-            this.checkBox10.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.toolTip1.SetToolTip(this.checkBox10, "-nologs : block all logs output from game.");
+            this.toolTip1.SetToolTip(this.checkBox10, resources.GetString("checkBox10.ToolTip"));
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // button26
             // 
-            this.button26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button26.Location = new System.Drawing.Point(271, 21);
+            resources.ApplyResources(this.button26, "button26");
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(141, 25);
-            this.button26.TabIndex = 3;
-            this.button26.Text = "Configuration WIN SCP";
             this.button26.UseVisualStyleBackColor = true;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // progressBar1
             // 
-            this.progressBar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.progressBar1.Location = new System.Drawing.Point(271, 42);
+            resources.ApplyResources(this.progressBar1, "progressBar1");
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(141, 10);
-            this.progressBar1.TabIndex = 4;
             // 
             // pictureBox17
             // 
-            this.pictureBox17.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox17, "pictureBox17");
             this.pictureBox17.Image = global::FSF_Server_A3.Properties.Resources.winscp;
-            this.pictureBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox17.Location = new System.Drawing.Point(207, 13);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(37, 37);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 17;
             this.pictureBox17.TabStop = false;
             // 
             // numericUpDown11
             // 
-            this.numericUpDown11.Enabled = false;
-            this.numericUpDown11.Location = new System.Drawing.Point(125, 17);
+            resources.ApplyResources(this.numericUpDown11, "numericUpDown11");
             this.numericUpDown11.Maximum = new decimal(new int[] {
             120,
             0,
@@ -3011,8 +2135,6 @@
             0,
             0});
             this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(49, 22);
-            this.numericUpDown11.TabIndex = 32;
             this.numericUpDown11.Value = new decimal(new int[] {
             1,
             0,
@@ -3032,55 +2154,30 @@
             this.SynchroZONE.Controls.Add(this.progressBar1);
             this.SynchroZONE.Controls.Add(this.textBox11);
             this.SynchroZONE.Controls.Add(this.pictureBox17);
-            this.SynchroZONE.ImageIndex = 9;
-            this.SynchroZONE.Location = new System.Drawing.Point(4, 23);
+            resources.ApplyResources(this.SynchroZONE, "SynchroZONE");
             this.SynchroZONE.Name = "SynchroZONE";
-            this.SynchroZONE.Size = new System.Drawing.Size(453, 458);
-            this.SynchroZONE.TabIndex = 6;
-            this.SynchroZONE.Text = "Synchro ZONE";
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(20, 152);
-            this.textBox11.Multiline = true;
+            resources.ApplyResources(this.textBox11, "textBox11");
             this.textBox11.Name = "textBox11";
-            this.textBox11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox11.Size = new System.Drawing.Size(415, 252);
-            this.textBox11.TabIndex = 1;
             // 
             // button16
             // 
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button16.Location = new System.Drawing.Point(350, 507);
+            resources.ApplyResources(this.button16, "button16");
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(120, 48);
-            this.button16.TabIndex = 39;
-            this.button16.Text = "Lancer SERVEUR";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // label59
             // 
-            this.label59.AutoSize = true;
-            this.label59.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label59.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label59.Location = new System.Drawing.Point(35, 47);
+            resources.ApplyResources(this.label59, "label59");
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(84, 13);
-            this.label59.TabIndex = 4;
-            this.label59.Text = "View distance :";
             // 
             // label58
             // 
-            this.label58.AutoSize = true;
-            this.label58.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label58.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label58.Location = new System.Drawing.Point(47, 19);
+            resources.ApplyResources(this.label58, "label58");
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(72, 13);
-            this.label58.TabIndex = 2;
-            this.label58.Text = "Terrain grid :";
             // 
             // groupBox15
             // 
@@ -3088,32 +2185,21 @@
             this.groupBox15.Controls.Add(this.numericUpDown11);
             this.groupBox15.Controls.Add(this.label59);
             this.groupBox15.Controls.Add(this.label58);
-            this.groupBox15.Location = new System.Drawing.Point(11, 268);
+            resources.ApplyResources(this.groupBox15, "groupBox15");
             this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(253, 73);
-            this.groupBox15.TabIndex = 1;
             this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Terrain";
             // 
             // label60
             // 
-            this.label60.AutoSize = true;
-            this.label60.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label60.Location = new System.Drawing.Point(6, 18);
+            resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(129, 13);
-            this.label60.TabIndex = 0;
-            this.label60.Text = "Aucune aide disponible";
             // 
             // groupBox16
             // 
             this.groupBox16.Controls.Add(this.label60);
-            this.groupBox16.Location = new System.Drawing.Point(270, 8);
+            resources.ApplyResources(this.groupBox16, "groupBox16");
             this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(142, 254);
-            this.groupBox16.TabIndex = 45;
             this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Aide";
             // 
             // Performance
             // 
@@ -3122,23 +2208,19 @@
             this.Performance.Controls.Add(this.groupBox16);
             this.Performance.Controls.Add(this.groupBox15);
             this.Performance.Controls.Add(this.groupBox12);
-            this.Performance.ImageIndex = 1;
-            this.Performance.Location = new System.Drawing.Point(23, 4);
+            resources.ApplyResources(this.Performance, "Performance");
             this.Performance.Name = "Performance";
-            this.Performance.Padding = new System.Windows.Forms.Padding(3);
-            this.Performance.Size = new System.Drawing.Size(420, 411);
-            this.Performance.TabIndex = 3;
-            this.Performance.Text = "Performance";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.Tomato;
+            this.label9.Name = "label9";
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label26.Location = new System.Drawing.Point(11, 67);
+            resources.ApplyResources(this.label26, "label26");
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(69, 26);
-            this.label26.TabIndex = 32;
-            this.label26.Text = "Nombre \r\nde joueur   :";
             // 
             // groupBox2
             // 
@@ -3161,231 +2243,136 @@
             this.groupBox2.Controls.Add(this.trackBar2);
             this.groupBox2.Controls.Add(this.checkBox7);
             this.groupBox2.Controls.Add(this.trackBar1);
-            this.groupBox2.Location = new System.Drawing.Point(218, 6);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(194, 278);
-            this.groupBox2.TabIndex = 50;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Parametres expert";
             // 
             // pictureBox30
             // 
-            this.pictureBox30.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox30, "pictureBox30");
             this.pictureBox30.Image = global::FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
-            this.pictureBox30.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox30.InitialImage = null;
-            this.pictureBox30.Location = new System.Drawing.Point(42, 252);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(11, 13);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 54;
             this.pictureBox30.TabStop = false;
             // 
             // pictureBox28
             // 
-            this.pictureBox28.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox28, "pictureBox28");
             this.pictureBox28.Image = global::FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
-            this.pictureBox28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox28.InitialImage = null;
-            this.pictureBox28.Location = new System.Drawing.Point(42, 239);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(11, 13);
-            this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox28.TabIndex = 53;
             this.pictureBox28.TabStop = false;
             // 
             // pictureBox26
             // 
-            this.pictureBox26.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox26, "pictureBox26");
             this.pictureBox26.Image = global::FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
-            this.pictureBox26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox26.InitialImage = null;
-            this.pictureBox26.Location = new System.Drawing.Point(42, 226);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(11, 13);
-            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox26.TabIndex = 52;
             this.pictureBox26.TabStop = false;
             // 
             // label36
             // 
-            this.label36.AutoSize = true;
-            this.label36.Enabled = false;
-            this.label36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label36.Location = new System.Drawing.Point(59, 252);
+            resources.ApplyResources(this.label36, "label36");
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(99, 13);
-            this.label36.TabIndex = 51;
-            this.label36.Text = "Geometry loading";
             // 
             // label35
             // 
-            this.label35.AutoSize = true;
-            this.label35.Enabled = false;
-            this.label35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label35.Location = new System.Drawing.Point(59, 239);
+            resources.ApplyResources(this.label35, "label35");
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(87, 13);
-            this.label35.TabIndex = 51;
-            this.label35.Text = "Texture loading";
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Enabled = false;
-            this.label34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label34.Location = new System.Drawing.Point(59, 226);
+            resources.ApplyResources(this.label34, "label34");
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(84, 13);
-            this.label34.TabIndex = 51;
-            this.label34.Text = "File operations";
             // 
             // label41
             // 
-            this.label41.AutoSize = true;
-            this.label41.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label41.Location = new System.Drawing.Point(59, 21);
+            resources.ApplyResources(this.label41, "label41");
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(138, 39);
-            this.label41.TabIndex = 50;
-            this.label41.Text = "Modifier ces parametres \r\nuniquement si vous savez\r\nce que vous faites.";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkBox6
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox6.Location = new System.Drawing.Point(11, 112);
+            resources.ApplyResources(this.checkBox6, "checkBox6");
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(120, 17);
-            this.checkBox6.TabIndex = 5;
-            this.checkBox6.Text = "Mémoire max (MB)";
             this.checkBox6.UseVisualStyleBackColor = true;
             this.checkBox6.CheckedChanged += new System.EventHandler(this.checkBox6_CheckedChanged);
             // 
             // comboBox3
             // 
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox3, "comboBox3");
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox3.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "3",
-            "5",
-            "7"});
-            this.comboBox3.Location = new System.Drawing.Point(110, 202);
+            resources.GetString("comboBox3.Items"),
+            resources.GetString("comboBox3.Items1"),
+            resources.GetString("comboBox3.Items2"),
+            resources.GetString("comboBox3.Items3"),
+            resources.GetString("comboBox3.Items4")});
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(36, 21);
-            this.comboBox3.TabIndex = 40;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // pictureBox29
             // 
-            this.pictureBox29.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox29, "pictureBox29");
             this.pictureBox29.Image = global::FSF_Server_A3.Properties.Resources.danger;
-            this.pictureBox29.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox29.InitialImage = null;
-            this.pictureBox29.Location = new System.Drawing.Point(14, 20);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 49;
             this.pictureBox29.TabStop = false;
             // 
             // trackBar3
             // 
-            this.trackBar3.Enabled = false;
-            this.trackBar3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.trackBar3.Location = new System.Drawing.Point(73, 176);
+            resources.ApplyResources(this.trackBar3, "trackBar3");
             this.trackBar3.Maximum = 2047;
             this.trackBar3.Minimum = 128;
             this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(121, 45);
-            this.trackBar3.TabIndex = 42;
             this.trackBar3.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar3.Value = 128;
             this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
             // 
             // textBox5
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(31, 130);
+            resources.ApplyResources(this.textBox5, "textBox5");
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(36, 22);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBox22
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox22.Location = new System.Drawing.Point(11, 158);
+            resources.ApplyResources(this.checkBox22, "checkBox22");
             this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(156, 17);
-            this.checkBox22.TabIndex = 41;
-            this.checkBox22.Text = "Mémoire VIDEO max (MB)";
             this.checkBox22.UseVisualStyleBackColor = true;
             this.checkBox22.CheckedChanged += new System.EventHandler(this.checkBox22_CheckedChanged);
             // 
             // textBox6
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(30, 84);
+            resources.ApplyResources(this.textBox6, "textBox6");
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(71, 22);
-            this.textBox6.TabIndex = 12;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox20
             // 
-            this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(31, 176);
+            resources.ApplyResources(this.textBox20, "textBox20");
             this.textBox20.Name = "textBox20";
             this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(36, 22);
-            this.textBox20.TabIndex = 43;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // trackBar2
             // 
-            this.trackBar2.Enabled = false;
-            this.trackBar2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.trackBar2.Location = new System.Drawing.Point(103, 84);
+            resources.ApplyResources(this.trackBar2, "trackBar2");
             this.trackBar2.Maximum = 8;
             this.trackBar2.Minimum = 1;
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(85, 45);
-            this.trackBar2.TabIndex = 13;
             this.trackBar2.Value = 1;
             this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // checkBox7
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox7.Location = new System.Drawing.Point(11, 66);
+            resources.ApplyResources(this.checkBox7, "checkBox7");
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(147, 17);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Nombre de processeurs";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // trackBar1
             // 
-            this.trackBar1.Enabled = false;
-            this.trackBar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.trackBar1.Location = new System.Drawing.Point(73, 130);
+            resources.ApplyResources(this.trackBar1, "trackBar1");
             this.trackBar1.Maximum = 4096;
             this.trackBar1.Minimum = 256;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(115, 45);
-            this.trackBar1.TabIndex = 10;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar1.Value = 256;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
@@ -3397,17 +2384,13 @@
             this.groupBox11.Controls.Add(this.label26);
             this.groupBox11.Controls.Add(this.numericUpDown3);
             this.groupBox11.Controls.Add(this.checkBox16);
-            this.groupBox11.Location = new System.Drawing.Point(263, 226);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(149, 151);
-            this.groupBox11.TabIndex = 29;
             this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Vote";
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Enabled = false;
-            this.numericUpDown3.Location = new System.Drawing.Point(96, 71);
+            resources.ApplyResources(this.numericUpDown3, "numericUpDown3");
             this.numericUpDown3.Maximum = new decimal(new int[] {
             120,
             0,
@@ -3419,8 +2402,6 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(39, 22);
-            this.numericUpDown3.TabIndex = 31;
             this.numericUpDown3.Value = new decimal(new int[] {
             1,
             0,
@@ -3429,365 +2410,193 @@
             // 
             // checkBox16
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox16.Location = new System.Drawing.Point(18, 37);
+            resources.ApplyResources(this.checkBox16, "checkBox16");
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(110, 17);
-            this.checkBox16.TabIndex = 30;
-            this.checkBox16.Text = "Autoriser le vote";
             this.checkBox16.UseVisualStyleBackColor = true;
             this.checkBox16.CheckedChanged += new System.EventHandler(this.checkBox16_CheckedChanged);
             // 
             // pictureBox21
             // 
             this.pictureBox21.Image = global::FSF_Server_A3.Properties.Resources.profil;
-            this.pictureBox21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox21.Location = new System.Drawing.Point(16, 34);
+            resources.ApplyResources(this.pictureBox21, "pictureBox21");
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(77, 69);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 28;
             this.pictureBox21.TabStop = false;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label18.Location = new System.Drawing.Point(208, 93);
+            resources.ApplyResources(this.label18, "label18");
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(98, 13);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "Ajouter un Profil :";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(13, 121);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 13);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Favoris défini !";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Visible = false;
             // 
             // textBox1
             // 
             this.textBox1.CausesValidation = false;
-            this.textBox1.Location = new System.Drawing.Point(142, 112);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(214, 22);
-            this.textBox1.TabIndex = 18;
             // 
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(145, 21);
+            resources.ApplyResources(this.listBox1, "listBox1");
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(214, 69);
-            this.listBox1.TabIndex = 0;
             // 
             // pictureBox22
             // 
             this.pictureBox22.Image = global::FSF_Server_A3.Properties.Resources.globe;
-            this.pictureBox22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox22.Location = new System.Drawing.Point(21, 22);
+            resources.ApplyResources(this.pictureBox22, "pictureBox22");
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(73, 67);
-            this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox22.TabIndex = 55;
             this.pictureBox22.TabStop = false;
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
+            resources.ApplyResources(this.radioButton1, "radioButton1");
             this.radioButton1.Checked = true;
-            this.radioButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton1.Location = new System.Drawing.Point(123, 21);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 17);
-            this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Français";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Enabled = false;
-            this.pictureBox14.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox14, "pictureBox14");
             this.pictureBox14.Image = global::FSF_Server_A3.Properties.Resources.royaumeunis;
-            this.pictureBox14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox14.InitialImage = null;
-            this.pictureBox14.Location = new System.Drawing.Point(211, 50);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(29, 20);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 41;
             this.pictureBox14.TabStop = false;
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Enabled = false;
-            this.pictureBox20.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox20, "pictureBox20");
             this.pictureBox20.Image = global::FSF_Server_A3.Properties.Resources.allemagne;
-            this.pictureBox20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox20.InitialImage = null;
-            this.pictureBox20.Location = new System.Drawing.Point(343, 50);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(29, 20);
-            this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox20.TabIndex = 53;
             this.pictureBox20.TabStop = false;
             // 
             // radioButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton2.Location = new System.Drawing.Point(123, 53);
+            resources.ApplyResources(this.radioButton2, "radioButton2");
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(63, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.Text = "English";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Enabled = false;
-            this.radioButton5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton5.Location = new System.Drawing.Point(259, 24);
+            resources.ApplyResources(this.radioButton5, "radioButton5");
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(70, 17);
-            this.radioButton5.TabIndex = 49;
-            this.radioButton5.Text = "Ελληνικά";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Enabled = false;
-            this.radioButton4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton4.Location = new System.Drawing.Point(259, 82);
+            resources.ApplyResources(this.radioButton4, "radioButton4");
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(66, 17);
-            this.radioButton4.TabIndex = 48;
-            this.radioButton4.Text = "Español";
             this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.Visible = false;
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Enabled = false;
-            this.pictureBox15.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox15, "pictureBox15");
             this.pictureBox15.Image = global::FSF_Server_A3.Properties.Resources.france;
-            this.pictureBox15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox15.InitialImage = null;
-            this.pictureBox15.Location = new System.Drawing.Point(211, 21);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(29, 20);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 42;
             this.pictureBox15.TabStop = false;
             // 
             // radioButton6
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Enabled = false;
-            this.radioButton6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton6.Location = new System.Drawing.Point(259, 53);
+            resources.ApplyResources(this.radioButton6, "radioButton6");
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(67, 17);
-            this.radioButton6.TabIndex = 50;
-            this.radioButton6.Text = "Deutsch";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Enabled = false;
-            this.pictureBox19.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox19, "pictureBox19");
             this.pictureBox19.Image = global::FSF_Server_A3.Properties.Resources.grece;
-            this.pictureBox19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox19.InitialImage = null;
-            this.pictureBox19.Location = new System.Drawing.Point(343, 21);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(29, 20);
-            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox19.TabIndex = 52;
             this.pictureBox19.TabStop = false;
             // 
             // pictureBox27
             // 
-            this.pictureBox27.Enabled = false;
-            this.pictureBox27.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox27, "pictureBox27");
             this.pictureBox27.Image = global::FSF_Server_A3.Properties.Resources.russe;
-            this.pictureBox27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox27.InitialImage = null;
-            this.pictureBox27.Location = new System.Drawing.Point(211, 82);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(29, 19);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox27.TabIndex = 47;
             this.pictureBox27.TabStop = false;
             // 
             // radioButton3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton3.Location = new System.Drawing.Point(123, 84);
+            resources.ApplyResources(this.radioButton3, "radioButton3");
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(66, 17);
-            this.radioButton3.TabIndex = 43;
-            this.radioButton3.Text = "Pусский";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Enabled = false;
-            this.pictureBox18.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox18, "pictureBox18");
             this.pictureBox18.Image = global::FSF_Server_A3.Properties.Resources.espagne;
-            this.pictureBox18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox18.InitialImage = null;
-            this.pictureBox18.Location = new System.Drawing.Point(343, 82);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(29, 20);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 51;
             this.pictureBox18.TabStop = false;
-            this.pictureBox18.Visible = false;
             // 
             // pictureBox13
             // 
-            this.pictureBox13.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox13, "pictureBox13");
             this.pictureBox13.Image = global::FSF_Server_A3.Properties.Resources.blasonfsfA3;
-            this.pictureBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(16, 32);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(73, 74);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 24;
             this.pictureBox13.TabStop = false;
             // 
             // linkLabel3
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel3.Location = new System.Drawing.Point(6, 147);
+            resources.ApplyResources(this.linkLabel3, "linkLabel3");
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(120, 13);
-            this.linkLabel3.TabIndex = 25;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "http://www.clan-FSF.fr";
             this.linkLabel3.UseMnemonic = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label2.Location = new System.Drawing.Point(103, 8);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 47);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "FSF SERVER";
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe Print", 7.25F, System.Drawing.FontStyle.Bold);
-            this.label33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label33.Location = new System.Drawing.Point(289, 126);
+            resources.ApplyResources(this.label33, "label33");
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(138, 34);
-            this.label33.TabIndex = 36;
-            this.label33.Text = "KiTooN, Galahad, Aplion \r\nBrainbug, Alpha-Kilo";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Script", 8.25F);
-            this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(24, 109);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 17);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "FSF 2013";
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
-            this.label32.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label32.Location = new System.Drawing.Point(290, 105);
+            resources.ApplyResources(this.label32, "label32");
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(68, 13);
-            this.label32.TabIndex = 35;
-            this.label32.Text = "Traduction: ";
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Segoe Print", 9F, System.Drawing.FontStyle.Bold);
-            this.label22.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label22.Location = new System.Drawing.Point(138, 51);
+            resources.ApplyResources(this.label22, "label22");
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(104, 21);
-            this.label22.TabIndex = 34;
-            this.label22.Text = "Arma 3 edition";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline);
-            this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label12.Location = new System.Drawing.Point(290, 55);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 13);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "code :";
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(289, 68);
+            resources.ApplyResources(this.label17, "label17");
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 19);
-            this.label17.TabIndex = 30;
-            this.label17.Text = "ToF, El Doktor";
             // 
             // label31
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.label31.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label31.Location = new System.Drawing.Point(357, 564);
+            resources.ApplyResources(this.label31, "label31");
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(113, 13);
-            this.label31.TabIndex = 27;
-            this.label31.Text = "V xx.xx.xx.xxx (rev xxx)";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // comboBox4
             // 
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox4, "comboBox4");
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox4.Items.AddRange(new object[] {
-            "defaut"});
-            this.comboBox4.Location = new System.Drawing.Point(12, 522);
+            resources.GetString("comboBox4.Items")});
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(141, 21);
-            this.comboBox4.TabIndex = 46;
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // tabControl2
@@ -3797,14 +2606,11 @@
             this.tabControl2.Controls.Add(this.PRIORITE);
             this.tabControl2.Controls.Add(this.Options);
             this.tabControl2.Controls.Add(this.SynchroZONE);
-            this.tabControl2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.ImageList = this.imageList1;
-            this.tabControl2.Location = new System.Drawing.Point(9, 10);
             this.tabControl2.Multiline = true;
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(461, 485);
-            this.tabControl2.TabIndex = 44;
             // 
             // ConfigServeur
             // 
@@ -3813,47 +2619,32 @@
             this.ConfigServeur.Controls.Add(this.textBox18);
             this.ConfigServeur.Controls.Add(this.label24);
             this.ConfigServeur.Controls.Add(this.tab_serveur);
-            this.ConfigServeur.ImageIndex = 6;
-            this.ConfigServeur.Location = new System.Drawing.Point(4, 23);
+            resources.ApplyResources(this.ConfigServeur, "ConfigServeur");
             this.ConfigServeur.Name = "ConfigServeur";
-            this.ConfigServeur.Size = new System.Drawing.Size(453, 458);
-            this.ConfigServeur.TabIndex = 8;
-            this.ConfigServeur.Text = "Config Serveur";
             // 
             // button37
             // 
-            this.button37.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button37.Location = new System.Drawing.Point(371, 427);
+            resources.ApplyResources(this.button37, "button37");
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(28, 23);
-            this.button37.TabIndex = 48;
-            this.button37.Text = "...";
             this.button37.UseVisualStyleBackColor = true;
             this.button37.Click += new System.EventHandler(this.button37_Click);
             // 
             // textBox18
             // 
             this.textBox18.AcceptsReturn = true;
-            this.textBox18.Location = new System.Drawing.Point(157, 428);
+            resources.ApplyResources(this.textBox18, "textBox18");
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(205, 22);
-            this.textBox18.TabIndex = 47;
             this.textBox18.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox18_KeyDown);
             this.textBox18.Validated += new System.EventHandler(this.textBox18_Validated);
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label24.Location = new System.Drawing.Point(42, 431);
+            resources.ApplyResources(this.label24, "label24");
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(94, 13);
-            this.label24.TabIndex = 46;
-            this.label24.Text = "arma3server.exe :";
             // 
             // tab_serveur
             // 
-            this.tab_serveur.Alignment = System.Windows.Forms.TabAlignment.Left;
+            resources.ApplyResources(this.tab_serveur, "tab_serveur");
             this.tab_serveur.Controls.Add(this.Serveur_Detail);
             this.tab_serveur.Controls.Add(this.reglement);
             this.tab_serveur.Controls.Add(this.difficulte);
@@ -3861,14 +2652,10 @@
             this.tab_serveur.Controls.Add(this.Performance);
             this.tab_serveur.HotTrack = true;
             this.tab_serveur.ImageList = this.imageList1;
-            this.tab_serveur.Location = new System.Drawing.Point(3, 3);
             this.tab_serveur.Multiline = true;
             this.tab_serveur.Name = "tab_serveur";
-            this.tab_serveur.Padding = new System.Drawing.Point(6, 2);
             this.tab_serveur.SelectedIndex = 0;
-            this.tab_serveur.Size = new System.Drawing.Size(447, 419);
             this.tab_serveur.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
-            this.tab_serveur.TabIndex = 33;
             // 
             // Serveur_Detail
             // 
@@ -3893,40 +2680,26 @@
             this.Serveur_Detail.Controls.Add(this.label15);
             this.Serveur_Detail.Controls.Add(this.label6);
             this.Serveur_Detail.Controls.Add(this.label1);
-            this.Serveur_Detail.ImageIndex = 0;
-            this.Serveur_Detail.Location = new System.Drawing.Point(23, 4);
+            resources.ApplyResources(this.Serveur_Detail, "Serveur_Detail");
             this.Serveur_Detail.Name = "Serveur_Detail";
-            this.Serveur_Detail.Padding = new System.Windows.Forms.Padding(3);
-            this.Serveur_Detail.Size = new System.Drawing.Size(420, 411);
-            this.Serveur_Detail.TabIndex = 0;
-            this.Serveur_Detail.Text = "Serveur";
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.label25);
             this.groupBox9.Controls.Add(this.numericUpDown2);
             this.groupBox9.Controls.Add(this.checkBox13);
-            this.groupBox9.Location = new System.Drawing.Point(263, 129);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(140, 91);
-            this.groupBox9.TabIndex = 30;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Voice over net";
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label25.Location = new System.Drawing.Point(15, 48);
+            resources.ApplyResources(this.label25, "label25");
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(83, 13);
-            this.label25.TabIndex = 32;
-            this.label25.Text = "Qualité audio :";
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Enabled = false;
-            this.numericUpDown2.Location = new System.Drawing.Point(54, 63);
+            resources.ApplyResources(this.numericUpDown2, "numericUpDown2");
             this.numericUpDown2.Maximum = new decimal(new int[] {
             30,
             0,
@@ -3938,8 +2711,6 @@
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(39, 22);
-            this.numericUpDown2.TabIndex = 31;
             this.numericUpDown2.Value = new decimal(new int[] {
             10,
             0,
@@ -3948,13 +2719,8 @@
             // 
             // checkBox13
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox13.Location = new System.Drawing.Point(48, 21);
+            resources.ApplyResources(this.checkBox13, "checkBox13");
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(87, 17);
-            this.checkBox13.TabIndex = 30;
-            this.checkBox13.Text = "Activer VON";
             this.checkBox13.UseVisualStyleBackColor = true;
             this.checkBox13.CheckedChanged += new System.EventHandler(this.checkBox13_CheckedChanged);
             // 
@@ -3963,17 +2729,13 @@
             this.groupBox6.Controls.Add(this.numericUpDown10);
             this.groupBox6.Controls.Add(this.label43);
             this.groupBox6.Controls.Add(this.textBox21);
-            this.groupBox6.Location = new System.Drawing.Point(11, 226);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(246, 151);
-            this.groupBox6.TabIndex = 36;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Messages du jour";
             // 
             // numericUpDown10
             // 
-            this.numericUpDown10.Enabled = false;
-            this.numericUpDown10.Location = new System.Drawing.Point(193, 123);
+            resources.ApplyResources(this.numericUpDown10, "numericUpDown10");
             this.numericUpDown10.Maximum = new decimal(new int[] {
             60,
             0,
@@ -3985,8 +2747,6 @@
             0,
             0});
             this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(39, 22);
-            this.numericUpDown10.TabIndex = 36;
             this.numericUpDown10.Value = new decimal(new int[] {
             1,
             0,
@@ -3995,33 +2755,19 @@
             // 
             // label43
             // 
-            this.label43.AutoSize = true;
-            this.label43.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label43.Location = new System.Drawing.Point(12, 129);
+            resources.ApplyResources(this.label43, "label43");
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(177, 13);
-            this.label43.TabIndex = 35;
-            this.label43.Text = "seconde entre chaque message  :";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(14, 22);
-            this.textBox21.Multiline = true;
+            resources.ApplyResources(this.textBox21, "textBox21");
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(221, 95);
-            this.textBox21.TabIndex = 0;
             this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(172, 42);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 13);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "Report IP : ";
             // 
             // groupBox10
             // 
@@ -4029,122 +2775,74 @@
             this.groupBox10.Controls.Add(this.checkBox17);
             this.groupBox10.Controls.Add(this.checkBox15);
             this.groupBox10.Controls.Add(this.checkBox14);
-            this.groupBox10.Location = new System.Drawing.Point(12, 129);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(245, 91);
-            this.groupBox10.TabIndex = 31;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Securité";
             // 
             // checkBox18
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox18.Location = new System.Drawing.Point(6, 67);
+            resources.ApplyResources(this.checkBox18, "checkBox18");
             this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(116, 17);
-            this.checkBox18.TabIndex = 33;
-            this.checkBox18.Text = "Ejecter double id.";
             this.checkBox18.UseVisualStyleBackColor = true;
             // 
             // checkBox17
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox17.Location = new System.Drawing.Point(6, 44);
+            resources.ApplyResources(this.checkBox17, "checkBox17");
             this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(120, 17);
-            this.checkBox17.TabIndex = 32;
-            this.checkBox17.Text = "Verifier signatures";
             this.checkBox17.UseVisualStyleBackColor = true;
             // 
             // checkBox15
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox15.Location = new System.Drawing.Point(129, 21);
+            resources.ApplyResources(this.checkBox15, "checkBox15");
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(67, 17);
-            this.checkBox15.TabIndex = 31;
-            this.checkBox15.Text = "BattlEye";
             this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // checkBox14
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox14.Location = new System.Drawing.Point(6, 21);
+            resources.ApplyResources(this.checkBox14, "checkBox14");
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(117, 17);
-            this.checkBox14.TabIndex = 30;
-            this.checkBox14.Text = "serveur persistant";
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox1.Items.AddRange(new object[] {
-            "",
-            "127.0.0.1",
-            "arma3pc.master.gamespy.com"});
-            this.comboBox1.Location = new System.Drawing.Point(235, 39);
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2")});
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(177, 21);
-            this.comboBox1.TabIndex = 43;
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label28.Location = new System.Drawing.Point(252, 104);
+            resources.ApplyResources(this.label28, "label28");
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(104, 13);
-            this.label28.TabIndex = 42;
-            this.label28.Text = "Steam Query Port  :";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label10.Location = new System.Drawing.Point(130, 104);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 13);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Steam Port :";
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(359, 101);
+            resources.ApplyResources(this.textBox17, "textBox17");
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(44, 22);
-            this.textBox17.TabIndex = 40;
-            this.textBox17.Text = "27016";
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(204, 101);
+            resources.ApplyResources(this.textBox16, "textBox16");
             this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(42, 22);
-            this.textBox16.TabIndex = 38;
-            this.textBox16.Text = "8766";
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(263, 70);
+            resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            64,
+            128,
             0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(49, 22);
-            this.numericUpDown1.TabIndex = 24;
             this.numericUpDown1.Value = new decimal(new int[] {
             10,
             0,
@@ -4153,83 +2851,48 @@
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label23.Location = new System.Drawing.Point(172, 73);
+            resources.ApplyResources(this.label23, "label23");
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(85, 13);
-            this.label23.TabIndex = 23;
-            this.label23.Text = "Joueurs MAX. : ";
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(60, 101);
+            resources.ApplyResources(this.textBox15, "textBox15");
             this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(49, 22);
-            this.textBox15.TabIndex = 22;
-            this.textBox15.Text = "2302";
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label21.Location = new System.Drawing.Point(20, 104);
+            resources.ApplyResources(this.label21, "label21");
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(34, 13);
-            this.label21.TabIndex = 21;
-            this.label21.Text = "Port :";
             // 
             // textBox14
             // 
-            this.textBox14.Location = new System.Drawing.Point(102, 70);
+            resources.ApplyResources(this.textBox14, "textBox14");
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(61, 22);
-            this.textBox14.TabIndex = 20;
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(102, 39);
+            resources.ApplyResources(this.textBox13, "textBox13");
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(61, 22);
-            this.textBox13.TabIndex = 19;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(102, 11);
+            resources.ApplyResources(this.textBox12, "textBox12");
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(310, 22);
-            this.textBox12.TabIndex = 18;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label15.Location = new System.Drawing.Point(11, 73);
+            resources.ApplyResources(this.label15, "label15");
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(80, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "Passe ADMIN :";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(11, 42);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Mot de passe :";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(8, 14);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nom du serveur :";
             // 
             // reglement
             // 
@@ -4237,13 +2900,8 @@
             this.reglement.Controls.Add(this.groupBox2);
             this.reglement.Controls.Add(this.groupBox4);
             this.reglement.Controls.Add(this.groupBox1);
-            this.reglement.ImageIndex = 2;
-            this.reglement.Location = new System.Drawing.Point(23, 4);
+            resources.ApplyResources(this.reglement, "reglement");
             this.reglement.Name = "reglement";
-            this.reglement.Padding = new System.Windows.Forms.Padding(3);
-            this.reglement.Size = new System.Drawing.Size(420, 411);
-            this.reglement.TabIndex = 1;
-            this.reglement.Text = "Parametres";
             // 
             // groupBox4
             // 
@@ -4258,118 +2916,68 @@
             this.groupBox4.Controls.Add(this.button27);
             this.groupBox4.Controls.Add(this.button28);
             this.groupBox4.Controls.Add(this.button33);
-            this.groupBox4.Location = new System.Drawing.Point(9, 290);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(406, 87);
-            this.groupBox4.TabIndex = 36;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Serveur Log";
             // 
             // checkBox27
             // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Enabled = false;
-            this.checkBox27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox27.Location = new System.Drawing.Point(1, 61);
+            resources.ApplyResources(this.checkBox27, "checkBox27");
             this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(114, 17);
-            this.checkBox27.TabIndex = 45;
-            this.checkBox27.Text = "activer fichier PID";
             this.checkBox27.UseVisualStyleBackColor = true;
             // 
             // checkBox26
             // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Enabled = false;
-            this.checkBox26.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox26.Location = new System.Drawing.Point(2, 38);
+            resources.ApplyResources(this.checkBox26, "checkBox26");
             this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(123, 17);
-            this.checkBox26.TabIndex = 45;
-            this.checkBox26.Text = "activer fichier Rank";
             this.checkBox26.UseVisualStyleBackColor = true;
             // 
             // checkBox25
             // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox25.Location = new System.Drawing.Point(2, 15);
+            resources.ApplyResources(this.checkBox25, "checkBox25");
             this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(126, 17);
-            this.checkBox25.TabIndex = 45;
-            this.checkBox25.Text = "activer Log Console";
             this.checkBox25.UseVisualStyleBackColor = true;
             // 
             // button36
             // 
-            this.button36.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button36.Location = new System.Drawing.Point(260, 44);
+            resources.ApplyResources(this.button36, "button36");
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(61, 22);
-            this.button36.TabIndex = 44;
-            this.button36.Text = "rotation";
             this.button36.UseVisualStyleBackColor = true;
             // 
             // button35
             // 
-            this.button35.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button35.Location = new System.Drawing.Point(327, 45);
+            resources.ApplyResources(this.button35, "button35");
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(51, 22);
-            this.button35.TabIndex = 43;
-            this.button35.Text = "Effacer";
             this.button35.UseVisualStyleBackColor = true;
             // 
             // button34
             // 
-            this.button34.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button34.Location = new System.Drawing.Point(325, 17);
+            resources.ApplyResources(this.button34, "button34");
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(53, 22);
-            this.button34.TabIndex = 42;
-            this.button34.Text = "Ouvrir";
             this.button34.UseVisualStyleBackColor = true;
             // 
             // checkBox20
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Enabled = false;
-            this.checkBox20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox20.Location = new System.Drawing.Point(226, 21);
+            resources.ApplyResources(this.checkBox20, "checkBox20");
             this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(98, 17);
-            this.checkBox20.TabIndex = 41;
-            this.checkBox20.Text = "Activer Netlog";
             this.checkBox20.UseVisualStyleBackColor = true;
             // 
             // button27
             // 
-            this.button27.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button27.Location = new System.Drawing.Point(156, 57);
+            resources.ApplyResources(this.button27, "button27");
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(58, 22);
-            this.button27.TabIndex = 40;
-            this.button27.Text = "Ouvrir";
             this.button27.UseVisualStyleBackColor = true;
             // 
             // button28
             // 
-            this.button28.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button28.Location = new System.Drawing.Point(156, 34);
+            resources.ApplyResources(this.button28, "button28");
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(58, 22);
-            this.button28.TabIndex = 39;
-            this.button28.Text = "Ouvrir";
             this.button28.UseVisualStyleBackColor = true;
             // 
             // button33
             // 
-            this.button33.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button33.Location = new System.Drawing.Point(156, 11);
+            resources.ApplyResources(this.button33, "button33");
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(58, 22);
-            this.button33.TabIndex = 38;
-            this.button33.Text = "Ouvrir";
             this.button33.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -4384,55 +2992,32 @@
             this.groupBox1.Controls.Add(this.checkBox4);
             this.groupBox1.Controls.Add(this.checkBox3);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(6, 8);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(206, 276);
-            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Paramètres";
             // 
             // checkBox5
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox5.Location = new System.Drawing.Point(6, 113);
+            resources.ApplyResources(this.checkBox5, "checkBox5");
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(153, 17);
-            this.checkBox5.TabIndex = 4;
-            this.checkBox5.Text = "Afficher les erreurs script";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox2.Location = new System.Drawing.Point(6, 44);
+            resources.ApplyResources(this.checkBox2, "checkBox2");
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(93, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Pas de pause";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox4.Location = new System.Drawing.Point(6, 67);
+            resources.ApplyResources(this.checkBox4, "checkBox4");
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(161, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Monde vide au démarrage";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.checkBox3.Location = new System.Drawing.Point(6, 90);
+            resources.ApplyResources(this.checkBox3, "checkBox3");
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(96, 17);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Mode fenêtré";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // Missions
@@ -4448,126 +3033,85 @@
             this.Missions.Controls.Add(this.comboBox5);
             this.Missions.Controls.Add(this.label8);
             this.Missions.Controls.Add(this.checkedListBoxMissions);
-            this.Missions.ImageIndex = 10;
-            this.Missions.Location = new System.Drawing.Point(23, 4);
+            resources.ApplyResources(this.Missions, "Missions");
             this.Missions.Name = "Missions";
-            this.Missions.Size = new System.Drawing.Size(420, 411);
-            this.Missions.TabIndex = 6;
-            this.Missions.Text = "Missions";
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(195, 350);
+            resources.ApplyResources(this.button21, "button21");
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 25);
-            this.button21.TabIndex = 60;
-            this.button21.Text = "Bas";
             this.button21.UseVisualStyleBackColor = true;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(210, 323);
+            resources.ApplyResources(this.button20, "button20");
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(50, 23);
-            this.button20.TabIndex = 59;
-            this.button20.Text = "Haut";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // comboBox6
             // 
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox6.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox6, "comboBox6");
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox6.Items.AddRange(new object[] {
-            "recruit",
-            "regular",
-            "veteran",
-            "expert"});
-            this.comboBox6.Location = new System.Drawing.Point(311, 354);
+            resources.GetString("comboBox6.Items"),
+            resources.GetString("comboBox6.Items1"),
+            resources.GetString("comboBox6.Items2"),
+            resources.GetString("comboBox6.Items3")});
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(78, 21);
-            this.comboBox6.TabIndex = 57;
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(114, 350);
+            resources.ApplyResources(this.button19, "button19");
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 25);
-            this.button19.TabIndex = 54;
-            this.button19.Text = "Descendre";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(123, 323);
+            resources.ApplyResources(this.button18, "button18");
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(59, 23);
-            this.button18.TabIndex = 53;
-            this.button18.Text = "Monter";
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(39, 352);
+            resources.ApplyResources(this.button17, "button17");
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(57, 23);
-            this.button17.TabIndex = 52;
-            this.button17.Text = "Inverser";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 323);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 23);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Tout";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox5
             // 
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox5.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox5, "comboBox5");
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBox5.Items.AddRange(new object[] {
-            "Toutes"});
-            this.comboBox5.Location = new System.Drawing.Point(176, 21);
+            resources.GetString("comboBox5.Items")});
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(226, 21);
-            this.comboBox5.TabIndex = 50;
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(124, 24);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "Filtrer  :";
             // 
             // checkedListBoxMissions
             // 
             this.checkedListBoxMissions.BackColor = System.Drawing.Color.LightGray;
             this.checkedListBoxMissions.CheckOnClick = true;
-            this.checkedListBoxMissions.ColumnWidth = 160;
-            this.checkedListBoxMissions.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.checkedListBoxMissions, "checkedListBoxMissions");
             this.checkedListBoxMissions.FormattingEnabled = true;
-            this.checkedListBoxMissions.Location = new System.Drawing.Point(14, 57);
             this.checkedListBoxMissions.Name = "checkedListBoxMissions";
-            this.checkedListBoxMissions.Size = new System.Drawing.Size(386, 242);
-            this.checkedListBoxMissions.TabIndex = 8;
             this.checkedListBoxMissions.ThreeDCheckBoxes = true;
             // 
             // imageList1
@@ -4590,12 +3134,8 @@
             // 
             this.TabMODS.BackColor = System.Drawing.Color.Gainsboro;
             this.TabMODS.Controls.Add(this.tabControl1);
-            this.TabMODS.ImageIndex = 5;
-            this.TabMODS.Location = new System.Drawing.Point(4, 23);
+            resources.ApplyResources(this.TabMODS, "TabMODS");
             this.TabMODS.Name = "TabMODS";
-            this.TabMODS.Size = new System.Drawing.Size(453, 458);
-            this.TabMODS.TabIndex = 9;
-            this.TabMODS.Text = "MODs";
             // 
             // tabControl1
             // 
@@ -4606,19 +3146,15 @@
             this.tabControl1.Controls.Add(this.CLIENT);
             this.tabControl1.Controls.Add(this.TEST);
             this.tabControl1.Controls.Add(this.DIVERS);
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tabControl1.Location = new System.Drawing.Point(7, 3);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(443, 452);
-            this.tabControl1.TabIndex = 8;
             // 
             // TEMPLATE
             // 
             this.TEMPLATE.BackColor = System.Drawing.Color.Gainsboro;
-            this.TEMPLATE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.TEMPLATE, "TEMPLATE");
             this.TEMPLATE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TEMPLATE.Controls.Add(this.groupBox14);
             this.TEMPLATE.Controls.Add(this.groupBox13);
@@ -4626,103 +3162,64 @@
             this.TEMPLATE.Controls.Add(this.button13);
             this.TEMPLATE.Controls.Add(this.button12);
             this.TEMPLATE.Controls.Add(this.checkedListBox7);
-            this.TEMPLATE.Location = new System.Drawing.Point(4, 22);
             this.TEMPLATE.Name = "TEMPLATE";
-            this.TEMPLATE.Size = new System.Drawing.Size(435, 426);
-            this.TEMPLATE.TabIndex = 5;
-            this.TEMPLATE.Text = "@Template";
             // 
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.comboBox2);
             this.groupBox14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox14.Location = new System.Drawing.Point(292, 146);
+            resources.ApplyResources(this.groupBox14, "groupBox14");
             this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(131, 54);
-            this.groupBox14.TabIndex = 19;
             this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Apparence";
             // 
             // comboBox2
             // 
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.comboBox2, "comboBox2");
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.comboBox2.Location = new System.Drawing.Point(6, 21);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(119, 21);
-            this.comboBox2.TabIndex = 13;
             // 
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.radioButton21);
             this.groupBox13.Controls.Add(this.radioButton20);
             this.groupBox13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox13.Location = new System.Drawing.Point(298, 322);
+            resources.ApplyResources(this.groupBox13, "groupBox13");
             this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(125, 83);
-            this.groupBox13.TabIndex = 18;
             this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Casques Perso";
             // 
             // radioButton21
             // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton21.Location = new System.Drawing.Point(24, 53);
+            resources.ApplyResources(this.radioButton21, "radioButton21");
             this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(53, 17);
-            this.radioButton21.TabIndex = 4;
             this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "Perso";
             this.radioButton21.UseVisualStyleBackColor = true;
             // 
             // radioButton20
             // 
-            this.radioButton20.AutoSize = true;
-            this.radioButton20.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioButton20.Location = new System.Drawing.Point(24, 30);
+            resources.ApplyResources(this.radioButton20, "radioButton20");
             this.radioButton20.Name = "radioButton20";
-            this.radioButton20.Size = new System.Drawing.Size(77, 17);
-            this.radioButton20.TabIndex = 1;
             this.radioButton20.TabStop = true;
-            this.radioButton20.Text = "Standards";
             this.radioButton20.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::FSF_Server_A3.Properties.Resources.logo_fsf;
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(298, 194);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(119, 122);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
             // button13
             // 
-            this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button13.Location = new System.Drawing.Point(292, 83);
+            resources.ApplyResources(this.button13, "button13");
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(131, 43);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Inverser selection";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
-            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button12.Location = new System.Drawing.Point(292, 34);
+            resources.ApplyResources(this.button12, "button12");
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(131, 43);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Selectionner tous";
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
@@ -4731,64 +3228,41 @@
             this.checkedListBox7.BackColor = System.Drawing.Color.Gainsboro;
             this.checkedListBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox7.CheckOnClick = true;
-            this.checkedListBox7.ColumnWidth = 160;
-            this.checkedListBox7.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.checkedListBox7, "checkedListBox7");
             this.checkedListBox7.FormattingEnabled = true;
-            this.checkedListBox7.Location = new System.Drawing.Point(18, 14);
             this.checkedListBox7.MultiColumn = true;
             this.checkedListBox7.Name = "checkedListBox7";
-            this.checkedListBox7.Size = new System.Drawing.Size(268, 391);
-            this.checkedListBox7.TabIndex = 7;
             this.checkedListBox7.ThreeDCheckBoxes = true;
             // 
             // ISLANDS
             // 
             this.ISLANDS.BackColor = System.Drawing.Color.Gainsboro;
-            this.ISLANDS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.ISLANDS, "ISLANDS");
             this.ISLANDS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ISLANDS.Controls.Add(this.pictureBox7);
             this.ISLANDS.Controls.Add(this.button3);
             this.ISLANDS.Controls.Add(this.button2);
             this.ISLANDS.Controls.Add(this.checkedListBox1);
-            this.ISLANDS.Location = new System.Drawing.Point(4, 22);
             this.ISLANDS.Name = "ISLANDS";
-            this.ISLANDS.Padding = new System.Windows.Forms.Padding(3);
-            this.ISLANDS.Size = new System.Drawing.Size(435, 426);
-            this.ISLANDS.TabIndex = 0;
-            this.ISLANDS.Text = "@Islands";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox7, "pictureBox7");
             this.pictureBox7.Image = global::FSF_Server_A3.Properties.Resources.Island_Stone;
-            this.pictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(317, 164);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(77, 82);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
             // 
             // button3
             // 
-            this.button3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button3.Location = new System.Drawing.Point(308, 86);
+            resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 43);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Inverser selection";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button2.Location = new System.Drawing.Point(308, 28);
+            resources.ApplyResources(this.button2, "button2");
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 43);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Selectionner tous";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -4797,64 +3271,41 @@
             this.checkedListBox1.BackColor = System.Drawing.Color.Gainsboro;
             this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            resources.ApplyResources(this.checkedListBox1, "checkedListBox1");
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.HorizontalScrollbar = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(18, 14);
             this.checkedListBox1.MultiColumn = true;
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(270, 408);
-            this.checkedListBox1.TabIndex = 6;
             this.checkedListBox1.ThreeDCheckBoxes = true;
             // 
             // UNITS
             // 
             this.UNITS.BackColor = System.Drawing.Color.Gainsboro;
-            this.UNITS.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.UNITS, "UNITS");
             this.UNITS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UNITS.Controls.Add(this.pictureBox8);
             this.UNITS.Controls.Add(this.button4);
             this.UNITS.Controls.Add(this.button5);
             this.UNITS.Controls.Add(this.checkedListBox2);
-            this.UNITS.Location = new System.Drawing.Point(4, 22);
             this.UNITS.Name = "UNITS";
-            this.UNITS.Padding = new System.Windows.Forms.Padding(3);
-            this.UNITS.Size = new System.Drawing.Size(435, 426);
-            this.UNITS.TabIndex = 1;
-            this.UNITS.Text = "@Units";
             // 
             // pictureBox8
             // 
-            this.pictureBox8.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
             this.pictureBox8.Image = global::FSF_Server_A3.Properties.Resources.hexa_soldier_radio_mini_art;
-            this.pictureBox8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox8.InitialImage = null;
-            this.pictureBox8.Location = new System.Drawing.Point(295, 148);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(111, 96);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
             // 
             // button4
             // 
-            this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(310, 85);
+            resources.ApplyResources(this.button4, "button4");
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 43);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "Inverser selection";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button5.Location = new System.Drawing.Point(310, 27);
+            resources.ApplyResources(this.button5, "button5");
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 43);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Selectionner tous";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -4864,61 +3315,40 @@
             this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox2.CheckOnClick = true;
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(18, 14);
+            resources.ApplyResources(this.checkedListBox2, "checkedListBox2");
             this.checkedListBox2.MultiColumn = true;
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(272, 408);
-            this.checkedListBox2.TabIndex = 5;
             this.checkedListBox2.ThreeDCheckBoxes = true;
             // 
             // MATERIEL
             // 
             this.MATERIEL.BackColor = System.Drawing.Color.Gainsboro;
-            this.MATERIEL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.MATERIEL, "MATERIEL");
             this.MATERIEL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MATERIEL.Controls.Add(this.pictureBox9);
             this.MATERIEL.Controls.Add(this.button6);
             this.MATERIEL.Controls.Add(this.button7);
             this.MATERIEL.Controls.Add(this.checkedListBox3);
-            this.MATERIEL.Location = new System.Drawing.Point(4, 22);
             this.MATERIEL.Name = "MATERIEL";
-            this.MATERIEL.Padding = new System.Windows.Forms.Padding(3);
-            this.MATERIEL.Size = new System.Drawing.Size(435, 426);
-            this.MATERIEL.TabIndex = 2;
-            this.MATERIEL.Text = "@Materiel";
             // 
             // pictureBox9
             // 
-            this.pictureBox9.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox9, "pictureBox9");
             this.pictureBox9.Image = global::FSF_Server_A3.Properties.Resources.Hangar_svg;
-            this.pictureBox9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox9.InitialImage = null;
-            this.pictureBox9.Location = new System.Drawing.Point(295, 145);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(111, 96);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 18;
             this.pictureBox9.TabStop = false;
             // 
             // button6
             // 
-            this.button6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button6.Location = new System.Drawing.Point(310, 86);
+            resources.ApplyResources(this.button6, "button6");
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 43);
-            this.button6.TabIndex = 10;
-            this.button6.Text = "Inverser selection";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
-            this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(310, 28);
+            resources.ApplyResources(this.button7, "button7");
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(96, 43);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Selectionner tous";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -4928,60 +3358,40 @@
             this.checkedListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox3.CheckOnClick = true;
             this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(21, 14);
+            resources.ApplyResources(this.checkedListBox3, "checkedListBox3");
             this.checkedListBox3.MultiColumn = true;
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(254, 408);
-            this.checkedListBox3.TabIndex = 5;
             this.checkedListBox3.ThreeDCheckBoxes = true;
             // 
             // CLIENT
             // 
             this.CLIENT.BackColor = System.Drawing.Color.Gainsboro;
-            this.CLIENT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.CLIENT, "CLIENT");
             this.CLIENT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CLIENT.Controls.Add(this.pictureBox10);
             this.CLIENT.Controls.Add(this.button11);
             this.CLIENT.Controls.Add(this.button10);
             this.CLIENT.Controls.Add(this.checkedListBox6);
-            this.CLIENT.Location = new System.Drawing.Point(4, 22);
             this.CLIENT.Name = "CLIENT";
-            this.CLIENT.Size = new System.Drawing.Size(435, 426);
-            this.CLIENT.TabIndex = 4;
-            this.CLIENT.Text = "@Client";
             // 
             // pictureBox10
             // 
-            this.pictureBox10.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
             this.pictureBox10.Image = global::FSF_Server_A3.Properties.Resources.utilisateur_icone_8690_128;
-            this.pictureBox10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox10.InitialImage = null;
-            this.pictureBox10.Location = new System.Drawing.Point(305, 162);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 91);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 19;
             this.pictureBox10.TabStop = false;
             // 
             // button11
             // 
-            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button11.Location = new System.Drawing.Point(317, 88);
+            resources.ApplyResources(this.button11, "button11");
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(88, 43);
-            this.button11.TabIndex = 13;
-            this.button11.Text = "Inverser selection";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
-            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button10.Location = new System.Drawing.Point(317, 30);
+            resources.ApplyResources(this.button10, "button10");
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(88, 43);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "Selectionner tous";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -4990,63 +3400,41 @@
             this.checkedListBox6.BackColor = System.Drawing.Color.Gainsboro;
             this.checkedListBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox6.CheckOnClick = true;
-            this.checkedListBox6.ColumnWidth = 150;
+            resources.ApplyResources(this.checkedListBox6, "checkedListBox6");
             this.checkedListBox6.FormattingEnabled = true;
-            this.checkedListBox6.Location = new System.Drawing.Point(21, 14);
             this.checkedListBox6.MultiColumn = true;
             this.checkedListBox6.Name = "checkedListBox6";
-            this.checkedListBox6.Size = new System.Drawing.Size(265, 408);
-            this.checkedListBox6.TabIndex = 6;
             this.checkedListBox6.ThreeDCheckBoxes = true;
             // 
             // TEST
             // 
             this.TEST.BackColor = System.Drawing.Color.Gainsboro;
-            this.TEST.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.TEST, "TEST");
             this.TEST.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TEST.Controls.Add(this.pictureBox11);
             this.TEST.Controls.Add(this.button8);
             this.TEST.Controls.Add(this.button9);
             this.TEST.Controls.Add(this.checkedListBox4);
-            this.TEST.Location = new System.Drawing.Point(4, 22);
             this.TEST.Name = "TEST";
-            this.TEST.Padding = new System.Windows.Forms.Padding(3);
-            this.TEST.Size = new System.Drawing.Size(435, 426);
-            this.TEST.TabIndex = 3;
-            this.TEST.Text = "@Test";
             // 
             // pictureBox11
             // 
-            this.pictureBox11.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox11, "pictureBox11");
             this.pictureBox11.Image = global::FSF_Server_A3.Properties.Resources.la_gestion_pouvoir_preferences_systeme_icone_5042_96;
-            this.pictureBox11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox11.InitialImage = null;
-            this.pictureBox11.Location = new System.Drawing.Point(306, 159);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 91);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 20;
             this.pictureBox11.TabStop = false;
             // 
             // button8
             // 
-            this.button8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button8.Location = new System.Drawing.Point(310, 88);
+            resources.ApplyResources(this.button8, "button8");
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(96, 43);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Inverser selection";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
-            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button9.Location = new System.Drawing.Point(310, 30);
+            resources.ApplyResources(this.button9, "button9");
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(96, 43);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Selectionner tous";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -5055,13 +3443,10 @@
             this.checkedListBox4.BackColor = System.Drawing.Color.Gainsboro;
             this.checkedListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox4.CheckOnClick = true;
-            this.checkedListBox4.ColumnWidth = 150;
+            resources.ApplyResources(this.checkedListBox4, "checkedListBox4");
             this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Location = new System.Drawing.Point(21, 14);
             this.checkedListBox4.MultiColumn = true;
             this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(264, 408);
-            this.checkedListBox4.TabIndex = 5;
             this.checkedListBox4.ThreeDCheckBoxes = true;
             // 
             // DIVERS
@@ -5071,44 +3456,27 @@
             this.DIVERS.Controls.Add(this.button14);
             this.DIVERS.Controls.Add(this.button15);
             this.DIVERS.Controls.Add(this.checkedListBox5);
-            this.DIVERS.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.DIVERS, "DIVERS");
             this.DIVERS.Name = "DIVERS";
-            this.DIVERS.Size = new System.Drawing.Size(435, 426);
-            this.DIVERS.TabIndex = 6;
-            this.DIVERS.Text = "Divers";
             // 
             // pictureBox12
             // 
-            this.pictureBox12.ErrorImage = null;
+            resources.ApplyResources(this.pictureBox12, "pictureBox12");
             this.pictureBox12.Image = global::FSF_Server_A3.Properties.Resources.case_divers_icone_9631_96;
-            this.pictureBox12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox12.InitialImage = null;
-            this.pictureBox12.Location = new System.Drawing.Point(303, 179);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(96, 95);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 25;
             this.pictureBox12.TabStop = false;
             // 
             // button14
             // 
-            this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button14.Location = new System.Drawing.Point(303, 87);
+            resources.ApplyResources(this.button14, "button14");
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(96, 43);
-            this.button14.TabIndex = 24;
-            this.button14.Text = "Inverser selection";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
-            this.button15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button15.Location = new System.Drawing.Point(303, 29);
+            resources.ApplyResources(this.button15, "button15");
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(96, 43);
-            this.button15.TabIndex = 23;
-            this.button15.Text = "Selectionner tous";
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
@@ -5118,11 +3486,8 @@
             this.checkedListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.checkedListBox5.CheckOnClick = true;
             this.checkedListBox5.FormattingEnabled = true;
-            this.checkedListBox5.HorizontalScrollbar = true;
-            this.checkedListBox5.Location = new System.Drawing.Point(7, 19);
+            resources.ApplyResources(this.checkedListBox5, "checkedListBox5");
             this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(290, 391);
-            this.checkedListBox5.TabIndex = 22;
             this.checkedListBox5.ThreeDCheckBoxes = true;
             // 
             // PRIORITE
@@ -5133,39 +3498,26 @@
             this.PRIORITE.Controls.Add(this.button30);
             this.PRIORITE.Controls.Add(this.button29);
             this.PRIORITE.Controls.Add(this.ctrlListModPrioritaire);
-            this.PRIORITE.ImageIndex = 7;
-            this.PRIORITE.Location = new System.Drawing.Point(4, 23);
+            resources.ApplyResources(this.PRIORITE, "PRIORITE");
             this.PRIORITE.Name = "PRIORITE";
-            this.PRIORITE.Size = new System.Drawing.Size(453, 458);
-            this.PRIORITE.TabIndex = 10;
-            this.PRIORITE.Text = "Priorité";
             this.PRIORITE.Enter += new System.EventHandler(this.Priorité_Enter);
             // 
             // ctrlListModPrioritaire
             // 
             this.ctrlListModPrioritaire.BackColor = System.Drawing.Color.LightGray;
             this.ctrlListModPrioritaire.FormattingEnabled = true;
-            this.ctrlListModPrioritaire.Location = new System.Drawing.Point(22, 20);
+            resources.ApplyResources(this.ctrlListModPrioritaire, "ctrlListModPrioritaire");
             this.ctrlListModPrioritaire.Name = "ctrlListModPrioritaire";
-            this.ctrlListModPrioritaire.Size = new System.Drawing.Size(312, 420);
-            this.ctrlListModPrioritaire.TabIndex = 10;
             // 
             // Options
             // 
             this.Options.BackColor = System.Drawing.Color.Gainsboro;
-            this.Options.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.Options, "Options");
             this.Options.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Options.Controls.Add(this.groupBox8);
             this.Options.Controls.Add(this.groupBox7);
             this.Options.Controls.Add(this.groupBox3);
-            this.Options.ImageIndex = 8;
-            this.Options.Location = new System.Drawing.Point(4, 23);
             this.Options.Name = "Options";
-            this.Options.Padding = new System.Windows.Forms.Padding(3);
-            this.Options.Size = new System.Drawing.Size(453, 458);
-            this.Options.TabIndex = 1;
-            this.Options.Text = "Options";
-            this.Options.ToolTipText = "Sauvegarder le profil";
             // 
             // groupBox8
             // 
@@ -5184,61 +3536,38 @@
             this.groupBox8.Controls.Add(this.label32);
             this.groupBox8.Controls.Add(this.label3);
             this.groupBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox8.Location = new System.Drawing.Point(10, 6);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(433, 172);
-            this.groupBox8.TabIndex = 43;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "A propos";
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(145, 142);
+            resources.ApplyResources(this.button22, "button22");
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(75, 23);
-            this.button22.TabIndex = 47;
-            this.button22.Text = "Mode FSF";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // linkLabel4
             // 
-            this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel4.Location = new System.Drawing.Point(121, 116);
+            resources.ApplyResources(this.linkLabel4, "linkLabel4");
             this.linkLabel4.Name = "linkLabel4";
-            this.linkLabel4.Size = new System.Drawing.Size(129, 13);
-            this.linkLabel4.TabIndex = 46;
             this.linkLabel4.TabStop = true;
-            this.linkLabel4.Text = "Support Forum (Bohemia)";
             this.linkLabel4.UseMnemonic = false;
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel2
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel2.Location = new System.Drawing.Point(129, 95);
+            resources.ApplyResources(this.linkLabel2, "linkLabel2");
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(114, 13);
-            this.linkLabel2.TabIndex = 45;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "GiTHuB Sources Depot";
             this.linkLabel2.UseMnemonic = false;
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.linkLabel1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.linkLabel1.Location = new System.Drawing.Point(129, 74);
+            resources.ApplyResources(this.linkLabel1, "linkLabel1");
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(111, 13);
-            this.linkLabel1.TabIndex = 44;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "GiTHuB Issues Report";
             this.linkLabel1.UseMnemonic = false;
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
@@ -5259,12 +3588,9 @@
             this.groupBox7.Controls.Add(this.pictureBox15);
             this.groupBox7.Controls.Add(this.radioButton4);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox7.Location = new System.Drawing.Point(10, 184);
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(433, 115);
-            this.groupBox7.TabIndex = 42;
             this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Langage";
             // 
             // groupBox3
             // 
@@ -5278,47 +3604,23 @@
             this.groupBox3.Controls.Add(this.pictureBox5);
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Location = new System.Drawing.Point(10, 303);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(433, 145);
-            this.groupBox3.TabIndex = 41;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Gestion des Profils";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label4.Location = new System.Drawing.Point(36, 548);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 48;
-            this.label4.Text = "Profil sauvegardé !";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Visible = false;
             // 
             // cultureManager1
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Tomato;
-            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(6, 355);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(399, 40);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "CURRENTLY NOT WORKING";
-            // 
             // FenetrePrincipale
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 580);
             this.Controls.Add(this.checkBox19);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.tabControl2);
@@ -5327,9 +3629,7 @@
             this.Controls.Add(this.button16);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.checkBox24);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FenetrePrincipale";
-            this.Text = "FSF Server A3";
             this.Load += new System.EventHandler(this.FenetrePrincipale_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             this.groupBox_regular.ResumeLayout(false);

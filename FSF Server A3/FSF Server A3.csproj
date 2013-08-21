@@ -34,8 +34,8 @@
     <SuiteName>ToF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>44</ApplicationRevision>
-    <ApplicationVersion>0.70.0816.%2a</ApplicationVersion>
+    <ApplicationRevision>47</ApplicationRevision>
+    <ApplicationVersion>0.70.0821.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\GestionProfil.cs" />
+    <Compile Include="Classes\Language.cs" />
     <Compile Include="Classes\TabMissions.cs" />
     <Compile Include="Classes\TabPriority.cs" />
     <Compile Include="Classes\SerializeForm.cs" />
@@ -135,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DIAL_Unlock.resx">
       <DependentUpon>DIAL_Unlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FenetrePrincipale.en.resx">
+      <DependentUpon>FenetrePrincipale.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FenetrePrincipale.resx">
       <DependentUpon>FenetrePrincipale.cs</DependentUpon>

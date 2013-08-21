@@ -80,7 +80,7 @@ namespace FSF_Server_A3.Classes
                     else if (simplifiedControl.getType() == typeof(RadioButton))
                     {
                         ((RadioButton)c).Checked = (bool)simplifiedControl.getValue1();
-                        ((RadioButton)c).Text = (string)simplifiedControl.getValue2();
+                        //((RadioButton)c).Text = (string)simplifiedControl.getValue2();
                     }
                     else if (simplifiedControl.getType() == typeof(NumericUpDown))
                     {
