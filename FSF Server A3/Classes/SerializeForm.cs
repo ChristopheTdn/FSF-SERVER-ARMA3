@@ -12,7 +12,7 @@ namespace FSF_Server_A3.Classes
 {
     class SerializeForm
     {
-              public void serialize(Control controlToSerialize, string filename)
+        public void serialize(Control controlToSerialize, string filename)
         {
             //On créé la table des données
             ArrayList data = new ArrayList();
@@ -39,14 +39,14 @@ namespace FSF_Server_A3.Classes
                     sc = new SimplifiedControl(control.Name, ((NumericUpDown)control).Value, control.GetType());
                 else if (control.GetType() == typeof(ComboBox))
                     sc = new SimplifiedControl(control.Name, ((ComboBox)control).SelectedIndex, control.GetType());
- 
+
                 else if (control.GetType() == typeof(GroupBox))
                     readControls(control, data);
                 else if (control.GetType() == typeof(TabPage))
                     readControls(control, data);
                 else if (control.GetType() == typeof(TabControl))
                     readControls(control, data);
-               
+
 
 
                 if (sc != null) data.Add(sc);
@@ -162,5 +162,5 @@ namespace FSF_Server_A3.Classes
             }
         }
     }
-    }
+}
 

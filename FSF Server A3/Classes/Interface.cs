@@ -31,7 +31,7 @@ namespace FSF_Server_A3.Classes
             // 
             if (!Core.IsFSFInterface())
             {
-                Var.fenetrePrincipale.tabControl2.TabPages.Remove(Var.fenetrePrincipale.SynchroZONE);
+                Var.fenetrePrincipale.tabControl2.TabPages.Remove(Var.fenetrePrincipale.NetWork);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEMPLATE);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.ISLANDS);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.UNITS);

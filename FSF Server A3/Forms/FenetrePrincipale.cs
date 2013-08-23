@@ -517,13 +517,7 @@ namespace FSF_Server_A3
             System.Diagnostics.Process.Start("http://forums.bistudio.com/showthread.php?161899-FSF-SERVER-Administrate-Multi-dedicated-servers-under-Windows-Environnement");
         }
 
-  
-
-
-
-
-
-        
+       
     }
 }
 

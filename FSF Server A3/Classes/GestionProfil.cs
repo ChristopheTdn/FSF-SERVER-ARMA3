@@ -234,17 +234,17 @@ namespace FSF_Server_A3.Classes
         }
         static public void SauvegardeProfilServer(string profil)
         {
-            //
-            //GestionProfil.GenerefichierServer();
-            //
+
             SerializeForm formSerializer = new SerializeForm();
             formSerializer.serialize(Var.fenetrePrincipale.ConfigServeur,Var.RepertoireDeSauvegarde + profil+@".FSFServer.bin");
+            formSerializer.serialize(Var.fenetrePrincipale.NetWork, Var.RepertoireDeSauvegarde + profil + @".FSFServerNetwork.bin");
         }
         static public void ChargeProfilServer(string profil)
         {
             DefautConfig();
             SerializeForm formSerializer = new SerializeForm();
             formSerializer.unSerialize(Var.fenetrePrincipale, Var.RepertoireDeSauvegarde + profil + @".FSFServer.bin");
+            formSerializer.unSerialize(Var.fenetrePrincipale, Var.RepertoireDeSauvegarde + profil + @".FSFServerNetwork.bin");
         }
         static public void DefautConfig()
         {
@@ -397,7 +397,15 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.numericUpDown18.Value = 1.00M;
             Var.fenetrePrincipale.numericUpDown17.Value = 0.85M;
             Var.fenetrePrincipale.numericUpDown16.Value = 0.85M;
-
+            
+            // NetWork
+            Var.fenetrePrincipale.textBox2.Text = "";
+            Var.fenetrePrincipale.textBox3.Text = "";
+            Var.fenetrePrincipale.textBox4.Text = "";
+            Var.fenetrePrincipale.textBox7.Text = "";
+            Var.fenetrePrincipale.textBox8.Text = "";
+            Var.fenetrePrincipale.textBox9.Text = "";
+            Var.fenetrePrincipale.textBox10.Text = "";       
         }
         static public void GenerefichierServeur(string profil)
         {
@@ -420,6 +428,8 @@ namespace FSF_Server_A3.Classes
 
             //creation .Arma3Profile
             GenereArma3Profile(profil);
+            // genere infoServeur
+            Network.sauvegardeVersionA3(profil);
         }
 
         // Fichier SERVEUR.BAT

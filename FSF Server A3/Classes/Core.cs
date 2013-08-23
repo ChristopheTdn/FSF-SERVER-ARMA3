@@ -8,6 +8,7 @@ using System.IO;
 using System.Net;
 using System.ComponentModel;
 using WinSCP;
+using System.Diagnostics;
 
 namespace FSF_Server_A3.Classes
 {
@@ -109,7 +110,6 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.button26.Text = "Téléchargement...";
             Var.fenetrePrincipale.button26.Enabled = false;
         }
-
        static private void client_DownloadProgressChanged(object sender, System.Net.DownloadProgressChangedEventArgs e)
         {
             double bytesIn = double.Parse(e.BytesReceived.ToString());
@@ -151,9 +151,9 @@ namespace FSF_Server_A3.Classes
                switch (typeSynchro)
                {
                    case "beta":
-                       host = "ftp1.clan-fsf.fr";
-                       userName = "fsflauncherA3";
-                       pass = "fsflauncherA3";
+                       host = Var.fenetrePrincipale.textBox9.Text;
+                       userName = Var.fenetrePrincipale.textBox8.Text;
+                       pass = Var.fenetrePrincipale.textBox7.Text; 
                        SessionOptions sessionOptions1 = new SessionOptions
                        {
                            Protocol = Protocol.Ftp,
