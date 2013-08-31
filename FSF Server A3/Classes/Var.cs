@@ -19,7 +19,7 @@ namespace FSF_Server_A3.Classes
             try
             {
                 FileVersionInfo version = FileVersionInfo.GetVersionInfo(Var.fenetrePrincipale.textBox18.Text + @"\arma3.exe");
-                return version.FileMajorPart + "." + version.FileMinorPart;
+                return version.ProductVersion;
             }
             catch
             {

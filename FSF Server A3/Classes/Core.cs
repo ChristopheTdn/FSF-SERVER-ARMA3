@@ -265,6 +265,7 @@ namespace FSF_Server_A3.Classes
                    Var.fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
 
                    downloadnouvelleVersion("Organisation.txt", host + "/@FSF/", userName, pass, repertoireLocal);
+                   downloadnouvelleVersion("version.xml", host + "/@FSF/", userName, pass, repertoireLocal);
 
                }
            }
