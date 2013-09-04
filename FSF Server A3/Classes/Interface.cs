@@ -40,12 +40,13 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
 
             }
-
-
-            // Dessin Interface Constant
-            Var.fenetrePrincipale.label31.Text = AfficheVersionProgramme();
             // Genere Tabs 
             genereTab(profil);
+            // Dessin Interface Constant
+            Var.fenetrePrincipale.label31.Text = Var.VersionProgramme();
+            Var.fenetrePrincipale.label76.Text = Var.VersionArma3Exe();
+            Var.fenetrePrincipale.label77.Text = Var.VersionSynchro();
+
             // Bouton Lancer Serveur
             if (!System.IO.File.Exists(Var.fenetrePrincipale.textBox18.Text + @"\arma3server.exe"))
             {
@@ -54,6 +55,7 @@ namespace FSF_Server_A3.Classes
             else
             {
                 Var.fenetrePrincipale.button16.Enabled = true;
+
             }
             // Bouton Synchro WINSCP
             if (File.Exists(Var.RepertoireApplication+@"\winscp.exe"))
@@ -74,18 +76,9 @@ namespace FSF_Server_A3.Classes
             Language.CheckButtonLanguageOption();
 
 
-        }
-        static private string AfficheVersionProgramme()
-        {
-            string versionProg = "";
-            if (System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed)
-            {
-                Version version = System.Deployment.Application.ApplicationDeployment.CurrentDeployment.CurrentVersion;
-                versionProg = "v. " + version.Major + "." + version.Minor + "." + version.Build + " (Rev. " + version.Revision + ")";
-            }
-            return versionProg;
 
         }
+ 
 
         // TABS
         // GESTION TAB MODS 

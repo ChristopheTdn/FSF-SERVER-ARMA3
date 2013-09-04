@@ -214,6 +214,7 @@
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.NetWork = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -355,6 +356,7 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
+            this.ScriptServeur = new System.Windows.Forms.TabPage();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabMODS = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -410,7 +412,13 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -505,6 +513,8 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label63
@@ -2185,6 +2195,11 @@
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.TabStop = false;
             // 
+            // textBox10
+            // 
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
+            // 
             // label73
             // 
             resources.ApplyResources(this.label73, "label73");
@@ -2771,6 +2786,7 @@
             this.tab_serveur.Controls.Add(this.difficulte);
             this.tab_serveur.Controls.Add(this.Missions);
             this.tab_serveur.Controls.Add(this.Performance);
+            this.tab_serveur.Controls.Add(this.ScriptServeur);
             this.tab_serveur.HotTrack = true;
             this.tab_serveur.ImageList = this.imageList1;
             this.tab_serveur.Multiline = true;
@@ -3241,6 +3257,12 @@
             this.checkedListBoxMissions.FormattingEnabled = true;
             this.checkedListBoxMissions.Name = "checkedListBoxMissions";
             this.checkedListBoxMissions.ThreeDCheckBoxes = true;
+            // 
+            // ScriptServeur
+            // 
+            this.ScriptServeur.BackColor = System.Drawing.Color.Gainsboro;
+            resources.ApplyResources(this.ScriptServeur, "ScriptServeur");
+            this.ScriptServeur.Name = "ScriptServeur";
             // 
             // imageList1
             // 
@@ -3745,15 +3767,57 @@
             // 
             this.cultureManager1.ManagedControl = this;
             // 
-            // textBox10
+            // groupBox20
             // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
+            this.groupBox20.Controls.Add(this.pictureBox6);
+            this.groupBox20.Controls.Add(this.label77);
+            this.groupBox20.Controls.Add(this.label76);
+            this.groupBox20.Controls.Add(this.label75);
+            this.groupBox20.Controls.Add(this.label74);
+            resources.ApplyResources(this.groupBox20, "groupBox20");
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.TabStop = false;
+            this.toolTip1.SetToolTip(this.groupBox20, resources.GetString("groupBox20.ToolTip"));
+            // 
+            // label77
+            // 
+            resources.ApplyResources(this.label77, "label77");
+            this.label77.Name = "label77";
+            // 
+            // label76
+            // 
+            resources.ApplyResources(this.label76, "label76");
+            this.label76.Name = "label76";
+            // 
+            // label75
+            // 
+            resources.ApplyResources(this.label75, "label75");
+            this.label75.Name = "label75";
+            // 
+            // label74
+            // 
+            resources.ApplyResources(this.label74, "label74");
+            this.label74.Name = "label74";
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            resources.ApplyResources(this.imageList2, "imageList2");
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
             // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox20);
             this.Controls.Add(this.checkBox19);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.tabControl2);
@@ -3886,6 +3950,9 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4274,6 +4341,14 @@
         internal System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label73;
         internal System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label74;
+        internal System.Windows.Forms.Label label77;
+        internal System.Windows.Forms.Label label76;
+        private System.Windows.Forms.TabPage ScriptServeur;
+        private System.Windows.Forms.ImageList imageList2;
+        internal System.Windows.Forms.PictureBox pictureBox6;
 
     }
 }
