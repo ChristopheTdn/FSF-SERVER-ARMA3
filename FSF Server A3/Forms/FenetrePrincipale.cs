@@ -399,8 +399,7 @@ namespace FSF_Server_A3
                 Var.fenetrePrincipale.label5.Visible = true;
                 Var.timer.Start(); 
                 string profilChoisis = (Var.fenetrePrincipale.listBox1.SelectedItem as ComboboxItem).Value.ToString();
-                string text = profilChoisis + ".profil.xml";
-                System.IO.File.WriteAllText(Var.RepertoireDeSauvegarde + "config.ini", text);
+                Core.SetKeyValue(@"Software\Clan FSF\FSF Server A3\", "profil_favoris", (Var.fenetrePrincipale.listBox1.SelectedItem as ComboboxItem).Value.ToString());
             }
         }
 

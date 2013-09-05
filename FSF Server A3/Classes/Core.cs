@@ -23,7 +23,7 @@ namespace FSF_Server_A3.Classes
                 GestionProfil.CreationNouveauProfil("default");
             }
            GestionProfil.InitialiseListeProfil();
-           Var.fenetrePrincipale.comboBox4.SelectedIndex = 0;
+           Var.fenetrePrincipale.comboBox4.SelectedIndex = Var.IndexProfilParDefaut();
 
            Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
 

@@ -99,7 +99,22 @@ namespace FSF_Server_A3.Classes
             if (RepertoireDeSauvegarde != null) { return RepertoireDeSauvegarde; }
             return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).ToString() + @"\FSFServerA3\"; 
         }
- 
+
+        static public int IndexProfilParDefaut()
+        {
+                int index = 0;
+                string profilFavoris = Core.GetKeyValue(@"Software\Clan FSF\FSF Server A3\", "profil_favoris");
+                if (profilFavoris != "00")
+                {
+                    int compteur = 0;
+                    foreach (ComboboxItem profil in Var.fenetrePrincipale.comboBox4.Items)
+                    {
+                        if (profil.Text.ToString() == profilFavoris) { index = compteur; };
+                        compteur++;
+                    }
+                }
+                return index;            
+        }
 
         
     }
