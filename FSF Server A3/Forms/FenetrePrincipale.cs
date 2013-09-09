@@ -516,10 +516,13 @@ namespace FSF_Server_A3
             System.Diagnostics.Process.Start("http://forums.bistudio.com/showthread.php?161899-FSF-SERVER-Administrate-Multi-dedicated-servers-under-Windows-Environnement");
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            System.Diagnostics.Process.Start("http://community.bistudio.com/wiki/ArmA:_Server_Side_Scripting");
 
         }
+
+
 
        
     }

@@ -363,6 +363,21 @@
             this.label8 = new System.Windows.Forms.Label();
             this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
             this.ScriptServeur = new System.Windows.Forms.TabPage();
+            this.label85 = new System.Windows.Forms.Label();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.TabMODS = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -419,6 +434,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -492,6 +510,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Missions.SuspendLayout();
+            this.ScriptServeur.SuspendLayout();
             this.TabMODS.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TEMPLATE.SuspendLayout();
@@ -515,6 +534,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox21.SuspendLayout();
             this.SuspendLayout();
             // 
             // label63
@@ -2150,7 +2170,6 @@
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label77
             // 
@@ -3300,8 +3319,99 @@
             // ScriptServeur
             // 
             this.ScriptServeur.BackColor = System.Drawing.Color.Gainsboro;
+            this.ScriptServeur.Controls.Add(this.groupBox21);
+            this.ScriptServeur.Controls.Add(this.label85);
+            this.ScriptServeur.Controls.Add(this.textBox35);
+            this.ScriptServeur.Controls.Add(this.textBox34);
+            this.ScriptServeur.Controls.Add(this.textBox33);
+            this.ScriptServeur.Controls.Add(this.textBox32);
+            this.ScriptServeur.Controls.Add(this.textBox31);
+            this.ScriptServeur.Controls.Add(this.textBox30);
+            this.ScriptServeur.Controls.Add(this.textBox36);
+            this.ScriptServeur.Controls.Add(this.label84);
+            this.ScriptServeur.Controls.Add(this.label83);
+            this.ScriptServeur.Controls.Add(this.label82);
+            this.ScriptServeur.Controls.Add(this.label81);
+            this.ScriptServeur.Controls.Add(this.label80);
+            this.ScriptServeur.Controls.Add(this.label79);
+            this.ScriptServeur.Controls.Add(this.label78);
             resources.ApplyResources(this.ScriptServeur, "ScriptServeur");
             this.ScriptServeur.Name = "ScriptServeur";
+            // 
+            // label85
+            // 
+            resources.ApplyResources(this.label85, "label85");
+            this.label85.Name = "label85";
+            // 
+            // textBox35
+            // 
+            resources.ApplyResources(this.textBox35, "textBox35");
+            this.textBox35.Name = "textBox35";
+            // 
+            // textBox34
+            // 
+            resources.ApplyResources(this.textBox34, "textBox34");
+            this.textBox34.Name = "textBox34";
+            // 
+            // textBox33
+            // 
+            resources.ApplyResources(this.textBox33, "textBox33");
+            this.textBox33.Name = "textBox33";
+            // 
+            // textBox32
+            // 
+            resources.ApplyResources(this.textBox32, "textBox32");
+            this.textBox32.Name = "textBox32";
+            // 
+            // textBox31
+            // 
+            resources.ApplyResources(this.textBox31, "textBox31");
+            this.textBox31.Name = "textBox31";
+            // 
+            // textBox30
+            // 
+            resources.ApplyResources(this.textBox30, "textBox30");
+            this.textBox30.Name = "textBox30";
+            // 
+            // textBox36
+            // 
+            resources.ApplyResources(this.textBox36, "textBox36");
+            this.textBox36.Name = "textBox36";
+            // 
+            // label84
+            // 
+            resources.ApplyResources(this.label84, "label84");
+            this.label84.Name = "label84";
+            // 
+            // label83
+            // 
+            resources.ApplyResources(this.label83, "label83");
+            this.label83.Name = "label83";
+            // 
+            // label82
+            // 
+            resources.ApplyResources(this.label82, "label82");
+            this.label82.Name = "label82";
+            // 
+            // label81
+            // 
+            resources.ApplyResources(this.label81, "label81");
+            this.label81.Name = "label81";
+            // 
+            // label80
+            // 
+            resources.ApplyResources(this.label80, "label80");
+            this.label80.Name = "label80";
+            // 
+            // label79
+            // 
+            resources.ApplyResources(this.label79, "label79");
+            this.label79.Name = "label79";
+            // 
+            // label78
+            // 
+            resources.ApplyResources(this.label78, "label78");
+            this.label78.Name = "label78";
             // 
             // imageList1
             // 
@@ -3812,6 +3922,26 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.linkLabel5);
+            this.groupBox21.Controls.Add(this.label86);
+            resources.ApplyResources(this.groupBox21, "groupBox21");
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.TabStop = false;
+            // 
+            // label86
+            // 
+            resources.ApplyResources(this.label86, "label86");
+            this.label86.Name = "label86";
+            // 
+            // linkLabel5
+            // 
+            resources.ApplyResources(this.linkLabel5, "linkLabel5");
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -3925,6 +4055,8 @@
             this.groupBox1.PerformLayout();
             this.Missions.ResumeLayout(false);
             this.Missions.PerformLayout();
+            this.ScriptServeur.ResumeLayout(false);
+            this.ScriptServeur.PerformLayout();
             this.TabMODS.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.TEMPLATE.ResumeLayout(false);
@@ -3952,6 +4084,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox21.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4348,6 +4482,24 @@
         private System.Windows.Forms.ImageList imageList2;
         internal System.Windows.Forms.PictureBox pictureBox6;
         internal System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label85;
+        internal System.Windows.Forms.TextBox textBox35;
+        internal System.Windows.Forms.TextBox textBox34;
+        internal System.Windows.Forms.TextBox textBox33;
+        internal System.Windows.Forms.TextBox textBox32;
+        internal System.Windows.Forms.TextBox textBox31;
+        internal System.Windows.Forms.TextBox textBox30;
+        internal System.Windows.Forms.TextBox textBox36;
+        internal System.Windows.Forms.Label label84;
+        internal System.Windows.Forms.Label label83;
+        internal System.Windows.Forms.Label label82;
+        internal System.Windows.Forms.Label label81;
+        internal System.Windows.Forms.Label label80;
+        internal System.Windows.Forms.Label label79;
+        internal System.Windows.Forms.Label label78;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.Label label86;
 
     }
 }

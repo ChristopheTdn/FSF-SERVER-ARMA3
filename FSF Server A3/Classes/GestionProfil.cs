@@ -405,7 +405,16 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox7.Text = "";
             Var.fenetrePrincipale.textBox8.Text = "";
             Var.fenetrePrincipale.textBox9.Text = "";
-            Var.fenetrePrincipale.textBox10.Text = "";       
+            Var.fenetrePrincipale.textBox10.Text = "";
+
+            // script
+            Var.fenetrePrincipale.textBox30.Text = "";
+            Var.fenetrePrincipale.textBox31.Text = "";
+            Var.fenetrePrincipale.textBox32.Text = "";
+            Var.fenetrePrincipale.textBox33.Text = "";
+            Var.fenetrePrincipale.textBox34.Text = "";
+            Var.fenetrePrincipale.textBox35.Text = "";
+            Var.fenetrePrincipale.textBox36.Text = "";
         }
         static public void GenerefichierServeur(string profil)
         {
@@ -568,6 +577,16 @@ namespace FSF_Server_A3.Classes
                 text += "voteMissionPlayers = " + Var.fenetrePrincipale.numericUpDown3.Value.ToString() + @";" + Environment.NewLine;
                 text += "voteThreshold = " + (Var.fenetrePrincipale.numericUpDown4.Value / 100).ToString().Replace(",", ".") + @";" + Environment.NewLine;
             }
+            // serveur script
+            text += "// Script Server" + Environment.NewLine;
+            if (Var.fenetrePrincipale.textBox30.Text != "") { text += @"doubleIdDetected = """ + Var.fenetrePrincipale.textBox30.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox31.Text != "") { text += @"onUserConnected = """ + Var.fenetrePrincipale.textBox31.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox32.Text != "") { text += @"onUserDisconnected = """ + Var.fenetrePrincipale.textBox32.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox33.Text != "") { text += @"onHackedData = """ + Var.fenetrePrincipale.textBox33.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox34.Text != "") { text += @"onDifferentData = """ + Var.fenetrePrincipale.textBox34.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox35.Text != "") { text += @"onUnsignedData = """ + Var.fenetrePrincipale.textBox35.Text + @""";" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.textBox36.Text != "") { text += @"regularCheck = """ + Var.fenetrePrincipale.textBox36.Text + @""";" + Environment.NewLine; };
+            text += Environment.NewLine;
             // Missions
             text += "// Missions" + Environment.NewLine;
             text += "class Missions" + Environment.NewLine;

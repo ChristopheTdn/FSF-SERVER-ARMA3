@@ -36,20 +36,27 @@ namespace FSF_Server_A3.Classes
         }
         public static void UploadConfigServeur(string nomFichier, string repertoireFTP, string login, string pass)
         {
-            // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
-            FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create(repertoireFTP);
-            request.Method = WebRequestMethods.Ftp.UploadFile;
-            request.Credentials = new NetworkCredential(login, pass);
-            request.UsePassive = true;
-            request.UseBinary = true;
-            request.KeepAlive = false;
-            FileStream stream = File.OpenRead(nomFichier);
-            byte[] buffer = new byte[stream.Length];
-            stream.Read(buffer, 0, buffer.Length);
-            stream.Close();
-            Stream reqStream = request.GetRequestStream();
-            reqStream.Write(buffer, 0, buffer.Length);
-            reqStream.Close();
+            try
+            {
+                // parametre : nom du fichier téléchargé sur le FTP, répertoire d'emplacement dans le FTP, emplacement ou sera enregistré le fichier
+                FtpWebRequest request = (FtpWebRequest)FtpWebRequest.Create(repertoireFTP);
+                request.Method = WebRequestMethods.Ftp.UploadFile;
+                request.Credentials = new NetworkCredential(login, pass);
+                request.UsePassive = true;
+                request.UseBinary = true;
+                request.KeepAlive = false;
+                FileStream stream = File.OpenRead(nomFichier);
+                byte[] buffer = new byte[stream.Length];
+                stream.Read(buffer, 0, buffer.Length);
+                stream.Close();
+                Stream reqStream = request.GetRequestStream();
+                reqStream.Write(buffer, 0, buffer.Length);
+                reqStream.Close();
+            }
+            catch
+            {
+
+            }
         }
 
         private static bool CheckConfigExportVersionValid()
