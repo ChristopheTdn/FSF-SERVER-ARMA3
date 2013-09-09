@@ -10,7 +10,6 @@ using System.IO;
 
 namespace FSF_Server_A3.Classes
 {
-
     //  Classe Combo BoxItem
 
     public class ComboboxItem
@@ -38,7 +37,9 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.MATERIEL);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.CLIENT);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
-
+                Var.fenetrePrincipale.label77.Visible = false;
+                Var.fenetrePrincipale.label75.Visible = false;
+                Var.fenetrePrincipale.pictureBox6.Visible = false;
             }
             // Genere Tabs 
             genereTab(profil);

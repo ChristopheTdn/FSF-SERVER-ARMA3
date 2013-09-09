@@ -131,6 +131,12 @@
   <data name="groupBox5.Text" xml:space="preserve">
     <value>profil difficulty settings</value>
   </data>
+  <data name="checkBox19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 17</value>
+  </data>
+  <data name="checkBox19.Text" xml:space="preserve">
+    <value>reduce on Launch</value>
+  </data>
   <data name="checkBox23.Size" type="System.Drawing.Size, System.Drawing">
     <value>182, 17</value>
   </data>
@@ -163,6 +169,12 @@
   </data>
   <data name="pictureBox6.ToolTip" xml:space="preserve">
     <value>Synchronization state.</value>
+  </data>
+  <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label74.Text" xml:space="preserve">
+    <value>Server :</value>
   </data>
   <data name="button16.Text" xml:space="preserve">
     <value>Launch SERVER</value>
@@ -244,7 +256,7 @@ what you're doing.</value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADe
-        FAAAAk1TRnQBSQFMAgEBCwEAAawBAQGsAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FAAAAk1TRnQBSQFMAgEBCwEAAbQBAQG0AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA

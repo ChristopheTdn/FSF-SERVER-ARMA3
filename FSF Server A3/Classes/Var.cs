@@ -59,34 +59,37 @@ namespace FSF_Server_A3.Classes
             return VersionSynchro;
         }
         static public void VersionSynchroCompare(string versionSynchroLocale)
-        {            
-            string VersionSynchroEnLigne;
-            try
+        {
+            if (Core.IsFSFInterface())
             {
-                
-                string link = @"ftp://" + Var.fenetrePrincipale.textBox8.Text + ":" + Var.fenetrePrincipale.textBox7.Text + @"@" + Var.fenetrePrincipale.textBox9.Text + @"/@FSF/version.xml";
-                XmlTextReader fichierInfoServer = new XmlTextReader(link);
-                fichierInfoServer.ReadToFollowing("VERSION");
-                VersionSynchroEnLigne = fichierInfoServer.ReadString();
-                fichierInfoServer.Close();
-            }
-            catch
-            {
-                VersionSynchroEnLigne = "null";
-                Var.fenetrePrincipale.pictureBox6.Visible = false;
-            }
-            if (versionSynchroLocale != VersionSynchroEnLigne)
-            {
-                Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Red;
-                Var.fenetrePrincipale.pictureBox6.Visible = true;
-                Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
+                string VersionSynchroEnLigne;
+                try
+                {
 
-            }
-            else
-            {
-                Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Black;
-                Var.fenetrePrincipale.pictureBox6.Visible = true;
-                Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
+                    string link = @"ftp://" + Var.fenetrePrincipale.textBox8.Text + ":" + Var.fenetrePrincipale.textBox7.Text + @"@" + Var.fenetrePrincipale.textBox9.Text + @"/@FSF/version.xml";
+                    XmlTextReader fichierInfoServer = new XmlTextReader(link);
+                    fichierInfoServer.ReadToFollowing("VERSION");
+                    VersionSynchroEnLigne = fichierInfoServer.ReadString();
+                    fichierInfoServer.Close();
+                }
+                catch
+                {
+                    VersionSynchroEnLigne = "null";
+                    Var.fenetrePrincipale.pictureBox6.Visible = false;
+                }
+                if (versionSynchroLocale != VersionSynchroEnLigne)
+                {
+                    Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Red;
+                    Var.fenetrePrincipale.pictureBox6.Visible = true;
+                    Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
+
+                }
+                else
+                {
+                    Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Black;
+                    Var.fenetrePrincipale.pictureBox6.Visible = true;
+                    Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
+                }
             }
 
         }
