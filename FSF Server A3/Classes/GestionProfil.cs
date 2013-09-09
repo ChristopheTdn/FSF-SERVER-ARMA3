@@ -406,6 +406,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox8.Text = "";
             Var.fenetrePrincipale.textBox9.Text = "";
             Var.fenetrePrincipale.textBox10.Text = "";
+            Var.fenetrePrincipale.textBox19.Text = "";
 
             // script
             Var.fenetrePrincipale.textBox30.Text = "";

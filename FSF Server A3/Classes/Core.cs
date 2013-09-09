@@ -137,7 +137,7 @@ namespace FSF_Server_A3.Classes
            try
            {
                string repertoireLocal = Var.fenetrePrincipale.textBox18.Text + @"\@FSF\";
-               string repertoireDistant = "/@FSF/";
+               string repertoireDistant = "/"+Var.fenetrePrincipale.textBox19.Text+"/";
                 string host,userName,pass;
                 host = "";
                 userName = "";
@@ -162,7 +162,7 @@ namespace FSF_Server_A3.Classes
                            Password = pass
 
                        };
-                       repertoireDistant = "/@FSF/";
+                       repertoireDistant = "/" + Var.fenetrePrincipale.textBox19.Text + "/";
                        sessionOptions = sessionOptions1;
 
                        break;
@@ -264,8 +264,8 @@ namespace FSF_Server_A3.Classes
                    synchronizationResult.Check();
                    Var.fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "->fichier " + repertoireLocal + "Organisation.txt mis a jour." + Environment.NewLine);
 
-                   downloadnouvelleVersion("Organisation.txt", host + "/@FSF/", userName, pass, repertoireLocal);
-                   downloadnouvelleVersion("version.xml", host + "/@FSF/", userName, pass, repertoireLocal);
+                   downloadnouvelleVersion("Organisation.txt", host + repertoireDistant, userName, pass, repertoireLocal);
+                   downloadnouvelleVersion("version.xml", host + repertoireDistant, userName, pass, repertoireLocal);
 
                }
            }
