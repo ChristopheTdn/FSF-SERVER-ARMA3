@@ -66,7 +66,7 @@ namespace FSF_Server_A3.Classes
                 try
                 {
 
-                    string link = @"ftp://" + Var.fenetrePrincipale.textBox8.Text + ":" + Var.fenetrePrincipale.textBox7.Text + @"@" + Var.fenetrePrincipale.textBox9.Text + @"/@FSF/version.xml";
+                    string link = @"ftp://" + Var.fenetrePrincipale.textBox8.Text + ":" + Var.fenetrePrincipale.textBox7.Text + @"@" + Var.fenetrePrincipale.textBox9.Text + @"/"+Var.fenetrePrincipale.textBox19.Text+ @"/version.xml";
                     XmlTextReader fichierInfoServer = new XmlTextReader(link);
                     fichierInfoServer.ReadToFollowing("VERSION");
                     VersionSynchroEnLigne = fichierInfoServer.ReadString();
