@@ -522,6 +522,11 @@ namespace FSF_Server_A3
 
         }
 
+        private void NetWork_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
        

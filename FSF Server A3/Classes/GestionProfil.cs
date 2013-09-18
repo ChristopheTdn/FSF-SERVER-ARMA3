@@ -234,10 +234,9 @@ namespace FSF_Server_A3.Classes
         }
         static public void SauvegardeProfilServer(string profil)
         {
-
             SerializeForm formSerializer = new SerializeForm();
             formSerializer.serialize(Var.fenetrePrincipale.ConfigServeur,Var.RepertoireDeSauvegarde + profil+@".FSFServer.bin");
-            formSerializer.serialize(Var.fenetrePrincipale.NetWork, Var.RepertoireDeSauvegarde + profil + @".FSFServerNetwork.bin");
+            formSerializer.serialize(Var.fenetrePrincipale.groupBox_ConfigSynchro, Var.RepertoireDeSauvegarde + profil + @".FSFServerNetwork.bin");
         }
         static public void ChargeProfilServer(string profil)
         {

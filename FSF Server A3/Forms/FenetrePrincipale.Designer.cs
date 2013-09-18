@@ -219,7 +219,6 @@
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.NetWork = new System.Windows.Forms.TabPage();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -228,7 +227,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label87 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -437,8 +437,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.label87 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.groupBox_ConfigSynchro = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -473,8 +472,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.NetWork.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox18.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
@@ -537,6 +534,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox_ConfigSynchro.SuspendLayout();
             this.SuspendLayout();
             // 
             // label63
@@ -2235,25 +2233,11 @@
             // NetWork
             // 
             this.NetWork.BackColor = System.Drawing.Color.Gainsboro;
-            this.NetWork.Controls.Add(this.groupBox19);
-            this.NetWork.Controls.Add(this.groupBox18);
+            this.NetWork.Controls.Add(this.groupBox_ConfigSynchro);
             this.NetWork.Controls.Add(this.groupBox17);
             resources.ApplyResources(this.NetWork, "NetWork");
             this.NetWork.Name = "NetWork";
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.textBox10);
-            this.groupBox19.Controls.Add(this.label73);
-            this.groupBox19.Controls.Add(this.textBox4);
-            this.groupBox19.Controls.Add(this.textBox3);
-            this.groupBox19.Controls.Add(this.textBox2);
-            this.groupBox19.Controls.Add(this.label16);
-            this.groupBox19.Controls.Add(this.label37);
-            this.groupBox19.Controls.Add(this.label20);
-            resources.ApplyResources(this.groupBox19, "groupBox19");
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.TabStop = false;
+            this.NetWork.Click += new System.EventHandler(this.NetWork_Click);
             // 
             // textBox10
             // 
@@ -2296,19 +2280,15 @@
             resources.ApplyResources(this.label20, "label20");
             this.label20.Name = "label20";
             // 
-            // groupBox18
+            // textBox19
             // 
-            this.groupBox18.Controls.Add(this.textBox19);
-            this.groupBox18.Controls.Add(this.label87);
-            this.groupBox18.Controls.Add(this.label72);
-            this.groupBox18.Controls.Add(this.textBox7);
-            this.groupBox18.Controls.Add(this.textBox8);
-            this.groupBox18.Controls.Add(this.textBox9);
-            this.groupBox18.Controls.Add(this.label70);
-            this.groupBox18.Controls.Add(this.label71);
-            resources.ApplyResources(this.groupBox18, "groupBox18");
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.TabStop = false;
+            resources.ApplyResources(this.textBox19, "textBox19");
+            this.textBox19.Name = "textBox19";
+            // 
+            // label87
+            // 
+            resources.ApplyResources(this.label87, "label87");
+            this.label87.Name = "label87";
             // 
             // label72
             // 
@@ -3946,15 +3926,27 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // label87
+            // groupBox_ConfigSynchro
             // 
-            resources.ApplyResources(this.label87, "label87");
-            this.label87.Name = "label87";
-            // 
-            // textBox19
-            // 
-            resources.ApplyResources(this.textBox19, "textBox19");
-            this.textBox19.Name = "textBox19";
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox19);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label16);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label87);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox10);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label72);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox7);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label73);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox8);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox2);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox9);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox4);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label70);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label20);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label71);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox3);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label37);
+            resources.ApplyResources(this.groupBox_ConfigSynchro, "groupBox_ConfigSynchro");
+            this.groupBox_ConfigSynchro.Name = "groupBox_ConfigSynchro";
+            this.groupBox_ConfigSynchro.TabStop = false;
             // 
             // FenetrePrincipale
             // 
@@ -4014,10 +4006,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.NetWork.ResumeLayout(false);
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -4100,6 +4088,8 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox_ConfigSynchro.ResumeLayout(false);
+            this.groupBox_ConfigSynchro.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4471,8 +4461,6 @@
         internal System.Windows.Forms.Button button36;
         internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.Label label13;
-        private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.GroupBox groupBox19;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label16;
@@ -4516,6 +4504,7 @@
         private System.Windows.Forms.Label label86;
         internal System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label87;
+        internal System.Windows.Forms.GroupBox groupBox_ConfigSynchro;
 
     }
 }
