@@ -486,31 +486,6 @@ namespace FSF_Server_A3
             Interface.UnlockFSFServer();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-            {
-                Language.ChangeLangage("fr-fr");
-            };
-        }
-
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked)
-            {
-                Language.ChangeLangage("en-us");
-            };
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton3.Checked)
-            {
-                Language.ChangeLangage("ru-RU");
-            };
-        }
-
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("http://forums.bistudio.com/showthread.php?161899-FSF-SERVER-Administrate-Multi-dedicated-servers-under-Windows-Environnement");
@@ -522,10 +497,20 @@ namespace FSF_Server_A3
 
         }
 
-        private void NetWork_Click(object sender, EventArgs e)
+        private void button23_Click(object sender, EventArgs e)
         {
-
+            if (radioButton1.Checked)
+            {
+                Language.ChangeLangage("fr-fr");
+            };
+            if (radioButton2.Checked)
+            {
+                Language.ChangeLangage("en-us");
+            };
+            Application.Restart();
         }
+
+
 
 
 

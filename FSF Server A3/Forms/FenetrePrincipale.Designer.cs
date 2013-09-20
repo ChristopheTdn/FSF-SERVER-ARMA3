@@ -219,22 +219,23 @@
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.NetWork = new System.Windows.Forms.TabPage();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.groupBox_ConfigSynchro = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.label72 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label70 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
@@ -276,16 +277,8 @@
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
@@ -433,11 +426,11 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button23 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.groupBox_ConfigSynchro = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -472,6 +465,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.NetWork.SuspendLayout();
+            this.groupBox_ConfigSynchro.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
@@ -489,11 +483,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.ConfigServeur.SuspendLayout();
@@ -534,7 +524,6 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox_ConfigSynchro.SuspendLayout();
             this.SuspendLayout();
             // 
             // label63
@@ -2237,58 +2226,48 @@
             this.NetWork.Controls.Add(this.groupBox17);
             resources.ApplyResources(this.NetWork, "NetWork");
             this.NetWork.Name = "NetWork";
-            this.NetWork.Click += new System.EventHandler(this.NetWork_Click);
             // 
-            // textBox10
+            // groupBox_ConfigSynchro
             // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
-            // 
-            // label73
-            // 
-            resources.ApplyResources(this.label73, "label73");
-            this.label73.Name = "label73";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            this.textBox4.UseSystemPasswordChar = true;
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.Name = "label16";
-            // 
-            // label37
-            // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox19);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label16);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label87);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox10);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label72);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox7);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label73);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox8);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox2);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox9);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox4);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label70);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label20);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label71);
+            this.groupBox_ConfigSynchro.Controls.Add(this.textBox3);
+            this.groupBox_ConfigSynchro.Controls.Add(this.label37);
+            resources.ApplyResources(this.groupBox_ConfigSynchro, "groupBox_ConfigSynchro");
+            this.groupBox_ConfigSynchro.Name = "groupBox_ConfigSynchro";
+            this.groupBox_ConfigSynchro.TabStop = false;
             // 
             // textBox19
             // 
             resources.ApplyResources(this.textBox19, "textBox19");
             this.textBox19.Name = "textBox19";
             // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.Name = "label16";
+            // 
             // label87
             // 
             resources.ApplyResources(this.label87, "label87");
             this.label87.Name = "label87";
+            // 
+            // textBox10
+            // 
+            resources.ApplyResources(this.textBox10, "textBox10");
+            this.textBox10.Name = "textBox10";
             // 
             // label72
             // 
@@ -2301,25 +2280,56 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.UseSystemPasswordChar = true;
             // 
+            // label73
+            // 
+            resources.ApplyResources(this.label73, "label73");
+            this.label73.Name = "label73";
+            // 
             // textBox8
             // 
             resources.ApplyResources(this.textBox8, "textBox8");
             this.textBox8.Name = "textBox8";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
             // 
             // textBox9
             // 
             resources.ApplyResources(this.textBox9, "textBox9");
             this.textBox9.Name = "textBox9";
             // 
+            // textBox4
+            // 
+            resources.ApplyResources(this.textBox4, "textBox4");
+            this.textBox4.Name = "textBox4";
+            this.textBox4.UseSystemPasswordChar = true;
+            // 
             // label70
             // 
             resources.ApplyResources(this.label70, "label70");
             this.label70.Name = "label70";
             // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
             // label71
             // 
             resources.ApplyResources(this.label71, "label71");
             this.label71.Name = "label71";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
             // 
             // groupBox17
             // 
@@ -2637,7 +2647,6 @@
             resources.ApplyResources(this.radioButton1, "radioButton1");
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // pictureBox14
             // 
@@ -2646,31 +2655,11 @@
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox20
-            // 
-            resources.ApplyResources(this.pictureBox20, "pictureBox20");
-            this.pictureBox20.Image = global::FSF_Server_A3.Properties.Resources.allemagne;
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.TabStop = false;
-            // 
             // radioButton2
             // 
             resources.ApplyResources(this.radioButton2, "radioButton2");
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // radioButton5
-            // 
-            resources.ApplyResources(this.radioButton5, "radioButton5");
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            resources.ApplyResources(this.radioButton4, "radioButton4");
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // pictureBox15
             // 
@@ -2678,40 +2667,6 @@
             this.pictureBox15.Image = global::FSF_Server_A3.Properties.Resources.france;
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.TabStop = false;
-            // 
-            // radioButton6
-            // 
-            resources.ApplyResources(this.radioButton6, "radioButton6");
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox19
-            // 
-            resources.ApplyResources(this.pictureBox19, "pictureBox19");
-            this.pictureBox19.Image = global::FSF_Server_A3.Properties.Resources.grece;
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            resources.ApplyResources(this.pictureBox27, "pictureBox27");
-            this.pictureBox27.Image = global::FSF_Server_A3.Properties.Resources.russe;
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            resources.ApplyResources(this.radioButton3, "radioButton3");
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
-            // pictureBox18
-            // 
-            resources.ApplyResources(this.pictureBox18, "pictureBox18");
-            this.pictureBox18.Image = global::FSF_Server_A3.Properties.Resources.espagne;
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.TabStop = false;
             // 
             // pictureBox13
             // 
@@ -3877,23 +3832,23 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.LightGray;
+            this.groupBox7.Controls.Add(this.button23);
             this.groupBox7.Controls.Add(this.pictureBox22);
-            this.groupBox7.Controls.Add(this.pictureBox19);
             this.groupBox7.Controls.Add(this.radioButton1);
-            this.groupBox7.Controls.Add(this.pictureBox18);
             this.groupBox7.Controls.Add(this.pictureBox14);
-            this.groupBox7.Controls.Add(this.radioButton3);
-            this.groupBox7.Controls.Add(this.pictureBox20);
-            this.groupBox7.Controls.Add(this.pictureBox27);
             this.groupBox7.Controls.Add(this.radioButton2);
-            this.groupBox7.Controls.Add(this.radioButton6);
-            this.groupBox7.Controls.Add(this.radioButton5);
             this.groupBox7.Controls.Add(this.pictureBox15);
-            this.groupBox7.Controls.Add(this.radioButton4);
             this.groupBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
+            // 
+            // button23
+            // 
+            resources.ApplyResources(this.button23, "button23");
+            this.button23.Name = "button23";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // groupBox3
             // 
@@ -3925,28 +3880,6 @@
             this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // groupBox_ConfigSynchro
-            // 
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox19);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label16);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label87);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox10);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label72);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox7);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label73);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox8);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox2);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox9);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox4);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label70);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label20);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label71);
-            this.groupBox_ConfigSynchro.Controls.Add(this.textBox3);
-            this.groupBox_ConfigSynchro.Controls.Add(this.label37);
-            resources.ApplyResources(this.groupBox_ConfigSynchro, "groupBox_ConfigSynchro");
-            this.groupBox_ConfigSynchro.Name = "groupBox_ConfigSynchro";
-            this.groupBox_ConfigSynchro.TabStop = false;
             // 
             // FenetrePrincipale
             // 
@@ -4006,6 +3939,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.NetWork.ResumeLayout(false);
+            this.groupBox_ConfigSynchro.ResumeLayout(false);
+            this.groupBox_ConfigSynchro.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -4029,11 +3964,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.ConfigServeur.ResumeLayout(false);
@@ -4088,8 +4019,6 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox_ConfigSynchro.ResumeLayout(false);
-            this.groupBox_ConfigSynchro.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4307,16 +4236,8 @@
         internal System.Windows.Forms.PictureBox pictureBox22;
         internal System.Windows.Forms.RadioButton radioButton1;
         internal System.Windows.Forms.PictureBox pictureBox14;
-        internal System.Windows.Forms.PictureBox pictureBox20;
         internal System.Windows.Forms.RadioButton radioButton2;
-        internal System.Windows.Forms.RadioButton radioButton5;
-        internal System.Windows.Forms.RadioButton radioButton4;
         internal System.Windows.Forms.PictureBox pictureBox15;
-        internal System.Windows.Forms.RadioButton radioButton6;
-        internal System.Windows.Forms.PictureBox pictureBox19;
-        internal System.Windows.Forms.PictureBox pictureBox27;
-        internal System.Windows.Forms.RadioButton radioButton3;
-        internal System.Windows.Forms.PictureBox pictureBox18;
         internal System.Windows.Forms.PictureBox pictureBox13;
         internal System.Windows.Forms.LinkLabel linkLabel3;
         internal System.Windows.Forms.Label label31;
@@ -4505,6 +4426,7 @@
         internal System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label87;
         internal System.Windows.Forms.GroupBox groupBox_ConfigSynchro;
+        private System.Windows.Forms.Button button23;
 
     }
 }

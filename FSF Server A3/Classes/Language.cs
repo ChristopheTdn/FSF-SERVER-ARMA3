@@ -36,6 +36,7 @@ namespace FSF_Server_A3.Classes
         static public void ChangeLangage(string langue)
         {
             SauvegardeLangage(langue);
+
         }
         static private void SauvegardeLangage(string langue)
         {
