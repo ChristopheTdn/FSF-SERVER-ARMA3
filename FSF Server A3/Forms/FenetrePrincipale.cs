@@ -40,8 +40,7 @@ namespace FSF_Server_A3
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        {
-           
+        {           
             Var.timer.Tick += new EventHandler(TimerEvent);
             Var.timer.Interval = 5000;
             Var.timer.Start();     
@@ -257,7 +256,7 @@ namespace FSF_Server_A3
             groupBox_recruit.Visible = radioButton7.Checked;
             groupBox_regular.Visible = radioButton8.Checked;
             groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
+            groupBox_mercenary.Visible = radioButton10.Checked;
         }
 
         private void radioButton8_CheckedChanged(object sender, EventArgs e)
@@ -265,7 +264,7 @@ namespace FSF_Server_A3
             groupBox_recruit.Visible = radioButton7.Checked;
             groupBox_regular.Visible = radioButton8.Checked;
             groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
+            groupBox_mercenary.Visible = radioButton10.Checked;
         }
 
         private void radioButton9_CheckedChanged(object sender, EventArgs e)
@@ -273,7 +272,7 @@ namespace FSF_Server_A3
             groupBox_recruit.Visible = radioButton7.Checked;
             groupBox_regular.Visible = radioButton8.Checked;
             groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
+            groupBox_mercenary.Visible = radioButton10.Checked;
         }
 
         private void radioButton10_CheckedChanged(object sender, EventArgs e)
@@ -281,7 +280,7 @@ namespace FSF_Server_A3
             groupBox_recruit.Visible = radioButton7.Checked;
             groupBox_regular.Visible = radioButton8.Checked;
             groupBox_veteran.Visible = radioButton9.Checked;
-            groupBox_elite.Visible = radioButton10.Checked;
+            groupBox_mercenary.Visible = radioButton10.Checked;
         }
 
         private void checkBox16_CheckedChanged(object sender, EventArgs e)
@@ -509,6 +508,34 @@ namespace FSF_Server_A3
             };
             Application.Restart();
         }
+
+        private void checkBox11_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ActivatePerformanceTunning.Checked)
+            {
+                textBox_MaxMsgSend.Enabled = true;
+                textBox_MaxSizeGaranteed.Enabled = true;
+                textBox_MaxSizeNONGaranteed.Enabled = true;
+                textBox_MinimumBandwidth.Enabled = true;
+                textBox_MaximumBandwith.Enabled = true;
+                textBox_MinErrorToSend.Enabled = true;
+                textBox_MaxCustomFileSize.Enabled = true;
+
+            }
+            else
+            {
+                textBox_MaxMsgSend.Enabled = false;
+                textBox_MaxSizeGaranteed.Enabled = false;
+                textBox_MaxSizeNONGaranteed.Enabled = false;
+                textBox_MinimumBandwidth.Enabled = false;
+                textBox_MaximumBandwith.Enabled = false;
+                textBox_MinErrorToSend.Enabled = false;
+                textBox_MaxCustomFileSize.Enabled = false;
+            }
+        }
+
+ 
+
 
 
 

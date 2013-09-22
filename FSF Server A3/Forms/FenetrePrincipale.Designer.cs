@@ -144,7 +144,7 @@
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox_elite = new System.Windows.Forms.GroupBox();
+            this.groupBox_mercenary = new System.Windows.Forms.GroupBox();
             this.checkBox72 = new System.Windows.Forms.CheckBox();
             this.checkBox73 = new System.Windows.Forms.CheckBox();
             this.checkBox74 = new System.Windows.Forms.CheckBox();
@@ -167,24 +167,22 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBox_MaxCustomFileSize = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBox_MinErrorToSend = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBox_MaximumBandwith = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBox_MinimumBandwidth = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBox_MaxSizeNONGaranteed = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox_MaxSizeGaranteed = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBox_MaxMsgSend = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.checkBox_ActivatePerformanceTunning = new System.Windows.Forms.CheckBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -217,7 +215,6 @@
             this.button26 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.NetWork = new System.Windows.Forms.TabPage();
             this.groupBox_ConfigSynchro = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -239,13 +236,14 @@
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.Performance = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown_PreferredObjectViewDistance = new System.Windows.Forms.NumericUpDown();
+            this.label60 = new System.Windows.Forms.Label();
+            this.numericUpDown_ViewDistance = new System.Windows.Forms.NumericUpDown();
+            this.label59 = new System.Windows.Forms.Label();
+            this.numericUpDown_TerrainGrid = new System.Windows.Forms.NumericUpDown();
+            this.label58 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
@@ -450,12 +448,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
-            this.groupBox_elite.SuspendLayout();
+            this.groupBox_mercenary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -463,13 +460,14 @@
             this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.NetWork.SuspendLayout();
             this.groupBox_ConfigSynchro.SuspendLayout();
             this.groupBox17.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            this.groupBox16.SuspendLayout();
             this.Performance.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PreferredObjectViewDistance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_ViewDistance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_TerrainGrid)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
@@ -540,7 +538,7 @@
             // 
             this.numericUpDown19.DecimalPlaces = 2;
             this.numericUpDown19.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -550,11 +548,6 @@
             0,
             0,
             0});
-            this.numericUpDown19.Minimum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            131072});
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Value = new decimal(new int[] {
             1,
@@ -780,7 +773,7 @@
             // 
             this.numericUpDown5.DecimalPlaces = 2;
             this.numericUpDown5.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -801,7 +794,7 @@
             // 
             this.numericUpDown13.DecimalPlaces = 2;
             this.numericUpDown13.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -822,7 +815,7 @@
             // 
             this.numericUpDown14.DecimalPlaces = 2;
             this.numericUpDown14.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -863,7 +856,7 @@
             // 
             this.numericUpDown15.DecimalPlaces = 2;
             this.numericUpDown15.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1090,7 +1083,7 @@
             // 
             this.numericUpDown9.DecimalPlaces = 2;
             this.numericUpDown9.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1111,7 +1104,7 @@
             // 
             this.numericUpDown8.DecimalPlaces = 2;
             this.numericUpDown8.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1132,7 +1125,7 @@
             // 
             this.numericUpDown7.DecimalPlaces = 2;
             this.numericUpDown7.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1173,7 +1166,7 @@
             // 
             this.numericUpDown6.DecimalPlaces = 2;
             this.numericUpDown6.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1284,7 +1277,7 @@
             this.groupBox5.Controls.Add(this.radioButton7);
             this.groupBox5.Controls.Add(this.groupBox_recruit);
             this.groupBox5.Controls.Add(this.groupBox_veteran);
-            this.groupBox5.Controls.Add(this.groupBox_elite);
+            this.groupBox5.Controls.Add(this.groupBox_mercenary);
             this.groupBox5.Controls.Add(this.groupBox_regular);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
@@ -1514,7 +1507,7 @@
             // 
             this.numericUpDown20.DecimalPlaces = 2;
             this.numericUpDown20.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1535,7 +1528,7 @@
             // 
             this.numericUpDown21.DecimalPlaces = 2;
             this.numericUpDown21.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1545,11 +1538,6 @@
             0,
             0,
             0});
-            this.numericUpDown21.Minimum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            131072});
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Value = new decimal(new int[] {
             1,
@@ -1561,7 +1549,7 @@
             // 
             this.numericUpDown22.DecimalPlaces = 2;
             this.numericUpDown22.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1602,7 +1590,7 @@
             // 
             this.numericUpDown23.DecimalPlaces = 2;
             this.numericUpDown23.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1612,11 +1600,6 @@
             0,
             0,
             0});
-            this.numericUpDown23.Minimum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            131072});
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Value = new decimal(new int[] {
             1,
@@ -1624,41 +1607,41 @@
             0,
             0});
             // 
-            // groupBox_elite
+            // groupBox_mercenary
             // 
-            this.groupBox_elite.Controls.Add(this.checkBox72);
-            this.groupBox_elite.Controls.Add(this.checkBox73);
-            this.groupBox_elite.Controls.Add(this.checkBox74);
-            this.groupBox_elite.Controls.Add(this.checkBox75);
-            this.groupBox_elite.Controls.Add(this.checkBox76);
-            this.groupBox_elite.Controls.Add(this.checkBox77);
-            this.groupBox_elite.Controls.Add(this.checkBox78);
-            this.groupBox_elite.Controls.Add(this.checkBox79);
-            this.groupBox_elite.Controls.Add(this.checkBox80);
-            this.groupBox_elite.Controls.Add(this.checkBox81);
-            this.groupBox_elite.Controls.Add(this.checkBox82);
-            this.groupBox_elite.Controls.Add(this.checkBox83);
-            this.groupBox_elite.Controls.Add(this.checkBox84);
-            this.groupBox_elite.Controls.Add(this.checkBox85);
-            this.groupBox_elite.Controls.Add(this.checkBox86);
-            this.groupBox_elite.Controls.Add(this.checkBox87);
-            this.groupBox_elite.Controls.Add(this.checkBox88);
-            this.groupBox_elite.Controls.Add(this.checkBox90);
-            this.groupBox_elite.Controls.Add(this.checkBox91);
-            this.groupBox_elite.Controls.Add(this.checkBox92);
-            this.groupBox_elite.Controls.Add(this.checkBox93);
-            this.groupBox_elite.Controls.Add(this.numericUpDown16);
-            this.groupBox_elite.Controls.Add(this.numericUpDown17);
-            this.groupBox_elite.Controls.Add(this.numericUpDown18);
-            this.groupBox_elite.Controls.Add(this.label62);
-            this.groupBox_elite.Controls.Add(this.label63);
-            this.groupBox_elite.Controls.Add(this.label64);
-            this.groupBox_elite.Controls.Add(this.label65);
-            this.groupBox_elite.Controls.Add(this.numericUpDown19);
-            this.groupBox_elite.Controls.Add(this.checkBox89);
-            resources.ApplyResources(this.groupBox_elite, "groupBox_elite");
-            this.groupBox_elite.Name = "groupBox_elite";
-            this.groupBox_elite.TabStop = false;
+            this.groupBox_mercenary.Controls.Add(this.checkBox72);
+            this.groupBox_mercenary.Controls.Add(this.checkBox73);
+            this.groupBox_mercenary.Controls.Add(this.checkBox74);
+            this.groupBox_mercenary.Controls.Add(this.checkBox75);
+            this.groupBox_mercenary.Controls.Add(this.checkBox76);
+            this.groupBox_mercenary.Controls.Add(this.checkBox77);
+            this.groupBox_mercenary.Controls.Add(this.checkBox78);
+            this.groupBox_mercenary.Controls.Add(this.checkBox79);
+            this.groupBox_mercenary.Controls.Add(this.checkBox80);
+            this.groupBox_mercenary.Controls.Add(this.checkBox81);
+            this.groupBox_mercenary.Controls.Add(this.checkBox82);
+            this.groupBox_mercenary.Controls.Add(this.checkBox83);
+            this.groupBox_mercenary.Controls.Add(this.checkBox84);
+            this.groupBox_mercenary.Controls.Add(this.checkBox85);
+            this.groupBox_mercenary.Controls.Add(this.checkBox86);
+            this.groupBox_mercenary.Controls.Add(this.checkBox87);
+            this.groupBox_mercenary.Controls.Add(this.checkBox88);
+            this.groupBox_mercenary.Controls.Add(this.checkBox90);
+            this.groupBox_mercenary.Controls.Add(this.checkBox91);
+            this.groupBox_mercenary.Controls.Add(this.checkBox92);
+            this.groupBox_mercenary.Controls.Add(this.checkBox93);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown16);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown17);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown18);
+            this.groupBox_mercenary.Controls.Add(this.label62);
+            this.groupBox_mercenary.Controls.Add(this.label63);
+            this.groupBox_mercenary.Controls.Add(this.label64);
+            this.groupBox_mercenary.Controls.Add(this.label65);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown19);
+            this.groupBox_mercenary.Controls.Add(this.checkBox89);
+            resources.ApplyResources(this.groupBox_mercenary, "groupBox_mercenary");
+            this.groupBox_mercenary.Name = "groupBox_mercenary";
+            this.groupBox_mercenary.TabStop = false;
             // 
             // checkBox72
             // 
@@ -1744,7 +1727,7 @@
             // 
             this.numericUpDown16.DecimalPlaces = 2;
             this.numericUpDown16.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1765,7 +1748,7 @@
             // 
             this.numericUpDown17.DecimalPlaces = 2;
             this.numericUpDown17.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1775,11 +1758,6 @@
             0,
             0,
             0});
-            this.numericUpDown17.Minimum = new decimal(new int[] {
-            70,
-            0,
-            0,
-            131072});
             this.numericUpDown17.Name = "numericUpDown17";
             this.numericUpDown17.Value = new decimal(new int[] {
             1,
@@ -1791,7 +1769,7 @@
             // 
             this.numericUpDown18.DecimalPlaces = 2;
             this.numericUpDown18.Increment = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             131072});
@@ -1838,137 +1816,108 @@
             resources.ApplyResources(this.label53, "label53");
             this.label53.Name = "label53";
             // 
-            // textBox29
+            // textBox_MaxCustomFileSize
             // 
-            resources.ApplyResources(this.textBox29, "textBox29");
-            this.textBox29.Name = "textBox29";
+            resources.ApplyResources(this.textBox_MaxCustomFileSize, "textBox_MaxCustomFileSize");
+            this.textBox_MaxCustomFileSize.Name = "textBox_MaxCustomFileSize";
             // 
             // label52
             // 
             resources.ApplyResources(this.label52, "label52");
             this.label52.Name = "label52";
             // 
-            // textBox28
+            // textBox_MinErrorToSend
             // 
-            resources.ApplyResources(this.textBox28, "textBox28");
-            this.textBox28.Name = "textBox28";
-            // 
-            // label51
-            // 
-            resources.ApplyResources(this.label51, "label51");
-            this.label51.Name = "label51";
-            // 
-            // textBox27
-            // 
-            resources.ApplyResources(this.textBox27, "textBox27");
-            this.textBox27.Name = "textBox27";
+            resources.ApplyResources(this.textBox_MinErrorToSend, "textBox_MinErrorToSend");
+            this.textBox_MinErrorToSend.Name = "textBox_MinErrorToSend";
             // 
             // label50
             // 
             resources.ApplyResources(this.label50, "label50");
             this.label50.Name = "label50";
             // 
-            // textBox26
+            // textBox_MaximumBandwith
             // 
-            resources.ApplyResources(this.textBox26, "textBox26");
-            this.textBox26.Name = "textBox26";
+            resources.ApplyResources(this.textBox_MaximumBandwith, "textBox_MaximumBandwith");
+            this.textBox_MaximumBandwith.Name = "textBox_MaximumBandwith";
             // 
             // label49
             // 
             resources.ApplyResources(this.label49, "label49");
             this.label49.Name = "label49";
             // 
-            // textBox25
+            // textBox_MinimumBandwidth
             // 
-            resources.ApplyResources(this.textBox25, "textBox25");
-            this.textBox25.Name = "textBox25";
+            resources.ApplyResources(this.textBox_MinimumBandwidth, "textBox_MinimumBandwidth");
+            this.textBox_MinimumBandwidth.Name = "textBox_MinimumBandwidth";
             // 
             // label48
             // 
             resources.ApplyResources(this.label48, "label48");
             this.label48.Name = "label48";
             // 
-            // textBox24
+            // textBox_MaxSizeNONGaranteed
             // 
-            resources.ApplyResources(this.textBox24, "textBox24");
-            this.textBox24.Name = "textBox24";
+            resources.ApplyResources(this.textBox_MaxSizeNONGaranteed, "textBox_MaxSizeNONGaranteed");
+            this.textBox_MaxSizeNONGaranteed.Name = "textBox_MaxSizeNONGaranteed";
             // 
             // label47
             // 
             resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
             // 
-            // textBox23
+            // textBox_MaxSizeGaranteed
             // 
-            resources.ApplyResources(this.textBox23, "textBox23");
-            this.textBox23.Name = "textBox23";
+            resources.ApplyResources(this.textBox_MaxSizeGaranteed, "textBox_MaxSizeGaranteed");
+            this.textBox_MaxSizeGaranteed.Name = "textBox_MaxSizeGaranteed";
             // 
             // label46
             // 
             resources.ApplyResources(this.label46, "label46");
             this.label46.Name = "label46";
             // 
-            // textBox22
+            // textBox_MaxMsgSend
             // 
-            resources.ApplyResources(this.textBox22, "textBox22");
-            this.textBox22.Name = "textBox22";
+            resources.ApplyResources(this.textBox_MaxMsgSend, "textBox_MaxMsgSend");
+            this.textBox_MaxMsgSend.Name = "textBox_MaxMsgSend";
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.checkBox_ActivatePerformanceTunning);
             this.groupBox12.Controls.Add(this.label57);
             this.groupBox12.Controls.Add(this.label56);
             this.groupBox12.Controls.Add(this.label55);
             this.groupBox12.Controls.Add(this.label54);
             this.groupBox12.Controls.Add(this.label53);
-            this.groupBox12.Controls.Add(this.textBox29);
+            this.groupBox12.Controls.Add(this.textBox_MaxCustomFileSize);
             this.groupBox12.Controls.Add(this.label52);
-            this.groupBox12.Controls.Add(this.textBox28);
-            this.groupBox12.Controls.Add(this.label51);
-            this.groupBox12.Controls.Add(this.textBox27);
+            this.groupBox12.Controls.Add(this.textBox_MinErrorToSend);
             this.groupBox12.Controls.Add(this.label50);
-            this.groupBox12.Controls.Add(this.textBox26);
+            this.groupBox12.Controls.Add(this.textBox_MaximumBandwith);
             this.groupBox12.Controls.Add(this.label49);
-            this.groupBox12.Controls.Add(this.textBox25);
+            this.groupBox12.Controls.Add(this.textBox_MinimumBandwidth);
             this.groupBox12.Controls.Add(this.label48);
-            this.groupBox12.Controls.Add(this.textBox24);
+            this.groupBox12.Controls.Add(this.textBox_MaxSizeNONGaranteed);
             this.groupBox12.Controls.Add(this.label47);
-            this.groupBox12.Controls.Add(this.textBox23);
+            this.groupBox12.Controls.Add(this.textBox_MaxSizeGaranteed);
             this.groupBox12.Controls.Add(this.label46);
-            this.groupBox12.Controls.Add(this.textBox22);
+            this.groupBox12.Controls.Add(this.textBox_MaxMsgSend);
             this.groupBox12.Controls.Add(this.label45);
             resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
             // 
+            // checkBox_ActivatePerformanceTunning
+            // 
+            resources.ApplyResources(this.checkBox_ActivatePerformanceTunning, "checkBox_ActivatePerformanceTunning");
+            this.checkBox_ActivatePerformanceTunning.Name = "checkBox_ActivatePerformanceTunning";
+            this.checkBox_ActivatePerformanceTunning.UseVisualStyleBackColor = true;
+            this.checkBox_ActivatePerformanceTunning.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
+            // 
             // label45
             // 
             resources.ApplyResources(this.label45, "label45");
             this.label45.Name = "label45";
-            // 
-            // numericUpDown12
-            // 
-            resources.ApplyResources(this.numericUpDown12, "numericUpDown12");
-            this.numericUpDown12.Increment = new decimal(new int[] {
-            100,
-            0,
-            0,
-            0});
-            this.numericUpDown12.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.numericUpDown12.Minimum = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Value = new decimal(new int[] {
-            500,
-            0,
-            0,
-            0});
             // 
             // label19
             // 
@@ -2159,6 +2108,7 @@
             resources.ApplyResources(this.pictureBox6, "pictureBox6");
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
             // 
             // label77
             // 
@@ -2198,26 +2148,6 @@
             this.pictureBox17.Image = global::FSF_Server_A3.Properties.Resources.winscp;
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.TabStop = false;
-            // 
-            // numericUpDown11
-            // 
-            resources.ApplyResources(this.numericUpDown11, "numericUpDown11");
-            this.numericUpDown11.Maximum = new decimal(new int[] {
-            120,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // NetWork
             // 
@@ -2359,53 +2289,116 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
-            // label59
+            // Performance
             // 
-            resources.ApplyResources(this.label59, "label59");
-            this.label59.Name = "label59";
-            // 
-            // label58
-            // 
-            resources.ApplyResources(this.label58, "label58");
-            this.label58.Name = "label58";
+            this.Performance.BackColor = System.Drawing.Color.Gainsboro;
+            this.Performance.Controls.Add(this.groupBox15);
+            this.Performance.Controls.Add(this.groupBox12);
+            resources.ApplyResources(this.Performance, "Performance");
+            this.Performance.Name = "Performance";
             // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.numericUpDown12);
-            this.groupBox15.Controls.Add(this.numericUpDown11);
+            this.groupBox15.Controls.Add(this.numericUpDown_PreferredObjectViewDistance);
+            this.groupBox15.Controls.Add(this.label60);
+            this.groupBox15.Controls.Add(this.numericUpDown_ViewDistance);
             this.groupBox15.Controls.Add(this.label59);
+            this.groupBox15.Controls.Add(this.numericUpDown_TerrainGrid);
             this.groupBox15.Controls.Add(this.label58);
             resources.ApplyResources(this.groupBox15, "groupBox15");
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.TabStop = false;
+            // 
+            // numericUpDown_PreferredObjectViewDistance
+            // 
+            resources.ApplyResources(this.numericUpDown_PreferredObjectViewDistance, "numericUpDown_PreferredObjectViewDistance");
+            this.numericUpDown_PreferredObjectViewDistance.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDown_PreferredObjectViewDistance.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown_PreferredObjectViewDistance.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numericUpDown_PreferredObjectViewDistance.Name = "numericUpDown_PreferredObjectViewDistance";
+            this.numericUpDown_PreferredObjectViewDistance.Value = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
             // 
             // label60
             // 
             resources.ApplyResources(this.label60, "label60");
             this.label60.Name = "label60";
             // 
-            // groupBox16
+            // numericUpDown_ViewDistance
             // 
-            this.groupBox16.Controls.Add(this.label60);
-            resources.ApplyResources(this.groupBox16, "groupBox16");
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.TabStop = false;
+            resources.ApplyResources(this.numericUpDown_ViewDistance, "numericUpDown_ViewDistance");
+            this.numericUpDown_ViewDistance.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            this.numericUpDown_ViewDistance.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numericUpDown_ViewDistance.Minimum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.numericUpDown_ViewDistance.Name = "numericUpDown_ViewDistance";
+            this.numericUpDown_ViewDistance.Value = new decimal(new int[] {
+            3000,
+            0,
+            0,
+            0});
             // 
-            // Performance
+            // label59
             // 
-            this.Performance.BackColor = System.Drawing.Color.Gainsboro;
-            this.Performance.Controls.Add(this.label9);
-            this.Performance.Controls.Add(this.groupBox16);
-            this.Performance.Controls.Add(this.groupBox15);
-            this.Performance.Controls.Add(this.groupBox12);
-            resources.ApplyResources(this.Performance, "Performance");
-            this.Performance.Name = "Performance";
+            resources.ApplyResources(this.label59, "label59");
+            this.label59.Name = "label59";
             // 
-            // label9
+            // numericUpDown_TerrainGrid
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.Tomato;
-            this.label9.Name = "label9";
+            this.numericUpDown_TerrainGrid.DecimalPlaces = 1;
+            resources.ApplyResources(this.numericUpDown_TerrainGrid, "numericUpDown_TerrainGrid");
+            this.numericUpDown_TerrainGrid.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.numericUpDown_TerrainGrid.Maximum = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+            this.numericUpDown_TerrainGrid.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_TerrainGrid.Name = "numericUpDown_TerrainGrid";
+            this.numericUpDown_TerrainGrid.Value = new decimal(new int[] {
+            125,
+            0,
+            0,
+            65536});
+            // 
+            // label58
+            // 
+            resources.ApplyResources(this.label58, "label58");
+            this.label58.Name = "label58";
             // 
             // label26
             // 
@@ -3921,14 +3914,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
-            this.groupBox_elite.ResumeLayout(false);
-            this.groupBox_elite.PerformLayout();
+            this.groupBox_mercenary.ResumeLayout(false);
+            this.groupBox_mercenary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -3937,18 +3929,17 @@
             this.groupBox20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.NetWork.ResumeLayout(false);
             this.groupBox_ConfigSynchro.ResumeLayout(false);
             this.groupBox_ConfigSynchro.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
+            this.Performance.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.Performance.ResumeLayout(false);
-            this.Performance.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PreferredObjectViewDistance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_ViewDistance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_TerrainGrid)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
@@ -4109,7 +4100,7 @@
         internal System.Windows.Forms.RadioButton radioButton9;
         internal System.Windows.Forms.RadioButton radioButton8;
         internal System.Windows.Forms.RadioButton radioButton7;
-        internal System.Windows.Forms.GroupBox groupBox_elite;
+        internal System.Windows.Forms.GroupBox groupBox_mercenary;
         internal System.Windows.Forms.CheckBox checkBox72;
         internal System.Windows.Forms.CheckBox checkBox73;
         internal System.Windows.Forms.CheckBox checkBox74;
@@ -4163,24 +4154,21 @@
         internal System.Windows.Forms.Label label55;
         internal System.Windows.Forms.Label label54;
         internal System.Windows.Forms.Label label53;
-        internal System.Windows.Forms.TextBox textBox29;
+        internal System.Windows.Forms.TextBox textBox_MaxCustomFileSize;
         internal System.Windows.Forms.Label label52;
-        internal System.Windows.Forms.TextBox textBox28;
-        internal System.Windows.Forms.Label label51;
-        internal System.Windows.Forms.TextBox textBox27;
+        internal System.Windows.Forms.TextBox textBox_MinErrorToSend;
         internal System.Windows.Forms.Label label50;
-        internal System.Windows.Forms.TextBox textBox26;
+        internal System.Windows.Forms.TextBox textBox_MaximumBandwith;
         internal System.Windows.Forms.Label label49;
-        internal System.Windows.Forms.TextBox textBox25;
+        internal System.Windows.Forms.TextBox textBox_MinimumBandwidth;
         internal System.Windows.Forms.Label label48;
-        internal System.Windows.Forms.TextBox textBox24;
+        internal System.Windows.Forms.TextBox textBox_MaxSizeNONGaranteed;
         internal System.Windows.Forms.Label label47;
-        internal System.Windows.Forms.TextBox textBox23;
+        internal System.Windows.Forms.TextBox textBox_MaxSizeGaranteed;
         internal System.Windows.Forms.Label label46;
-        internal System.Windows.Forms.TextBox textBox22;
+        internal System.Windows.Forms.TextBox textBox_MaxMsgSend;
         internal System.Windows.Forms.GroupBox groupBox12;
         internal System.Windows.Forms.Label label45;
-        internal System.Windows.Forms.NumericUpDown numericUpDown12;
         internal System.Windows.Forms.Label label19;
         internal System.Windows.Forms.ProgressBar progressBar3;
         internal System.Windows.Forms.ProgressBar progressBar2;
@@ -4191,15 +4179,9 @@
         internal System.Windows.Forms.Button button26;
         internal System.Windows.Forms.ProgressBar progressBar1;
         internal System.Windows.Forms.PictureBox pictureBox17;
-        internal System.Windows.Forms.NumericUpDown numericUpDown11;
         internal System.Windows.Forms.TabPage NetWork;
         internal System.Windows.Forms.TextBox textBox11;
         internal System.Windows.Forms.Button button16;
-        internal System.Windows.Forms.Label label59;
-        internal System.Windows.Forms.Label label58;
-        internal System.Windows.Forms.GroupBox groupBox15;
-        internal System.Windows.Forms.Label label60;
-        internal System.Windows.Forms.GroupBox groupBox16;
         internal System.Windows.Forms.TabPage Performance;
         internal System.Windows.Forms.Label label26;
         internal System.Windows.Forms.GroupBox groupBox2;
@@ -4378,7 +4360,6 @@
         internal System.Windows.Forms.LinkLabel linkLabel4;
         internal System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button22;
-        internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Button button36;
         internal System.Windows.Forms.Button button35;
         internal System.Windows.Forms.Label label13;
@@ -4427,6 +4408,14 @@
         private System.Windows.Forms.Label label87;
         internal System.Windows.Forms.GroupBox groupBox_ConfigSynchro;
         private System.Windows.Forms.Button button23;
+        internal System.Windows.Forms.GroupBox groupBox15;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PreferredObjectViewDistance;
+        internal System.Windows.Forms.Label label60;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_ViewDistance;
+        internal System.Windows.Forms.Label label59;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_TerrainGrid;
+        internal System.Windows.Forms.Label label58;
+        internal System.Windows.Forms.CheckBox checkBox_ActivatePerformanceTunning;
 
     }
 }

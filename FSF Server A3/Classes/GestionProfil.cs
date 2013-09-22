@@ -305,10 +305,10 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox47.Checked = true;
             Var.fenetrePrincipale.checkBox48.Checked = true;
             Var.fenetrePrincipale.checkBox32.Checked = true;
-            Var.fenetrePrincipale.numericUpDown6.Value = 0.65M;
-            Var.fenetrePrincipale.numericUpDown7.Value = 0.65M;
-            Var.fenetrePrincipale.numericUpDown8.Value = 0.40M;
-            Var.fenetrePrincipale.numericUpDown9.Value = 0.40M;
+            Var.fenetrePrincipale.numericUpDown6.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown7.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown8.Value = 0.28M;
+            Var.fenetrePrincipale.numericUpDown9.Value = 0.28M;
 
             // regular
 
@@ -334,10 +334,10 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox52.Checked = true;
             Var.fenetrePrincipale.checkBox51.Checked = true;
             Var.fenetrePrincipale.checkBox67.Checked = true;
-            Var.fenetrePrincipale.numericUpDown15.Value = 0.75M;
-            Var.fenetrePrincipale.numericUpDown14.Value = 0.75M;
-            Var.fenetrePrincipale.numericUpDown13.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown5.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown15.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown14.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown13.Value = 0.28M;
+            Var.fenetrePrincipale.numericUpDown5.Value = 0.28M;
 
             // Veteran
 
@@ -363,12 +363,12 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox96.Checked = true;
             Var.fenetrePrincipale.checkBox95.Checked = false;
             Var.fenetrePrincipale.checkBox111.Checked = true;
-            Var.fenetrePrincipale.numericUpDown23.Value = 0.85M;
-            Var.fenetrePrincipale.numericUpDown22.Value = 0.85M;
-            Var.fenetrePrincipale.numericUpDown21.Value = 0.85M;
-            Var.fenetrePrincipale.numericUpDown20.Value = 0.85M;
+            Var.fenetrePrincipale.numericUpDown23.Value = 0.6M;
+            Var.fenetrePrincipale.numericUpDown22.Value = 0.60M;
+            Var.fenetrePrincipale.numericUpDown21.Value = 0.28M;
+            Var.fenetrePrincipale.numericUpDown20.Value = 0.28M;
 
-            // ELITE
+            // Mercenary
 
             Var.fenetrePrincipale.checkBox93.Checked = false;
             Var.fenetrePrincipale.checkBox92.Checked = false;
@@ -415,6 +415,22 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox34.Text = "";
             Var.fenetrePrincipale.textBox35.Text = "";
             Var.fenetrePrincipale.textBox36.Text = "";
+
+            // Performance
+            Var.fenetrePrincipale.checkBox_ActivatePerformanceTunning.Checked = false;
+            Var.fenetrePrincipale.numericUpDown_TerrainGrid.Value = 12.5M;            
+            Var.fenetrePrincipale.numericUpDown_ViewDistance.Value = 3000;
+            Var.fenetrePrincipale.numericUpDown_PreferredObjectViewDistance.Value = 3000;
+            Var.fenetrePrincipale.textBox_MaxMsgSend.Text = "384";
+            Var.fenetrePrincipale.textBox_MaxSizeGaranteed.Text = "512";
+            Var.fenetrePrincipale.textBox_MaxSizeNONGaranteed.Text = "256";
+            Var.fenetrePrincipale.textBox_MinimumBandwidth.Text = "800000";
+            Var.fenetrePrincipale.textBox_MaximumBandwith.Text = "25000000";
+            Var.fenetrePrincipale.textBox_MinErrorToSend.Text = "0.003";
+            Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text = "100000";
+
+
+            
         }
         static public void GenerefichierServeur(string profil)
         {
@@ -636,7 +652,7 @@ namespace FSF_Server_A3.Classes
             text += "" + Environment.NewLine;
             text += "class Difficulties" + Environment.NewLine;
             text += " {" + Environment.NewLine;
-            text += "      class Recruit" + Environment.NewLine;
+            text += "      class recruit" + Environment.NewLine;
             text += "       {" + Environment.NewLine;
             text += "       	class Flags" + Environment.NewLine;
             text += "             {" + Environment.NewLine;
@@ -669,7 +685,7 @@ namespace FSF_Server_A3.Classes
             text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown9.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
 
-            text += "      class Regular" + Environment.NewLine;
+            text += "      class regular" + Environment.NewLine;
             text += "       {" + Environment.NewLine;
             text += "       	class Flags" + Environment.NewLine;
             text += "             {" + Environment.NewLine;
@@ -701,7 +717,7 @@ namespace FSF_Server_A3.Classes
             text += "   		  skillEnemy=" + (Var.fenetrePrincipale.numericUpDown13.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown5.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
-            text += "      class Veteran" + Environment.NewLine;
+            text += "      class veteran" + Environment.NewLine;
             text += "       {" + Environment.NewLine;
             text += "       	class Flags" + Environment.NewLine;
             text += "             {" + Environment.NewLine;
@@ -734,7 +750,7 @@ namespace FSF_Server_A3.Classes
             text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown20.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
 
-            text += "      class Expert" + Environment.NewLine;
+            text += "      class mercenary" + Environment.NewLine;
             text += "       {" + Environment.NewLine;
             text += "       	class Flags" + Environment.NewLine;
             text += "             {" + Environment.NewLine;

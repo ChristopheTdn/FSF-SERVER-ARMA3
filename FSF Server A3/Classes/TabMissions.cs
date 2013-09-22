@@ -94,7 +94,6 @@ namespace FSF_Server_A3.Classes
             }
             return listeMissionsChecked;
         }
-
         static public void changeFiltreMissions(string profil)
         {
             Var.fenetrePrincipale.checkedListBoxMissions.Items.Clear();

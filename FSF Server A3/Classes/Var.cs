@@ -13,6 +13,7 @@ namespace FSF_Server_A3.Classes
     {        
         static public FenetrePrincipale fenetrePrincipale;
         static public System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+        static public System.Windows.Forms.Timer timerSynchro = new System.Windows.Forms.Timer();
         static public string RepertoireDeSauvegarde = DefRepertoireDeSauvegarde();
         static public string RepertoireApplication = AppDomain.CurrentDomain.BaseDirectory;
         static public string VersionArma3Exe()

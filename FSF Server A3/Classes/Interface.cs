@@ -43,6 +43,7 @@ namespace FSF_Server_A3.Classes
             }
             // Genere Tabs 
             genereTab(profil);
+
             // Dessin Interface Constant
             Var.fenetrePrincipale.label31.Text = Var.VersionProgramme();
             Var.fenetrePrincipale.label76.Text = Var.VersionArma3Exe();
@@ -75,9 +76,6 @@ namespace FSF_Server_A3.Classes
             }
             // Determine Langage choisi 
             Language.CheckButtonLanguageOption();
-
-
-
         }
  
 

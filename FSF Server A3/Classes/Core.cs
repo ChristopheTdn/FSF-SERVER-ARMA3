@@ -22,13 +22,30 @@ namespace FSF_Server_A3.Classes
                // le repertoire n'existe pas
                 GestionProfil.CreationNouveauProfil("default");
             }
+            
            GestionProfil.InitialiseListeProfil();
            Var.fenetrePrincipale.comboBox4.SelectedIndex = Var.IndexProfilParDefaut();
 
            Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
 
-
+            // Timer test mise a jour synchro si Synchro FSF
+           if (IsFSFInterface())
+           {
+               Var.timerSynchro.Tick += new EventHandler(TimerSynchroEvent);
+               Var.timerSynchro.Interval = 120000;
+               Var.timerSynchro.Start();
+           }
         }
+
+        private static void TimerSynchroEvent(Object myObject, EventArgs myEventArgs)
+        {
+            Var.timerSynchro.Stop();
+            Var.fenetrePrincipale.label76.Text = Var.VersionArma3Exe();
+            Var.fenetrePrincipale.label77.Text = Var.VersionSynchro();
+            Var.timerSynchro.Start();
+        }
+
+        
 
         // Divers
         static public string ConversionNomFichierValide(string FileName, char RemplaceChar)
