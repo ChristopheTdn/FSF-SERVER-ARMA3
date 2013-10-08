@@ -206,8 +206,8 @@
             this.button30 = new System.Windows.Forms.Button();
             this.button29 = new System.Windows.Forms.Button();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
@@ -237,6 +237,8 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.Performance = new System.Windows.Forms.TabPage();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.checkBox_HeadLessClientActivate = new System.Windows.Forms.CheckBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.numericUpDown_PreferredObjectViewDistance = new System.Windows.Forms.NumericUpDown();
             this.label60 = new System.Windows.Forms.Label();
@@ -385,6 +387,11 @@
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.checkedListBox7 = new System.Windows.Forms.CheckedListBox();
+            this.FRAMEWORK = new System.Windows.Forms.TabPage();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.checkedListBox8 = new System.Windows.Forms.CheckedListBox();
             this.ISLANDS = new System.Windows.Forms.TabPage();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -457,13 +464,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.NetWork.SuspendLayout();
             this.groupBox_ConfigSynchro.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.Performance.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PreferredObjectViewDistance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_ViewDistance)).BeginInit();
@@ -505,6 +513,8 @@
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.FRAMEWORK.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.ISLANDS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.UNITS.SuspendLayout();
@@ -2091,6 +2101,14 @@
             this.toolTip1.SetToolTip(this.checkBox10, resources.GetString("checkBox10.ToolTip"));
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
+            resources.ApplyResources(this.pictureBox6, "pictureBox6");
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
+            // 
             // groupBox20
             // 
             this.groupBox20.Controls.Add(this.pictureBox6);
@@ -2101,14 +2119,6 @@
             resources.ApplyResources(this.groupBox20, "groupBox20");
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
             // 
             // label77
             // 
@@ -2292,10 +2302,24 @@
             // Performance
             // 
             this.Performance.BackColor = System.Drawing.Color.Gainsboro;
+            this.Performance.Controls.Add(this.groupBox16);
             this.Performance.Controls.Add(this.groupBox15);
             this.Performance.Controls.Add(this.groupBox12);
             resources.ApplyResources(this.Performance, "Performance");
             this.Performance.Name = "Performance";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.checkBox_HeadLessClientActivate);
+            resources.ApplyResources(this.groupBox16, "groupBox16");
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.TabStop = false;
+            // 
+            // checkBox_HeadLessClientActivate
+            // 
+            resources.ApplyResources(this.checkBox_HeadLessClientActivate, "checkBox_HeadLessClientActivate");
+            this.checkBox_HeadLessClientActivate.Name = "checkBox_HeadLessClientActivate";
+            this.checkBox_HeadLessClientActivate.UseVisualStyleBackColor = true;
             // 
             // groupBox15
             // 
@@ -3391,6 +3415,7 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.TEMPLATE);
+            this.tabControl1.Controls.Add(this.FRAMEWORK);
             this.tabControl1.Controls.Add(this.ISLANDS);
             this.tabControl1.Controls.Add(this.UNITS);
             this.tabControl1.Controls.Add(this.MATERIEL);
@@ -3484,6 +3509,48 @@
             this.checkedListBox7.MultiColumn = true;
             this.checkedListBox7.Name = "checkedListBox7";
             this.checkedListBox7.ThreeDCheckBoxes = true;
+            // 
+            // FRAMEWORK
+            // 
+            this.FRAMEWORK.BackColor = System.Drawing.Color.Gainsboro;
+            this.FRAMEWORK.Controls.Add(this.pictureBox16);
+            this.FRAMEWORK.Controls.Add(this.button24);
+            this.FRAMEWORK.Controls.Add(this.button38);
+            this.FRAMEWORK.Controls.Add(this.checkedListBox8);
+            resources.ApplyResources(this.FRAMEWORK, "FRAMEWORK");
+            this.FRAMEWORK.Name = "FRAMEWORK";
+            // 
+            // pictureBox16
+            // 
+            resources.ApplyResources(this.pictureBox16, "pictureBox16");
+            this.pictureBox16.Image = global::FSF_Server_A3.Properties.Resources.la_gestion_pouvoir_preferences_systeme_icone_5042_96;
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.TabStop = false;
+            // 
+            // button24
+            // 
+            resources.ApplyResources(this.button24, "button24");
+            this.button24.Name = "button24";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button38
+            // 
+            resources.ApplyResources(this.button38, "button38");
+            this.button38.Name = "button38";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // checkedListBox8
+            // 
+            this.checkedListBox8.BackColor = System.Drawing.Color.Gainsboro;
+            this.checkedListBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox8.CheckOnClick = true;
+            resources.ApplyResources(this.checkedListBox8, "checkedListBox8");
+            this.checkedListBox8.FormattingEnabled = true;
+            this.checkedListBox8.MultiColumn = true;
+            this.checkedListBox8.Name = "checkedListBox8";
+            this.checkedListBox8.ThreeDCheckBoxes = true;
             // 
             // ISLANDS
             // 
@@ -3925,9 +3992,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.NetWork.ResumeLayout(false);
             this.groupBox_ConfigSynchro.ResumeLayout(false);
@@ -3935,6 +4002,8 @@
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.Performance.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PreferredObjectViewDistance)).EndInit();
@@ -3990,6 +4059,8 @@
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FRAMEWORK.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ISLANDS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.UNITS.ResumeLayout(false);
@@ -4416,6 +4487,13 @@
         internal System.Windows.Forms.NumericUpDown numericUpDown_TerrainGrid;
         internal System.Windows.Forms.Label label58;
         internal System.Windows.Forms.CheckBox checkBox_ActivatePerformanceTunning;
+        private System.Windows.Forms.GroupBox groupBox16;
+        internal System.Windows.Forms.CheckBox checkBox_HeadLessClientActivate;
+        internal System.Windows.Forms.PictureBox pictureBox16;
+        internal System.Windows.Forms.Button button24;
+        internal System.Windows.Forms.Button button38;
+        internal System.Windows.Forms.CheckedListBox checkedListBox8;
+        internal System.Windows.Forms.TabPage FRAMEWORK;
 
     }
 }

@@ -534,6 +534,16 @@ namespace FSF_Server_A3
             }
         }
 
+        private void button38_Click(object sender, EventArgs e)
+        {
+            Interface.SelectionneTous(checkedListBox8);
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            Interface.InverseSelection(checkedListBox8);
+        }
+
  
 
 

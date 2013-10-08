@@ -62,6 +62,17 @@ namespace FSF_Server_A3.Classes
             FichierProfilXML.WriteComment("Creation Du profil FSF SERVER " + nomProfil + ".profil.xml"); // commentaire
             FichierProfilXML.WriteStartElement("PROFIL");
             FichierProfilXML.WriteStartElement("MODS_FSF");
+            //FRAMEWORK
+            FichierProfilXML.WriteStartElement("FRAMEWORK");
+
+            if (Var.fenetrePrincipale.checkedListBox8.CheckedItems.Count != 0)
+            {
+                for (int x = 0; x <= Var.fenetrePrincipale.checkedListBox8.CheckedItems.Count - 1; x++)
+                {
+                    FichierProfilXML.WriteElementString("MODS", @"@FSF\@FRAMEWORK\" + Var.fenetrePrincipale.checkedListBox8.CheckedItems[x].ToString());
+                }
+
+            }
 
             //ISLANDS
             FichierProfilXML.WriteStartElement("ISLANDS");
@@ -428,9 +439,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox_MaximumBandwith.Text = "25000000";
             Var.fenetrePrincipale.textBox_MinErrorToSend.Text = "0.003";
             Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text = "100000";
-
-
-            
+            Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked = false;            
         }
         static public void GenerefichierServeur(string profil)
         {
@@ -552,6 +561,14 @@ namespace FSF_Server_A3.Classes
             text += @"passwordAdmin = """ + Var.fenetrePrincipale.textBox14.Text + @""";" + Environment.NewLine;
             text += @"reportingIP = """ + Var.fenetrePrincipale.comboBox1.Text + @""";" + Environment.NewLine;
             if (Var.fenetrePrincipale.checkBox25.Checked) { text += @"logFile = ""Console.log""" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked)
+            {
+                text += Environment.NewLine;
+                text += "//Headless Client" + Environment.NewLine;
+                text += "localClient[]={127.0.0.1};" + Environment.NewLine;
+                text += Environment.NewLine;
+            }
+
 
             text += "//STEAM Info Port" + Environment.NewLine;
             if (Var.fenetrePrincipale.textBox16.Text != "") { text += @"steamport = " + Var.fenetrePrincipale.textBox16.Text + ";" + Environment.NewLine; };

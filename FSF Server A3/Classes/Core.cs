@@ -196,6 +196,7 @@ namespace FSF_Server_A3.Classes
                            Directory.CreateDirectory(repertoireLocal + "@UNITS");
                            Directory.CreateDirectory(repertoireLocal + "@MATERIEL");
                            Directory.CreateDirectory(repertoireLocal + "@ISLANDS");
+                           Directory.CreateDirectory(repertoireLocal + "@FRAMEWORK");
                            break;
                    }
                    // Will continuously report progress of synchronization
@@ -217,6 +218,17 @@ namespace FSF_Server_A3.Classes
                            SynchronizationMode.Local,
                            repertoireLocal + "@TEMPLATE",
                            repertoireDistant + "@TEMPLATE",
+                           true,
+                           false,
+                           SynchronizationCriteria.Size);
+                   effaceProgressBar();
+
+                   Var.fenetrePrincipale.textBox11.AppendText(Environment.NewLine + "****   SYNCHRO @FRAMEWORK     ******" + Environment.NewLine);
+                   synchronizationResult =
+                       session.SynchronizeDirectories(
+                           SynchronizationMode.Local,
+                           repertoireLocal + "@FRAMEWORK",
+                           repertoireDistant + "@FRAMEWORK",
                            true,
                            false,
                            SynchronizationCriteria.Size);

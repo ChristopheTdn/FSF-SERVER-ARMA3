@@ -97,6 +97,12 @@ namespace FSF_Server_A3.Classes
             if (Var.fenetrePrincipale.radioButton20.Checked) { listeModsValide.Add(@"@FSF\@TEMPLATE\@FSFUnit_HelmetsST"); };
             if (Var.fenetrePrincipale.radioButton21.Checked) { listeModsValide.Add(@"@FSF\@TEMPLATE\@FSFUnit_HelmetsXT"); };
 
+            // FRAMEWORK
+            foreach (string ligne in ExtractionListeModsValides(Var.fenetrePrincipale.checkedListBox8, @"@FSF\@FRAMEWORK\"))
+            {
+                listeModsValide.Add(ligne);
+            }
+
             // Islands
             foreach (string ligne in ExtractionListeModsValides(Var.fenetrePrincipale.checkedListBox1, @"@FSF\@ISLANDS\"))
             {

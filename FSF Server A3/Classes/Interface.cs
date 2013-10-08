@@ -37,9 +37,16 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.MATERIEL);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.CLIENT);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
+                Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.FRAMEWORK);
                 Var.fenetrePrincipale.label77.Visible = false;
                 Var.fenetrePrincipale.label75.Visible = false;
                 Var.fenetrePrincipale.pictureBox6.Visible = false;
+            }
+            else
+            {
+                // Lance Serveur Remote FSF
+               // new HttpServer("127.0.0.1", 9090);
+
             }
             // Genere Tabs 
             genereTab(profil);
@@ -88,10 +95,12 @@ namespace FSF_Server_A3.Classes
             
             // @FSF 
             ListeTab(Var.fenetrePrincipale.checkedListBox7, "@TEMPLATE", profil);
+            ListeTab(Var.fenetrePrincipale.checkedListBox8, "@FRAMEWORK", profil);
             ListeTab(Var.fenetrePrincipale.checkedListBox1, "@ISLANDS", profil);
             ListeTab(Var.fenetrePrincipale.checkedListBox2, "@UNITS", profil);
             ListeTab(Var.fenetrePrincipale.checkedListBox3, "@MATERIEL", profil);
             ListeTab(Var.fenetrePrincipale.checkedListBox6, "@CLIENT", profil);
+
             ListeTab(Var.fenetrePrincipale.checkedListBox4, "@TEST", profil);
             // @Autre
             ListeTab(Var.fenetrePrincipale.checkedListBox5, "", profil);
@@ -109,6 +118,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.radioButton21.Enabled = false;
             Var.fenetrePrincipale.radioButton21.Checked = false;
             Var.fenetrePrincipale.pictureBox1.Image = FSF_Server_A3.Properties.Resources.logo_fsf;
+            Var.fenetrePrincipale.checkedListBox8.Items.Clear();
             Var.fenetrePrincipale.checkedListBox7.Items.Clear();
             Var.fenetrePrincipale.checkedListBox1.Items.Clear();
             Var.fenetrePrincipale.checkedListBox2.Items.Clear();
@@ -165,6 +175,7 @@ namespace FSF_Server_A3.Classes
                     string menuRepertoire = System.IO.Directory.GetParent(ligne).ToString();
                     string nomAAjouter = menuRepertoire;
                     if ((nomAAjouter.IndexOf(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\@ISLANDS\") == -1)
+                        && (nomAAjouter.IndexOf(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\@FRAMEWORK\") == -1)
                         && (nomAAjouter.IndexOf(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\@UNITS\") == -1)
                         && (nomAAjouter.IndexOf(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\@MATERIEL\") == -1)
                         && (nomAAjouter.IndexOf(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\@TEMPLATE\") == -1)
@@ -213,6 +224,10 @@ namespace FSF_Server_A3.Classes
                     tagNameXML = "TEMPLATE";
                     filtreRepertoire = @"@FSF\@TEMPLATE\";
                     break;
+                case "@FRAMEWORK":
+                    tagNameXML = "FRAMEWORK";
+                    filtreRepertoire = @"@FSF\@FRAMEWORK\";
+                    break;
                 case "@ISLANDS":
                     tagNameXML = "ISLANDS";
                     filtreRepertoire = @"@FSF\@ISLANDS\";
@@ -248,6 +263,7 @@ namespace FSF_Server_A3.Classes
                 bool elementsProfilChecked = false;
                 // Read the XmlDocument (Directory Node)
                 XmlNodeList elemList = fichierProfilXML.GetElementsByTagName(tagNameXML);
+                if (elemList.Count == 0) { Tab.Items.Add(ligne, elementsProfilChecked); };
                 for (int i = 0; i < elemList.Count; i++)
                 {
                     XmlNodeList eltList = elemList[i].ChildNodes;
