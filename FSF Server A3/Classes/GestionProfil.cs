@@ -560,7 +560,7 @@ namespace FSF_Server_A3.Classes
             text += @"password = """ + Var.fenetrePrincipale.textBox13.Text + @""";" + Environment.NewLine;
             text += @"passwordAdmin = """ + Var.fenetrePrincipale.textBox14.Text + @""";" + Environment.NewLine;
             text += @"reportingIP = """ + Var.fenetrePrincipale.comboBox1.Text + @""";" + Environment.NewLine;
-            if (Var.fenetrePrincipale.checkBox25.Checked) { text += @"logFile = ""Console.log""" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.checkBox25.Checked) { text += @"logFile = ""Console.log"";" + Environment.NewLine; };
             if (Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked)
             {
                 text += Environment.NewLine;
@@ -592,7 +592,7 @@ namespace FSF_Server_A3.Classes
             if (Var.fenetrePrincipale.checkBox18.Checked) { text += "kickDuplicate = 1;" + Environment.NewLine; };
             if (Var.fenetrePrincipale.checkBox17.Checked) { text += "verifySignatures = 2;" + Environment.NewLine; };
             if (Var.fenetrePrincipale.checkBox14.Checked) { text += "persistent = 1;" + Environment.NewLine; };
-            if (Var.fenetrePrincipale.checkBox15.Checked) { text += "Battleye = 1;" + Environment.NewLine; };
+            if (Var.fenetrePrincipale.checkBox15.Checked) { text += "BattlEye=1;" + Environment.NewLine; } else { text += "BattlEye=0;" + Environment.NewLine; };
             if (Var.fenetrePrincipale.checkBox13.Checked)
             {
                 text += "// VON" + Environment.NewLine;
