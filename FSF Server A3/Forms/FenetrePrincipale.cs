@@ -511,27 +511,15 @@ namespace FSF_Server_A3
 
         private void checkBox11_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox_ActivatePerformanceTunning.Checked)
-            {
-                textBox_MaxMsgSend.Enabled = true;
-                textBox_MaxSizeGaranteed.Enabled = true;
-                textBox_MaxSizeNONGaranteed.Enabled = true;
-                textBox_MinimumBandwidth.Enabled = true;
-                textBox_MaximumBandwith.Enabled = true;
-                textBox_MinErrorToSend.Enabled = true;
-                textBox_MaxCustomFileSize.Enabled = true;
-
-            }
-            else
-            {
-                textBox_MaxMsgSend.Enabled = false;
-                textBox_MaxSizeGaranteed.Enabled = false;
-                textBox_MaxSizeNONGaranteed.Enabled = false;
-                textBox_MinimumBandwidth.Enabled = false;
-                textBox_MaximumBandwith.Enabled = false;
-                textBox_MinErrorToSend.Enabled = false;
-                textBox_MaxCustomFileSize.Enabled = false;
-            }
+            bool state = checkBox_ActivatePerformanceTunning.Checked;
+            textBox_MaxMsgSend.Enabled = state;
+            textBox_MaxSizeGaranteed.Enabled = state;
+            textBox_MaxSizeNONGaranteed.Enabled = state;
+            textBox_MinimumBandwidth.Enabled = state;
+            textBox_MaximumBandwith.Enabled = state;
+            textBox_MinErrorToSend.Enabled = state;
+            textBox_MaxCustomFileSize.Enabled = state;
+            textBox_MinErrorToSendNear.Enabled = state;          
         }
 
         private void button38_Click(object sender, EventArgs e)
@@ -542,6 +530,11 @@ namespace FSF_Server_A3
         private void button24_Click(object sender, EventArgs e)
         {
             Interface.InverseSelection(checkedListBox8);
+        }
+
+        private void label53_Click(object sender, EventArgs e)
+        {
+
         }
 
  

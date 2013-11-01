@@ -432,13 +432,14 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.numericUpDown_TerrainGrid.Value = 12.5M;            
             Var.fenetrePrincipale.numericUpDown_ViewDistance.Value = 3000;
             Var.fenetrePrincipale.numericUpDown_PreferredObjectViewDistance.Value = 3000;
-            Var.fenetrePrincipale.textBox_MaxMsgSend.Text = "384";
-            Var.fenetrePrincipale.textBox_MaxSizeGaranteed.Text = "512";
-            Var.fenetrePrincipale.textBox_MaxSizeNONGaranteed.Text = "256";
-            Var.fenetrePrincipale.textBox_MinimumBandwidth.Text = "800000";
-            Var.fenetrePrincipale.textBox_MaximumBandwith.Text = "25000000";
-            Var.fenetrePrincipale.textBox_MinErrorToSend.Text = "0.003";
-            Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text = "100000";
+            Var.fenetrePrincipale.textBox_MaxMsgSend.Text = "";
+            Var.fenetrePrincipale.textBox_MaxSizeGaranteed.Text = "";
+            Var.fenetrePrincipale.textBox_MaxSizeNONGaranteed.Text = "";
+            Var.fenetrePrincipale.textBox_MinimumBandwidth.Text = "";
+            Var.fenetrePrincipale.textBox_MaximumBandwith.Text = "";
+            Var.fenetrePrincipale.textBox_MinErrorToSend.Text = "";
+            Var.fenetrePrincipale.textBox_MinErrorToSendNear.Text = "";
+            Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text = "";
             Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked = false;            
         }
         static public void GenerefichierServeur(string profil)
@@ -647,13 +648,30 @@ namespace FSF_Server_A3.Classes
 
         //Fichier BASIC.CFG
         static private void GenereBasicCfg(string profil)
-        {           
+        {
             string repertoireDeTravail = Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil;
             FileStream fs = File.Create(repertoireDeTravail + @"\basic.cfg");
             fs.Close();
             string text = "";
             text += "// fichier basic.cfg" + Environment.NewLine;
-            System.IO.File.WriteAllText(repertoireDeTravail + @"\basic.cfg", text);
+            text += Environment.NewLine + Environment.NewLine;
+            if (Var.fenetrePrincipale.checkBox_ActivatePerformanceTunning.Checked)
+            {
+                text += "// These options are important for performance tuning" + Environment.NewLine;
+                if (Var.fenetrePrincipale.textBox_MinimumBandwidth.Text != "") { text += "MinBandwidth = " + Var.fenetrePrincipale.textBox_MinimumBandwidth.Text + ";			// Bandwidth the server is guaranteed to have (in bps). This value helps server to estimate bandwidth available. Increasing it to too optimistic values can increase lag and CPU load, as too many messages will be sent but discarded. Default: 131072" + Environment.NewLine; };
+                if (Var.fenetrePrincipale.textBox_MaximumBandwith.Text != "") { text += "MaxBandwidth = " + Var.fenetrePrincipale.textBox_MaximumBandwith.Text + ";		// Bandwidth the server is guaranteed to never have. This value helps the server to estimate bandwidth available." + Environment.NewLine; };
+                if (Var.fenetrePrincipale.textBox_MaxMsgSend.Text != "") { text += "MaxMsgSend = " + Var.fenetrePrincipale.textBox_MaxMsgSend.Text + ";			// Maximum number of messages that can be sent in one simulation cycle. Increasing this value can decrease lag on high upload bandwidth servers. Default: 128" + Environment.NewLine; };
+                if (Var.fenetrePrincipale.textBox_MaxSizeGaranteed.Text != "")
+                {
+                    text += "MaxSizeGuaranteed = " + Var.fenetrePrincipale.textBox_MaxSizeGaranteed.Text + ";		// Maximum size of guaranteed packet in bytes (without headers). Small messages are packed to larger frames. Guaranteed messages are used for non-repetitive events like shooting. Default: 512" + Environment.NewLine;
+                    if (Var.fenetrePrincipale.textBox_MaxSizeNONGaranteed.Text != "") { text += "MaxSizeNonguaranteed = " + Var.fenetrePrincipale.textBox_MaxSizeNONGaranteed.Text + ";		// Maximum size of non-guaranteed packet in bytes (without headers). Non-guaranteed messages are used for repetitive updates like soldier or vehicle position. Increasing this value may improve bandwidth requirement, but it may increase lag. Default: 256" + Environment.NewLine; };
+                    if (Var.fenetrePrincipale.textBox_MinErrorToSend.Text != "") { text += "MinErrorToSend = " + Var.fenetrePrincipale.textBox_MinErrorToSend.Text + ";			// Minimal error to send updates across network. Using a smaller value can make units observed by binoculars or sniper rifle to move smoother. Default: 0.001" + Environment.NewLine; };
+                    if (Var.fenetrePrincipale.textBox_MinErrorToSendNear.Text != "") { text += "MinErrorToSendNear = " + Var.fenetrePrincipale.textBox_MinErrorToSendNear.Text + ";		// Minimal error to send updates across network for near units. Using larger value can reduce traffic sent for near units. Used to control client to server traffic as well. Default: 0.01" + Environment.NewLine; };
+                    if (Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text != "") { text += "MaxCustomFileSize = " + Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text + ";			// (bytes) Users with custom face or custom sound larger than this size are kicked when trying to connect." + Environment.NewLine; };
+                }
+            };
+                System.IO.File.WriteAllText(repertoireDeTravail + @"\basic.cfg", text);
+            
         }
 
         //Fichier ARMA3PROFILE.CFG
