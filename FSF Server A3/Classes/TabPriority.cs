@@ -40,7 +40,21 @@ namespace FSF_Server_A3.Classes
 
         }
         static public void actualisePrioriteMods()
-        {           // recupere tous les Mods coché dans une liste
+        { 
+            // Verifie bug de l'apparence des casque 
+            try
+            {
+                if (!Var.fenetrePrincipale.checkedListBox7.GetItemChecked(Var.fenetrePrincipale.checkedListBox7.FindString("@FSFUnits_Cfg")))
+                {
+                    Var.fenetrePrincipale.comboBox2.SelectedIndex = 0;
+                    Var.fenetrePrincipale.radioButton20.Checked = false;
+                    Var.fenetrePrincipale.radioButton21.Checked = false;                    
+                }
+            }
+            catch
+            {
+            }
+            // recupere tous les Mods coché dans une liste
             // Compare Liste Mods avec Liste Tab prioritaire
 
 
