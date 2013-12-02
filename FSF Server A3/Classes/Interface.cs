@@ -406,11 +406,13 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox8.Checked = false;
             Var.fenetrePrincipale.checkBox9.Checked = false;
             Var.fenetrePrincipale.checkBox10.Checked = false;
+            Var.fenetrePrincipale.checkBox11.Checked = false;
             Var.fenetrePrincipale.checkBox19.Checked = false;
             Var.fenetrePrincipale.checkBox22.Checked = false;
             Var.fenetrePrincipale.checkBox23.Checked = false;
             Var.fenetrePrincipale.checkBox21.Checked = false;
             Var.fenetrePrincipale.checkBox24.Checked = false;
+            Var.fenetrePrincipale.textBox22.Text = "";
 
         }
         static public void genereTabParam(string profil)
@@ -455,7 +457,9 @@ namespace FSF_Server_A3.Classes
                 if (fichierProfilXML.ReadString() == "true") { Var.fenetrePrincipale.checkBox24.Checked = true; }
                 fichierProfilXML.ReadToFollowing("nologs");
                 if (fichierProfilXML.ReadString() == "true") { Var.fenetrePrincipale.checkBox10.Checked = true; }
-
+                fichierProfilXML.ReadToFollowing("customCMDLine");
+                string customCMDLine = fichierProfilXML.ReadString();
+                if (customCMDLine != "") { Var.fenetrePrincipale.checkBox11.Checked = true; Var.fenetrePrincipale.textBox22.Text = customCMDLine; } else { Var.fenetrePrincipale.checkBox11.Checked = false; Var.fenetrePrincipale.textBox22.Text = "";  }
             }
             fichierProfilXML.Close();
         }

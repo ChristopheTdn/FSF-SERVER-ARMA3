@@ -181,6 +181,8 @@
             this.label46 = new System.Windows.Forms.Label();
             this.textBox_MaxMsgSend = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.textBox_MinErrorToSendNear = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.checkBox_ActivatePerformanceTunning = new System.Windows.Forms.CheckBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -436,8 +438,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.textBox_MinErrorToSendNear = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
@@ -1922,6 +1924,16 @@
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
             // 
+            // textBox_MinErrorToSendNear
+            // 
+            resources.ApplyResources(this.textBox_MinErrorToSendNear, "textBox_MinErrorToSendNear");
+            this.textBox_MinErrorToSendNear.Name = "textBox_MinErrorToSendNear";
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
             // checkBox_ActivatePerformanceTunning
             // 
             resources.ApplyResources(this.checkBox_ActivatePerformanceTunning, "checkBox_ActivatePerformanceTunning");
@@ -3145,6 +3157,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox22);
+            this.groupBox1.Controls.Add(this.checkBox11);
             this.groupBox1.Controls.Add(this.checkBox10);
             this.groupBox1.Controls.Add(this.checkBox23);
             this.groupBox1.Controls.Add(this.checkBox8);
@@ -3946,15 +3960,18 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // textBox_MinErrorToSendNear
+            // checkBox11
             // 
-            resources.ApplyResources(this.textBox_MinErrorToSendNear, "textBox_MinErrorToSendNear");
-            this.textBox_MinErrorToSendNear.Name = "textBox_MinErrorToSendNear";
+            resources.ApplyResources(this.checkBox11, "checkBox11");
+            this.checkBox11.Name = "checkBox11";
+            this.toolTip1.SetToolTip(this.checkBox11, resources.GetString("checkBox11.ToolTip"));
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged_1);
             // 
-            // label9
+            // textBox22
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.textBox22, "textBox22");
+            this.textBox22.Name = "textBox22";
             // 
             // FenetrePrincipale
             // 
@@ -4511,6 +4528,8 @@
         internal System.Windows.Forms.TabPage FRAMEWORK;
         internal System.Windows.Forms.TextBox textBox_MinErrorToSendNear;
         internal System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.CheckBox checkBox11;
+        internal System.Windows.Forms.TextBox textBox22;
 
     }
 }

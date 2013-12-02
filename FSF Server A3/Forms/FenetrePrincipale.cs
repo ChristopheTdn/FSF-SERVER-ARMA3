@@ -537,6 +537,11 @@ namespace FSF_Server_A3
 
         }
 
+        private void checkBox11_CheckedChanged_1(object sender, EventArgs e)
+        {
+            textBox22.Enabled = checkBox11.Checked;
+        }
+
  
 
 
