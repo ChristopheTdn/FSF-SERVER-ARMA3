@@ -240,6 +240,10 @@ namespace FSF_Server_A3.Classes
                 FichierProfilXML.WriteElementString("FICHIER", ligne);
             }
             FichierProfilXML.WriteEndElement();
+            FichierProfilXML.WriteStartElement("DIFFICULTE");
+            FichierProfilXML.WriteElementString("DIFFICULTE_ID", Var.fenetrePrincipale.comboBox6.SelectedIndex.ToString());
+            FichierProfilXML.WriteEndElement();
+
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.Flush(); //vide le buffer
             FichierProfilXML.Close(); // ferme le document

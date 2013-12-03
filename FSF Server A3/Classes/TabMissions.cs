@@ -50,7 +50,6 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.comboBox5.Items.Add(nomile);
             }
             Var.fenetrePrincipale.comboBox5.SelectedIndex = 0;
-            Var.fenetrePrincipale.comboBox6.SelectedIndex = 0;
 
         }
         static private List<string> ListeMissionsSurDisque(string profil)
@@ -87,10 +86,26 @@ namespace FSF_Server_A3.Classes
                         }
                     }
                     fichierProfilMissionsXML.Close();
-                }
 
+                    if (System.IO.File.Exists(Var.RepertoireDeSauvegarde + profil + ".profilMissions.xml"))
+                    {
+                        fichierProfilMissionsXML = new XmlTextReader(Var.RepertoireDeSauvegarde + profil + ".profilMissions.xml");
+                        while (fichierProfilMissionsXML.Read())
+                        {
+                            fichierProfilMissionsXML.ReadToFollowing("DIFFICULTE_ID");
+                            string ligne = fichierProfilMissionsXML.ReadString();
+                            if (ligne != "")
+                            {
+                                Var.fenetrePrincipale.comboBox6.SelectedIndex = int.Parse(ligne);
+
+                            }
+                        }
+
+                    }
+                }
             }
-            catch {
+            catch
+            {
             }
             return listeMissionsChecked;
         }
