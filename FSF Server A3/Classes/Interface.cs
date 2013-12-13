@@ -420,9 +420,6 @@ namespace FSF_Server_A3.Classes
             effaceTousparamsOnglet();
             if (profil == "") return;
             XmlTextReader fichierProfilXML = new XmlTextReader(Var.RepertoireDeSauvegarde + profil + ".profil.xml");
-            while (fichierProfilXML.Read())
-            {
-
                 fichierProfilXML.ReadToFollowing("winXP");
                 if (fichierProfilXML.ReadString() == "true") { Var.fenetrePrincipale.checkBox9.Checked = true; }
                 fichierProfilXML.ReadToFollowing("showScriptErrors");
@@ -460,7 +457,6 @@ namespace FSF_Server_A3.Classes
                 fichierProfilXML.ReadToFollowing("customCMDLine");
                 string customCMDLine = fichierProfilXML.ReadString();
                 if (customCMDLine != "") { Var.fenetrePrincipale.checkBox11.Checked = true; Var.fenetrePrincipale.textBox22.Text = customCMDLine; } else { Var.fenetrePrincipale.checkBox11.Checked = false; Var.fenetrePrincipale.textBox22.Text = "";  }
-            }
             fichierProfilXML.Close();
         }
         static public void AjouteComboNomProfil(int index, string nomProfil)

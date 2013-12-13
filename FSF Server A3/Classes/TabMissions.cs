@@ -100,6 +100,7 @@ namespace FSF_Server_A3.Classes
 
                             }
                         }
+                        fichierProfilMissionsXML.Close();
 
                     }
                 }
