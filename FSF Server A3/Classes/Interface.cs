@@ -137,7 +137,7 @@ namespace FSF_Server_A3.Classes
 
 
 
-            string[] tableauRepertoire = Directory.GetDirectories(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\" + repertoireSource + @"\", "Addons*", SearchOption.AllDirectories);
+            string[] tableauRepertoire = Directory.GetDirectories(Var.fenetrePrincipale.textBox18.Text + @"\@FSF\" + repertoireSource + @"\", "Add*", SearchOption.AllDirectories);
 
             foreach (var ligne in tableauRepertoire)
             {
@@ -168,7 +168,7 @@ namespace FSF_Server_A3.Classes
             List<string> listeRepertoire = new List<string>();
             try
             {
-                string[] tableauRepertoire = Directory.GetDirectories(Var.fenetrePrincipale.textBox18.Text, "Addons*", SearchOption.AllDirectories);
+                string[] tableauRepertoire = Directory.GetDirectories(Var.fenetrePrincipale.textBox18.Text, "Add*", SearchOption.AllDirectories);
 
                 foreach (var ligne in tableauRepertoire)
                 {

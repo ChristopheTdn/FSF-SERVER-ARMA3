@@ -30,12 +30,12 @@
     <InstallUrl>http://www.clan-gign.net/FSFServerA3/</InstallUrl>
     <SupportUrl>http://www.clan-fsf.fr</SupportUrl>
     <ProductName>FSF Server A3</ProductName>
-    <PublisherName>Clan FSF</PublisherName>
-    <SuiteName>ToF Developpement</SuiteName>
+    <PublisherName>Clan F.S.F</PublisherName>
+    <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>76</ApplicationRevision>
-    <ApplicationVersion>0.96.1312.%2a</ApplicationVersion>
+    <ApplicationRevision>78</ApplicationRevision>
+    <ApplicationVersion>0.96.1231.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
