@@ -34,8 +34,8 @@
     <SuiteName>FSF Developpement</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.htm</WebPage>
-    <ApplicationRevision>80</ApplicationRevision>
-    <ApplicationVersion>1.00.0314.%2a</ApplicationVersion>
+    <ApplicationRevision>81</ApplicationRevision>
+    <ApplicationVersion>1.00.0325.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
@@ -96,9 +96,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="WinSCPnet, Version=1.1.1.3231, Culture=neutral, PublicKeyToken=b5f19f5762436b89, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\WinSCPnet.dll</HintPath>
+    <Reference Include="WinSCPnet">
+      <HintPath>..\packages\WinSCP.5.5.2\lib\WinSCPnet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +159,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -201,7 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dll\Infralution.Localization.dll" />
-    <Content Include="dll\WinSCPnet.dll" />
     <Content Include="graphX\Ace_logo.jpg" />
     <Content Include="graphX\ajouter-vert-plus-icone-9105-128.png" />
     <Content Include="graphX\ajouterListe.png" />
@@ -241,6 +241,9 @@
     <Content Include="graphX\ts3.png" />
     <Content Include="graphX\utilisateur-icone-8690-128.png" />
     <Content Include="graphX\winscp.png" />
+    <Content Include="WinSCP.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
