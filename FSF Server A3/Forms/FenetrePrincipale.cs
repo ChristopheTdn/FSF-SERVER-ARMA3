@@ -542,14 +542,122 @@ namespace FSF_Server_A3
             textBox22.Enabled = checkBox11.Checked;
         }
 
- 
+        private void comboBox_AILevelPresetRECRUIT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox_AILevelPresetRECRUIT.SelectedIndex)
+            {
+                case 0 :
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Value = 0.20M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Enabled = false;
+                    break;
+                case 1:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Enabled = false;
+                    break;
+                case 2:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Value = 0.8M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Enabled = false;
+                    break;
+                case 3:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Enabled = true;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Enabled = true;
+                    break;
+            }
+        }
 
+        private void comboBox_AILevelPresetREGULAR_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox_AILevelPresetREGULAR.SelectedIndex)
+            {
+                case 0:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Value = 0.20M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Enabled = false;
+                    break;
+                case 1:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Enabled = false;
+                    break;
+                case 2:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Value = 0.8M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Enabled = false;
+                    break;
+                case 3:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Enabled = true;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Enabled = true;
+                    break;
+            }
+        }
 
+        private void comboBox_AILevelPresetVETERAN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox_AILevelPresetVETERAN.SelectedIndex)
+            {
+                case 0:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Value = 0.20M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Enabled = false;
+                    break;
+                case 1:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Enabled = false;
+                    break;
+                case 2:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Value = 0.8M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Enabled = false;
+                    break;
+                case 3:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Enabled = true;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Enabled = true;
+                    break;
+            }
+        }
 
+        private void comboBox_AILevelPresetMERCENARY_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBox_AILevelPresetMERCENARY.SelectedIndex)
+            {
+                case 0:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Value = 0.20M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Enabled = false;
+                    break;
+                case 1:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Value = 0.50M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Enabled = false;
+                    break;
+                case 2:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Value = 0.8M;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Value = 0.70M;
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Enabled = false;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Enabled = false;
+                    break;
+                case 3:
+                    Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Enabled = true;
+                    Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Enabled = true;
+                    break;
+            }
+        }
 
-
-
-       
     }
-}
+    }
 

@@ -321,10 +321,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox47.Checked = true;
             Var.fenetrePrincipale.checkBox48.Checked = true;
             Var.fenetrePrincipale.checkBox32.Checked = true;
-            Var.fenetrePrincipale.numericUpDown6.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown7.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown8.Value = 0.28M;
-            Var.fenetrePrincipale.numericUpDown9.Value = 0.28M;
+            Var.fenetrePrincipale.comboBox_AILevelPresetRECRUIT.SelectedIndex = 0;
 
             // regular
 
@@ -350,10 +347,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox52.Checked = true;
             Var.fenetrePrincipale.checkBox51.Checked = true;
             Var.fenetrePrincipale.checkBox67.Checked = true;
-            Var.fenetrePrincipale.numericUpDown15.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown14.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown13.Value = 0.28M;
-            Var.fenetrePrincipale.numericUpDown5.Value = 0.28M;
+            Var.fenetrePrincipale.comboBox_AILevelPresetREGULAR.SelectedIndex = 1;
 
             // Veteran
 
@@ -379,10 +373,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox96.Checked = true;
             Var.fenetrePrincipale.checkBox95.Checked = false;
             Var.fenetrePrincipale.checkBox111.Checked = true;
-            Var.fenetrePrincipale.numericUpDown23.Value = 0.6M;
-            Var.fenetrePrincipale.numericUpDown22.Value = 0.60M;
-            Var.fenetrePrincipale.numericUpDown21.Value = 0.28M;
-            Var.fenetrePrincipale.numericUpDown20.Value = 0.28M;
+            Var.fenetrePrincipale.comboBox_AILevelPresetVETERAN.SelectedIndex = 2;
 
             // Mercenary
 
@@ -408,10 +399,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox74.Checked = true;
             Var.fenetrePrincipale.checkBox73.Checked = false;
             Var.fenetrePrincipale.checkBox89.Checked = true;
-            Var.fenetrePrincipale.numericUpDown19.Value = 1.00M;
-            Var.fenetrePrincipale.numericUpDown18.Value = 1.00M;
-            Var.fenetrePrincipale.numericUpDown17.Value = 0.85M;
-            Var.fenetrePrincipale.numericUpDown16.Value = 0.85M;
+            Var.fenetrePrincipale.comboBox_AILevelPresetMERCENARY.SelectedIndex = 2;
             
             // NetWork
             Var.fenetrePrincipale.textBox2.Text = "";
@@ -720,10 +708,9 @@ namespace FSF_Server_A3.Classes
             text += "              VonID=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox48.Checked) + ";" + Environment.NewLine;
             text += "              ExtendetInfoType=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox32.Checked) + ";" + Environment.NewLine;
             text += "             };" + Environment.NewLine;
-            text += "   		  skillFriendly=" + (Var.fenetrePrincipale.numericUpDown6.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionFriendly=" + (Var.fenetrePrincipale.numericUpDown7.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  skillEnemy=" + (Var.fenetrePrincipale.numericUpDown8.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown9.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  aiLevelPreset=" + (Var.fenetrePrincipale.comboBox_AILevelPresetRECRUIT.SelectedIndex).ToString() + ";" + Environment.NewLine;
+            text += "   		  skillAI=" + (Var.fenetrePrincipale.numericUpDown_SkillAIRECRUIT.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  precisionAI=" + (Var.fenetrePrincipale.numericUpDown_PrecisionAIRECRUIT.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
 
             text += "      class regular" + Environment.NewLine;
@@ -753,10 +740,9 @@ namespace FSF_Server_A3.Classes
             text += "              VonID=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox51.Checked) + ";" + Environment.NewLine;
             text += "              ExtendetInfoType=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox67.Checked) + ";" + Environment.NewLine;
             text += "             };" + Environment.NewLine;
-            text += "   		  skillFriendly=" + (Var.fenetrePrincipale.numericUpDown15.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionFriendly=" + (Var.fenetrePrincipale.numericUpDown14.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  skillEnemy=" + (Var.fenetrePrincipale.numericUpDown13.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown5.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  aiLevelPreset=" + (Var.fenetrePrincipale.comboBox_AILevelPresetREGULAR.SelectedIndex).ToString() + ";" + Environment.NewLine;
+            text += "   		  skillAI=" + (Var.fenetrePrincipale.numericUpDown_SkillAIREGULAR.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  precisionAI=" + (Var.fenetrePrincipale.numericUpDown_PrecisionAIREGULAR.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
             text += "      class veteran" + Environment.NewLine;
             text += "       {" + Environment.NewLine;
@@ -785,10 +771,9 @@ namespace FSF_Server_A3.Classes
             text += "              VonID=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox95.Checked) + ";" + Environment.NewLine;
             text += "              ExtendetInfoType=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox67.Checked) + ";" + Environment.NewLine;
             text += "             };" + Environment.NewLine;
-            text += "   		  skillFriendly=" + (Var.fenetrePrincipale.numericUpDown23.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionFriendly=" + (Var.fenetrePrincipale.numericUpDown22.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  skillEnemy=" + (Var.fenetrePrincipale.numericUpDown21.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown20.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  aiLevelPreset=" + (Var.fenetrePrincipale.comboBox_AILevelPresetVETERAN.SelectedIndex).ToString() + ";" + Environment.NewLine;
+            text += "   		  skillAI=" + (Var.fenetrePrincipale.numericUpDown_SkillAIVETERAN.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  precisionAI=" + (Var.fenetrePrincipale.numericUpDown_PrecisionAIVETERAN.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
 
             text += "      class mercenary" + Environment.NewLine;
@@ -818,10 +803,9 @@ namespace FSF_Server_A3.Classes
             text += "              VonID=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox73.Checked) + ";" + Environment.NewLine;
             text += "              ExtendetInfoType=" + Convert.ToInt32(Var.fenetrePrincipale.checkBox89.Checked) + ";" + Environment.NewLine;
             text += "             };" + Environment.NewLine;
-            text += "   		  skillFriendly=" + (Var.fenetrePrincipale.numericUpDown19.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionFriendly=" + (Var.fenetrePrincipale.numericUpDown18.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  skillEnemy=" + (Var.fenetrePrincipale.numericUpDown17.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
-            text += "   		  precisionEnemy=" + (Var.fenetrePrincipale.numericUpDown16.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  aiLevelPreset=" + (Var.fenetrePrincipale.comboBox_AILevelPresetMERCENARY.SelectedIndex).ToString() + ";" + Environment.NewLine;
+            text += "   		  skillAI=" + (Var.fenetrePrincipale.numericUpDown_SkillAIMERCENARY.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
+            text += "   		  precisionAI=" + (Var.fenetrePrincipale.numericUpDown_PrecisionAIMERCENARY.Value).ToString().Replace(",", ".") + ";" + Environment.NewLine;
             text += "       };" + Environment.NewLine;
             text += " };" + Environment.NewLine;
             System.IO.File.WriteAllText(repertoireDeTravail + @"\profile\Users\server\server.Arma3Profile", text);

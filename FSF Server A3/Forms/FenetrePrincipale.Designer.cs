@@ -30,11 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FenetrePrincipale));
-            this.label63 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
             this.checkBox89 = new System.Windows.Forms.CheckBox();
             this.groupBox_regular = new System.Windows.Forms.GroupBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.numericUpDown_PrecisionAIREGULAR = new System.Windows.Forms.NumericUpDown();
+            this.label61 = new System.Windows.Forms.Label();
+            this.numericUpDown_SkillAIREGULAR = new System.Windows.Forms.NumericUpDown();
+            this.comboBox_AILevelPresetREGULAR = new System.Windows.Forms.ComboBox();
+            this.label62 = new System.Windows.Forms.Label();
             this.checkBox50 = new System.Windows.Forms.CheckBox();
             this.checkBox51 = new System.Windows.Forms.CheckBox();
             this.checkBox52 = new System.Windows.Forms.CheckBox();
@@ -57,15 +60,13 @@
             this.checkBox69 = new System.Windows.Forms.CheckBox();
             this.checkBox70 = new System.Windows.Forms.CheckBox();
             this.checkBox71 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.groupBox_recruit = new System.Windows.Forms.GroupBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.numericUpDown_PrecisionAIRECRUIT = new System.Windows.Forms.NumericUpDown();
+            this.label88 = new System.Windows.Forms.Label();
+            this.numericUpDown_SkillAIRECRUIT = new System.Windows.Forms.NumericUpDown();
+            this.comboBox_AILevelPresetRECRUIT = new System.Windows.Forms.ComboBox();
+            this.label51 = new System.Windows.Forms.Label();
             this.checkBox49 = new System.Windows.Forms.CheckBox();
             this.checkBox48 = new System.Windows.Forms.CheckBox();
             this.checkBox47 = new System.Windows.Forms.CheckBox();
@@ -88,15 +89,6 @@
             this.checkBox30 = new System.Windows.Forms.CheckBox();
             this.checkBox29 = new System.Windows.Forms.CheckBox();
             this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.label64 = new System.Windows.Forms.Label();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.checkBox75 = new System.Windows.Forms.CheckBox();
             this.checkBox76 = new System.Windows.Forms.CheckBox();
@@ -114,6 +106,12 @@
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.groupBox_veteran = new System.Windows.Forms.GroupBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.numericUpDown_PrecisionAIVETERAN = new System.Windows.Forms.NumericUpDown();
+            this.label39 = new System.Windows.Forms.Label();
+            this.numericUpDown_SkillAIVETERAN = new System.Windows.Forms.NumericUpDown();
+            this.comboBox_AILevelPresetVETERAN = new System.Windows.Forms.ComboBox();
+            this.label40 = new System.Windows.Forms.Label();
             this.checkBox94 = new System.Windows.Forms.CheckBox();
             this.checkBox95 = new System.Windows.Forms.CheckBox();
             this.checkBox96 = new System.Windows.Forms.CheckBox();
@@ -136,15 +134,13 @@
             this.checkBox113 = new System.Windows.Forms.CheckBox();
             this.checkBox114 = new System.Windows.Forms.CheckBox();
             this.checkBox115 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
             this.groupBox_mercenary = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.numericUpDown_PrecisionAIMERCENARY = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numericUpDown_SkillAIMERCENARY = new System.Windows.Forms.NumericUpDown();
+            this.comboBox_AILevelPresetMERCENARY = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.checkBox72 = new System.Windows.Forms.CheckBox();
             this.checkBox73 = new System.Windows.Forms.CheckBox();
             this.checkBox74 = new System.Windows.Forms.CheckBox();
@@ -158,10 +154,6 @@
             this.checkBox91 = new System.Windows.Forms.CheckBox();
             this.checkBox92 = new System.Windows.Forms.CheckBox();
             this.checkBox93 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
-            this.label62 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -209,6 +201,7 @@
             this.button29 = new System.Windows.Forms.Button();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -342,6 +335,7 @@
             this.button28 = new System.Windows.Forms.Button();
             this.button33 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -438,31 +432,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             this.groupBox_regular.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
             this.groupBox_recruit.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIRECRUIT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIRECRUIT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.difficulte.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox_veteran.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).BeginInit();
             this.groupBox_mercenary.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIMERCENARY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIMERCENARY)).BeginInit();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -538,37 +522,6 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label63
-            // 
-            resources.ApplyResources(this.label63, "label63");
-            this.label63.Name = "label63";
-            // 
-            // label65
-            // 
-            resources.ApplyResources(this.label65, "label65");
-            this.label65.Name = "label65";
-            // 
-            // numericUpDown19
-            // 
-            this.numericUpDown19.DecimalPlaces = 2;
-            this.numericUpDown19.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown19, "numericUpDown19");
-            this.numericUpDown19.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // checkBox89
             // 
             resources.ApplyResources(this.checkBox89, "checkBox89");
@@ -579,6 +532,12 @@
             // 
             // groupBox_regular
             // 
+            this.groupBox_regular.Controls.Add(this.label44);
+            this.groupBox_regular.Controls.Add(this.numericUpDown_PrecisionAIREGULAR);
+            this.groupBox_regular.Controls.Add(this.label61);
+            this.groupBox_regular.Controls.Add(this.numericUpDown_SkillAIREGULAR);
+            this.groupBox_regular.Controls.Add(this.comboBox_AILevelPresetREGULAR);
+            this.groupBox_regular.Controls.Add(this.label62);
             this.groupBox_regular.Controls.Add(this.checkBox50);
             this.groupBox_regular.Controls.Add(this.checkBox51);
             this.groupBox_regular.Controls.Add(this.checkBox52);
@@ -601,17 +560,78 @@
             this.groupBox_regular.Controls.Add(this.checkBox69);
             this.groupBox_regular.Controls.Add(this.checkBox70);
             this.groupBox_regular.Controls.Add(this.checkBox71);
-            this.groupBox_regular.Controls.Add(this.numericUpDown5);
-            this.groupBox_regular.Controls.Add(this.numericUpDown13);
-            this.groupBox_regular.Controls.Add(this.numericUpDown14);
-            this.groupBox_regular.Controls.Add(this.label29);
-            this.groupBox_regular.Controls.Add(this.label30);
-            this.groupBox_regular.Controls.Add(this.label44);
-            this.groupBox_regular.Controls.Add(this.label61);
-            this.groupBox_regular.Controls.Add(this.numericUpDown15);
             resources.ApplyResources(this.groupBox_regular, "groupBox_regular");
             this.groupBox_regular.Name = "groupBox_regular";
             this.groupBox_regular.TabStop = false;
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // numericUpDown_PrecisionAIREGULAR
+            // 
+            this.numericUpDown_PrecisionAIREGULAR.DecimalPlaces = 2;
+            this.numericUpDown_PrecisionAIREGULAR.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_PrecisionAIREGULAR, "numericUpDown_PrecisionAIREGULAR");
+            this.numericUpDown_PrecisionAIREGULAR.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_PrecisionAIREGULAR.Name = "numericUpDown_PrecisionAIREGULAR";
+            this.numericUpDown_PrecisionAIREGULAR.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label61
+            // 
+            resources.ApplyResources(this.label61, "label61");
+            this.label61.Name = "label61";
+            // 
+            // numericUpDown_SkillAIREGULAR
+            // 
+            this.numericUpDown_SkillAIREGULAR.DecimalPlaces = 2;
+            this.numericUpDown_SkillAIREGULAR.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_SkillAIREGULAR, "numericUpDown_SkillAIREGULAR");
+            this.numericUpDown_SkillAIREGULAR.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_SkillAIREGULAR.Name = "numericUpDown_SkillAIREGULAR";
+            this.numericUpDown_SkillAIREGULAR.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBox_AILevelPresetREGULAR
+            // 
+            this.comboBox_AILevelPresetREGULAR.FormattingEnabled = true;
+            this.comboBox_AILevelPresetREGULAR.Items.AddRange(new object[] {
+            resources.GetString("comboBox_AILevelPresetREGULAR.Items"),
+            resources.GetString("comboBox_AILevelPresetREGULAR.Items1"),
+            resources.GetString("comboBox_AILevelPresetREGULAR.Items2"),
+            resources.GetString("comboBox_AILevelPresetREGULAR.Items3")});
+            resources.ApplyResources(this.comboBox_AILevelPresetREGULAR, "comboBox_AILevelPresetREGULAR");
+            this.comboBox_AILevelPresetREGULAR.Name = "comboBox_AILevelPresetREGULAR";
+            this.comboBox_AILevelPresetREGULAR.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetREGULAR_SelectedIndexChanged);
+            // 
+            // label62
+            // 
+            resources.ApplyResources(this.label62, "label62");
+            this.label62.Name = "label62";
             // 
             // checkBox50
             // 
@@ -783,112 +803,14 @@
             this.checkBox71.Name = "checkBox71";
             this.checkBox71.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.DecimalPlaces = 2;
-            this.numericUpDown5.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown5, "numericUpDown5");
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown13
-            // 
-            this.numericUpDown13.DecimalPlaces = 2;
-            this.numericUpDown13.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown13, "numericUpDown13");
-            this.numericUpDown13.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown14
-            // 
-            this.numericUpDown14.DecimalPlaces = 2;
-            this.numericUpDown14.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown14, "numericUpDown14");
-            this.numericUpDown14.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            // 
-            // label61
-            // 
-            resources.ApplyResources(this.label61, "label61");
-            this.label61.Name = "label61";
-            // 
-            // numericUpDown15
-            // 
-            this.numericUpDown15.DecimalPlaces = 2;
-            this.numericUpDown15.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown15, "numericUpDown15");
-            this.numericUpDown15.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // groupBox_recruit
             // 
+            this.groupBox_recruit.Controls.Add(this.label89);
+            this.groupBox_recruit.Controls.Add(this.numericUpDown_PrecisionAIRECRUIT);
+            this.groupBox_recruit.Controls.Add(this.label88);
+            this.groupBox_recruit.Controls.Add(this.numericUpDown_SkillAIRECRUIT);
+            this.groupBox_recruit.Controls.Add(this.comboBox_AILevelPresetRECRUIT);
+            this.groupBox_recruit.Controls.Add(this.label51);
             this.groupBox_recruit.Controls.Add(this.checkBox49);
             this.groupBox_recruit.Controls.Add(this.checkBox48);
             this.groupBox_recruit.Controls.Add(this.checkBox47);
@@ -911,17 +833,78 @@
             this.groupBox_recruit.Controls.Add(this.checkBox30);
             this.groupBox_recruit.Controls.Add(this.checkBox29);
             this.groupBox_recruit.Controls.Add(this.checkBox28);
-            this.groupBox_recruit.Controls.Add(this.numericUpDown9);
-            this.groupBox_recruit.Controls.Add(this.numericUpDown8);
-            this.groupBox_recruit.Controls.Add(this.numericUpDown7);
-            this.groupBox_recruit.Controls.Add(this.label40);
-            this.groupBox_recruit.Controls.Add(this.label42);
-            this.groupBox_recruit.Controls.Add(this.label39);
-            this.groupBox_recruit.Controls.Add(this.label38);
-            this.groupBox_recruit.Controls.Add(this.numericUpDown6);
             resources.ApplyResources(this.groupBox_recruit, "groupBox_recruit");
             this.groupBox_recruit.Name = "groupBox_recruit";
             this.groupBox_recruit.TabStop = false;
+            // 
+            // label89
+            // 
+            resources.ApplyResources(this.label89, "label89");
+            this.label89.Name = "label89";
+            // 
+            // numericUpDown_PrecisionAIRECRUIT
+            // 
+            this.numericUpDown_PrecisionAIRECRUIT.DecimalPlaces = 2;
+            this.numericUpDown_PrecisionAIRECRUIT.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_PrecisionAIRECRUIT, "numericUpDown_PrecisionAIRECRUIT");
+            this.numericUpDown_PrecisionAIRECRUIT.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_PrecisionAIRECRUIT.Name = "numericUpDown_PrecisionAIRECRUIT";
+            this.numericUpDown_PrecisionAIRECRUIT.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label88
+            // 
+            resources.ApplyResources(this.label88, "label88");
+            this.label88.Name = "label88";
+            // 
+            // numericUpDown_SkillAIRECRUIT
+            // 
+            this.numericUpDown_SkillAIRECRUIT.DecimalPlaces = 2;
+            this.numericUpDown_SkillAIRECRUIT.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_SkillAIRECRUIT, "numericUpDown_SkillAIRECRUIT");
+            this.numericUpDown_SkillAIRECRUIT.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_SkillAIRECRUIT.Name = "numericUpDown_SkillAIRECRUIT";
+            this.numericUpDown_SkillAIRECRUIT.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBox_AILevelPresetRECRUIT
+            // 
+            this.comboBox_AILevelPresetRECRUIT.FormattingEnabled = true;
+            this.comboBox_AILevelPresetRECRUIT.Items.AddRange(new object[] {
+            resources.GetString("comboBox_AILevelPresetRECRUIT.Items"),
+            resources.GetString("comboBox_AILevelPresetRECRUIT.Items1"),
+            resources.GetString("comboBox_AILevelPresetRECRUIT.Items2"),
+            resources.GetString("comboBox_AILevelPresetRECRUIT.Items3")});
+            resources.ApplyResources(this.comboBox_AILevelPresetRECRUIT, "comboBox_AILevelPresetRECRUIT");
+            this.comboBox_AILevelPresetRECRUIT.Name = "comboBox_AILevelPresetRECRUIT";
+            this.comboBox_AILevelPresetRECRUIT.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetRECRUIT_SelectedIndexChanged);
+            // 
+            // label51
+            // 
+            resources.ApplyResources(this.label51, "label51");
+            this.label51.Name = "label51";
             // 
             // checkBox49
             // 
@@ -1093,115 +1076,6 @@
             this.checkBox28.Name = "checkBox28";
             this.checkBox28.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.DecimalPlaces = 2;
-            this.numericUpDown9.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown9, "numericUpDown9");
-            this.numericUpDown9.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.DecimalPlaces = 2;
-            this.numericUpDown8.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown8, "numericUpDown8");
-            this.numericUpDown8.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.DecimalPlaces = 2;
-            this.numericUpDown7.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown7, "numericUpDown7");
-            this.numericUpDown7.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // label39
-            // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            // 
-            // label38
-            // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.DecimalPlaces = 2;
-            this.numericUpDown6.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown6, "numericUpDown6");
-            this.numericUpDown6.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label64
-            // 
-            resources.ApplyResources(this.label64, "label64");
-            this.label64.Name = "label64";
-            // 
             // numericUpDown4
             // 
             resources.ApplyResources(this.numericUpDown4, "numericUpDown4");
@@ -1289,10 +1163,10 @@
             this.groupBox5.Controls.Add(this.radioButton9);
             this.groupBox5.Controls.Add(this.radioButton8);
             this.groupBox5.Controls.Add(this.radioButton7);
-            this.groupBox5.Controls.Add(this.groupBox_recruit);
-            this.groupBox5.Controls.Add(this.groupBox_veteran);
             this.groupBox5.Controls.Add(this.groupBox_mercenary);
             this.groupBox5.Controls.Add(this.groupBox_regular);
+            this.groupBox5.Controls.Add(this.groupBox_recruit);
+            this.groupBox5.Controls.Add(this.groupBox_veteran);
             resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
@@ -1329,6 +1203,12 @@
             // 
             // groupBox_veteran
             // 
+            this.groupBox_veteran.Controls.Add(this.label38);
+            this.groupBox_veteran.Controls.Add(this.numericUpDown_PrecisionAIVETERAN);
+            this.groupBox_veteran.Controls.Add(this.label39);
+            this.groupBox_veteran.Controls.Add(this.numericUpDown_SkillAIVETERAN);
+            this.groupBox_veteran.Controls.Add(this.comboBox_AILevelPresetVETERAN);
+            this.groupBox_veteran.Controls.Add(this.label40);
             this.groupBox_veteran.Controls.Add(this.checkBox94);
             this.groupBox_veteran.Controls.Add(this.checkBox95);
             this.groupBox_veteran.Controls.Add(this.checkBox96);
@@ -1351,17 +1231,78 @@
             this.groupBox_veteran.Controls.Add(this.checkBox113);
             this.groupBox_veteran.Controls.Add(this.checkBox114);
             this.groupBox_veteran.Controls.Add(this.checkBox115);
-            this.groupBox_veteran.Controls.Add(this.numericUpDown20);
-            this.groupBox_veteran.Controls.Add(this.numericUpDown21);
-            this.groupBox_veteran.Controls.Add(this.numericUpDown22);
-            this.groupBox_veteran.Controls.Add(this.label66);
-            this.groupBox_veteran.Controls.Add(this.label67);
-            this.groupBox_veteran.Controls.Add(this.label68);
-            this.groupBox_veteran.Controls.Add(this.label69);
-            this.groupBox_veteran.Controls.Add(this.numericUpDown23);
             resources.ApplyResources(this.groupBox_veteran, "groupBox_veteran");
             this.groupBox_veteran.Name = "groupBox_veteran";
             this.groupBox_veteran.TabStop = false;
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            // 
+            // numericUpDown_PrecisionAIVETERAN
+            // 
+            this.numericUpDown_PrecisionAIVETERAN.DecimalPlaces = 2;
+            this.numericUpDown_PrecisionAIVETERAN.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_PrecisionAIVETERAN, "numericUpDown_PrecisionAIVETERAN");
+            this.numericUpDown_PrecisionAIVETERAN.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_PrecisionAIVETERAN.Name = "numericUpDown_PrecisionAIVETERAN";
+            this.numericUpDown_PrecisionAIVETERAN.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            // 
+            // numericUpDown_SkillAIVETERAN
+            // 
+            this.numericUpDown_SkillAIVETERAN.DecimalPlaces = 2;
+            this.numericUpDown_SkillAIVETERAN.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_SkillAIVETERAN, "numericUpDown_SkillAIVETERAN");
+            this.numericUpDown_SkillAIVETERAN.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_SkillAIVETERAN.Name = "numericUpDown_SkillAIVETERAN";
+            this.numericUpDown_SkillAIVETERAN.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBox_AILevelPresetVETERAN
+            // 
+            this.comboBox_AILevelPresetVETERAN.FormattingEnabled = true;
+            this.comboBox_AILevelPresetVETERAN.Items.AddRange(new object[] {
+            resources.GetString("comboBox_AILevelPresetVETERAN.Items"),
+            resources.GetString("comboBox_AILevelPresetVETERAN.Items1"),
+            resources.GetString("comboBox_AILevelPresetVETERAN.Items2"),
+            resources.GetString("comboBox_AILevelPresetVETERAN.Items3")});
+            resources.ApplyResources(this.comboBox_AILevelPresetVETERAN, "comboBox_AILevelPresetVETERAN");
+            this.comboBox_AILevelPresetVETERAN.Name = "comboBox_AILevelPresetVETERAN";
+            this.comboBox_AILevelPresetVETERAN.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetVETERAN_SelectedIndexChanged);
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
             // 
             // checkBox94
             // 
@@ -1517,112 +1458,14 @@
             this.checkBox115.Name = "checkBox115";
             this.checkBox115.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown20
-            // 
-            this.numericUpDown20.DecimalPlaces = 2;
-            this.numericUpDown20.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown20, "numericUpDown20");
-            this.numericUpDown20.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown21
-            // 
-            this.numericUpDown21.DecimalPlaces = 2;
-            this.numericUpDown21.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown21, "numericUpDown21");
-            this.numericUpDown21.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown22
-            // 
-            this.numericUpDown22.DecimalPlaces = 2;
-            this.numericUpDown22.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown22, "numericUpDown22");
-            this.numericUpDown22.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label66
-            // 
-            resources.ApplyResources(this.label66, "label66");
-            this.label66.Name = "label66";
-            // 
-            // label67
-            // 
-            resources.ApplyResources(this.label67, "label67");
-            this.label67.Name = "label67";
-            // 
-            // label68
-            // 
-            resources.ApplyResources(this.label68, "label68");
-            this.label68.Name = "label68";
-            // 
-            // label69
-            // 
-            resources.ApplyResources(this.label69, "label69");
-            this.label69.Name = "label69";
-            // 
-            // numericUpDown23
-            // 
-            this.numericUpDown23.DecimalPlaces = 2;
-            this.numericUpDown23.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown23, "numericUpDown23");
-            this.numericUpDown23.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // groupBox_mercenary
             // 
+            this.groupBox_mercenary.Controls.Add(this.label29);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown_PrecisionAIMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.label30);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown_SkillAIMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.comboBox_AILevelPresetMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.label42);
             this.groupBox_mercenary.Controls.Add(this.checkBox72);
             this.groupBox_mercenary.Controls.Add(this.checkBox73);
             this.groupBox_mercenary.Controls.Add(this.checkBox74);
@@ -1644,18 +1487,79 @@
             this.groupBox_mercenary.Controls.Add(this.checkBox91);
             this.groupBox_mercenary.Controls.Add(this.checkBox92);
             this.groupBox_mercenary.Controls.Add(this.checkBox93);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown16);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown17);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown18);
-            this.groupBox_mercenary.Controls.Add(this.label62);
-            this.groupBox_mercenary.Controls.Add(this.label63);
-            this.groupBox_mercenary.Controls.Add(this.label64);
-            this.groupBox_mercenary.Controls.Add(this.label65);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown19);
             this.groupBox_mercenary.Controls.Add(this.checkBox89);
             resources.ApplyResources(this.groupBox_mercenary, "groupBox_mercenary");
             this.groupBox_mercenary.Name = "groupBox_mercenary";
             this.groupBox_mercenary.TabStop = false;
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // numericUpDown_PrecisionAIMERCENARY
+            // 
+            this.numericUpDown_PrecisionAIMERCENARY.DecimalPlaces = 2;
+            this.numericUpDown_PrecisionAIMERCENARY.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_PrecisionAIMERCENARY, "numericUpDown_PrecisionAIMERCENARY");
+            this.numericUpDown_PrecisionAIMERCENARY.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_PrecisionAIMERCENARY.Name = "numericUpDown_PrecisionAIMERCENARY";
+            this.numericUpDown_PrecisionAIMERCENARY.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // numericUpDown_SkillAIMERCENARY
+            // 
+            this.numericUpDown_SkillAIMERCENARY.DecimalPlaces = 2;
+            this.numericUpDown_SkillAIMERCENARY.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_SkillAIMERCENARY, "numericUpDown_SkillAIMERCENARY");
+            this.numericUpDown_SkillAIMERCENARY.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_SkillAIMERCENARY.Name = "numericUpDown_SkillAIMERCENARY";
+            this.numericUpDown_SkillAIMERCENARY.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBox_AILevelPresetMERCENARY
+            // 
+            this.comboBox_AILevelPresetMERCENARY.FormattingEnabled = true;
+            this.comboBox_AILevelPresetMERCENARY.Items.AddRange(new object[] {
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items1"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items2"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items3")});
+            resources.ApplyResources(this.comboBox_AILevelPresetMERCENARY, "comboBox_AILevelPresetMERCENARY");
+            this.comboBox_AILevelPresetMERCENARY.Name = "comboBox_AILevelPresetMERCENARY";
+            this.comboBox_AILevelPresetMERCENARY.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetMERCENARY_SelectedIndexChanged);
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
             // 
             // checkBox72
             // 
@@ -1736,74 +1640,6 @@
             resources.ApplyResources(this.checkBox93, "checkBox93");
             this.checkBox93.Name = "checkBox93";
             this.checkBox93.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown16
-            // 
-            this.numericUpDown16.DecimalPlaces = 2;
-            this.numericUpDown16.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown16, "numericUpDown16");
-            this.numericUpDown16.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown17
-            // 
-            this.numericUpDown17.DecimalPlaces = 2;
-            this.numericUpDown17.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown17, "numericUpDown17");
-            this.numericUpDown17.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // numericUpDown18
-            // 
-            this.numericUpDown18.DecimalPlaces = 2;
-            this.numericUpDown18.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown18, "numericUpDown18");
-            this.numericUpDown18.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label62
-            // 
-            resources.ApplyResources(this.label62, "label62");
-            this.label62.Name = "label62";
             // 
             // label57
             // 
@@ -2125,6 +1961,14 @@
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox6, resources.GetString("pictureBox6.ToolTip"));
+            // 
+            // checkBox11
+            // 
+            resources.ApplyResources(this.checkBox11, "checkBox11");
+            this.checkBox11.Name = "checkBox11";
+            this.toolTip1.SetToolTip(this.checkBox11, resources.GetString("checkBox11.ToolTip"));
+            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged_1);
             // 
             // groupBox20
             // 
@@ -3173,6 +3017,11 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
+            // textBox22
+            // 
+            resources.ApplyResources(this.textBox22, "textBox22");
+            this.textBox22.Name = "textBox22";
+            // 
             // checkBox5
             // 
             resources.ApplyResources(this.checkBox5, "checkBox5");
@@ -3960,19 +3809,6 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // checkBox11
-            // 
-            resources.ApplyResources(this.checkBox11, "checkBox11");
-            this.checkBox11.Name = "checkBox11";
-            this.toolTip1.SetToolTip(this.checkBox11, resources.GetString("checkBox11.ToolTip"));
-            this.checkBox11.UseVisualStyleBackColor = true;
-            this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged_1);
-            // 
-            // textBox22
-            // 
-            resources.ApplyResources(this.textBox22, "textBox22");
-            this.textBox22.Name = "textBox22";
-            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -3990,34 +3826,26 @@
             this.MaximizeBox = false;
             this.Name = "FenetrePrincipale";
             this.Load += new System.EventHandler(this.FenetrePrincipale_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             this.groupBox_regular.ResumeLayout(false);
             this.groupBox_regular.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).EndInit();
             this.groupBox_recruit.ResumeLayout(false);
             this.groupBox_recruit.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIRECRUIT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIRECRUIT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             this.difficulte.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox_veteran.ResumeLayout(false);
             this.groupBox_veteran.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).EndInit();
             this.groupBox_mercenary.ResumeLayout(false);
             this.groupBox_mercenary.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIMERCENARY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIMERCENARY)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -4120,9 +3948,6 @@
 
         #endregion
 
-        internal System.Windows.Forms.Label label63;
-        internal System.Windows.Forms.Label label65;
-        internal System.Windows.Forms.NumericUpDown numericUpDown19;
         internal System.Windows.Forms.CheckBox checkBox89;
         internal System.Windows.Forms.GroupBox groupBox_regular;
         internal System.Windows.Forms.CheckBox checkBox50;
@@ -4147,14 +3972,6 @@
         internal System.Windows.Forms.CheckBox checkBox69;
         internal System.Windows.Forms.CheckBox checkBox70;
         internal System.Windows.Forms.CheckBox checkBox71;
-        internal System.Windows.Forms.NumericUpDown numericUpDown5;
-        internal System.Windows.Forms.NumericUpDown numericUpDown13;
-        internal System.Windows.Forms.NumericUpDown numericUpDown14;
-        internal System.Windows.Forms.Label label29;
-        internal System.Windows.Forms.Label label30;
-        internal System.Windows.Forms.Label label44;
-        internal System.Windows.Forms.Label label61;
-        internal System.Windows.Forms.NumericUpDown numericUpDown15;
         internal System.Windows.Forms.GroupBox groupBox_recruit;
         internal System.Windows.Forms.CheckBox checkBox49;
         internal System.Windows.Forms.CheckBox checkBox48;
@@ -4178,15 +3995,6 @@
         internal System.Windows.Forms.CheckBox checkBox30;
         internal System.Windows.Forms.CheckBox checkBox29;
         internal System.Windows.Forms.CheckBox checkBox28;
-        internal System.Windows.Forms.NumericUpDown numericUpDown9;
-        internal System.Windows.Forms.NumericUpDown numericUpDown8;
-        internal System.Windows.Forms.NumericUpDown numericUpDown7;
-        internal System.Windows.Forms.Label label40;
-        internal System.Windows.Forms.Label label42;
-        internal System.Windows.Forms.Label label39;
-        internal System.Windows.Forms.Label label38;
-        internal System.Windows.Forms.NumericUpDown numericUpDown6;
-        internal System.Windows.Forms.Label label64;
         internal System.Windows.Forms.NumericUpDown numericUpDown4;
         internal System.Windows.Forms.CheckBox checkBox75;
         internal System.Windows.Forms.CheckBox checkBox76;
@@ -4217,10 +4025,6 @@
         internal System.Windows.Forms.CheckBox checkBox91;
         internal System.Windows.Forms.CheckBox checkBox92;
         internal System.Windows.Forms.CheckBox checkBox93;
-        internal System.Windows.Forms.NumericUpDown numericUpDown16;
-        internal System.Windows.Forms.NumericUpDown numericUpDown17;
-        internal System.Windows.Forms.NumericUpDown numericUpDown18;
-        internal System.Windows.Forms.Label label62;
         internal System.Windows.Forms.GroupBox groupBox_veteran;
         internal System.Windows.Forms.CheckBox checkBox94;
         internal System.Windows.Forms.CheckBox checkBox95;
@@ -4244,14 +4048,6 @@
         internal System.Windows.Forms.CheckBox checkBox113;
         internal System.Windows.Forms.CheckBox checkBox114;
         internal System.Windows.Forms.CheckBox checkBox115;
-        internal System.Windows.Forms.NumericUpDown numericUpDown20;
-        internal System.Windows.Forms.NumericUpDown numericUpDown21;
-        internal System.Windows.Forms.NumericUpDown numericUpDown22;
-        internal System.Windows.Forms.Label label66;
-        internal System.Windows.Forms.Label label67;
-        internal System.Windows.Forms.Label label68;
-        internal System.Windows.Forms.Label label69;
-        internal System.Windows.Forms.NumericUpDown numericUpDown23;
         internal System.Windows.Forms.Label label57;
         internal System.Windows.Forms.Label label56;
         internal System.Windows.Forms.Label label55;
@@ -4530,6 +4326,30 @@
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.CheckBox checkBox11;
         internal System.Windows.Forms.TextBox textBox22;
+        internal System.Windows.Forms.Label label51;
+        internal System.Windows.Forms.Label label88;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_SkillAIRECRUIT;
+        internal System.Windows.Forms.Label label89;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PrecisionAIRECRUIT;
+        internal System.Windows.Forms.ComboBox comboBox_AILevelPresetRECRUIT;
+        internal System.Windows.Forms.Label label38;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PrecisionAIVETERAN;
+        internal System.Windows.Forms.Label label39;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_SkillAIVETERAN;
+        internal System.Windows.Forms.ComboBox comboBox_AILevelPresetVETERAN;
+        internal System.Windows.Forms.Label label40;
+        internal System.Windows.Forms.Label label29;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PrecisionAIMERCENARY;
+        internal System.Windows.Forms.Label label30;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_SkillAIMERCENARY;
+        internal System.Windows.Forms.ComboBox comboBox_AILevelPresetMERCENARY;
+        internal System.Windows.Forms.Label label42;
+        internal System.Windows.Forms.Label label44;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PrecisionAIREGULAR;
+        internal System.Windows.Forms.Label label61;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_SkillAIREGULAR;
+        internal System.Windows.Forms.ComboBox comboBox_AILevelPresetREGULAR;
+        internal System.Windows.Forms.Label label62;
 
     }
 }

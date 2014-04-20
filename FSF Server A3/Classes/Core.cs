@@ -329,7 +329,7 @@ namespace FSF_Server_A3.Classes
                }
                else
                {
-                   Var.fenetrePrincipale.textBox11.AppendText("INFO  : Impossible de mettre a jour FSFLauncher.exe quand il est lancé" + Environment.NewLine);
+                   Var.fenetrePrincipale.textBox11.AppendText("INFO  : Impossible de mettre a jour FSFServer.exe quand il est lancé" + Environment.NewLine);
                }
            }
        }
