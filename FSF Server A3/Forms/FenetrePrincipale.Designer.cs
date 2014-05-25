@@ -105,6 +105,26 @@
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.groupBox_mercenary = new System.Windows.Forms.GroupBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.numericUpDown_PrecisionAIMERCENARY = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numericUpDown_SkillAIMERCENARY = new System.Windows.Forms.NumericUpDown();
+            this.comboBox_AILevelPresetMERCENARY = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.checkBox72 = new System.Windows.Forms.CheckBox();
+            this.checkBox73 = new System.Windows.Forms.CheckBox();
+            this.checkBox74 = new System.Windows.Forms.CheckBox();
+            this.checkBox83 = new System.Windows.Forms.CheckBox();
+            this.checkBox84 = new System.Windows.Forms.CheckBox();
+            this.checkBox85 = new System.Windows.Forms.CheckBox();
+            this.checkBox86 = new System.Windows.Forms.CheckBox();
+            this.checkBox87 = new System.Windows.Forms.CheckBox();
+            this.checkBox88 = new System.Windows.Forms.CheckBox();
+            this.checkBox90 = new System.Windows.Forms.CheckBox();
+            this.checkBox91 = new System.Windows.Forms.CheckBox();
+            this.checkBox92 = new System.Windows.Forms.CheckBox();
+            this.checkBox93 = new System.Windows.Forms.CheckBox();
             this.groupBox_veteran = new System.Windows.Forms.GroupBox();
             this.label38 = new System.Windows.Forms.Label();
             this.numericUpDown_PrecisionAIVETERAN = new System.Windows.Forms.NumericUpDown();
@@ -134,26 +154,6 @@
             this.checkBox113 = new System.Windows.Forms.CheckBox();
             this.checkBox114 = new System.Windows.Forms.CheckBox();
             this.checkBox115 = new System.Windows.Forms.CheckBox();
-            this.groupBox_mercenary = new System.Windows.Forms.GroupBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.numericUpDown_PrecisionAIMERCENARY = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
-            this.numericUpDown_SkillAIMERCENARY = new System.Windows.Forms.NumericUpDown();
-            this.comboBox_AILevelPresetMERCENARY = new System.Windows.Forms.ComboBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.checkBox72 = new System.Windows.Forms.CheckBox();
-            this.checkBox73 = new System.Windows.Forms.CheckBox();
-            this.checkBox74 = new System.Windows.Forms.CheckBox();
-            this.checkBox83 = new System.Windows.Forms.CheckBox();
-            this.checkBox84 = new System.Windows.Forms.CheckBox();
-            this.checkBox85 = new System.Windows.Forms.CheckBox();
-            this.checkBox86 = new System.Windows.Forms.CheckBox();
-            this.checkBox87 = new System.Windows.Forms.CheckBox();
-            this.checkBox88 = new System.Windows.Forms.CheckBox();
-            this.checkBox90 = new System.Windows.Forms.CheckBox();
-            this.checkBox91 = new System.Windows.Forms.CheckBox();
-            this.checkBox92 = new System.Windows.Forms.CheckBox();
-            this.checkBox93 = new System.Windows.Forms.CheckBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
@@ -432,6 +432,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.checkBox_enableHT = new System.Windows.Forms.CheckBox();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
@@ -441,12 +442,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             this.difficulte.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox_veteran.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).BeginInit();
             this.groupBox_mercenary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIMERCENARY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIMERCENARY)).BeginInit();
+            this.groupBox_veteran.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).BeginInit();
             this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -1201,6 +1202,189 @@
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
+            // groupBox_mercenary
+            // 
+            this.groupBox_mercenary.Controls.Add(this.label29);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown_PrecisionAIMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.label30);
+            this.groupBox_mercenary.Controls.Add(this.numericUpDown_SkillAIMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.comboBox_AILevelPresetMERCENARY);
+            this.groupBox_mercenary.Controls.Add(this.label42);
+            this.groupBox_mercenary.Controls.Add(this.checkBox72);
+            this.groupBox_mercenary.Controls.Add(this.checkBox73);
+            this.groupBox_mercenary.Controls.Add(this.checkBox74);
+            this.groupBox_mercenary.Controls.Add(this.checkBox75);
+            this.groupBox_mercenary.Controls.Add(this.checkBox76);
+            this.groupBox_mercenary.Controls.Add(this.checkBox77);
+            this.groupBox_mercenary.Controls.Add(this.checkBox78);
+            this.groupBox_mercenary.Controls.Add(this.checkBox79);
+            this.groupBox_mercenary.Controls.Add(this.checkBox80);
+            this.groupBox_mercenary.Controls.Add(this.checkBox81);
+            this.groupBox_mercenary.Controls.Add(this.checkBox82);
+            this.groupBox_mercenary.Controls.Add(this.checkBox83);
+            this.groupBox_mercenary.Controls.Add(this.checkBox84);
+            this.groupBox_mercenary.Controls.Add(this.checkBox85);
+            this.groupBox_mercenary.Controls.Add(this.checkBox86);
+            this.groupBox_mercenary.Controls.Add(this.checkBox87);
+            this.groupBox_mercenary.Controls.Add(this.checkBox88);
+            this.groupBox_mercenary.Controls.Add(this.checkBox90);
+            this.groupBox_mercenary.Controls.Add(this.checkBox91);
+            this.groupBox_mercenary.Controls.Add(this.checkBox92);
+            this.groupBox_mercenary.Controls.Add(this.checkBox93);
+            this.groupBox_mercenary.Controls.Add(this.checkBox89);
+            resources.ApplyResources(this.groupBox_mercenary, "groupBox_mercenary");
+            this.groupBox_mercenary.Name = "groupBox_mercenary";
+            this.groupBox_mercenary.TabStop = false;
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            // 
+            // numericUpDown_PrecisionAIMERCENARY
+            // 
+            this.numericUpDown_PrecisionAIMERCENARY.DecimalPlaces = 2;
+            this.numericUpDown_PrecisionAIMERCENARY.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_PrecisionAIMERCENARY, "numericUpDown_PrecisionAIMERCENARY");
+            this.numericUpDown_PrecisionAIMERCENARY.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_PrecisionAIMERCENARY.Name = "numericUpDown_PrecisionAIMERCENARY";
+            this.numericUpDown_PrecisionAIMERCENARY.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            // 
+            // numericUpDown_SkillAIMERCENARY
+            // 
+            this.numericUpDown_SkillAIMERCENARY.DecimalPlaces = 2;
+            this.numericUpDown_SkillAIMERCENARY.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            resources.ApplyResources(this.numericUpDown_SkillAIMERCENARY, "numericUpDown_SkillAIMERCENARY");
+            this.numericUpDown_SkillAIMERCENARY.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_SkillAIMERCENARY.Name = "numericUpDown_SkillAIMERCENARY";
+            this.numericUpDown_SkillAIMERCENARY.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // comboBox_AILevelPresetMERCENARY
+            // 
+            this.comboBox_AILevelPresetMERCENARY.FormattingEnabled = true;
+            this.comboBox_AILevelPresetMERCENARY.Items.AddRange(new object[] {
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items1"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items2"),
+            resources.GetString("comboBox_AILevelPresetMERCENARY.Items3")});
+            resources.ApplyResources(this.comboBox_AILevelPresetMERCENARY, "comboBox_AILevelPresetMERCENARY");
+            this.comboBox_AILevelPresetMERCENARY.Name = "comboBox_AILevelPresetMERCENARY";
+            this.comboBox_AILevelPresetMERCENARY.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetMERCENARY_SelectedIndexChanged);
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // checkBox72
+            // 
+            resources.ApplyResources(this.checkBox72, "checkBox72");
+            this.checkBox72.Name = "checkBox72";
+            this.checkBox72.UseVisualStyleBackColor = true;
+            // 
+            // checkBox73
+            // 
+            resources.ApplyResources(this.checkBox73, "checkBox73");
+            this.checkBox73.Name = "checkBox73";
+            this.checkBox73.UseVisualStyleBackColor = true;
+            // 
+            // checkBox74
+            // 
+            resources.ApplyResources(this.checkBox74, "checkBox74");
+            this.checkBox74.Checked = true;
+            this.checkBox74.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox74.Name = "checkBox74";
+            this.checkBox74.UseVisualStyleBackColor = true;
+            // 
+            // checkBox83
+            // 
+            resources.ApplyResources(this.checkBox83, "checkBox83");
+            this.checkBox83.Name = "checkBox83";
+            this.checkBox83.UseVisualStyleBackColor = true;
+            // 
+            // checkBox84
+            // 
+            resources.ApplyResources(this.checkBox84, "checkBox84");
+            this.checkBox84.Name = "checkBox84";
+            this.checkBox84.UseVisualStyleBackColor = true;
+            // 
+            // checkBox85
+            // 
+            resources.ApplyResources(this.checkBox85, "checkBox85");
+            this.checkBox85.Name = "checkBox85";
+            this.checkBox85.UseVisualStyleBackColor = true;
+            // 
+            // checkBox86
+            // 
+            resources.ApplyResources(this.checkBox86, "checkBox86");
+            this.checkBox86.Name = "checkBox86";
+            this.checkBox86.UseVisualStyleBackColor = true;
+            // 
+            // checkBox87
+            // 
+            resources.ApplyResources(this.checkBox87, "checkBox87");
+            this.checkBox87.Name = "checkBox87";
+            this.checkBox87.UseVisualStyleBackColor = true;
+            // 
+            // checkBox88
+            // 
+            resources.ApplyResources(this.checkBox88, "checkBox88");
+            this.checkBox88.Name = "checkBox88";
+            this.checkBox88.UseVisualStyleBackColor = true;
+            // 
+            // checkBox90
+            // 
+            resources.ApplyResources(this.checkBox90, "checkBox90");
+            this.checkBox90.Name = "checkBox90";
+            this.checkBox90.UseVisualStyleBackColor = true;
+            // 
+            // checkBox91
+            // 
+            resources.ApplyResources(this.checkBox91, "checkBox91");
+            this.checkBox91.Name = "checkBox91";
+            this.checkBox91.UseVisualStyleBackColor = true;
+            // 
+            // checkBox92
+            // 
+            resources.ApplyResources(this.checkBox92, "checkBox92");
+            this.checkBox92.Name = "checkBox92";
+            this.checkBox92.UseVisualStyleBackColor = true;
+            // 
+            // checkBox93
+            // 
+            resources.ApplyResources(this.checkBox93, "checkBox93");
+            this.checkBox93.Name = "checkBox93";
+            this.checkBox93.UseVisualStyleBackColor = true;
+            // 
             // groupBox_veteran
             // 
             this.groupBox_veteran.Controls.Add(this.label38);
@@ -1457,189 +1641,6 @@
             resources.ApplyResources(this.checkBox115, "checkBox115");
             this.checkBox115.Name = "checkBox115";
             this.checkBox115.UseVisualStyleBackColor = true;
-            // 
-            // groupBox_mercenary
-            // 
-            this.groupBox_mercenary.Controls.Add(this.label29);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown_PrecisionAIMERCENARY);
-            this.groupBox_mercenary.Controls.Add(this.label30);
-            this.groupBox_mercenary.Controls.Add(this.numericUpDown_SkillAIMERCENARY);
-            this.groupBox_mercenary.Controls.Add(this.comboBox_AILevelPresetMERCENARY);
-            this.groupBox_mercenary.Controls.Add(this.label42);
-            this.groupBox_mercenary.Controls.Add(this.checkBox72);
-            this.groupBox_mercenary.Controls.Add(this.checkBox73);
-            this.groupBox_mercenary.Controls.Add(this.checkBox74);
-            this.groupBox_mercenary.Controls.Add(this.checkBox75);
-            this.groupBox_mercenary.Controls.Add(this.checkBox76);
-            this.groupBox_mercenary.Controls.Add(this.checkBox77);
-            this.groupBox_mercenary.Controls.Add(this.checkBox78);
-            this.groupBox_mercenary.Controls.Add(this.checkBox79);
-            this.groupBox_mercenary.Controls.Add(this.checkBox80);
-            this.groupBox_mercenary.Controls.Add(this.checkBox81);
-            this.groupBox_mercenary.Controls.Add(this.checkBox82);
-            this.groupBox_mercenary.Controls.Add(this.checkBox83);
-            this.groupBox_mercenary.Controls.Add(this.checkBox84);
-            this.groupBox_mercenary.Controls.Add(this.checkBox85);
-            this.groupBox_mercenary.Controls.Add(this.checkBox86);
-            this.groupBox_mercenary.Controls.Add(this.checkBox87);
-            this.groupBox_mercenary.Controls.Add(this.checkBox88);
-            this.groupBox_mercenary.Controls.Add(this.checkBox90);
-            this.groupBox_mercenary.Controls.Add(this.checkBox91);
-            this.groupBox_mercenary.Controls.Add(this.checkBox92);
-            this.groupBox_mercenary.Controls.Add(this.checkBox93);
-            this.groupBox_mercenary.Controls.Add(this.checkBox89);
-            resources.ApplyResources(this.groupBox_mercenary, "groupBox_mercenary");
-            this.groupBox_mercenary.Name = "groupBox_mercenary";
-            this.groupBox_mercenary.TabStop = false;
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            // 
-            // numericUpDown_PrecisionAIMERCENARY
-            // 
-            this.numericUpDown_PrecisionAIMERCENARY.DecimalPlaces = 2;
-            this.numericUpDown_PrecisionAIMERCENARY.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown_PrecisionAIMERCENARY, "numericUpDown_PrecisionAIMERCENARY");
-            this.numericUpDown_PrecisionAIMERCENARY.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown_PrecisionAIMERCENARY.Name = "numericUpDown_PrecisionAIMERCENARY";
-            this.numericUpDown_PrecisionAIMERCENARY.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            // 
-            // numericUpDown_SkillAIMERCENARY
-            // 
-            this.numericUpDown_SkillAIMERCENARY.DecimalPlaces = 2;
-            this.numericUpDown_SkillAIMERCENARY.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
-            resources.ApplyResources(this.numericUpDown_SkillAIMERCENARY, "numericUpDown_SkillAIMERCENARY");
-            this.numericUpDown_SkillAIMERCENARY.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown_SkillAIMERCENARY.Name = "numericUpDown_SkillAIMERCENARY";
-            this.numericUpDown_SkillAIMERCENARY.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // comboBox_AILevelPresetMERCENARY
-            // 
-            this.comboBox_AILevelPresetMERCENARY.FormattingEnabled = true;
-            this.comboBox_AILevelPresetMERCENARY.Items.AddRange(new object[] {
-            resources.GetString("comboBox_AILevelPresetMERCENARY.Items"),
-            resources.GetString("comboBox_AILevelPresetMERCENARY.Items1"),
-            resources.GetString("comboBox_AILevelPresetMERCENARY.Items2"),
-            resources.GetString("comboBox_AILevelPresetMERCENARY.Items3")});
-            resources.ApplyResources(this.comboBox_AILevelPresetMERCENARY, "comboBox_AILevelPresetMERCENARY");
-            this.comboBox_AILevelPresetMERCENARY.Name = "comboBox_AILevelPresetMERCENARY";
-            this.comboBox_AILevelPresetMERCENARY.SelectedIndexChanged += new System.EventHandler(this.comboBox_AILevelPresetMERCENARY_SelectedIndexChanged);
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // checkBox72
-            // 
-            resources.ApplyResources(this.checkBox72, "checkBox72");
-            this.checkBox72.Name = "checkBox72";
-            this.checkBox72.UseVisualStyleBackColor = true;
-            // 
-            // checkBox73
-            // 
-            resources.ApplyResources(this.checkBox73, "checkBox73");
-            this.checkBox73.Name = "checkBox73";
-            this.checkBox73.UseVisualStyleBackColor = true;
-            // 
-            // checkBox74
-            // 
-            resources.ApplyResources(this.checkBox74, "checkBox74");
-            this.checkBox74.Checked = true;
-            this.checkBox74.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox74.Name = "checkBox74";
-            this.checkBox74.UseVisualStyleBackColor = true;
-            // 
-            // checkBox83
-            // 
-            resources.ApplyResources(this.checkBox83, "checkBox83");
-            this.checkBox83.Name = "checkBox83";
-            this.checkBox83.UseVisualStyleBackColor = true;
-            // 
-            // checkBox84
-            // 
-            resources.ApplyResources(this.checkBox84, "checkBox84");
-            this.checkBox84.Name = "checkBox84";
-            this.checkBox84.UseVisualStyleBackColor = true;
-            // 
-            // checkBox85
-            // 
-            resources.ApplyResources(this.checkBox85, "checkBox85");
-            this.checkBox85.Name = "checkBox85";
-            this.checkBox85.UseVisualStyleBackColor = true;
-            // 
-            // checkBox86
-            // 
-            resources.ApplyResources(this.checkBox86, "checkBox86");
-            this.checkBox86.Name = "checkBox86";
-            this.checkBox86.UseVisualStyleBackColor = true;
-            // 
-            // checkBox87
-            // 
-            resources.ApplyResources(this.checkBox87, "checkBox87");
-            this.checkBox87.Name = "checkBox87";
-            this.checkBox87.UseVisualStyleBackColor = true;
-            // 
-            // checkBox88
-            // 
-            resources.ApplyResources(this.checkBox88, "checkBox88");
-            this.checkBox88.Name = "checkBox88";
-            this.checkBox88.UseVisualStyleBackColor = true;
-            // 
-            // checkBox90
-            // 
-            resources.ApplyResources(this.checkBox90, "checkBox90");
-            this.checkBox90.Name = "checkBox90";
-            this.checkBox90.UseVisualStyleBackColor = true;
-            // 
-            // checkBox91
-            // 
-            resources.ApplyResources(this.checkBox91, "checkBox91");
-            this.checkBox91.Name = "checkBox91";
-            this.checkBox91.UseVisualStyleBackColor = true;
-            // 
-            // checkBox92
-            // 
-            resources.ApplyResources(this.checkBox92, "checkBox92");
-            this.checkBox92.Name = "checkBox92";
-            this.checkBox92.UseVisualStyleBackColor = true;
-            // 
-            // checkBox93
-            // 
-            resources.ApplyResources(this.checkBox93, "checkBox93");
-            this.checkBox93.Name = "checkBox93";
-            this.checkBox93.UseVisualStyleBackColor = true;
             // 
             // label57
             // 
@@ -3001,6 +3002,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBox_enableHT);
             this.groupBox1.Controls.Add(this.textBox22);
             this.groupBox1.Controls.Add(this.checkBox11);
             this.groupBox1.Controls.Add(this.checkBox10);
@@ -3809,6 +3811,13 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // checkBox_enableHT
+            // 
+            resources.ApplyResources(this.checkBox_enableHT, "checkBox_enableHT");
+            this.checkBox_enableHT.Name = "checkBox_enableHT";
+            this.toolTip1.SetToolTip(this.checkBox_enableHT, resources.GetString("checkBox_enableHT.ToolTip"));
+            this.checkBox_enableHT.UseVisualStyleBackColor = true;
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -3838,14 +3847,14 @@
             this.difficulte.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.groupBox_veteran.ResumeLayout(false);
-            this.groupBox_veteran.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).EndInit();
             this.groupBox_mercenary.ResumeLayout(false);
             this.groupBox_mercenary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIMERCENARY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIMERCENARY)).EndInit();
+            this.groupBox_veteran.ResumeLayout(false);
+            this.groupBox_veteran.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIVETERAN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIVETERAN)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -4350,6 +4359,7 @@
         internal System.Windows.Forms.NumericUpDown numericUpDown_SkillAIREGULAR;
         internal System.Windows.Forms.ComboBox comboBox_AILevelPresetREGULAR;
         internal System.Windows.Forms.Label label62;
+        internal System.Windows.Forms.CheckBox checkBox_enableHT;
 
     }
 }

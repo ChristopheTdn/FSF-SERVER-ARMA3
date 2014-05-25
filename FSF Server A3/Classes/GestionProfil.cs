@@ -183,7 +183,7 @@ namespace FSF_Server_A3.Classes
             if (Var.fenetrePrincipale.checkBox24.Checked) { FichierProfilXML.WriteElementString("adminmode", "true"); } else { FichierProfilXML.WriteElementString("adminmode", ""); }
             if (Var.fenetrePrincipale.checkBox10.Checked) { FichierProfilXML.WriteElementString("nologs", "true"); } else { FichierProfilXML.WriteElementString("nologs", ""); }
             if (Var.fenetrePrincipale.checkBox11.Checked) { FichierProfilXML.WriteElementString("customCMDLine", Var.fenetrePrincipale.textBox22.Text); } else { FichierProfilXML.WriteElementString("customCMDLine", ""); }
-        
+            if (Var.fenetrePrincipale.checkBox_enableHT.Checked) { FichierProfilXML.WriteElementString("enableHT", "true"); } else { FichierProfilXML.WriteElementString("enableHT", ""); }       
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.WriteEndElement();
             FichierProfilXML.Flush(); //vide le buffer
@@ -518,6 +518,7 @@ namespace FSF_Server_A3.Classes
             if (Var.fenetrePrincipale.checkBox22.Checked) { listArguments += "-maxVRAM=" + Var.fenetrePrincipale.textBox20.Text + " "; }
             if (Var.fenetrePrincipale.checkBox21.Checked) { listArguments += "-exThreads=" + Var.fenetrePrincipale.comboBox3.Text + " "; }
             if (Var.fenetrePrincipale.checkBox11.Checked) { listArguments += " " + Var.fenetrePrincipale.textBox22.Text + " "; }
+            if (Var.fenetrePrincipale.checkBox_enableHT.Checked) { listArguments += "-enableHT "; }
             return listArguments += @"""" + listMODS + @"""";
         }
         static private string GenereLigneParamServeur()

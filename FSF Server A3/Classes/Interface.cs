@@ -412,6 +412,7 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox23.Checked = false;
             Var.fenetrePrincipale.checkBox21.Checked = false;
             Var.fenetrePrincipale.checkBox24.Checked = false;
+            Var.fenetrePrincipale.checkBox_enableHT.Checked = false;
             Var.fenetrePrincipale.textBox22.Text = "";
 
         }
@@ -457,6 +458,8 @@ namespace FSF_Server_A3.Classes
                 fichierProfilXML.ReadToFollowing("customCMDLine");
                 string customCMDLine = fichierProfilXML.ReadString();
                 if (customCMDLine != "") { Var.fenetrePrincipale.checkBox11.Checked = true; Var.fenetrePrincipale.textBox22.Text = customCMDLine; } else { Var.fenetrePrincipale.checkBox11.Checked = false; Var.fenetrePrincipale.textBox22.Text = "";  }
+                fichierProfilXML.ReadToFollowing("enableHT");
+                if (fichierProfilXML.ReadString() == "true") { Var.fenetrePrincipale.checkBox_enableHT.Checked = true; }
             fichierProfilXML.Close();
         }
         static public void AjouteComboNomProfil(int index, string nomProfil)
