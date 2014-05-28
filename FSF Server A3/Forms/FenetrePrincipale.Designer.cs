@@ -202,6 +202,7 @@
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox_enableHT = new System.Windows.Forms.CheckBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -432,7 +433,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.checkBox_enableHT = new System.Windows.Forms.CheckBox();
+            this.RemoteAccess = new System.Windows.Forms.TabPage();
+            this.button39 = new System.Windows.Forms.Button();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
@@ -521,6 +523,7 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.RemoteAccess.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox89
@@ -1971,6 +1974,13 @@
             this.checkBox11.UseVisualStyleBackColor = true;
             this.checkBox11.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged_1);
             // 
+            // checkBox_enableHT
+            // 
+            resources.ApplyResources(this.checkBox_enableHT, "checkBox_enableHT");
+            this.checkBox_enableHT.Name = "checkBox_enableHT";
+            this.toolTip1.SetToolTip(this.checkBox_enableHT, resources.GetString("checkBox_enableHT.ToolTip"));
+            this.checkBox_enableHT.UseVisualStyleBackColor = true;
+            // 
             // groupBox20
             // 
             this.groupBox20.Controls.Add(this.pictureBox6);
@@ -2618,6 +2628,7 @@
             this.tabControl2.Controls.Add(this.PRIORITE);
             this.tabControl2.Controls.Add(this.Options);
             this.tabControl2.Controls.Add(this.NetWork);
+            this.tabControl2.Controls.Add(this.RemoteAccess);
             resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.ImageList = this.imageList1;
             this.tabControl2.Multiline = true;
@@ -3811,12 +3822,19 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // checkBox_enableHT
+            // RemoteAccess
             // 
-            resources.ApplyResources(this.checkBox_enableHT, "checkBox_enableHT");
-            this.checkBox_enableHT.Name = "checkBox_enableHT";
-            this.toolTip1.SetToolTip(this.checkBox_enableHT, resources.GetString("checkBox_enableHT.ToolTip"));
-            this.checkBox_enableHT.UseVisualStyleBackColor = true;
+            this.RemoteAccess.BackColor = System.Drawing.Color.Gainsboro;
+            this.RemoteAccess.Controls.Add(this.button39);
+            resources.ApplyResources(this.RemoteAccess, "RemoteAccess");
+            this.RemoteAccess.Name = "RemoteAccess";
+            // 
+            // button39
+            // 
+            resources.ApplyResources(this.button39, "button39");
+            this.button39.Name = "button39";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // FenetrePrincipale
             // 
@@ -3950,6 +3968,7 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.RemoteAccess.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4360,6 +4379,8 @@
         internal System.Windows.Forms.ComboBox comboBox_AILevelPresetREGULAR;
         internal System.Windows.Forms.Label label62;
         internal System.Windows.Forms.CheckBox checkBox_enableHT;
+        internal System.Windows.Forms.TabPage RemoteAccess;
+        private System.Windows.Forms.Button button39;
 
     }
 }

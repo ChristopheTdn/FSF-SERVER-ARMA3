@@ -38,6 +38,7 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.CLIENT);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.FRAMEWORK);
+                Var.fenetrePrincipale.tabControl2.TabPages.Remove(Var.fenetrePrincipale.RemoteAccess);
                 Var.fenetrePrincipale.label77.Visible = false;
                 Var.fenetrePrincipale.label75.Visible = false;
                 Var.fenetrePrincipale.pictureBox6.Visible = false;

@@ -6,6 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.IO.Compression;
 
 namespace FSF_Server_A3.Classes
 {
@@ -58,13 +59,41 @@ namespace FSF_Server_A3.Classes
 
             }
         }
-
         private static bool CheckConfigExportVersionValid()
         {
             if (Var.fenetrePrincipale.textBox2.Text=="") return false;
             return true;
         }
 
+        // Gestion Serveur distant LINUX
+        public static void demarreServeurDistant()
+        {
+            GenerationPackfichierconfig((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString());
+        }
+        private static void GenerationPackfichierconfig(string profil)
+        {
+                string repSourceFichierServeur = Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil + @"\";
+                GestionProfil.GenerefichierServeur(profil);
+                // Creation repertoire dédié Linux
+                if (!Directory.Exists(Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server"))
+                {
+                    Directory.CreateDirectory(Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server");
+                };
+                if (File.Exists(Var.RepertoireDeSauvegarde +"server.zip"))
+                {
+                    File.Delete(Var.RepertoireDeSauvegarde + "server.zip");
+                };
+
+            // copie fichier requis
+                File.Copy(repSourceFichierServeur + "basic.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\basic.cfg", true);
+                File.Copy(repSourceFichierServeur + "server.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\server.cfg", true);
+                File.Copy(repSourceFichierServeur + @"profile\Users\server\server.Arma3Profile", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server\server.Arma3Profile", true);
+            // Zip Archive fichier Serveur
+                string RepertoireSource = Var.RepertoireDeSauvegarde + @"linuxCFG";
+
+            string zipPath = Var.RepertoireDeSauvegarde +"server.zip";
+            ZipFile.CreateFromDirectory(RepertoireSource, zipPath);
+        }
     }
 }
   

@@ -658,6 +658,11 @@ namespace FSF_Server_A3
             }
         }
 
+        private void button39_Click(object sender, EventArgs e)
+        {
+            Network.demarreServeurDistant();
+        }
+
     }
     }
 
