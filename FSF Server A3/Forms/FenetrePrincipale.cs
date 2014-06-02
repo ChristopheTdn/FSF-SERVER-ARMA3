@@ -663,6 +663,65 @@ namespace FSF_Server_A3
             Network.demarreServeurDistant();
         }
 
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_proc0_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc1_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc2_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc3_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc4_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc5_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc6_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_proc7_CheckedChanged(object sender, EventArgs e)
+        {
+            Interface.ActualiseValeurAffinity();
+        }
+
+        private void checkBox_Affinity_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox_ValueAffinity.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc0.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc1.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc2.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc3.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc4.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc5.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc6.Enabled = checkBox_Affinity.Checked;
+            checkBox_proc7.Enabled = checkBox_Affinity.Checked;
+
+        }
+
     }
     }
 

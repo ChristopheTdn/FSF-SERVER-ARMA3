@@ -233,6 +233,17 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.Performance = new System.Windows.Forms.TabPage();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.textBox_ValueAffinity = new System.Windows.Forms.TextBox();
+            this.checkBox_proc7 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc6 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc5 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc4 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc3 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc1 = new System.Windows.Forms.CheckBox();
+            this.checkBox_proc0 = new System.Windows.Forms.CheckBox();
+            this.checkBox_Affinity = new System.Windows.Forms.CheckBox();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.checkBox_HeadLessClientActivate = new System.Windows.Forms.CheckBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
@@ -353,9 +364,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.checkedListBoxMissions = new System.Windows.Forms.CheckedListBox();
             this.ScriptServeur = new System.Windows.Forms.TabPage();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
-            this.label86 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox34 = new System.Windows.Forms.TextBox();
@@ -430,11 +439,11 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button23 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RemoteAccess = new System.Windows.Forms.TabPage();
+            this.button39 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.RemoteAccess = new System.Windows.Forms.TabPage();
-            this.button39 = new System.Windows.Forms.Button();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
@@ -462,6 +471,7 @@
             this.groupBox_ConfigSynchro.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.Performance.SuspendLayout();
+            this.groupBox18.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PreferredObjectViewDistance)).BeginInit();
@@ -497,7 +507,6 @@
             this.groupBox1.SuspendLayout();
             this.Missions.SuspendLayout();
             this.ScriptServeur.SuspendLayout();
-            this.groupBox21.SuspendLayout();
             this.TabMODS.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TEMPLATE.SuspendLayout();
@@ -2174,11 +2183,98 @@
             // Performance
             // 
             this.Performance.BackColor = System.Drawing.Color.Gainsboro;
+            this.Performance.Controls.Add(this.groupBox18);
             this.Performance.Controls.Add(this.groupBox16);
             this.Performance.Controls.Add(this.groupBox15);
             this.Performance.Controls.Add(this.groupBox12);
             resources.ApplyResources(this.Performance, "Performance");
             this.Performance.Name = "Performance";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.textBox_ValueAffinity);
+            this.groupBox18.Controls.Add(this.checkBox_proc7);
+            this.groupBox18.Controls.Add(this.checkBox_proc6);
+            this.groupBox18.Controls.Add(this.checkBox_proc5);
+            this.groupBox18.Controls.Add(this.checkBox_proc4);
+            this.groupBox18.Controls.Add(this.checkBox_proc3);
+            this.groupBox18.Controls.Add(this.checkBox_proc2);
+            this.groupBox18.Controls.Add(this.checkBox_proc1);
+            this.groupBox18.Controls.Add(this.checkBox_proc0);
+            this.groupBox18.Controls.Add(this.checkBox_Affinity);
+            resources.ApplyResources(this.groupBox18, "groupBox18");
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.TabStop = false;
+            // 
+            // textBox_ValueAffinity
+            // 
+            resources.ApplyResources(this.textBox_ValueAffinity, "textBox_ValueAffinity");
+            this.textBox_ValueAffinity.Name = "textBox_ValueAffinity";
+            this.textBox_ValueAffinity.ReadOnly = true;
+            this.textBox_ValueAffinity.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+            // 
+            // checkBox_proc7
+            // 
+            resources.ApplyResources(this.checkBox_proc7, "checkBox_proc7");
+            this.checkBox_proc7.Name = "checkBox_proc7";
+            this.checkBox_proc7.UseVisualStyleBackColor = true;
+            this.checkBox_proc7.CheckedChanged += new System.EventHandler(this.checkBox_proc7_CheckedChanged);
+            // 
+            // checkBox_proc6
+            // 
+            resources.ApplyResources(this.checkBox_proc6, "checkBox_proc6");
+            this.checkBox_proc6.Name = "checkBox_proc6";
+            this.checkBox_proc6.UseVisualStyleBackColor = true;
+            this.checkBox_proc6.CheckedChanged += new System.EventHandler(this.checkBox_proc6_CheckedChanged);
+            // 
+            // checkBox_proc5
+            // 
+            resources.ApplyResources(this.checkBox_proc5, "checkBox_proc5");
+            this.checkBox_proc5.Name = "checkBox_proc5";
+            this.checkBox_proc5.UseVisualStyleBackColor = true;
+            this.checkBox_proc5.CheckedChanged += new System.EventHandler(this.checkBox_proc5_CheckedChanged);
+            // 
+            // checkBox_proc4
+            // 
+            resources.ApplyResources(this.checkBox_proc4, "checkBox_proc4");
+            this.checkBox_proc4.Name = "checkBox_proc4";
+            this.checkBox_proc4.UseVisualStyleBackColor = true;
+            this.checkBox_proc4.CheckedChanged += new System.EventHandler(this.checkBox_proc4_CheckedChanged);
+            // 
+            // checkBox_proc3
+            // 
+            resources.ApplyResources(this.checkBox_proc3, "checkBox_proc3");
+            this.checkBox_proc3.Name = "checkBox_proc3";
+            this.checkBox_proc3.UseVisualStyleBackColor = true;
+            this.checkBox_proc3.CheckedChanged += new System.EventHandler(this.checkBox_proc3_CheckedChanged);
+            // 
+            // checkBox_proc2
+            // 
+            resources.ApplyResources(this.checkBox_proc2, "checkBox_proc2");
+            this.checkBox_proc2.Name = "checkBox_proc2";
+            this.checkBox_proc2.UseVisualStyleBackColor = true;
+            this.checkBox_proc2.CheckedChanged += new System.EventHandler(this.checkBox_proc2_CheckedChanged);
+            // 
+            // checkBox_proc1
+            // 
+            resources.ApplyResources(this.checkBox_proc1, "checkBox_proc1");
+            this.checkBox_proc1.Name = "checkBox_proc1";
+            this.checkBox_proc1.UseVisualStyleBackColor = true;
+            this.checkBox_proc1.CheckedChanged += new System.EventHandler(this.checkBox_proc1_CheckedChanged);
+            // 
+            // checkBox_proc0
+            // 
+            resources.ApplyResources(this.checkBox_proc0, "checkBox_proc0");
+            this.checkBox_proc0.Name = "checkBox_proc0";
+            this.checkBox_proc0.UseVisualStyleBackColor = true;
+            this.checkBox_proc0.CheckedChanged += new System.EventHandler(this.checkBox_proc0_CheckedChanged);
+            // 
+            // checkBox_Affinity
+            // 
+            resources.ApplyResources(this.checkBox_Affinity, "checkBox_Affinity");
+            this.checkBox_Affinity.Name = "checkBox_Affinity";
+            this.checkBox_Affinity.UseVisualStyleBackColor = true;
+            this.checkBox_Affinity.CheckedChanged += new System.EventHandler(this.checkBox_Affinity_CheckedChanged);
             // 
             // groupBox16
             // 
@@ -3156,7 +3252,7 @@
             // ScriptServeur
             // 
             this.ScriptServeur.BackColor = System.Drawing.Color.Gainsboro;
-            this.ScriptServeur.Controls.Add(this.groupBox21);
+            this.ScriptServeur.Controls.Add(this.label63);
             this.ScriptServeur.Controls.Add(this.label85);
             this.ScriptServeur.Controls.Add(this.textBox35);
             this.ScriptServeur.Controls.Add(this.textBox34);
@@ -3175,25 +3271,10 @@
             resources.ApplyResources(this.ScriptServeur, "ScriptServeur");
             this.ScriptServeur.Name = "ScriptServeur";
             // 
-            // groupBox21
+            // label63
             // 
-            this.groupBox21.Controls.Add(this.linkLabel5);
-            this.groupBox21.Controls.Add(this.label86);
-            resources.ApplyResources(this.groupBox21, "groupBox21");
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.TabStop = false;
-            // 
-            // linkLabel5
-            // 
-            resources.ApplyResources(this.linkLabel5, "linkLabel5");
-            this.linkLabel5.Name = "linkLabel5";
-            this.linkLabel5.TabStop = true;
-            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel5_LinkClicked);
-            // 
-            // label86
-            // 
-            resources.ApplyResources(this.label86, "label86");
-            this.label86.Name = "label86";
+            resources.ApplyResources(this.label63, "label63");
+            this.label63.Name = "label63";
             // 
             // label85
             // 
@@ -3807,6 +3888,20 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // RemoteAccess
+            // 
+            this.RemoteAccess.BackColor = System.Drawing.Color.Gainsboro;
+            this.RemoteAccess.Controls.Add(this.button39);
+            resources.ApplyResources(this.RemoteAccess, "RemoteAccess");
+            this.RemoteAccess.Name = "RemoteAccess";
+            // 
+            // button39
+            // 
+            resources.ApplyResources(this.button39, "button39");
+            this.button39.Name = "button39";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -3821,20 +3916,6 @@
             this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // RemoteAccess
-            // 
-            this.RemoteAccess.BackColor = System.Drawing.Color.Gainsboro;
-            this.RemoteAccess.Controls.Add(this.button39);
-            resources.ApplyResources(this.RemoteAccess, "RemoteAccess");
-            this.RemoteAccess.Name = "RemoteAccess";
-            // 
-            // button39
-            // 
-            resources.ApplyResources(this.button39, "button39");
-            this.button39.Name = "button39";
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
             // 
             // FenetrePrincipale
             // 
@@ -3889,6 +3970,8 @@
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
             this.Performance.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
             this.groupBox15.ResumeLayout(false);
@@ -3937,8 +4020,6 @@
             this.Missions.PerformLayout();
             this.ScriptServeur.ResumeLayout(false);
             this.ScriptServeur.PerformLayout();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
             this.TabMODS.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.TEMPLATE.ResumeLayout(false);
@@ -4328,20 +4409,11 @@
         internal System.Windows.Forms.Label label80;
         internal System.Windows.Forms.Label label79;
         internal System.Windows.Forms.Label label78;
-        private System.Windows.Forms.GroupBox groupBox21;
-        private System.Windows.Forms.LinkLabel linkLabel5;
-        private System.Windows.Forms.Label label86;
         internal System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label87;
         internal System.Windows.Forms.GroupBox groupBox_ConfigSynchro;
         private System.Windows.Forms.Button button23;
         internal System.Windows.Forms.GroupBox groupBox15;
-        internal System.Windows.Forms.NumericUpDown numericUpDown_PreferredObjectViewDistance;
-        internal System.Windows.Forms.Label label60;
-        internal System.Windows.Forms.NumericUpDown numericUpDown_ViewDistance;
-        internal System.Windows.Forms.Label label59;
-        internal System.Windows.Forms.NumericUpDown numericUpDown_TerrainGrid;
-        internal System.Windows.Forms.Label label58;
         internal System.Windows.Forms.CheckBox checkBox_ActivatePerformanceTunning;
         private System.Windows.Forms.GroupBox groupBox16;
         internal System.Windows.Forms.CheckBox checkBox_HeadLessClientActivate;
@@ -4381,6 +4453,24 @@
         internal System.Windows.Forms.CheckBox checkBox_enableHT;
         internal System.Windows.Forms.TabPage RemoteAccess;
         private System.Windows.Forms.Button button39;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_PreferredObjectViewDistance;
+        internal System.Windows.Forms.Label label60;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_ViewDistance;
+        internal System.Windows.Forms.Label label59;
+        internal System.Windows.Forms.NumericUpDown numericUpDown_TerrainGrid;
+        internal System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.GroupBox groupBox18;
+        internal System.Windows.Forms.CheckBox checkBox_Affinity;
+        internal System.Windows.Forms.TextBox textBox_ValueAffinity;
+        internal System.Windows.Forms.CheckBox checkBox_proc7;
+        internal System.Windows.Forms.CheckBox checkBox_proc6;
+        internal System.Windows.Forms.CheckBox checkBox_proc5;
+        internal System.Windows.Forms.CheckBox checkBox_proc4;
+        internal System.Windows.Forms.CheckBox checkBox_proc3;
+        internal System.Windows.Forms.CheckBox checkBox_proc2;
+        internal System.Windows.Forms.CheckBox checkBox_proc1;
+        internal System.Windows.Forms.CheckBox checkBox_proc0;
 
     }
 }

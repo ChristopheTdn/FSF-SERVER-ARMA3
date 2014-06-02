@@ -433,7 +433,20 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox_MinErrorToSend.Text = "";
             Var.fenetrePrincipale.textBox_MinErrorToSendNear.Text = "";
             Var.fenetrePrincipale.textBox_MaxCustomFileSize.Text = "";
-            Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked = false;            
+            Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked = false;
+            Var.fenetrePrincipale.checkBox_Affinity.Checked = false;
+            Var.fenetrePrincipale.textBox_ValueAffinity.Text = "";
+            Var.fenetrePrincipale.checkBox_proc0.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc1.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc2.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc3.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc4.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc5.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc6.Checked = false;
+            Var.fenetrePrincipale.checkBox_proc7.Checked = false;
+
+
+
         }
         static public void GenerefichierServeur(string profil)
         {
@@ -480,7 +493,7 @@ namespace FSF_Server_A3.Classes
             text += Environment.NewLine;
             text += System.IO.Directory.GetDirectoryRoot(repertoireDeTravail).Replace(@"\", "") + Environment.NewLine;
             text += @"CD " + Var.fenetrePrincipale.textBox18.Text + Environment.NewLine;
-            text += @"arma3server.exe " + GenereLigneArgument() + GenereLigneParamServeur() + Environment.NewLine;
+            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + GenereAffinityArgument()+ GenereLigneArgument() + GenereLigneParamServeur() + Environment.NewLine;
             text += @"Echo + Arret serveur !!!" + Environment.NewLine;
             text += @"Echo + Redemarrage Serveur. Patientez SVP !" + Environment.NewLine;
             text += @"Echo .." + Environment.NewLine;
@@ -489,7 +502,17 @@ namespace FSF_Server_A3.Classes
             text += @"Goto FSF" + Environment.NewLine;
             System.IO.File.WriteAllText(repertoireDeTravail + @"\server.bat", text);
         }
-        static private string GenereLigneArgument()
+        static public string GenereAffinityArgument()
+        {
+            string argument = "";
+            if (Var.fenetrePrincipale.checkBox_Affinity.Checked)
+            {
+                argument += @" /affinity " + Var.fenetrePrincipale.textBox_ValueAffinity.Text + " ";
+            }
+            argument += @" """ + Var.fenetrePrincipale.textBox18.Text + @"\arma3server.exe"" ";
+            return argument;
+        }
+        static public string GenereLigneArgument()
         {
             string listMODS = "-MOD=";
             string listArguments = "";

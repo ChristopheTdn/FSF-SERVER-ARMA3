@@ -88,6 +88,8 @@ namespace FSF_Server_A3.Classes
                 File.Copy(repSourceFichierServeur + "basic.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\basic.cfg", true);
                 File.Copy(repSourceFichierServeur + "server.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\server.cfg", true);
                 File.Copy(repSourceFichierServeur + @"profile\Users\server\server.Arma3Profile", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server\server.Arma3Profile", true);
+                FileStream fs = File.Create( Var.RepertoireDeSauvegarde + @"linuxCFG\commandLine.txt");fs.Close();
+                File.WriteAllText(Var.RepertoireDeSauvegarde + @"linuxCFG\commandLine.txt", GestionProfil.GenereLigneArgument());
             // Zip Archive fichier Serveur
                 string RepertoireSource = Var.RepertoireDeSauvegarde + @"linuxCFG";
 

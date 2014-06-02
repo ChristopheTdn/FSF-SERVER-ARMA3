@@ -535,7 +535,19 @@ namespace FSF_Server_A3.Classes
             dialogue.ShowDialog();
             Application.Restart();
         }
-
+        static public void ActualiseValeurAffinity()
+        {
+            int valeur = 0;
+            if (Var.fenetrePrincipale.checkBox_proc0.Checked) { valeur += 1; };
+            if (Var.fenetrePrincipale.checkBox_proc1.Checked) { valeur += 2; };
+            if (Var.fenetrePrincipale.checkBox_proc2.Checked) { valeur += 4; };
+            if (Var.fenetrePrincipale.checkBox_proc3.Checked) { valeur += 8; };
+            if (Var.fenetrePrincipale.checkBox_proc4.Checked) { valeur += 16; };
+            if (Var.fenetrePrincipale.checkBox_proc5.Checked) { valeur += 32; };
+            if (Var.fenetrePrincipale.checkBox_proc6.Checked) { valeur += 64; };
+            if (Var.fenetrePrincipale.checkBox_proc7.Checked) { valeur += 128; };
+            Var.fenetrePrincipale.textBox_ValueAffinity.Text = valeur.ToString("X");
+        }
 
 
 
