@@ -73,28 +73,37 @@ namespace FSF_Server_A3.Classes
         private static void GenerationPackfichierconfig(string profil)
         {
                 string repSourceFichierServeur = Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil + @"\";
-                GestionProfil.GenerefichierServeur(profil);
+                try
+                {
+                    GestionProfil.GenerefichierServeur(profil);
+                }
+                catch
+                {
+                }
                 // Creation repertoire dédié Linux
                 if (!Directory.Exists(Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server"))
                 {
                     Directory.CreateDirectory(Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server");
                 };
-                if (File.Exists(Var.RepertoireDeSauvegarde +"server.zip"))
+                if (File.Exists(Var.RepertoireDeSauvegarde + "serverLinux.zip"))
                 {
-                    File.Delete(Var.RepertoireDeSauvegarde + "server.zip");
+                    File.Delete(Var.RepertoireDeSauvegarde + "serverLinux.zip");
                 };
 
             // copie fichier requis
                 File.Copy(repSourceFichierServeur + "basic.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\basic.cfg", true);
                 File.Copy(repSourceFichierServeur + "server.cfg", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\server.cfg", true);
                 File.Copy(repSourceFichierServeur + @"profile\Users\server\server.Arma3Profile", Var.RepertoireDeSauvegarde + @"linuxCFG\serverFSF\profile\Users\server\server.Arma3Profile", true);
-                FileStream fs = File.Create( Var.RepertoireDeSauvegarde + @"linuxCFG\commandLine.txt");fs.Close();
-                File.WriteAllText(Var.RepertoireDeSauvegarde + @"linuxCFG\commandLine.txt", GestionProfil.GenereLigneArgument());
+                FileStream fs = File.Create( Var.RepertoireDeSauvegarde + @"linuxCFG\runserver.sh");fs.Close();
+                File.WriteAllText(Var.RepertoireDeSauvegarde + @"linuxCFG\runserver.sh", "./arma3server -config=serverFSF/server.cfg -cfg=serverFSF/basic.cfg -profiles=serverFSF/profile -name=server -port=" + Var.fenetrePrincipale.textBox15.Text + " " + GestionProfil.GenereLigneArgument("linux"));
             // Zip Archive fichier Serveur
                 string RepertoireSource = Var.RepertoireDeSauvegarde + @"linuxCFG";
 
-            string zipPath = Var.RepertoireDeSauvegarde +"server.zip";
+            string zipPath = Var.RepertoireDeSauvegarde +"serverLinux.zip";
+            
             ZipFile.CreateFromDirectory(RepertoireSource, zipPath);
+            UploadConfigServeur(Var.RepertoireDeSauvegarde + "serverLinux.zip", @"ftp://ftp1.clan-fsf.fr/serverLinux.zip", "fsfservera3cfg", "fsfservera3");
+            System.Diagnostics.Process.Start("explorer.exe", Var.RepertoireDeSauvegarde);
         }
     }
 }

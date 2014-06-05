@@ -493,7 +493,7 @@ namespace FSF_Server_A3.Classes
             text += Environment.NewLine;
             text += System.IO.Directory.GetDirectoryRoot(repertoireDeTravail).Replace(@"\", "") + Environment.NewLine;
             text += @"CD " + Var.fenetrePrincipale.textBox18.Text + Environment.NewLine;
-            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + GenereAffinityArgument()+ GenereLigneArgument() + GenereLigneParamServeur() + Environment.NewLine;
+            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + GenereAffinityArgument()+ GenereLigneArgument("win") + GenereLigneParamServeur() + Environment.NewLine;
             text += @"Echo + Arret serveur !!!" + Environment.NewLine;
             text += @"Echo + Redemarrage Serveur. Patientez SVP !" + Environment.NewLine;
             text += @"Echo .." + Environment.NewLine;
@@ -512,17 +512,27 @@ namespace FSF_Server_A3.Classes
             argument += @" """ + Var.fenetrePrincipale.textBox18.Text + @"\arma3server.exe"" ";
             return argument;
         }
-        static public string GenereLigneArgument()
-        {
-            string listMODS = "-MOD=";
+        static public string GenereLigneArgument(string sys)
+        {  
+            string listMODS = "";
             string listArguments = "";
+
+            if (sys == "win") { listMODS = @"""-MOD="; } else { listMODS = @"-MOD="""; }
 
             // Ligne Mods
             TabPriority.actualisePrioriteMods();
             foreach (string ligne in Var.fenetrePrincipale.ctrlListModPrioritaire.Items)
             {
-                listMODS += ligne + ";";
+                if (sys == "win")
+                {
+                    listMODS += ligne + ";";
+                }
+                else
+                {
+                    listMODS += ligne.Replace(@"\","/") + ";";
+                };
             }
+            listMODS += @""""; 
 
 
             // PARAMETRES
@@ -542,7 +552,9 @@ namespace FSF_Server_A3.Classes
             if (Var.fenetrePrincipale.checkBox21.Checked) { listArguments += "-exThreads=" + Var.fenetrePrincipale.comboBox3.Text + " "; }
             if (Var.fenetrePrincipale.checkBox11.Checked) { listArguments += " " + Var.fenetrePrincipale.textBox22.Text + " "; }
             if (Var.fenetrePrincipale.checkBox_enableHT.Checked) { listArguments += "-enableHT "; }
-            return listArguments += @"""" + listMODS + @"""";
+
+            return listArguments += @" " + listMODS + @" ";
+
         }
         static private string GenereLigneParamServeur()
         {
