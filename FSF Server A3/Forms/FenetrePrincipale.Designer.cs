@@ -312,16 +312,12 @@
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.label43 = new System.Windows.Forms.Label();
             this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
             this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label28 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
@@ -2783,12 +2779,8 @@
             this.Serveur_Detail.Controls.Add(this.groupBox11);
             this.Serveur_Detail.Controls.Add(this.groupBox9);
             this.Serveur_Detail.Controls.Add(this.groupBox6);
-            this.Serveur_Detail.Controls.Add(this.label7);
             this.Serveur_Detail.Controls.Add(this.groupBox10);
-            this.Serveur_Detail.Controls.Add(this.comboBox1);
-            this.Serveur_Detail.Controls.Add(this.label28);
             this.Serveur_Detail.Controls.Add(this.label10);
-            this.Serveur_Detail.Controls.Add(this.textBox17);
             this.Serveur_Detail.Controls.Add(this.textBox16);
             this.Serveur_Detail.Controls.Add(this.numericUpDown1);
             this.Serveur_Detail.Controls.Add(this.label23);
@@ -2884,11 +2876,6 @@
             this.textBox21.Name = "textBox21";
             this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
             // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.checkBox18);
@@ -2923,31 +2910,10 @@
             this.checkBox14.Name = "checkBox14";
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            resources.GetString("comboBox1.Items"),
-            resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
-            this.comboBox1.Name = "comboBox1";
-            // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.Name = "label28";
-            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            // 
-            // textBox17
-            // 
-            resources.ApplyResources(this.textBox17, "textBox17");
-            this.textBox17.Name = "textBox17";
             // 
             // textBox16
             // 
@@ -4257,11 +4223,7 @@
         internal System.Windows.Forms.Label label24;
         internal System.Windows.Forms.TabControl tab_serveur;
         internal System.Windows.Forms.TabPage Serveur_Detail;
-        internal System.Windows.Forms.Label label7;
-        internal System.Windows.Forms.ComboBox comboBox1;
-        internal System.Windows.Forms.Label label28;
         internal System.Windows.Forms.Label label10;
-        internal System.Windows.Forms.TextBox textBox17;
         internal System.Windows.Forms.TextBox textBox16;
         internal System.Windows.Forms.NumericUpDown numericUpDown1;
         internal System.Windows.Forms.Label label23;

@@ -267,19 +267,16 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.textBox18.Text = "";
 
             // onglet Serveur
-            Var.fenetrePrincipale.comboBox1.SelectedIndex = 0;
             Var.fenetrePrincipale.textBox12.Text = "";
             Var.fenetrePrincipale.textBox13.Text = "";
             Var.fenetrePrincipale.textBox14.Text = "";
             Var.fenetrePrincipale.numericUpDown1.Value = 10;
             Var.fenetrePrincipale.textBox15.Text = "2302";
             Var.fenetrePrincipale.textBox16.Text = "8766";
-            Var.fenetrePrincipale.textBox17.Text = "27016";
             Var.fenetrePrincipale.checkBox25.Checked = false;
             Var.fenetrePrincipale.checkBox26.Checked = false;
             Var.fenetrePrincipale.checkBox27.Checked = false;
             Var.fenetrePrincipale.checkBox20.Checked = false;
-            Var.fenetrePrincipale.comboBox1.SelectedItem = 0;
 
             // onglet regles
 
@@ -590,7 +587,6 @@ namespace FSF_Server_A3.Classes
             text += @"hostname = """ + Var.fenetrePrincipale.textBox12.Text + @""";" + Environment.NewLine;
             text += @"password = """ + Var.fenetrePrincipale.textBox13.Text + @""";" + Environment.NewLine;
             text += @"passwordAdmin = """ + Var.fenetrePrincipale.textBox14.Text + @""";" + Environment.NewLine;
-            text += @"reportingIP = """ + Var.fenetrePrincipale.comboBox1.Text + @""";" + Environment.NewLine;
             if (Var.fenetrePrincipale.checkBox25.Checked) { text += @"logFile = ""Console.log"";" + Environment.NewLine; };
             if (Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked)
             {
@@ -603,7 +599,6 @@ namespace FSF_Server_A3.Classes
 
             text += "//STEAM Info Port" + Environment.NewLine;
             if (Var.fenetrePrincipale.textBox16.Text != "") { text += @"steamport = " + Var.fenetrePrincipale.textBox16.Text + ";" + Environment.NewLine; };
-            if (Var.fenetrePrincipale.textBox17.Text != "") { text += @"steamqueryport = " + Var.fenetrePrincipale.textBox17.Text + ";" + Environment.NewLine; };
             if (Var.fenetrePrincipale.textBox21.Text != "")
             {
                 text += "//Message of the Day" + Environment.NewLine;
