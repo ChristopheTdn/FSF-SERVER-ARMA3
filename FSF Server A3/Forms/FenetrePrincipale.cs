@@ -26,9 +26,26 @@ namespace FSF_Server_A3
         private void FenetrePrincipale_Load(object sender, EventArgs e)
         {
 
-             
+            label77.TextChanged += label77_TextChanged; 
             Var.fenetrePrincipale = this;
             Core.InitialiseCore();
+        }
+
+        void label77_TextChanged(object sender, EventArgs e)
+        {
+            if (label77.Text.Replace(",", ".") == "0.000 Mo")
+            {
+                Var.fenetrePrincipale.label77.Text = "a jour";
+                Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Black;
+                Var.fenetrePrincipale.pictureBox6.Visible = true;
+                Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.crochet_ok_oui_icone_5594_64;
+            }
+            else
+            {
+                Var.fenetrePrincipale.label77.ForeColor = System.Drawing.Color.Red;
+                Var.fenetrePrincipale.pictureBox6.Visible = true;
+                Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
+            };
         }
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
@@ -422,14 +439,11 @@ namespace FSF_Server_A3
             TabPriority.downPrioriteMod();
         }
 
-        private void button26_Click(object sender, EventArgs e)
-        {
-            Core.telechargeFichier("http://www.clan-gign.net/FSFLauncherA3/", "WinSCP.exe");
-        }
 
         private void button25_Click(object sender, EventArgs e)
-        {               
-                Core.synchro("beta");
+        {              
+ 
+                Core.synchroRsync();
                 Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Text.ToString());            
         }
 

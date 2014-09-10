@@ -208,9 +208,6 @@
             this.label76 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.button26 = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.NetWork = new System.Windows.Forms.TabPage();
             this.groupBox_ConfigSynchro = new System.Windows.Forms.GroupBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
@@ -435,8 +432,6 @@
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button23 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.RemoteAccess = new System.Windows.Forms.TabPage();
-            this.button39 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
@@ -462,7 +457,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.NetWork.SuspendLayout();
             this.groupBox_ConfigSynchro.SuspendLayout();
             this.groupBox17.SuspendLayout();
@@ -528,7 +522,6 @@
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.RemoteAccess.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkBox89
@@ -2017,25 +2010,6 @@
             resources.ApplyResources(this.label74, "label74");
             this.label74.Name = "label74";
             // 
-            // button26
-            // 
-            resources.ApplyResources(this.button26, "button26");
-            this.button26.Name = "button26";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
-            // progressBar1
-            // 
-            resources.ApplyResources(this.progressBar1, "progressBar1");
-            this.progressBar1.Name = "progressBar1";
-            // 
-            // pictureBox17
-            // 
-            resources.ApplyResources(this.pictureBox17, "pictureBox17");
-            this.pictureBox17.Image = global::FSF_Server_A3.Properties.Resources.winscp;
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.TabStop = false;
-            // 
             // NetWork
             // 
             this.NetWork.BackColor = System.Drawing.Color.Gainsboro;
@@ -2152,13 +2126,10 @@
             // 
             this.groupBox17.Controls.Add(this.label14);
             this.groupBox17.Controls.Add(this.button25);
-            this.groupBox17.Controls.Add(this.pictureBox17);
             this.groupBox17.Controls.Add(this.label19);
             this.groupBox17.Controls.Add(this.textBox11);
             this.groupBox17.Controls.Add(this.progressBar3);
-            this.groupBox17.Controls.Add(this.progressBar1);
             this.groupBox17.Controls.Add(this.progressBar2);
-            this.groupBox17.Controls.Add(this.button26);
             this.groupBox17.Controls.Add(this.label11);
             resources.ApplyResources(this.groupBox17, "groupBox17");
             this.groupBox17.Name = "groupBox17";
@@ -2720,7 +2691,6 @@
             this.tabControl2.Controls.Add(this.PRIORITE);
             this.tabControl2.Controls.Add(this.Options);
             this.tabControl2.Controls.Add(this.NetWork);
-            this.tabControl2.Controls.Add(this.RemoteAccess);
             resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.ImageList = this.imageList1;
             this.tabControl2.Multiline = true;
@@ -3854,20 +3824,6 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // RemoteAccess
-            // 
-            this.RemoteAccess.BackColor = System.Drawing.Color.Gainsboro;
-            this.RemoteAccess.Controls.Add(this.button39);
-            resources.ApplyResources(this.RemoteAccess, "RemoteAccess");
-            this.RemoteAccess.Name = "RemoteAccess";
-            // 
-            // button39
-            // 
-            resources.ApplyResources(this.button39, "button39");
-            this.button39.Name = "button39";
-            this.button39.UseVisualStyleBackColor = true;
-            this.button39.Click += new System.EventHandler(this.button39_Click);
-            // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
@@ -3929,7 +3885,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.NetWork.ResumeLayout(false);
             this.groupBox_ConfigSynchro.ResumeLayout(false);
             this.groupBox_ConfigSynchro.PerformLayout();
@@ -4015,7 +3970,6 @@
             this.groupBox7.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.RemoteAccess.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4150,9 +4104,6 @@
         internal System.Windows.Forms.Label label14;
         internal System.Windows.Forms.Button button25;
         internal System.Windows.Forms.ToolTip toolTip1;
-        internal System.Windows.Forms.Button button26;
-        internal System.Windows.Forms.ProgressBar progressBar1;
-        internal System.Windows.Forms.PictureBox pictureBox17;
         internal System.Windows.Forms.TabPage NetWork;
         internal System.Windows.Forms.TextBox textBox11;
         internal System.Windows.Forms.Button button16;
@@ -4338,13 +4289,10 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         internal System.Windows.Forms.TextBox textBox4;
         internal System.Windows.Forms.TextBox textBox3;
         internal System.Windows.Forms.TextBox textBox2;
-        internal System.Windows.Forms.TextBox textBox7;
-        internal System.Windows.Forms.TextBox textBox8;
         internal System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label73;
         internal System.Windows.Forms.TextBox textBox10;
@@ -4371,8 +4319,6 @@
         internal System.Windows.Forms.Label label80;
         internal System.Windows.Forms.Label label79;
         internal System.Windows.Forms.Label label78;
-        internal System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.Label label87;
         internal System.Windows.Forms.GroupBox groupBox_ConfigSynchro;
         private System.Windows.Forms.Button button23;
         internal System.Windows.Forms.GroupBox groupBox15;
@@ -4413,8 +4359,6 @@
         internal System.Windows.Forms.ComboBox comboBox_AILevelPresetREGULAR;
         internal System.Windows.Forms.Label label62;
         internal System.Windows.Forms.CheckBox checkBox_enableHT;
-        internal System.Windows.Forms.TabPage RemoteAccess;
-        private System.Windows.Forms.Button button39;
         internal System.Windows.Forms.NumericUpDown numericUpDown_PreferredObjectViewDistance;
         internal System.Windows.Forms.Label label60;
         internal System.Windows.Forms.NumericUpDown numericUpDown_ViewDistance;
@@ -4433,6 +4377,11 @@
         internal System.Windows.Forms.CheckBox checkBox_proc2;
         internal System.Windows.Forms.CheckBox checkBox_proc1;
         internal System.Windows.Forms.CheckBox checkBox_proc0;
+        internal System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label87;
+        internal System.Windows.Forms.TextBox textBox7;
+        internal System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label70;
 
     }
 }

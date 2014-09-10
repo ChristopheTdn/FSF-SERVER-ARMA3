@@ -4637,7 +4637,7 @@ du vote (en %) :</value>
     <value>groupBox17</value>
   </data>
   <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="progressBar3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4661,7 +4661,7 @@ du vote (en %) :</value>
     <value>groupBox17</value>
   </data>
   <data name="&gt;&gt;progressBar3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="progressBar2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -4685,7 +4685,7 @@ du vote (en %) :</value>
     <value>groupBox17</value>
   </data>
   <data name="&gt;&gt;progressBar2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4715,7 +4715,7 @@ du vote (en %) :</value>
     <value>groupBox17</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5537,89 +5537,8 @@ pour un lancement plus rapide (-noSplash)</value>
   <data name="&gt;&gt;groupBox20.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 21</value>
-  </data>
-  <data name="button26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 25</value>
-  </data>
-  <data name="button26.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button26.Text" xml:space="preserve">
-    <value>Configuration WIN SCP</value>
-  </data>
-  <data name="&gt;&gt;button26.Name" xml:space="preserve">
-    <value>button26</value>
-  </data>
-  <data name="&gt;&gt;button26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button26.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;button26.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="progressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 42</value>
-  </data>
-  <data name="progressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 10</value>
-  </data>
-  <data name="progressBar1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
-    <value>progressBar1</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="pictureBox17.ErrorImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="pictureBox17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 13</value>
-  </data>
-  <data name="pictureBox17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 37</value>
-  </data>
-  <data name="pictureBox17.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="pictureBox17.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;pictureBox17.Name" xml:space="preserve">
-    <value>pictureBox17</value>
-  </data>
-  <data name="&gt;&gt;pictureBox17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox17.Parent" xml:space="preserve">
-    <value>groupBox17</value>
-  </data>
-  <data name="&gt;&gt;pictureBox17.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="textBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 129</value>
+    <value>86, 101</value>
   </data>
   <data name="textBox19.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 22</value>
@@ -5673,16 +5592,16 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label87.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 132</value>
+    <value>6, 104</value>
   </data>
   <data name="label87.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 13</value>
+    <value>42, 13</value>
   </data>
   <data name="label87.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="label87.Text" xml:space="preserve">
-    <value>Rep Distant  :</value>
+    <value>Login :</value>
   </data>
   <data name="&gt;&gt;label87.Name" xml:space="preserve">
     <value>label87</value>
@@ -5727,13 +5646,13 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>6, 18</value>
   </data>
   <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 13</value>
+    <value>144, 13</value>
   </data>
   <data name="label72.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="label72.Text" xml:space="preserve">
-    <value>Hote FTP  SYNCHRO :</value>
+    <value>URL Serveur  DELTA COPY  :</value>
   </data>
   <data name="&gt;&gt;label72.Name" xml:space="preserve">
     <value>label72</value>
@@ -5748,7 +5667,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>4</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 98</value>
+    <value>86, 129</value>
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 22</value>
@@ -5889,7 +5808,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label70.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 101</value>
+    <value>8, 132</value>
   </data>
   <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 13</value>
@@ -5949,16 +5868,16 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>NoControl</value>
   </data>
   <data name="label71.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 68</value>
+    <value>1, 68</value>
   </data>
   <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 13</value>
+    <value>81, 13</value>
   </data>
   <data name="label71.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="label71.Text" xml:space="preserve">
-    <value>Login FTP :</value>
+    <value>Nom Synchro :</value>
   </data>
   <data name="&gt;&gt;label71.Name" xml:space="preserve">
     <value>label71</value>
@@ -6072,7 +5991,7 @@ pour un lancement plus rapide (-noSplash)</value>
     <value>groupBox17</value>
   </data>
   <data name="&gt;&gt;textBox11.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="groupBox17.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 11</value>
@@ -10236,7 +10155,7 @@ Brainbug, Alpha-Kilo</value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADe
-        FAAAAk1TRnQBSQFMAgEBCwEAATwBAwE8AQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FAAAAk1TRnQBSQFMAgEBCwEAAUwBAwFMAQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -11989,57 +11908,6 @@ Brainbug, Alpha-Kilo</value>
   </data>
   <data name="&gt;&gt;Options.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="button39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 50</value>
-  </data>
-  <data name="button39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 23</value>
-  </data>
-  <data name="button39.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="button39.Text" xml:space="preserve">
-    <value>Envois Fichier Config</value>
-  </data>
-  <data name="&gt;&gt;button39.Name" xml:space="preserve">
-    <value>button39</value>
-  </data>
-  <data name="&gt;&gt;button39.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button39.Parent" xml:space="preserve">
-    <value>RemoteAccess</value>
-  </data>
-  <data name="&gt;&gt;button39.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RemoteAccess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 23</value>
-  </data>
-  <data name="RemoteAccess.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="RemoteAccess.Size" type="System.Drawing.Size, System.Drawing">
-    <value>508, 458</value>
-  </data>
-  <data name="RemoteAccess.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="RemoteAccess.Text" xml:space="preserve">
-    <value>Remote Access</value>
-  </data>
-  <data name="&gt;&gt;RemoteAccess.Name" xml:space="preserve">
-    <value>RemoteAccess</value>
-  </data>
-  <data name="&gt;&gt;RemoteAccess.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RemoteAccess.Parent" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;RemoteAccess.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 8.25pt</value>

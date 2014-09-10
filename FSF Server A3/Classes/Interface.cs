@@ -38,7 +38,6 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.CLIENT);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.TEST);
                 Var.fenetrePrincipale.tabControl1.TabPages.Remove(Var.fenetrePrincipale.FRAMEWORK);
-                Var.fenetrePrincipale.tabControl2.TabPages.Remove(Var.fenetrePrincipale.RemoteAccess);
                 Var.fenetrePrincipale.label77.Visible = false;
                 Var.fenetrePrincipale.label75.Visible = false;
                 Var.fenetrePrincipale.pictureBox6.Visible = false;
@@ -55,7 +54,10 @@ namespace FSF_Server_A3.Classes
             // Dessin Interface Constant
             Var.fenetrePrincipale.label31.Text = Var.VersionProgramme();
             Var.fenetrePrincipale.label76.Text = Var.VersionArma3Exe();
-            Var.fenetrePrincipale.label77.Text = Var.VersionSynchro();
+
+            // Genere Taille Mise a jour
+            Var.fenetrePrincipale.label77.Text = "???";
+            Core.synchroTailleRsync();
 
             // Bouton Lancer Serveur
             if (!System.IO.File.Exists(Var.fenetrePrincipale.textBox18.Text + @"\arma3server.exe"))
@@ -67,21 +69,7 @@ namespace FSF_Server_A3.Classes
                 Var.fenetrePrincipale.button16.Enabled = true;
 
             }
-            // Bouton Synchro WINSCP
-            if (File.Exists(Var.RepertoireApplication+@"\winscp.exe"))
-            {
-                Var.fenetrePrincipale.button26.Visible = false;
-                Var.fenetrePrincipale.progressBar1.Visible = false;
-                Var.fenetrePrincipale.button25.Enabled = true; 
 
-            }
-            else
-            {
-                Var.fenetrePrincipale.button26.Visible = true;
-                Var.fenetrePrincipale.progressBar1.Visible = true;
-                Var.fenetrePrincipale.button25.Enabled = false; 
-
-            }
             // Determine Langage choisi 
             Language.CheckButtonLanguageOption();
         }
