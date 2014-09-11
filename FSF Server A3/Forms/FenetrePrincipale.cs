@@ -26,9 +26,18 @@ namespace FSF_Server_A3
         private void FenetrePrincipale_Load(object sender, EventArgs e)
         {
 
-            label77.TextChanged += label77_TextChanged; 
+            label77.TextChanged += label77_TextChanged;
+            labelSynchroEnCoursInvisible.EnabledChanged += labelSynchroEnCoursInvisible_EnabledChanged;
             Var.fenetrePrincipale = this;
             Core.InitialiseCore();
+        }
+
+        void labelSynchroEnCoursInvisible_EnabledChanged(object sender, EventArgs e)
+        {
+               if (labelSynchroEnCoursInvisible.Enabled == true)
+               {
+                   Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Text.ToString());            
+               }
         }
 
         void label77_TextChanged(object sender, EventArgs e)
@@ -47,6 +56,7 @@ namespace FSF_Server_A3
                 Var.fenetrePrincipale.pictureBox6.Image = FSF_Server_A3.Properties.Resources.balle_fermer_cute_stop_icone_4372_64;
             };
         }
+
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -444,7 +454,6 @@ namespace FSF_Server_A3
         {              
  
                 Core.synchroRsync();
-                Interface.dessineInterface((Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Text.ToString());            
         }
 
         private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)

@@ -135,8 +135,9 @@ namespace FSF_Server_A3.Classes
             //String remoteServer = "127.0.0.1";
             String remoteServer = "server2.clan-fsf.fr";
             string remoteDir = Var.fenetrePrincipale.textBox8.Text;
-            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(Var.fenetrePrincipale, Var.fenetrePrincipale.button25, Var.fenetrePrincipale.textBox11, Var.fenetrePrincipale.progressBar3, Var.fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir,Var.fenetrePrincipale.label77);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
+            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(Var.fenetrePrincipale, Var.fenetrePrincipale.button25, Var.fenetrePrincipale.textBox11, Var.fenetrePrincipale.progressBar3, Var.fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir,Var.fenetrePrincipale.label77,Var.fenetrePrincipale.labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
             rSyncCall.setTotalSize(Var.fenetrePrincipale.label77);
+            rSyncCall.addControlToDisable(Var.fenetrePrincipale.labelSynchroEnCoursInvisible);
             rSyncCall.start();
        }
        static public void synchroTailleRsync()

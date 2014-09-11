@@ -24,17 +24,18 @@ namespace RSync
         private Button cancelButton;
 
         private Control outputDisplaySize;
+        private Control transferRate;
 
         private ArrayList controlsToDisable = new ArrayList();
 
         private long totalSize = 0;
 
-        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir)
-            : this(form, button, outputBox, progressTotal, progressBar, exeName, ip, rsyncRemoteDir, localDir, null)
+        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control transferRate)
+            : this(form, button, outputBox, progressTotal, progressBar, exeName, ip, rsyncRemoteDir, localDir, null, transferRate)
         {
         }
 
-        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control outputDisplaySize)
+        public RSyncCall(Form form, Button button, TextBox outputBox, ProgressBar progressTotal, ProgressBar progressBar, FileInfo exeName, String ip, String rsyncRemoteDir, DirectoryInfo localDir, Control outputDisplaySize, Control transferRate)
         {
             this.form = form;
             this.button = button;
@@ -43,6 +44,7 @@ namespace RSync
             this.progressBar = progressBar;
             this.exeName = exeName.FullName;
             this.outputDisplaySize = outputDisplaySize;
+            this.transferRate = transferRate;
             //"-r -v -z --progress --size-only --chmod=ugo=rwX \"127.0.0.1::RSYNCSERVER\" \"/TESTRSYNC_CLIENT\"");  
             /*
             Il est recommandé d'utiliser :
@@ -159,6 +161,10 @@ namespace RSync
                                 {
                                     progressBar.Value = Int32.Parse(s.Substring(0, s.Length - 1));
                                 }
+                                if (s.IndexOf("B/s") > -1 && transferRate != null)
+                                {
+                                    transferRate.Text = s;
+                                }
                                 if (s.IndexOf(",") > -1)
                                 {
                                     try
@@ -202,6 +208,10 @@ namespace RSync
                 outputBox.AppendText("[" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "] Mise à jour terminée !" + Environment.NewLine);
                 enableControls();
                 getInfo();
+                progressBar.Value = 0;
+                progressTotal.Value = 0;
+                transferRate.Text = "0.00Kb/s";
+
             });
         }
 

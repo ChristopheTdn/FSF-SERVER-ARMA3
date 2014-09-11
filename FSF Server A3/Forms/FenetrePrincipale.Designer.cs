@@ -435,6 +435,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.labelVitesseSynchro = new System.Windows.Forms.Label();
+            this.labelSynchroEnCoursInvisible = new System.Windows.Forms.Label();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
@@ -2124,11 +2126,13 @@
             // 
             // groupBox17
             // 
+            this.groupBox17.Controls.Add(this.labelSynchroEnCoursInvisible);
+            this.groupBox17.Controls.Add(this.labelVitesseSynchro);
+            this.groupBox17.Controls.Add(this.progressBar3);
             this.groupBox17.Controls.Add(this.label14);
             this.groupBox17.Controls.Add(this.button25);
             this.groupBox17.Controls.Add(this.label19);
             this.groupBox17.Controls.Add(this.textBox11);
-            this.groupBox17.Controls.Add(this.progressBar3);
             this.groupBox17.Controls.Add(this.progressBar2);
             this.groupBox17.Controls.Add(this.label11);
             resources.ApplyResources(this.groupBox17, "groupBox17");
@@ -3839,6 +3843,16 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // labelVitesseSynchro
+            // 
+            resources.ApplyResources(this.labelVitesseSynchro, "labelVitesseSynchro");
+            this.labelVitesseSynchro.Name = "labelVitesseSynchro";
+            // 
+            // labelSynchroEnCoursInvisible
+            // 
+            resources.ApplyResources(this.labelSynchroEnCoursInvisible, "labelSynchroEnCoursInvisible");
+            this.labelSynchroEnCoursInvisible.Name = "labelSynchroEnCoursInvisible";
+            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -4382,6 +4396,8 @@
         internal System.Windows.Forms.TextBox textBox7;
         internal System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label70;
+        internal System.Windows.Forms.Label labelVitesseSynchro;
+        internal System.Windows.Forms.Label labelSynchroEnCoursInvisible;
 
     }
 }
