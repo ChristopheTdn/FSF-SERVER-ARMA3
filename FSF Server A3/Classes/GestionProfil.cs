@@ -277,6 +277,9 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.checkBox26.Checked = false;
             Var.fenetrePrincipale.checkBox27.Checked = false;
             Var.fenetrePrincipale.checkBox20.Checked = false;
+            Var.fenetrePrincipale.radioButton3.Checked = false;
+            Var.fenetrePrincipale.radioButton4.Checked = false;
+            Var.fenetrePrincipale.radioButton5.Checked = false;
 
             // onglet regles
 
@@ -636,6 +639,21 @@ namespace FSF_Server_A3.Classes
                 text += "voteMissionPlayers = " + Var.fenetrePrincipale.numericUpDown3.Value.ToString() + @";" + Environment.NewLine;
                 text += "voteThreshold = " + (Var.fenetrePrincipale.numericUpDown4.Value / 100).ToString().Replace(",", ".") + @";" + Environment.NewLine;
             }
+            if (Var.fenetrePrincipale.radioButton3.Checked)
+            {
+                text += "// Enabled rotor simulation" + Environment.NewLine;
+                text += "forceRotorLibSimulation = 0;" + Environment.NewLine;
+            };
+            if (Var.fenetrePrincipale.radioButton4.Checked)
+            {
+                text += "// Enabled rotor simulation" + Environment.NewLine;
+                text += "forceRotorLibSimulation = 2;" + Environment.NewLine;
+            };
+            if (Var.fenetrePrincipale.radioButton5.Checked)
+            {
+                text += "// Enabled rotor simulation" + Environment.NewLine;
+                text += "forceRotorLibSimulation = 1;" + Environment.NewLine;
+            };
             // serveur script
             text += "// Script Server" + Environment.NewLine;
             if (Var.fenetrePrincipale.textBox30.Text != "") { text += @"doubleIdDetected = """ + Var.fenetrePrincipale.textBox30.Text + @""";" + Environment.NewLine; };

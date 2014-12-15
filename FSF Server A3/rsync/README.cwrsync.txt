@@ -1,5 +1,5 @@
-cwRsync 5.3.0 Free - Rsync for Windows
-April 2014, provided by Itefix - https://www.itefix.no/i2/cwrsync
+cwRsync 5.4.1 Free - Rsync for Windows
+October 2014, provided by Itefix - https://www.itefix.net/cwrsync
 
 This archive contains a barebone distribution of Rsync for Windows.
 
@@ -9,9 +9,9 @@ command line.
 
 NB! In the case you run into -meaningless- permission issues, please
 consult our FAQ
-https://www.itefix.no/i2/content/permissions-filesdirectories-are-clutteredmixed
+https://www.itefix.net/content/permissions-filesdirectories-are-clutteredmixed
 
-cwRsync FAQs can also be helpful - https://www.itefix.no/i2/faq/cwrsync
+cwRsync FAQs can also be helpful - https://www.itefix.net/faq/cwrsync
 
 We provide a paid version of cwRsync. Please consider purchasing if you want to:
 
@@ -22,12 +22,12 @@ We provide a paid version of cwRsync. Please consider purchasing if you want to:
   or no strict check of password file permissions
 - use 64-bit distributions
 
-See https://www.itefix.no/i2/cwrsync for more information.
+See https://www.itefix.net/cwrsync for more information.
 
 ENJOY RSYNC!!
 
 Version information:
-Rsync 3.1.1pre1
-Cygwin 1.7.29
-OpenSSH 6.6p
-OpenSSL 1.0.1g
+Rsync 3.1.1
+Cygwin 1.7.32
+OpenSSH 6.7p
+OpenSSL 1.0.1i

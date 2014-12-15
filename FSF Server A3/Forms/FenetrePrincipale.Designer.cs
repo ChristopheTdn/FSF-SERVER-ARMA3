@@ -227,6 +227,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.labelSynchroEnCoursInvisible = new System.Windows.Forms.Label();
+            this.labelVitesseSynchro = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button16 = new System.Windows.Forms.Button();
             this.Performance = new System.Windows.Forms.TabPage();
@@ -301,6 +303,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.tab_serveur = new System.Windows.Forms.TabControl();
             this.Serveur_Detail = new System.Windows.Forms.TabPage();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -435,8 +441,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cultureManager1 = new Infralution.Localization.CultureManager(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.labelVitesseSynchro = new System.Windows.Forms.Label();
-            this.labelSynchroEnCoursInvisible = new System.Windows.Forms.Label();
             this.groupBox_regular.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_PrecisionAIREGULAR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_SkillAIREGULAR)).BeginInit();
@@ -488,6 +492,7 @@
             this.ConfigServeur.SuspendLayout();
             this.tab_serveur.SuspendLayout();
             this.Serveur_Detail.SuspendLayout();
+            this.groupBox19.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.groupBox6.SuspendLayout();
@@ -2139,6 +2144,16 @@
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.TabStop = false;
             // 
+            // labelSynchroEnCoursInvisible
+            // 
+            resources.ApplyResources(this.labelSynchroEnCoursInvisible, "labelSynchroEnCoursInvisible");
+            this.labelSynchroEnCoursInvisible.Name = "labelSynchroEnCoursInvisible";
+            // 
+            // labelVitesseSynchro
+            // 
+            resources.ApplyResources(this.labelVitesseSynchro, "labelVitesseSynchro");
+            this.labelVitesseSynchro.Name = "labelVitesseSynchro";
+            // 
             // textBox11
             // 
             resources.ApplyResources(this.textBox11, "textBox11");
@@ -2750,6 +2765,7 @@
             // Serveur_Detail
             // 
             this.Serveur_Detail.BackColor = System.Drawing.Color.Gainsboro;
+            this.Serveur_Detail.Controls.Add(this.groupBox19);
             this.Serveur_Detail.Controls.Add(this.groupBox11);
             this.Serveur_Detail.Controls.Add(this.groupBox9);
             this.Serveur_Detail.Controls.Add(this.groupBox6);
@@ -2768,6 +2784,36 @@
             this.Serveur_Detail.Controls.Add(this.label1);
             resources.ApplyResources(this.Serveur_Detail, "Serveur_Detail");
             this.Serveur_Detail.Name = "Serveur_Detail";
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.radioButton5);
+            this.groupBox19.Controls.Add(this.radioButton4);
+            this.groupBox19.Controls.Add(this.radioButton3);
+            resources.ApplyResources(this.groupBox19, "groupBox19");
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.TabStop = false;
+            // 
+            // radioButton5
+            // 
+            resources.ApplyResources(this.radioButton5, "radioButton5");
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.TabStop = true;
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            resources.ApplyResources(this.radioButton4, "radioButton4");
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.TabStop = true;
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            resources.ApplyResources(this.radioButton3, "radioButton3");
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.TabStop = true;
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -3843,16 +3889,6 @@
             resources.ApplyResources(this.imageList2, "imageList2");
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // labelVitesseSynchro
-            // 
-            resources.ApplyResources(this.labelVitesseSynchro, "labelVitesseSynchro");
-            this.labelVitesseSynchro.Name = "labelVitesseSynchro";
-            // 
-            // labelSynchroEnCoursInvisible
-            // 
-            resources.ApplyResources(this.labelSynchroEnCoursInvisible, "labelSynchroEnCoursInvisible");
-            this.labelSynchroEnCoursInvisible.Name = "labelSynchroEnCoursInvisible";
-            // 
             // FenetrePrincipale
             // 
             resources.ApplyResources(this, "$this");
@@ -3937,6 +3973,8 @@
             this.tab_serveur.ResumeLayout(false);
             this.Serveur_Detail.ResumeLayout(false);
             this.Serveur_Detail.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -4398,6 +4436,10 @@
         private System.Windows.Forms.Label label70;
         internal System.Windows.Forms.Label labelVitesseSynchro;
         internal System.Windows.Forms.Label labelSynchroEnCoursInvisible;
+        private System.Windows.Forms.GroupBox groupBox19;
+        internal System.Windows.Forms.RadioButton radioButton3;
+        internal System.Windows.Forms.RadioButton radioButton4;
+        internal System.Windows.Forms.RadioButton radioButton5;
 
     }
 }
