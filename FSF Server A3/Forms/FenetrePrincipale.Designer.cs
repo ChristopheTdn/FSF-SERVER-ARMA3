@@ -304,6 +304,7 @@
             this.tab_serveur = new System.Windows.Forms.TabControl();
             this.Serveur_Detail = new System.Windows.Forms.TabPage();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -2787,12 +2788,20 @@
             // 
             // groupBox19
             // 
+            this.groupBox19.Controls.Add(this.radioButton6);
             this.groupBox19.Controls.Add(this.radioButton5);
             this.groupBox19.Controls.Add(this.radioButton4);
             this.groupBox19.Controls.Add(this.radioButton3);
             resources.ApplyResources(this.groupBox19, "groupBox19");
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.TabStop = false;
+            // 
+            // radioButton6
+            // 
+            resources.ApplyResources(this.radioButton6, "radioButton6");
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.TabStop = true;
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
@@ -4440,6 +4449,7 @@
         internal System.Windows.Forms.RadioButton radioButton3;
         internal System.Windows.Forms.RadioButton radioButton4;
         internal System.Windows.Forms.RadioButton radioButton5;
+        internal System.Windows.Forms.RadioButton radioButton6;
 
     }
 }
