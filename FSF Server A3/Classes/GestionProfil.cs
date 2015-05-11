@@ -280,6 +280,8 @@ namespace FSF_Server_A3.Classes
             Var.fenetrePrincipale.radioButton3.Checked = false;
             Var.fenetrePrincipale.radioButton4.Checked = false;
             Var.fenetrePrincipale.radioButton5.Checked = false;
+            Var.fenetrePrincipale.radioButton6.Checked = false;
+
 
             // onglet regles
 
@@ -469,6 +471,11 @@ namespace FSF_Server_A3.Classes
 
             //creation .Arma3Profile
             GenereArma3Profile(profil);
+
+            // Genere HCini.bat
+            GenereHCinitBat(profil);
+
+
             // genere infoServeur
             Network.sauvegardeVersionA3(profil);
         }
@@ -493,7 +500,7 @@ namespace FSF_Server_A3.Classes
             text += Environment.NewLine;
             text += System.IO.Directory.GetDirectoryRoot(repertoireDeTravail).Replace(@"\", "") + Environment.NewLine;
             text += @"CD " + Var.fenetrePrincipale.textBox18.Text + Environment.NewLine;
-            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + GenereAffinityArgument()+ GenereLigneArgument("win") + GenereLigneParamServeur() + Environment.NewLine;
+            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + GenereAffinityArgument() + GenereLigneParamServeur() +  GenereLigneArgument("win") + Environment.NewLine;
             text += @"Echo + Arret serveur !!!" + Environment.NewLine;
             text += @"Echo + Redemarrage Serveur. Patientez SVP !" + Environment.NewLine;
             text += @"Echo .." + Environment.NewLine;
@@ -564,7 +571,7 @@ namespace FSF_Server_A3.Classes
             parametreServeur += @"""-cfg=" + cheminCfgServer + @"basic.cfg"" ";
             parametreServeur += @"""-profiles=" + cheminCfgServer + @"profile"" ";
             parametreServeur += @"""-name=server"" ";
-            parametreServeur += "-port=" + Var.fenetrePrincipale.textBox15.Text + " ";
+            parametreServeur += @"""-port=" + Var.fenetrePrincipale.textBox15.Text + @""" ";
             return parametreServeur;
         }
 
@@ -595,7 +602,8 @@ namespace FSF_Server_A3.Classes
             {
                 text += Environment.NewLine;
                 text += "//Headless Client" + Environment.NewLine;
-                text += "localClient[]={127.0.0.1};" + Environment.NewLine;
+                text += @"localClient[]={""127.0.0.1""};" + Environment.NewLine;
+                text += @"headlessClients[]={""127.0.0.1""};" + Environment.NewLine;
                 text += Environment.NewLine;
             }
 
@@ -859,6 +867,33 @@ namespace FSF_Server_A3.Classes
             text += " };" + Environment.NewLine;
             System.IO.File.WriteAllText(repertoireDeTravail + @"\profile\Users\server\server.Arma3Profile", text);
         }
-
+// Fichier HCinit.bat
+static public void GenereHCinitBat(string profil)
+        {
+            string repertoireDeTravail = Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil;
+            FileStream fs = File.Create(repertoireDeTravail + @"\HCinit.bat");
+            fs.Close();
+            string cheminCfgServer = @"@FSFServer\" + (Var.fenetrePrincipale.comboBox4.SelectedItem as ComboboxItem).Value.ToString() + @"\";
+            string text = "";
+            text += @":FSF" + Environment.NewLine;
+            text += @"Echo  off" + Environment.NewLine;
+            text += @"Cls" + Environment.NewLine;
+            text += @"Echo     +------------------------+" + Environment.NewLine;
+            text += @"Echo     +    FSF LAUNCHER A3     +" + Environment.NewLine;
+            text += @"Echo     +    HEADLESS CLIENT    +" + Environment.NewLine;
+            text += @"Echo     +------------------------+" + Environment.NewLine;
+            text += @"Echo   Profil : [" + Var.fenetrePrincipale.comboBox4.Text + "] en cours d'execution." + Environment.NewLine;
+            text += Environment.NewLine;
+            text += System.IO.Directory.GetDirectoryRoot(repertoireDeTravail).Replace(@"\", "") + Environment.NewLine;
+            text += @"CD " + Var.fenetrePrincipale.textBox18.Text + Environment.NewLine;
+            text += @"c:\Windows\System32\cmd.exe /C START ""arma3server"" /wait " + @" """ + Var.fenetrePrincipale.textBox18.Text + @"\arma3server.exe"" ""-client"" ""-connect=127.0.0.1"" ""-port=" + Var.fenetrePrincipale.textBox15.Text + @""" ""-password=" + Var.fenetrePrincipale.textBox13.Text + @""" ""-profiles=" + cheminCfgServer + @"profile"" " + GenereLigneArgument("win") + Environment.NewLine;
+            text += @"Echo + Arret serveur !!!" + Environment.NewLine;
+            text += @"Echo + Redemarrage Serveur. Patientez SVP !" + Environment.NewLine;
+            text += @"Echo .." + Environment.NewLine;
+            text += @"Echo ." + Environment.NewLine;
+            text += @"timeout /T 20 /NOBREAK" + Environment.NewLine;
+            text += @"Goto FSF" + Environment.NewLine;
+            System.IO.File.WriteAllText(repertoireDeTravail + @"\HCinit.bat", text);
+        }
         }
 }

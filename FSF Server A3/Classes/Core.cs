@@ -119,8 +119,12 @@ namespace FSF_Server_A3.Classes
         {
             GestionProfil.GenerefichierServeur(profil);
             Var.fenetrePrincipale.button16.Enabled = false;
-            new SurveillanceProcess(Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil +@"\server.bat", "");  
-        }
+            new SurveillanceProcess(Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil +@"\server.bat", "");
+            if (Var.fenetrePrincipale.checkBox_HeadLessClientActivate.Checked)
+            {
+            new SurveillanceProcess(Var.fenetrePrincipale.textBox18.Text + @"\@FSFServer\" + profil + @"\HCinit.bat", "");
+            }
+         }
 
          // Synchronisation
 
@@ -133,7 +137,7 @@ namespace FSF_Server_A3.Classes
             DirectoryInfo localDir = new DirectoryInfo(Var.fenetrePrincipale.textBox18.Text+@"\@FSF");
             FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
             //String remoteServer = "127.0.0.1";
-            String remoteServer = "server2.clan-fsf.fr";
+            String remoteServer = Var.fenetrePrincipale.textBox9.Text;
             string remoteDir = Var.fenetrePrincipale.textBox8.Text;
             RSync.RSyncCall rSyncCall = new RSync.RSyncCall(Var.fenetrePrincipale, Var.fenetrePrincipale.button25, Var.fenetrePrincipale.textBox11, Var.fenetrePrincipale.progressBar3, Var.fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir,Var.fenetrePrincipale.label77,Var.fenetrePrincipale.labelVitesseSynchro);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
             rSyncCall.setTotalSize(Var.fenetrePrincipale.label77);
@@ -145,7 +149,7 @@ namespace FSF_Server_A3.Classes
            DirectoryInfo localDir = new DirectoryInfo(Var.fenetrePrincipale.textBox18.Text + @"\@FSF");
            FileInfo rsyncExe = new FileInfo(AppDomain.CurrentDomain.BaseDirectory + @"rsync\rsync.exe");
            //String remoteServer = "127.0.0.1";
-           String remoteServer = "server2.clan-fsf.fr";
+           String remoteServer = Var.fenetrePrincipale.textBox9.Text;
            string remoteDir = Var.fenetrePrincipale.textBox8.Text;
            RSync.RSyncCall rSyncCall = new RSync.RSyncCall(Var.fenetrePrincipale, Var.fenetrePrincipale.button25, Var.fenetrePrincipale.textBox11, Var.fenetrePrincipale.progressBar3, Var.fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir, Var.fenetrePrincipale.label77);            //new RSync.RSyncCall(fenetrePrincipale, BoutonSender, fenetrePrincipale.textBox11, fenetrePrincipale.progressBar3, fenetrePrincipale.progressBar2, rsyncExe, remoteServer, remoteDir, localDir);
            rSyncCall.setTotalSize(Var.fenetrePrincipale.label77);

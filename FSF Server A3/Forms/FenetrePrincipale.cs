@@ -494,7 +494,7 @@ namespace FSF_Server_A3
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://server.clan-fsf.fr:8008/redmine/projects/fsf-server-arma-3/issues");
+            System.Diagnostics.Process.Start("http://clan-fsf.fr/redmine/projects/fsf-server-arma-3/issues");
         }
 
 
@@ -742,6 +742,11 @@ namespace FSF_Server_A3
             checkBox_proc5.Enabled = checkBox_Affinity.Checked;
             checkBox_proc6.Enabled = checkBox_Affinity.Checked;
             checkBox_proc7.Enabled = checkBox_Affinity.Checked;
+
+        }
+
+        private void checkBox_HeadLessClientActivate_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
 

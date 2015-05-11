@@ -102,7 +102,7 @@ namespace FSF_Server_A3.Classes
             string zipPath = Var.RepertoireDeSauvegarde +"serverLinux.zip";
             
             ZipFile.CreateFromDirectory(RepertoireSource, zipPath);
-            UploadConfigServeur(Var.RepertoireDeSauvegarde + "serverLinux.zip", @"ftp://ftp1.clan-fsf.fr/serverLinux.zip", "fsfservera3cfg", "fsfservera3");
+            UploadConfigServeur(Var.RepertoireDeSauvegarde + "serverLinux.zip", @"ftp://37.59.36.179/serverLinux.zip", "fsflauncherA3", "fsflauncherA3");
             System.Diagnostics.Process.Start("explorer.exe", Var.RepertoireDeSauvegarde);
         }
     }

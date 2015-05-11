@@ -2275,6 +2275,7 @@
             resources.ApplyResources(this.checkBox_HeadLessClientActivate, "checkBox_HeadLessClientActivate");
             this.checkBox_HeadLessClientActivate.Name = "checkBox_HeadLessClientActivate";
             this.checkBox_HeadLessClientActivate.UseVisualStyleBackColor = true;
+            this.checkBox_HeadLessClientActivate.CheckedChanged += new System.EventHandler(this.checkBox_HeadLessClientActivate_CheckedChanged);
             // 
             // groupBox15
             // 
